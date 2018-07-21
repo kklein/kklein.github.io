@@ -24,6 +24,8 @@ rss: rss
 # - username: jekyll2
 #   instance: example.com
 
+google_analytics: UA-122721044-1
+
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
