@@ -97,30 +97,64 @@ We can simply add bias terms per user and movie, such that our estimate looks li
 As we are trying to learn both embeddings and biases of users and movies, all of those should be regularized.
 \\[D = \\lambda(||U||\_F^2 + ||Q||\_F^2 + ||bu||\_2^2 + ||bm||\_2^2)\\]
 
-Hence our overall loss function is \\(\\mathcal{L}_D = \\mathcal{L} + D\\)
+Hence our overall loss function is \\(\\mathcal{L_D} = \\mathcal{L} + D\\)
 
 #### Stochastic Gradient Descent
-Despite the loss function, as well as e.g. \\(\\frac{\\partial L_D}{\\partial p_i}\\), iterating over all given ratings, we aim to avoid iterations over the whole dataset per update/iteration. Our compromise is to only look at one randomly chosen rating \\((i,j,r)\\) at a time and investigate the loss function:
-\\[ (r - \\hat{r_{ij}})^2 + \\lambda(||p_i||\_2^2 + ||q_j||\_2^2 + ||bu_i||\_2^2 + ||bm_j||\_2^2)\\]
+Despite the loss function, as well as e.g. \\(\\frac{\\partial \\mathcal{L_D}}{\\partial p_i}\\), iterating over all given ratings, we aim to avoid iterations over the whole dataset per update/iteration to relieve our machines. Our compromise is to only look at one randomly chosen rating \\((i,j,r)\\) at a time and investigate the loss function:
+\\[\\mathcal{L_{i,j}} = (r - \\hat{r_{ij}})^2 + \\lambda(||p_i||\_2^2 + ||q_j||\_2^2 + ||bu_i||\_2^2 + ||bm_j||\_2^2)\\]
 Therefore our overall process is to shuffle the training set, iterate over individual datapoints and update embeddings and biases impacted by that datapoint. We repeat this process until 'convergence' is reached.
 Note that this approach still requires initialization of \\(P\\) and \\(Q\\) to begin with. I think a fairly conventional approach is to initialize them with random numbers from \\([0,1]\\). For my purposes, it has worked well to initialize them via aforementioned SVD.
 
 #### Updates
-Note that the loss function is not convex in the tuple \\((P, Q)\\), hence it is not straightforward how to define \\(P, Q, bu, bm\\) minimizing it jointly. I came across three approaches.
-1. Alternating optimization
-This approach revolves around the fact that \\(\mathcal{L_D}\\) is convex in \\(P\\) for a _fixed_ \\(Q\\) and vice versa. So this approach initializes both embedding matrices in some way and then takes turns updating either movie or user embedding based on their relative gradient of the loss function.
-This approach didn't work great for me.
+Note that the loss function is not convex in the tuple \\((P, Q)\\), hence it we will most likely not minimize it but get stuck in a local minimum. We hope that this local minimum is good enough. Updates will be roughly of the following form upon investigating rating \\((i,j,r)\\):
+\\[q_i \\leftarrow q_i - \\eta \\frac{\\partial \\mathcal{L_{i,j}}}{\\partial p_i}\\]
+\\[\\frac{\\partial \\mathcal{L_{i,j}}}{\\partial p_i} = 2(r - r_{ij})(-q_j) + 2 \\lambda p_i\\]
+Where \\(\\eta\\) corresponds to our learning rate, e.g. fixed at \\(10^{-3}\\) or adapted, typically reduced, with growing number of updates.
 
-2. Simultaneous updates with Stochastic Gradient Descent
-In this approach we basically just update everything at the same time and hope for the best.
+I encountered three different approaches towards ordering updates of different variables. I orderer the approaches in increasing performance in my use case.
 
-3. Coordinate Descent
-Per datapoint \\((i,j,r)\\), instead of updating \\(p_i, q_j\\), we update only one dimension of the embedding vectors at a time. In particular we only update the \\(l\\)-th dimension until we have reached 'convergence'. We then continue by fixing dimension \\(l\\) and start the same procedure for dimension \\(l+1\\). To my knowledge, this appraoch was popularized by [Simon Funk](http://sifter.org/simon/journal/20061211.html),
+1. Alternating optimization:
 
+    ```python
+    for _ in range(n_epochs): # stop when convergence is reached
+      shuffle(dataset)
+      shuffled_half_1, shuffled_half_2 = halve(dataset)
+      for (i, j, r) in shuffled_half_1:
+        update(q_i)
+        update(bu_i)
+      for (i, j, r) in shuffled_half_2:
+        update(p_j)
+        update(bm_j)
+    ```
+This approach revolves around the fact that \\(\mathcal{L_D}\\) is convex in \\(P\\) for a _fixed_ \\(Q\\) and vice versa. With fixed counterpart, our embeddings have a closed form, least squares solution. This however assumes invertibility of the ratings matrix. This is not practical here because the matrix is sparse and its inversion would be costly.
+
+2. Simultaneous updates:
+    ```python
+    for _ in range(n_epochs): # stop when convergence is reached
+      shuffle(dataset)
+      for (i, j, r) in dataset:
+        update(p_i)
+        update(q_j)
+        update(bu_i)
+        update(bm_j)
+    ```
+Update everything at the same time, i.e. per encountered datapoint \\((i,j,r)\\), update \\(q_i, p_j, bu_i, bm_j\\).
+
+3. Coordinate Descent:
+    ```python
+    for d in range(n_dimensions):
+      for _ in range(n_epochs): # stop when convergence is reached
+        shuffle(dataset)
+        for (i, j, r) in dataset:
+          update(p_i[d])
+          update(q_j[d])
+          update(bu_i)
+          update(bm_j)
+    ```
+Per datapoint \\((i,j,r)\\), instead of updating \\(p_i, q_j\\), we update only one dimension of the embedding vectors at a time. In particular we only update the \\(d\\)-th dimension until we have reached 'convergence'. We then continue by fixing dimension \\(d\\) and start the same procedure for dimension \\(d+1\\). To my knowledge, this approach was popularized by [Simon Funk](http://sifter.org/simon/journal/20061211.html),
 
 
 # TODOS
 - References
 - Further reading
-- Clarifying ALS
-- Clarifying SGD
+- Give formula of ALS inversion
