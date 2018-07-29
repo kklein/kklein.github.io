@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Time Is Money"
-date:   2018-07-28 16:38:07 +0200
+date:   2018-08-25 16:38:07 +0200
 categories: jekyll update
 ---
 <script type="text/javascript" async
@@ -22,5 +22,24 @@ Ideally, one would use the technology and very frequently, consciously reevaluat
 Let's say 'good usage' of product P is a fashion of using it  that one would label _desirable_ when _consciously_ meditating on it. 'Bad usage is' otherwise.
 In general, good and bad usage are interwoven on the temporal axis, i.e. that good and bad usage can following each other in whatever possibility. I will make the simplifying assumption that one starts using P with the intention of good usage in mind. This will not hold for everything and everyone but I found that it is fairly representable of my behavior. Under that assumption, the user begins with the intention of good usage in mind, his attention will be captivated and his usage will often drift towards bad usage. In other words with diminishing returns per timestep the cost (time) remains constant per timestep. In such a scenario the task of the wished-for tool is substantially easier, it only has to spot or hint at the threshold at which the costs surpass the returns. Think of the monotonically decreasing function \\(f(t) = return(t) - cost(t)\\) of which one tries to find its root.
 
+Even this relaxation of the problem seemed relatively ambitious and by no means do I dare think that the tool provides such a functionality. I merely think that _Time Is Money_ goes into the right direction. It has no knowledge about where your threshold lies, it tries to make querying for surpassing the threshold easier for its user.
 
-## What the extension does
+More concretely, it aims to give you a proxy of whether your browsing behavior has surpassed the threshold by judging the amount of time spent on critical websites.
+
+For the sake of concreteness, let's have a look at the life of a visit of Facebook.com, with both its positive and negative aspects.
+- A: Your friend Xi messaged you about something you consider relevant. You take pleasure in being in touch and reply.
+- B: Via a post of hers that landed on your news feed, you find out that Amélie's in town for a short while, which rarely happens. You message her to meet up.
+- C: Marcus' beautiful picture from Tikal, Guatemala stands apart and you wish him a great rest of his trip.
+- D: You are sucked into the whirlpool of pages, posts and videos that are just funny or interesting enough to not make you question what your current activity. In a conscious state, you would stop. You're trapped.
+
+![image-title-here](/function.png){:class="img-responsive"}
+
+## How it works
+You can define a set of websites which you think could come with bad usage, i.e. drag you into something you did not approve of in the first place. The time spent by you on said websites will be recorded and accumulated on a weekly basis. This counter is displayed in the browser window.
+
+I think that many people, including myself, intuitively value their time less than the money they earn in this equivalent duration of time. As this goes against the idea of a thought-through decision-making of how to use time, I gave it a humble try to short-circuit this intuition. Hence, instead of an amount of time, an amount of money is displayed, that one could have earned in the meantime. An hourly wage can be defined by you.
+
+![image-title-here](/counter.png){:class="img-responsive"}
+
+## Misc
+Everything will be open source, all information stored locally and no communication exist.
