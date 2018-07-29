@@ -1,7 +1,8 @@
 ---
 layout: post
+published: false
 title:  "Time Is Money"
-date:   2018-08-25 16:38:07 +0200
+date:   2018-07-29 16:38:07 +0200
 categories: jekyll update
 ---
 <script type="text/javascript" async
