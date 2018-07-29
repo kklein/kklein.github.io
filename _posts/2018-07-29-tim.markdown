@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "Time Is Money"
+date:   2018-07-28 16:38:07 +0200
+categories: jekyll update
+---
+<script type="text/javascript" async
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?
+config=TeX-AMS-MML_HTMLorMML"></script>
+
+This post is about a browser add-on that is hopefully a drop in the ocean towards a rather ambitious goal.
+
+## Motivation
+A while back I listened to [Sam Harris' podcast with Tristan Harris](https://samharris.org/podcasts/what-is-technology-doing-to-us/). What remained was following:
+
+I agreed that most technology is agnostic. At the same time, a lot of technology stemming from or being a byproduct of the attention economy is rather geared towards a usage that is a net disadvantage for the user. What I mean by that is that such technology has both advantages and disadvantages that can at least partly be isolated. Yet a somewhat unconscious usage, think: path of least resistance, will often weigh the disadvantages more heavily. I don't see why this would be an intrinsic property of such products and services, it just happens to be the case for most examples I could think of.
+
+On the one hand, one could analyze technology based on those criteria and consequently disregard it if it turns out to favor negative outcomes. On the other hand, throwing away its advantages is a pity!
+
+Ideally, one would use the technology and very frequently, consciously reevaluate its consequences and adapt one's usage accordingly. This burden of numerous reflection and decision making, multiplied by the great amount of features we use on a daily basis seems overwhelming and unbearable to me. What I would want, is a tool that takes away some of the reflection and evaluation. It should take on the role of a beacon warning me from a likely transition from net positive to net negative consequences. Now this seems like a really ambitious expectation to me!
+
+Let's say 'good usage' of product P is a fashion of using it  that one would label _desirable_ when _consciously_ meditating on it. 'Bad usage is' otherwise.
+In general, good and bad usage are interwoven on the temporal axis, i.e. that good and bad usage can following each other in whatever possibility. I will make the simplifying assumption that one starts using P with the intention of good usage in mind. This will not hold for everything and everyone but I found that it is fairly representable of my behavior. Under that assumption, the user begins with the intention of good usage in mind, his attention will be captivated and his usage will often drift towards bad usage. In other words with diminishing returns per timestep the cost (time) remains constant per timestep. In such a scenario the task of the wished-for tool is substantially easier, it only has to spot or hint at the threshold at which the costs surpass the returns. Think of the monotonically decreasing function \\(f(t) = return(t) - cost(t)\\) of which one tries to find its root.
+
+
+## What the extension does
