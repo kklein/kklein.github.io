@@ -1,15 +1,14 @@
 ---
 layout: post
-published: false
 title:  "Time Is Money"
-date:   2018-07-29 16:38:07 +0200
+date:   2018-08-03 16:38:07 +0200
 categories: jekyll update
 ---
 <script type="text/javascript" async
 src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?
 config=TeX-AMS-MML_HTMLorMML"></script>
 
-This post is about a browser add-on that is hopefully a drop in the ocean towards a rather ambitious goal.
+This post is about a browser add-on that is hopefully a drop in the ocean towards a rather ambitious goal. It's called [TimeIsMoney](https://github.com/kkleindev/timeismoney).
 
 ## Motivation
 A while back I listened to [Sam Harris' podcast with Tristan Harris](https://samharris.org/podcasts/what-is-technology-doing-to-us/). What remained was following:
@@ -35,12 +34,21 @@ For the sake of concreteness, let's have a look at the life of a visit of Facebo
 
 ![image-title-here](/function.png){:class="img-responsive"}
 
-## How it works
+## How it (should) work(s)
 You can define a set of websites which you think could come with bad usage, i.e. drag you into something you did not approve of in the first place. The time spent by you on said websites will be recorded and accumulated on a weekly basis. This counter is displayed in the browser window.
 
-I think that many people, including myself, intuitively value their time less than the money they earn in this equivalent duration of time. As this goes against the idea of a thought-through decision-making of how to use time, I gave it a humble try to short-circuit this intuition. Hence, instead of an amount of time, an amount of money is displayed, that one could have earned in the meantime. An hourly wage can be defined by you.
+I think that many people, including myself, intuitively value their time less than the money they earn in this equivalent duration of time. As this goes against the idea of a thought-through time allocation, I gave it a humble try to short-circuit this intuition. Hence, instead of an amount of time, an amount of money is displayed, that one could have earned in the meantime. An hourly wage can be defined by you.
 
 ![image-title-here](/counter.png){:class="img-responsive"}
 
-## Misc
-Everything will be open source, all information stored locally and no communication exist.
+Part of this project's motivation is for it to be open source and to do without third-party-communication.
+
+## How it doesn't work
+System as well browser crashes can reset the storage of the counter information as well as preferences, e.g. websites and hourly wages. Even though I initially found the idea of having everything stores locally attractive, this will probably ask for cloud storage in the long run.
+
+On a more fine-grained level, the 'accounting' is not flawless. Detecting idle times, standbys or lockings of devices are not all detectable via clean subscriber paradigms but currently also rely on hand-crafted heuristics. This bugs me quite a bit.
+
+At least tab switches and explicit closures of the browser work well as far as I can tell.
+
+## Improvements
+In case you have suggestions how to handle said scenarios in a nicer way, an idea how to write tests for such scenarios or general comments, feel free to get in touch via twitter.
