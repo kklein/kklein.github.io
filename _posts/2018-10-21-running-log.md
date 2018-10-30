@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Running log"
+title:  "Running Log"
 date:   2018-10-28 16:38:07 +0200
 categories: jekyll update
 ---
 
 ## Problem
-Sport tracking apps can offer lots of interesting functionalities regarding the logging of activities. I figured most of what they provided was only interesting in short-term for two reasons.
+Sports tracking apps offer lots of interesting functionalities regarding the logging of activities. I figured most of what they provided was only interesting in short-term for two reasons.
 
 On the one hand, I changed phones and tracking apps from time to time, which would sometimes lead to a reset of information. Also, some tracking apps were discontinued. You could say they introduced technical debt that I often was not willing or able to carry on.
 
@@ -31,9 +31,11 @@ Google Calendar offered many advantages that fit the situation:
 
 Hence I decided to log all sports activities in my private calendar with a specific color code. Also, I named the entries accordingly, e.g. 'Running'. Information about distances was taken care of by populating the event description with an indication, e.g. '9.6 km'.
 
+![gcal event](/gcal_event.png){:class="img-responsive"}
+
 I wrote a simple script to query the calendar events from Google's API and opted to visualize the data by aggregating per week distances and plotting weeks against distances within a certain time interval.
 
-![image-title-here](/gcal_distances.png){:class="img-responsive"}
+![resulting plot](/gcal_distances.png){:class="img-responsive"}
 
 There still is a lot of room for more elaborate analysis both in terms of metrics and visualizations.
 
