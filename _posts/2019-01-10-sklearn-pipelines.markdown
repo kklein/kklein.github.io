@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Sklearn pipelines"
+title:  "Sklearn Pipelines"
 date:   2019-01-08 13:38:07 +0200
 categories: jekyll update
 ---
