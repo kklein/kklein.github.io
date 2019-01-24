@@ -74,6 +74,7 @@ Therefore we know that _iteratively_ setting literals to the truth value maximiz
 Given assignments \\(l_1 = \alpha_1, \dots, l_i = \alpha_i\\), computing \\(\mathbb{E}[M\|l_1 = \alpha_1, \dots, l_i = \alpha_i]\\) is actually pretty easy. We go clause by clause, each containing 3 literals and hence requiring \\(\mathcal{O}(1)\\) time. If all literals of a clause are determined, we check whether the clause is satisfied or not and accordingly count it as 0 or 1. If some of the literals are set, we add the probability of it being satisfied, e.g. \\(\Pr[False \vee l_{i+1} \vee \neg l_{i+2}] = 1 - \frac{1}{4} = \frac{3}{4}\\). All clauses that have no determined literals keep their expected satisfaction of \\(\\frac{7}{8}\\). Hence computing one conditional expectation takes us \\(\mathcal{O}(m\cdot 1)\\) time.
 
 #### Bringing it together
+Aforementioned properties can now directly be turned into a deterministic greedy algorithm.
 
 ```
 for i = 1 to n:
