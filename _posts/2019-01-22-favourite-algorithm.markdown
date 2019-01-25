@@ -9,7 +9,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?
 config=TeX-AMS-MML_HTMLorMML"></script>
 
 ### Abstract
-Appreciating the simplicity of powerful randomized algorithms comes easy to me. In the following I will try to the describe a naive algorithm relying on a randomized argument. What I find particularly remarkable is that it can easily parry the critique I am so often encountered with when cherishing randomized algorithms: it can trivially be turned deterministic.
+Appreciating the simplicity of powerful randomized algorithms comes easy to me. In the following I will try to describe a naive algorithm relying on a randomized argument. What I find particularly remarkable is that it can easily parry the critique I am so often encountered with when cherishing randomized algorithms: it can trivially be turned deterministic.
 
 ### MAX-3SAT
 Is a boolean satisfiability problem. Given a formula in 3-CNF, the goal to satisfy as many clauses as possible.
