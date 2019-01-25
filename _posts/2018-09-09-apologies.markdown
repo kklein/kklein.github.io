@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "On Apologies"
+title:  "On Apologies: A Poor Man's Taxonomy"
 date:   2018-09-09 16:38:07 +0200
 categories: jekyll update
 ---
