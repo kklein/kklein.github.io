@@ -62,6 +62,6 @@ In order to transfer files, e.g. log files or loss function evaluations, use scp
 `scp your_nethz@login.leonhard.ethz.ch:~/repo/logs/\*.csv .`
 
 # Further reading
-https://scicomp.ethz.ch/wiki/
+[https://scicomp.ethz.ch/wiki/](https://scicomp.ethz.ch/wiki/)
 
-Thanks to Lorenz and Philip.
+Thanks to [Lorenz](https://www.lorenzkuhn.com/) and [Philip](https://www.linkedin.com/in/philip-junker/).
