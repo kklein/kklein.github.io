@@ -3,6 +3,7 @@ layout: post
 title:  "Running Log"
 date:   2018-10-28 16:38:07 +0200
 categories: jekyll update
+comments: false
 ---
 
 ## Problem

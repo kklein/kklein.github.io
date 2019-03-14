@@ -3,6 +3,7 @@ layout: post
 title:  "A Beautiful, Derandomized Algorithm"
 date:   2019-01-21 16:38:07 +0200
 categories: jekyll update
+comments: false
 ---
 <script type="text/javascript" async
 src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?

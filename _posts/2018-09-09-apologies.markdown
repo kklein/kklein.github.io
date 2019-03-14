@@ -3,6 +3,7 @@ layout: post
 title:  "On Apologies: A Poor Man's Taxonomy"
 date:   2018-09-09 16:38:07 +0200
 categories: jekyll update
+comments: false
 ---
 I have gotten confused and frustrated over apologies from time to time. They have been a consistent source of miscommunication. I figured that it isn't clear to me what an apology means in the general case. Hence I tried to distinguish possible meanings in more concrete cases.
 

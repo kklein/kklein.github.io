@@ -3,6 +3,7 @@ layout: post
 title:  "On Advice"
 date:   2018-10-05 18:00:00 +0200
 categories: jekyll update
+comments: false
 ---
 
 I have received and noticed other people receive advice. Most of the time, said advice advocated actions falling into either of those categories:
