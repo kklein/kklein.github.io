@@ -28,7 +28,7 @@ Once installed, in order to be able to call invoke conda from the command like, 
 
 `source $HOME/miniconda3/bin/activate`
 
-Followingly, clone the git repository of your preference, including a environment.yml file.
+Followingly, clone the git repository of your preference, including a `environment.yml` file.
 
 `conda env create -f myenvironment.yml`
 
@@ -37,7 +37,7 @@ All the steps so far only have to be executed once. You will need to activate th
 `conda activate myenvironment`
 
 # Submission system
-An activated enviroment will automatically be picked up by the submission system. In order words, you activate the environment in you own bash terminal, and can then run your python scripts by submitting `python script.py`.
+An activated enviroment will automatically be picked up by the submission system. In other words, you activate the environment in you own bash terminal, and can then run your python scripts by submitting `python script.py`.
 
 For cpu usage run:
 
@@ -52,7 +52,7 @@ In case you have access to more GPUs, you can adapt the parameter. Students will
 There are interesting features such as notifying yourself via email upon completion of a job. See more [ETH wiki](https://scicomp.ethz.ch/wiki/Using_the_batch_system), [IBM reference](https://www.ibm.com/support/knowledgecenter/en/SSETD4_9.1.2/lsf_command_ref/bsub.1.html).
 
 By default, standard output will be gathered in a file that is delivered to your home directory once the job is no longer running.
-An simple way to track progress is to write to standard output and look into this file on the go. `bjobs` will tell you the job id of your job, say `192240`.
+A simple way to track progress is to write to standard output and look into this file on the go. `bjobs` will tell you the job id of your job, say `192240`.
 In order to investigate the standard output so far, run:
 
 `bpeek 192240`
