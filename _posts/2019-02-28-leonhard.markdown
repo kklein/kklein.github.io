@@ -49,6 +49,14 @@ For gpu usage run:
 
 In case you have access to more GPUs, you can adapt the parameter. Students will usually only have access to one.
 
+Always make sure to request a conservative amount of time, as your job might be killed when surpassing its threshold. The default duration is 2h. The argument can be either in minutes or hours:minutes format.
+
+`bsub -W 8:30 -R "rusage[ngpus_excl_p=1]" "python script.py --batch_size 2 --n_epochs 50000"`
+
+In order to retroactively inspect parameters of a given, completed job, the following will do:
+
+`bhist -l 192240`
+
 There are interesting features such as notifying yourself via email upon completion of a job. See more [ETH wiki](https://scicomp.ethz.ch/wiki/Using_the_batch_system), [IBM reference](https://www.ibm.com/support/knowledgecenter/en/SSETD4_9.1.2/lsf_command_ref/bsub.1.html).
 
 By default, standard output will be gathered in a file that is delivered to your home directory once the job is no longer running.
@@ -56,6 +64,7 @@ A simple way to track progress is to write to standard output and look into this
 In order to investigate the standard output so far, run:
 
 `bpeek 192240`
+
 
 # File transfer
 In order to transfer files, e.g. log files or loss function evaluations, use scp. Note that wildcards have to be escaped when using scp. E.g. to transfer files from Leonhard to your machine, run the following on your machine
@@ -65,4 +74,4 @@ In order to transfer files, e.g. log files or loss function evaluations, use scp
 # Further reading
 [https://scicomp.ethz.ch/wiki/](https://scicomp.ethz.ch/wiki/)
 
-Thanks to [Lorenz](https://www.lorenzkuhn.com/) and [Philip](https://www.linkedin.com/in/philip-junker/).
+Thanks to [Lorenz](https://www.lorenzkuhn.com/), [Philip](https://www.linkedin.com/in/philip-junker/) and [Daniel](https://www.linkedin.com/in/dfischmann/).
