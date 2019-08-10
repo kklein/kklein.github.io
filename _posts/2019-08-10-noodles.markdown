@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "Korean Noodle Salad"
+date:   2019-08-10 8:00:00 +0200
+categories: jekyll update
+comments: false
+---
+
+This is a recipe for a Korean noodle salad. Its raw and at most lukewarm ingredients as well as the the coriander-acidity pairing make it feel light and fresh despite the rich nature of the peanut butter and sesame oil. I can recommend it as a main course on summer evenings.
+
+## Preliminaries
+Cucumbers and bell peppers are meant to be cut in juliennes. The following aspects flow into that decision:
+- They're supposed to be easily picked up by chopsticks.
+- Their overall volume-to-surface ratio should be rather low, as their rawness can easily be overbearing.
+
+## Ingredients
+Serves roughly 8 ppl.
+
+# Salad
+- 500g Korean wheat noodles
+- 3 spring onions
+- 3 bell peppers (orange, yellow, red, just not green)
+- 1 large cucumber
+- 1 small red cabbage
+- a good amount of coriander
+- 200g peanuts
+- sesame seeds    
+
+# Sauce
+- half a stem of ginger
+- 3 cloves of garlic
+- 4 TBS Gochujang (Korean chili sauce)
+- 4 TBS sesame oil
+- 3 TBS brown sugar
+- ~100 ml soy sauce
+- 4 TBS rice wine vinegar
+- 150g peanut butter
+
+## Method
+Chop bell peppers and cucumber in juliennes. Grate red cabbage. Chop the the green parts of spring onions in rings, the white parts finely. Finely chop the coriander stems and leave the leafs whole.
+Smash the peanuts to a coarseness of your liking, best done with a pestle mortar.
+
+Cook the wheat noodles according to packaging. Do your best not to overcook them. Continuously rinse coldly and drain as to prevent them from sticking.
+
+Heat the pb in a microwave until it has more or less liquified. Finely grate the ginger and garlic. Incorporate the remaining sauce ingredients. Taste the sauce by itself and adjust accordingly.
+
+Once the noodles don't seem sticky anymore (stir them with your hands to check), make all of the ingredients meet in a large bowl. Stir well and possibly adapt the quantity of the sauce, i.e. add it continuously until the mix pleases your preference. Can always add but not take away.
+
+Serve with some lime wedges.
