@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "I wish my position had been challenged more."
+title:  "Challenge People"
 date:   2019-08-14 8:00:00 +0200
 categories: jekyll update
 comments: false
