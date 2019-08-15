@@ -30,3 +30,7 @@ Now, years later, I changed my mind.
 My point is not about messaging. My point is that as long as you grant the assumption that the change of opinion is progress and progress is positive, one clearly benefits from having the flaws entailed in one's ideas pointed out. Laid out as explicitly, it really does seem like a no-brainer to me. But maybe, yet again, I'm wrong. If so, I'd like to know. :)
 
 Challenge your dear ones. Not doing so is not caring. It is wasteful.
+
+___
+
+Props and thanks to Théo for challenging this post.
