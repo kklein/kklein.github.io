@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Calendar API Quickstart</title>
+    <meta charset="utf-8" />
+  </head>
+  <link rel="stylesheet" href="style.css">
+  <body>
+    <svg width="1500" height="1000"></svg>
+    <button id="authorize_button" style="display: none;">Authorize</button>
+    <button id="signout_button" style="display: none;">Sign Out</button>
+    <div id="tooltip">
+    </div>
+    <div class="aggregate_panel">
+      <p style="text-align:center; margin: auto;">
+        Aggregate by week:
+      </p>
+      <label class="switch">
+        <input id="aggregate_checkbox" type="checkbox" checked>
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <pre id="content" style="white-space: pre-wrap;"></pre>
+    <div id="wrapper"></div>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="./events.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
