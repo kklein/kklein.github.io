@@ -63,7 +63,7 @@ function displayData(data) {
   const tooltip = d3.select('#tooltip');
 
   const svg = d3.select('svg');
-  const margin = {top: 20, right: 20, bottom: 30, left: 40};
+  const margin = {top: 20, right: 20, bottom: 30, left: 60};
   const width = +svg.attr('width') - margin.left - margin.right;
   const height = +svg.attr('height') - margin.top - margin.bottom;
 
@@ -130,6 +130,14 @@ function displayData(data) {
 
   // Bind zooming to svg.
   svg.call(initiateZoom(width, height, g, xScaler, xAxis)).transition();
+
+    // Add label to x-axis.
+  svg.append('text')
+      .attr('transform', 'rotate(-90)')
+      .attr('y', 20)
+      .attr('x', 0 - (height / 2))
+      .style('text-anchor', 'middle')
+      .text('distance [km]');
 }
 
 function initializeVisualizion() {

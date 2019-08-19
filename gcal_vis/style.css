@@ -1,7 +1,19 @@
+* {
+ font: 16px sans-serif;
+}
+
 .datapoint {
   fill: white;
   stroke: steelblue;
   stroke-width: 1.5px;
+}
+
+.axis--x {
+  font: 16px sans-serif;
+}
+
+.axis--y {
+  font: 16px sans-serif;
 }
 
 #tooltip {
@@ -23,7 +35,7 @@
   display: flex;
   flex-direction: row;
   top: 40px;
-  left: 60px;
+  left: 80px;
   color: white;
   background-color: lightgrey;
   padding: 5px;
