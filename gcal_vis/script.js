@@ -128,8 +128,16 @@ function displayData(data) {
             .style('opacity', 0);
       });
 
+
+  const d0 = new Date(2017, 10, 10);
+  const d1 = new Date(2018, 7, 1);
+
   // Bind zooming to svg.
-  svg.call(initiateZoom(width, height, g, xScaler, xAxis)).transition();
+  svg.call(initiateZoom(width, height, g, xScaler, xAxis))
+      .transition()
+      .duration(1500)
+      .call(initiateZoom(width, height, g, xScaler, xAxis).transform,
+            d3.zoomIdentity.scale(width / (xScaler(d1) - xScaler(d0)))    .translate(-xScaler(d0), 0));
 
     // Add label to x-axis.
   svg.append('text')
