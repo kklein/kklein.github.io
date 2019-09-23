@@ -3,7 +3,7 @@ layout: post
 title:  "Breaking Pills: An Intuition"
 date:   2019-09-23 09:38:07 +0200
 categories: jekyll update
-comments: false
+comments: true
 ---
 <script type="text/javascript" async
 src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?
