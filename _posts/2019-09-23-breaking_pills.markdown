@@ -55,3 +55,5 @@ In case such a (hopefully) intuitive reasoning still seems unsatisfactory, note 
 Recall that the harmonic number can be very well approximated by the natural logarithm. In particular, we have \\(H_n = \Theta(\log(n))\\) and \\(\gamma + \log(n) < H_n < \gamma + \log(n+1)\\), where \\(\gamma \approx .577\\) is the [Euler-Mascheroni constant](https://en.wikipedia.org/wiki/Euler–Mascheroni_constant).
 
 ![hn](/Hn.png){:class="img-responsive"}
+
+Thanks to Philip for bringing this problem to my attention.
