@@ -29,9 +29,9 @@ For the sake of concreteness, let us illustrate the mechanism with \\(n=7\\). Re
 
 W3 | h3 | W4 | W5 | W6 | W7
 W3 | W4 | h3 | W4 | W6 | W7
-W3 | W4 | W5 | h1 | W6 | W7
-W3 | W4 | W5 | W6 | h1 | W7
-W3 | W4 | W5 | W6 | W7 | h1
+W3 | W4 | W5 | h3 | W6 | W7
+W3 | W4 | W5 | W6 | h3 | W7
+W3 | W4 | W5 | W6 | W7 | h3
 
 Note that only in the last scenario, does the half pill add to the count of half pills remaining after all whole pills. Hence, in expectation, the half pill associated with the first whole pill adds \\(\frac{1}{5}\\) to the count of remaining half pills.
 
