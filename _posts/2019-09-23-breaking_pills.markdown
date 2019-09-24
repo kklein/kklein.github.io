@@ -10,7 +10,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?
 config=TeX-AMS-MML_HTMLorMML"></script>
 
 ### Motivation
-Recently, Mark Dominus' [post on breaking pills](https://blog.plover.com/math/breaking-pills.html). Appeared on [Hacker News](https://news.ycombinator.com/item?id=21024224). I was surprised to see the author not provide a closed-form and wanted to extend on some of the comments indicating a relation to the [harmonic numbers](https://en.wikipedia.org/wiki/Harmonic_number).
+Recently, Mark Dominus' [post on breaking pills](https://blog.plover.com/math/breaking-pills.html) appeared on [Hacker News](https://news.ycombinator.com/item?id=21024224). I was surprised to see the author not provide a closed-form and wanted to extend on some of the comments indicating a relation to the [harmonic numbers](https://en.wikipedia.org/wiki/Harmonic_number).
 
 ### Problem Formulation
 Starting off with a bowl of \\(n\\) whole pills, you draw from the bowl uniformly at random according to the following mechanism: if the drawn pill is whole, you put back one half of it; if the drawn pill is half, you don't put back anything.
