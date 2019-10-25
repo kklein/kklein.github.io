@@ -8,6 +8,7 @@ comments: false
 
 I'd argue that those beautifully colored kimchi pancakes are rather on the subtle side when it comes to taste intensity. The kimchi flavor certainly isn't overwhelming. At the same time, leaving it out makes you wish for something.
 
+![Stacked pancakes](/pancake.jpg){:class="img-responsive"}
 
 ## Ingredients
 Serves 4 hungry ppl.
