@@ -42,7 +42,7 @@ Half a cup of each will do, less probably too.
 ## Method
 Strain the kimchi and preserve the juice. Finely chop it and mix it with the remaining batter ingredients. The batter should neither be as liquid as normal pancake batter nor be as sticky as dough - just somewhere in between should be fine. In case your kimchi doesn't hold the suggested amount of kimchi juice, just substitute it with water.
 
-Place the batter in a high-heat pan coated with a neutral oil. It should be fairly easy to flip them. Aim for a thickness between .5 and .8 cm.
+Place the batter in a high-heat pan coated with a neutral oil. It should be fairly easy to flip them. Aim for a thickness between .5 and .8 cm. Not using too much oil will prevent them to be too heavy and soft.
 
 Precut the pancakes so they can be dipped in a sauce bowl with chopsticks.
 
