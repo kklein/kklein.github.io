@@ -38,11 +38,11 @@ Within 2019, I looked into weekly stats. It turns out that I averaged at 2.04 ru
 
 While quite a few weeks came with fairly little mileage, I'm quite satisfied to see that there were only 5 weeks without running despite quite several of traveling.
 
-Lastly, I wondered: Was the weekly cumulative distance more influenced on how often I pulled myself together to go for a run or more influenced by for how long I hung in runs? For that purpose I computed the Pearson coefficients between sad metrics.
+Lastly, I wondered: Are greater weekly cumulative distances more associated with how often I pulled myself together to go for a run or more associated by for how long I hung in runs? For that purpose, restricting myself to linear effects, I computed the Pearson coefficients between sad metrics.
 
 |              |    |   Pearson coefficient |
 |--------------|-------|-------:|
 | weekly cumulative distance |  weekly average distance  |   .65|
 | weekly cumulative distance | weekly number of runs | .88 |
 
-While there is no simple answer to the brought-up question, this might be an interesting observation nevertheless.
+While there is no simple answer to the brought-up question, this might be an interesting observation that is vaguely related.
