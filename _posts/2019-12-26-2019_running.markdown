@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2020 in Running"
+title:  "2019 in Running"
 date:   2019-12-27 16:38:07 +0200
 categories: jekyll update
 comments: false
@@ -38,7 +38,7 @@ Within 2019, I looked into weekly stats. It turns out that I averaged at 2.04 ru
 
 While quite a few weeks came with fairly little mileage, I'm quite satisfied to see that there were only 5 weeks without running despite quite several of traveling.
 
-Lastly, I wondered: Are greater weekly cumulative distances more associated with how often I pulled myself together to go for a run or more associated by for how long I hung in runs? For that purpose, restricting myself to linear effects, I computed the Pearson coefficients between sad metrics.
+Lastly, I wondered: Are greater weekly cumulative distances more associated with how often I pulled myself together to go for a run or more associated by for how long I hung in runs? For that purpose, restricting myself to linear effects, I computed the Pearson coefficients between said metrics.
 
 |              |    |   Pearson coefficient |
 |--------------|-------|-------:|
