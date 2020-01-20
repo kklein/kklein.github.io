@@ -49,7 +49,7 @@ Trade-off equal (resp. symmetric) to option 1.
 
 After many late-night executive decisions to go with either option 1 or 2 for no reason but tiredness I will from now on side with option 3. 
 
-## Addendum 1: Type signatures might help by hinting at the problem, but don't solve the problem.Q
+## Addendum 1: Type signatures might help by hinting at the problem, but don't solve the problem.
 Type hints, both with respect to function parameters as well as return values, in combination with some IDE or editor features parsing function signatures, might provide a lot of ease and value to the user. More precisely, they can protect against overconfidence purely derived from the name of a function. E.g. a user looking for a mathematical log, finding out about the existence of a function called `log` might blindly trust that it applies the mathematical log. With the following definition:
 
 ```python
