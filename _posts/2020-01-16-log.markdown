@@ -13,7 +13,7 @@ So let's take a step back and formalize our desires from naming.
 ## Goals
 1. Given the semantics of a function, the origin of its name should be comprehensible.
 2. Given only a function name, the rough semantics should be clear.
-3. Given the semantics of a function, the function should be named after the first name the user would associate with the semantics. [0]
+3. Given the semantics of a function, the function should be named after the first name the user would associate with the semantics. [0] <sup id="a1">[1](#f1)</sup>
 
 The first goal should be self-evident and be realized by any thinkable suggestion. While achieving the latter goal might be the pinnacle of interface design, I'm afraid it is unreachable in this context. Many people will just want to give the operation they have in mind the name `log` - a naming conflict. Hence we will evaluate options by whether they manage to realize the second goal.
 
@@ -78,6 +78,8 @@ It is not perfectly clear that it is _worth_ the effort. What is clear is that t
 2. It seems to me that such structural, engineering practices vehemently rely on consistency. Both users and I only truly start profiting from such upsides if we all have the feeling that they hold at least 'almost all of the time'[1].
 3. Moreover, I like to think of this thought process as practice. I will face very similar decisions time and time again and thinking about them earlier will make it easier to make good calls later.
 
+
+<b id="f1">1</b> Footnote content here. [↩](#a1)
 
 [0] Note that there is another possible distinction to be made here: It can easily be argued that not having a 'hit' is way superior to having a 'hit' with semantics differing from expectation.
 [1] Think of a sigmoid function. Perceived value = sigmoid(likelihood of success of intuition) with a vertical inflection point[2] somewhere between 0.9 and 1.
