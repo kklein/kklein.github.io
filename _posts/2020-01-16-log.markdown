@@ -80,5 +80,7 @@ It is not perfectly clear that it is _worth_ the effort. What is clear is that t
 
 
 <b id="f0">[0]</b> Note that there is another possible distinction to be made here: It can easily be argued that not having a 'hit' is way superior to having a 'hit' with semantics differing from expectation. [↩](#a0)
+
 <b id="f1">[1]</b> Think of a sigmoid function. Perceived value = sigmoid(likelihood of success of intuition) with a vertical inflection point<sup id="a2">[[2]](#f2)</sup> somewhere between 0.9 and 1.[↩](#a1)
+
 <b id="f2">[2]</b> I think inflection points are 'horizontal' by definition, please forgive the abuse of terminology. :) [↩](#a2)
