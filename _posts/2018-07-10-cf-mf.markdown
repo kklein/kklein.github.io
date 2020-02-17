@@ -156,4 +156,4 @@ Per datapoint \\((i,j,r)\\), instead of updating \\(p_i, q_j\\), we update only 
 - [Matrix Factorization Techniques for Recommender Systems. Koren, Bell, Volinsky](https://ieeexplore.ieee.org/document/5197422/)
 - [Recommender systems. Aggarwal](https://rd.springer.com/book/10.1007%2F978-3-319-29659-3)
 - [Improving regularized singular value decomposition for collaborative filtering. Paterek](https://www.cs.uic.edu/~liub/KDD-cup-2007/proceedings/Regular-Paterek.pdf)
-- [Project report](https://github.com/kkleindev/CILRecommender2018/blob/master/report/report.pdf)
+- [Project report](https://github.com/kklein/CILRecommender2018/blob/master/report/report.pdf)

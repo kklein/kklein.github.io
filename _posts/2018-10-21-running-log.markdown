@@ -45,7 +45,7 @@ There still is a lot of room for more elaborate analysis both in terms of metric
 - I've been using this script for quite a while and I find it quite interesting to look into trends of my activities. I have been logging events accordingly for 2-3 years.
 - It was fun to use data about myself _myself_ and I'd encourage you to play around with the calendar API as well, given that you have some kind of consistency in logging events.
 
-You can find the code [here](https://github.com/kkleindev/gcal-analysis), it is supposed to be easy to execute and understand.
+You can find the code [here](https://github.com/kklein/gcal-analysis), it is supposed to be easy to execute and understand.
 
 ## Update 19/08/19: Interactive d3 visualization in browser
 After some years of telling myself to work with d3 again, I finally used this little project to do so. I used the exact same data and fed them to an interactive visualization. More concretely, running distances, both on a daily and weekly basis, are plotted against dates. The advantages of the _interactive_ visualizations are:
@@ -56,4 +56,4 @@ After some years of telling myself to work with d3 again, I finally used this li
 
 You can easily give the [live demo](http://kevinkle.in/gcal_vis/index.html) a try, courtesy of my data. ;)
 
-The [repository](https://github.com/kkleindev/gcal-analysis) now contains both approaches.
+The [repository](https://github.com/kklein/gcal-analysis) now contains both approaches.

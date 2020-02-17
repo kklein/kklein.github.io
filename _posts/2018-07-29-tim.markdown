@@ -9,7 +9,7 @@ comments: false
 src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?
 config=TeX-AMS-MML_HTMLorMML"></script>
 
-This post is about a browser add-on that is hopefully a drop in the ocean towards a rather ambitious goal. It's called [TimeIsMoney](https://github.com/kkleindev/timeismoney).
+This post is about a browser add-on that is hopefully a drop in the ocean towards a rather ambitious goal. It's called [TimeIsMoney](https://github.com/kklein/timeismoney).
 
 ## Motivation
 A while back I listened to [Sam Harris' podcast with Tristan Harris](https://samharris.org/podcasts/what-is-technology-doing-to-us/). What remained was following:
