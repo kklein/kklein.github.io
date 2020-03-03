@@ -16,7 +16,7 @@ You are the host of an event for which there are \\(n\\) candidates to be invite
 - some non-invitees will have a desire to attend
 - non-invitees with a desire to attend will feel bad about not being able to attend
 
-Moreover, one might weight the ambitions wrt non-desiring invitees and desiring non-invitees differently. For instance, one might consider the discomfort of someone having
+Moreover, one might weigh the ambitions wrt non-desiring invitees and desiring non-invitees differently. For instance, one might consider the discomfort of someone having
 to decline, and thereby expressing his/her lack of appreciation, worse than the missed opportunity of someone not attending who would've desired to.
 
 Concretely, this gives rise to the goal of _minimizing_ the following quantities:
@@ -63,7 +63,7 @@ Recalling that \\(p\\) is a probability, we know it is bounded by \\([0, 1] \\).
 What does this tell us?
 In the first case, we would like to go with the naive 'invite nobody' approach whereas in the second case, we would like to go with the 'invite everybody' approach. Intuitively this might come as a slight surprise - why aren't there any cases in which the optimal \\(p\\) lies _inbetween_ \\(0\\) and \\(1\\), after all? I think the route towards insight as to why this doesn't happen is to emphasize that all candidates are drawn i.i.d. with \\(p\\).
 
-However, as \\(q\\) is assumed to be unknown, we cannot evaluate said condition. In other words, depeding on \\(\alpha\\) and \\(q\\), one of Naive 1 and Naive 2 will perform well, the other badly. This randomized approach will lie somewhere inbetween. Allowing for an _adaptive_ approach, i.e. letting \\(p\\) vary ofer time, we could 'push' \\(p\\) closer to either \\(0\\) or \\(1\\), whichever is preferable. Such a method would naturally end up with a loss between that of the fixed starting probability \\(p\\) and the approached 'invite all' or 'invite nobody' approach. For instance, if asking everybody is the optimal choice, the relative ordering of expected losses looks as follows:
+However, as \\(q\\) is assumed to be unknown, we cannot evaluate said condition. In other words, depending on \\(\alpha\\) and \\(q\\), one of Naive 1 and Naive 2 will perform well, the other badly. This randomized approach will lie somewhere in-between. Allowing for an _adaptive_ approach, i.e. letting \\(p\\) vary over time, we could 'push' \\(p\\) closer to either \\(0\\) or \\(1\\), whichever is preferable. Such a method would naturally end up with a loss between that of the fixed starting probability \\(p\\) and the approached 'invite all' or 'invite nobody' approach. For instance, if asking everybody is the optimal choice, the relative ordering of expected losses looks as follows:
 
 ![losses](/losses.png){:class="img-responsive"}
 
@@ -90,7 +90,7 @@ The iterative process of updating \\(p_i\\) can be thought of as a random walk o
 
 ![probability updates](/invitation_mc.png){:class="img-responsive"}
 
-By definition, the likelihood of candidate \\(i\\) receiving an invitation depends on the state we find ourselves in in timestep \\(i\\). Refering to a state and its associated value \\(p_i\\) by \\(S_i\\), our question of the total amount of invitees translates to:
+By definition, the likelihood of candidate \\(i\\) receiving an invitation depends on the state we find ourselves in in timestep \\(i\\). Referring to a state and its associated value \\(p_i\\) by \\(S_i\\), our question of the total amount of invitees translates to:
 
 \\[\mathbb{E}[\text{\#invitees}] = \mathbb{E}[\sum_{i=1}^n S_i]\\]
 
@@ -125,6 +125,6 @@ Furthermore, note that the dependence of \\(r\\) on \\(n\\) implies that given t
 
 ## Closing remarks
 - It seems to me that what we are doing in the update step can be seen as implicitly maintaining and leveraging a counter on the binary outcomes of desire preferences. This is a flavor of explore-exploit.
-- The _addition_ of \\(\delta\\)s in the update step is a design choice. Mulitplication seems like a sensible approach, too.
+- The _addition_ of \\(\delta\\)s in the update step is a design choice. Multiplication seems like a sensible approach, too.
 - \\(\delta\\) is a hyperparameter.
 - Many thanks to Tim.
