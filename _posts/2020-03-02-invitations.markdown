@@ -65,7 +65,7 @@ In the first case, we would like to go with the naive 'invite nobody' approach w
 
 However, as \\(q\\) is assumed to be unknown, we cannot evaluate said condition. In other words, depending on \\(\alpha\\) and \\(q\\), one of Naive 1 and Naive 2 will perform well, the other badly. This randomized approach will lie somewhere in-between. Allowing for an _adaptive_ approach, i.e. letting \\(p\\) vary over time, we could 'push' \\(p\\) closer to either \\(0\\) or \\(1\\), whichever is preferable. Such a method would naturally end up with a loss between that of the fixed starting probability \\(p\\) and the approached 'invite all' or 'invite nobody' approach. For instance, if asking everybody is the optimal choice, the relative ordering of expected losses looks as follows:
 
-![losses](/losses.png){:class="img-responsive"}
+![losses](/imgs/losses.png){:class="img-responsive"}
 
 The red arrows indicate the direction in which we'd like to shift the randomized approach by making it adaptive.
 

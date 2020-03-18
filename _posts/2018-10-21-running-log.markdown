@@ -32,11 +32,11 @@ Google Calendar offered many advantages that fit the situation:
 
 Hence I decided to log all sports activities in my private calendar with a specific color code. Also, I named the entries accordingly, e.g. 'Running'. Information about distances was taken care of by populating the event description with an indication, e.g. '9.6 km'.
 
-![gcal event](/gcal_event.png){:class="img-responsive"}
+![gcal event](/imgs/gcal_event.png){:class="img-responsive"}
 
 I wrote a simple script to query the calendar events from Google's API and opted to visualize the data by aggregating per week distances and plotting weeks against distances within a certain time interval.
 
-![resulting plot](/gcal_distances.png){:class="img-responsive"}
+![resulting plot](/imgs/gcal_distances.png){:class="img-responsive"}
 
 There still is a lot of room for more elaborate analysis both in terms of metrics and visualizations.
 

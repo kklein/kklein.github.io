@@ -33,14 +33,14 @@ For the sake of concreteness, let's have a look at the life of a visit of Facebo
 - C: Marcus' beautiful picture from Tikal, Guatemala stands apart and you wish him a great rest of his trip.
 - D: You are sucked into the whirlpool of pages, posts and videos that are just funny or interesting enough to not make you question what your current activity. In a conscious state, you would stop. You're trapped.
 
-![image-title-here](/function.png){:class="img-responsive"}
+![image-title-here](/imgs/function.png){:class="img-responsive"}
 
 ## How it (should) work(s)
 You can define a set of websites which you think could come with bad usage, i.e. drag you into something you did not approve of in the first place. The time spent by you on said websites will be recorded and accumulated on a weekly basis. This counter is displayed in the browser window.
 
 I think that many people, including myself, intuitively value their time less than the money they earn in this equivalent duration of time. As this goes against the idea of a thought-through time allocation, I gave it a humble try to short-circuit this intuition. Hence, instead of an amount of time, an amount of money is displayed, that one could have earned in the meantime. An hourly wage can be defined by you.
 
-![image-title-here](/counter.png){:class="img-responsive"}
+![image-title-here](/imgs/counter.png){:class="img-responsive"}
 
 Part of this project's motivation is for it to be open source and to do without third-party-communication.
 

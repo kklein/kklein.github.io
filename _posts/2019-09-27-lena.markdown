@@ -26,7 +26,7 @@ How to get ahold of such rules?
 
 I came up with the idea of constructing rules based on neighboring colors. Given a colored central pixel, its neighboring pixels would be colored depending on the central pixel. The color of the neighbors could be determined by randomness: independently draw a color for each neighbor from a probability distribution over colors conditioning on the color of the central pixel.
 
-![Neighboring pixels](/neighbors.png){:class="img-responsive"}
+![Neighboring pixels](/imgs/neighbors.png){:class="img-responsive"}
 
 In this particular visualization one would need to look up the distribution conditioning on the own color being violet. Each arrow represents an independent draw from that distribution.
 
@@ -61,7 +61,7 @@ Given the nature of the 'neighboring' relationship and the fact that
 
 this relationship is naturally represented by a fully connected [Markov chain](https://en.wikipedia.org/wiki/Markov_chain).
 
-![Markov chain](/mc.png){:class="img-responsive"}
+![Markov chain](/imgs/mc.png){:class="img-responsive"}
 
 Put explicitly, the approach corresponds to the following:
 
@@ -84,10 +84,10 @@ I stumbled upon [Jonathan Mackenzie's github repo](https://github.com/JonnoFTW/m
 
 ## Outcome
 
-![Deconstructed Lena](/deconstructed_lena.png){:class="img-responsive"}
+![Deconstructed Lena](/imgs/deconstructed_lena.png){:class="img-responsive"}
 
 512x512 pixels
 
-![Hung Lena](/hung_lena.png){:class="img-responsive"}
+![Hung Lena](/imgs/hung_lena.png){:class="img-responsive"}
 
 4000x5000 pixels, printed on roughly 33x42 cm

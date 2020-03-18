@@ -17,24 +17,24 @@ In bad storytelling manner let's start with the most graspable and interesting s
 
 Given this lack of intuition I find it rather surprising to see the cumulative distance increase more than twofold. I guess I won't complain. :) The increased average distance made me wonder: Did I only leave out shorter runs or did I actually run 'longer runs'? As an, arguably weak, proxy I looked into the 20 longest runs I had every run and investigated which year they belonged to. Turns out practically all of them stem from 2019.
 
-![20 longest runs](/top_runs.png){:class="img-responsive"}
+![20 longest runs](/imgs/top_runs.png){:class="img-responsive"}
 
 I figure this expresses that the average distance did not only increase through leaving out shorter runs.
 
 
 Moreover, I wondered whether there were periodic phenomena on a monthly scale. Despite usually considering myself more or less indifferent to weather conditions, the following plot shows peaks in the summer months for 2017 and 2018. 2019 paints a less clear picture. Maybe the summer peaks and the summer are not causally related but only correlated by say a change of lifestyle? Both summers of 2017 and 2018 did not have me attend and work for lectures but rather intern and do exam prep.
 
-![monthly sums](/monthly_sums.png){:class="img-responsive"}
+![monthly sums](/imgs/monthly_sums.png){:class="img-responsive"}
 
 Overall, the average run distance does not seem to be vastly influenced by seasonal/periodic circumstances. I tell myself that this vaguely and qualitatively confirms my wishful thinking of me not being a fair weather runner. :)
 
-![monthly means](/monthly_means.png){:class="img-responsive"}
+![monthly means](/imgs/monthly_means.png){:class="img-responsive"}
 
 Within 2019, I looked into weekly stats. It turns out that I averaged at 2.04 runs per week and 18.5 km per week. Following are histograms of the number of weekly runs and weekly cumulative distances with said means as vertical lines.
 
-![weekly number of runs](/weekly_n_runs.png){:class="img-responsive"}
+![weekly number of runs](/imgs/weekly_n_runs.png){:class="img-responsive"}
 
-![weekly distance histogram](/weekly_cumulative_histogram.png){:class="img-responsive"}
+![weekly distance histogram](/imgs/weekly_cumulative_histogram.png){:class="img-responsive"}
 
 While quite a few weeks came with fairly little mileage, I'm quite satisfied to see that there were only 5 weeks without running despite quite several of traveling.
 
