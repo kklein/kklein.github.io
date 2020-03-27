@@ -38,13 +38,23 @@ If we had perfect a priori knowledge about candidates desires and would either i
 Let's start off with some naive deterministic algorithms before we delve into randomized approaches.
 
 # Naive 1: Invite all candidates
-\\(\mathbb{E}[\mathcal{L}] = \alpha \mathbb{E}[\text{\#non-desiring candidates}] = \alpha n (1-q) \\)
+\begin{align}
+\mathbb{E}[\mathcal{L}] &= \alpha \mathbb{E}[\text{\#non-desiring candidates}]\\\
+			&= \alpha n (1-q)
+\end{align}
 
 # Naive 2: Invite nobody
-\\(\mathbb{E}[\mathcal{L}] = (1 - \alpha) \mathbb{E}[\text{\#desiring candidates}] = (1 - \alpha)n q \\)
+\begin{align}
+\mathbb{E}[\mathcal{L}] &= (1 - \alpha) \mathbb{E}[\text{\#desiring candidates}] \\\
+			&= (1 - \alpha)n q
+\end{align}
 
 # Randomized 1: Invite candidates i.i.d. with \\(\Pr[\text{invite}]=p\\)
-\\(\mathbb{E}[\mathcal{L}] = \alpha n (1 - q) p +  (1 - \alpha)n q (1 - p)\\)
+\begin{align}
+\mathbb{E}[\mathcal{L}] &= \alpha \mathbb{E}[\text{\#non-desiring candidates}] \Pr[\text{invite}] + (1 - \alpha) \mathbb{E}[\text{\#desiring candidates}] \Pr[\text{no invite}] \\\
+			&= \alpha n (1 - q) p +  (1 - \alpha)n q (1 - p)
+\end{align}
+
 
 Naturally, one might wonder what shape the optimal \\(p\\) takes on, as a function of \\(\alpha\\) and \\(q\\).
 
@@ -88,7 +98,7 @@ In order to analyze the expected loss of this approach, it turns out useful to a
 
 The iterative process of updating \\(p_i\\) can be thought of as a random walk on the following Markov chain:
 
-![probability updates](/invitation_mc.png){:class="img-responsive"}
+![probability updates](/imgs/invitation_mc.png){:class="img-responsive"}
 
 By definition, the likelihood of candidate \\(i\\) receiving an invitation depends on the state we find ourselves in in timestep \\(i\\). Referring to a state and its associated value \\(p_i\\) by \\(S_i\\), our question of the total amount of invitees translates to:
 
@@ -113,7 +123,10 @@ Coming back to our underlying question, we obtain:
 For the sake of compactness, let us define \\(r := p_1 + \delta \frac{n-1}{2}(2q - 1)\\).
 Plugging this into our loss function, we learn that:
 
-\\[ \mathbb{E}[\mathcal{L}] = \alpha n (1 - q) r + (1 - \alpha) n q (1 - r) \\]
+\begin{align}
+\mathbb{E}[\mathcal{L}] &= \alpha \mathbb{E}[\text{\#non-desiring candidates}] \Pr[\text{invite}] + (1 - \alpha) \mathbb{E}[\text{\#desiring candidates}] \Pr[\text{no invite}] \\\
+			&= \alpha n (1 - q) r + (1 - \alpha) n q (1 - r)
+\end{align}
 
 ... so did we really improve on the first randomized, non-adaptive approach, with fixed \\(p\\)? A closer examination of \\(r\\) yields the insight. We see that \\(r < p_1\\) if \\(q < \frac{1}{2}\\) and \\(r > p_1\\) if \\(q > \frac{1}{2}\\). In other words, this approach is an enhancement over the former if either is satisfied:
 - \\(\alpha > q\\) and \\(\frac{1}{2} > q\\) 
@@ -127,4 +140,4 @@ Furthermore, note that the dependence of \\(r\\) on \\(n\\) implies that given t
 - It seems to me that what we are doing in the update step can be seen as implicitly maintaining and leveraging a counter on the binary outcomes of desire preferences. This is a flavor of explore-exploit.
 - The _addition_ of \\(\delta\\)s in the update step is a design choice. Multiplication seems like a sensible approach, too.
 - \\(\delta\\) is a hyperparameter.
-- Many thanks to Tim.
+- Many thanks to Tim and Daan.
