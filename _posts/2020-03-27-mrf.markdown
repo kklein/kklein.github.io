@@ -1,0 +1,60 @@
+---
+layout: post
+title:  "Markov Random Field image denoising"
+date:   2020-03-02 9:38:07 +0200
+categories: jekyll update
+comments: false
+---
+<script type="text/javascript" async
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?
+config=TeX-AMS-MML_HTMLorMML"></script>
+
+This post introduces and describes the application of a Probabilistic Graphical Model for simple image denoising, as suggested in [Bishop](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/)'s chapter 8.3.8. 
+
+## Rough introduction: Probabilistic Graphical Models
+
+## Introduction: Markov Random Fields
+
+## Application: Image denoising
+
+### Givens
+* An observed black-and white image $$Y \in \{-1, 1\}^{N \times M}$$
+
+### Assumptions
+* The observed image $$Y$$ is the result of an underlying 'true' image $$X \in \{-1, 1\}^{N \times M}$$ suffering noise pollution.
+* The noise flips every pixel i.i.d. with fixed probability $$p$$. I.e. $$Y_{ij} = X_{ij} + \epsilon_{ij}$$ with
+  $$ \epsilon_{ij} =
+    \begin{cases}
+    -2 X_{ij},& \text{ with probability } p\\
+    0 &\text{ with probability } 1 - p
+    \end{cases}$$
+* ~~~Pixels only depend on their immediate neighbors.
+
+### Goal
+* Intuition: Reconstruct the underlying image $$X_{ij}$$ by investigating the noisy observation $$Y_{ij}$$.
+* Explicit: Generate $$\hat{Y}$$ with $$\sum_{ij} \|(Y_{ij} - \hat{Y_{ij}})\|$$ a small as possible.
+
+### Model
+* Graph:
+
+  ![probability updates](/imgs/mrf/mrf_graph.png){:class="img-responsive"}
+
+
+  We observe that there are two types of edges in the graph:
+  - edges between $$X$$ and $$Y$$, e.g. $$X_{ij}$$ and $$Y_{ij}$$
+  - edges within $$X$$ and $$y$$ respectively, e.g. $$X_{ij}$$ and $$X_{i+1,j}$$
+
+  The former result from the nature of the noise process: an oberved pixel is directly linked to the underlying pixel. The latter result from the assumption that the immediate neighborhood of a pixel is its [Markov blanket](https://en.wikipedia.org/wiki/Markov_blanket). In other words, knowing the neighbors of the pixel, no other pixel will add any information about the pixel under consideration.
+
+  As compared to the complete graph, we clearly have _very few_ edges in this graph. Moreover, we only have a constant [degree](https://en.wikipedia.org/wiki/Degree_(graph_theory)). This will turn out very handy.
+
+  The transition from both kinds of edges allows for a very natural transition to two kinds of maximal cliques:
+  - cliques between $$X$$ and $$Y$$, e.g. $$X_{ij}$$ and $$Y_{ij}$$
+  - cliques within $$X$$ and $$Y$$ respectively, e.g. $$X_{ij}$$ and $$X_{i+1,j}$$
+
+* Potential functions:
+  - $$\Psi_a (X_{ij}, Y_{ij}) = -\eta_a X_{ij} Y_{ij}$$
+  - $$\Psi_b (X_{ij}, X_{ij}) = -\eta_b X_{ij} X_{ij} \text{ for } (i, j} \in \text{ neighborhood}(i,j)$$
+* Energy function:
+* Optimization algorithm:
+* Experiment:
