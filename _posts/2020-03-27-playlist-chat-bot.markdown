@@ -34,8 +34,8 @@ achieved by a chatbot. The desired behavior:
    * Chatbot adds highest-ranking result to my playlist.
    * Chatbot confirms addition to friend.
 
-Implementing such a bot came with fairly low effort as I found both the [python telegram bo
-api](https://python-telegram-bot.org/) as well as [gmusicapi](
+Implementing such a bot came with fairly low effort as I found both the [python telegram bot
+api](https://python-telegram-bot.org/) as well as the [gmusicapi](
 https://github.com/simon-weber/gmusicapi) very userfriendly. Deploying the bot locally with a
 polling mechanism has also proven to be relatively straightforward.
 
