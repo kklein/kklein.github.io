@@ -34,6 +34,8 @@ achieved by a chatbot. The desired behavior:
    * Chatbot adds highest-ranking result to my playlist.
    * Chatbot confirms addition to friend.
 
+![bot message](/imgs/playlist-chat-bot/bot-message.png){:class="img-responsive"}
+
 Implementing such a bot came with fairly low effort as I found both the [python telegram bot
 api](https://python-telegram-bot.org/) as well as the [gmusicapi](
 https://github.com/simon-weber/gmusicapi) very userfriendly. Deploying the bot locally with a
