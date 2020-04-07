@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Markov Random Field image denoising"
-date:   2020-04-10 9:38:07 +0200
+date:   2020-04-06 9:38:07 +0200
 categories: jekyll update
 comments: false
 published: false
@@ -10,11 +10,80 @@ published: false
 src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?
 config=TeX-AMS-MML_HTMLorMML"></script>
 
-This post introduces and describes the application of a Probabilistic Graphical Model for simple image denoising, as suggested in [Bishop](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/)'s chapter 8.3.8. 
+This post introduces and describes the application of a Probabilistic
+Graphical Model for simple image denoising, as suggested in
+[Bishop](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/)'s
+chapter 8.3.8.
 
 ## Rough introduction: Probabilistic Graphical Models
 
+Probabilisic Graphical Models are tools to model and express conditional
+independencies among a set of random variables.
+
+Why care about conditional independencies? They allow the reshaping of joint distributions in ways
+that require fewer parameters. In light of that, consider that a joint distribution can always be
+express without any conditional dependencies. This can be thought of as an exhaustive, conservative
+approach and leads to a fully connected graph in Graphical Models.
+
+There are two major variants of Graphical Models. Some rely on directed graphs and use the notion of
+'d-separation' for expressing conditional independencies. While there are quite a few flavours of
+directed Graphical Models, Bayesian Networks are the ones I encountered most. Another major variant
+is undirected Graphical Models. A prominent representative of that group are 'Markov Random Fields',
+or 'MRF' in short.
+
+In Bayesian Networks, nodes of the graph, also called 'factors' have a direct probabilistic
+interpretation: they represent conditional probabilities. In MRFs, the interpretation is less
+straight-forward, more on that later. Some more information about the relation between directed and
+undirected models:
+* Any directed graph model can be turned into an undirected graph model via a
+process called 'moralization'. It consists of 'marrying' parrent nodes. This process might remove
+some conditional independencies.
+* In general, directed and undirected graph models can capture
+different conditional independencies, see the next section for more detail.
+
+## Maps
+
+Let's define three types of 'maps' and illustrate how they interact with one another. Here, 'map'
+refers to the idea of going from a distribution to a model/graph. Assume the distribution has random
+variables $$A, B, C$$.
+
+
+* D(ependency)-map: $$A \not\perp B \| C$$ in distribution $$\Rightarrow$$ $$A \not\perp B \| C$$ in graph
+* I(ndepdence)-map: $$A \not\perp B \| C$$ in graph $$\Rightarrow$$ $$A \not\perp B \| C$$ in distribution
+* P(erfect) map: $$A \not\perp B \| C$$ in distribution $$\Leftrightarrow$$ $$A \not\perp B \| C$$ in graph
+
+We previously made the statement that directed and undirected graphs can, a priori, capture
+different conditional independencies. This can be formalized by looking into the set of perfect maps
+of directed and undirected graphs respectively. Let's call the set of all perfects maps
+$$\mathcal{P}$$, the set of all perfect maps captured by directed graphs $$\mathcal{P}_{DG}$$ and
+$$\mathcal{P}_{UG}$$ analogously. The relationship of said sets can be illustrated as follows:
+
+![map sets](/imgs/mrf/map_sets.png){:class="img-responsive"}
+
 ## Introduction: Markov Random Fields
+
+In MRFs, the joint distribution can be epresses as a product of potential functions over all maximal cliques of the graph.
+
+### Motivational example
+Given the set of Rancom Variables $$X_1, ..., X_N$$. Assume we are given the information that the distribution can be modeled via MRFs with a chain graph and potential functions $$\psi_{i, i+1}$$. Note that maximal cliques are any pairs of neighbors.
+
+![chain graph](/imgs/mrf/chain_graph.png){:class="img-responsive"}
+
+The goal is to answer the query: For a given $$x_i'$$, what is $$p(X_i=x_i')$$?
+
+A naive approach would go as follows: evaluate and marginalize the joint distribution. In other words:
+\\[p(x_i') = \sum_{x_1'}\sum_{x_2'} \dots \sum_{x_{i-1}'}\sum_{x_{i+1}'} \dots \sum_{X_N'} p(x_1', x_2', \dots, x_{i-1}', x_i', x_{i+1}', \dots, x_{N}')\\]
+Assuming that every random variable is discrete and can take on $$O(k)$$ many values, this approach leads to $$O(k^N)$$ evaluations of the joint distribution.
+
+Leveraging the conditional independencies express through the MRF we can do much better. While we still rely on marginalization, we can do it in a more efficient way by rearranging sum terms.
+
+\\[p(x_i') = \frac{1}{Z} \sum_{x_1'}\sum_{x_2'} \psi_{1,2}(x_1', x_2') \sum_{x_3'}\psi_{2,3}(x_2', x_3') \sum_{x_4'}\psi_{3,4}(x_3', x_4') \dots  \sum_{x_N'} \psi_{N-1, N}(x_{N-1}', X_N')\\]
+with $$Z$$ being a normalization term.
+
+Observe that this computation comes with merely $$O(K^2N)$$ evaluations of the potential functions.
+
+TODO: Relation between evaluations and parameters.
+
 
 ## Application: Image denoising
 
