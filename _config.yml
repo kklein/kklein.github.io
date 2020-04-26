@@ -2,11 +2,11 @@ title: Blog
 author: Kevin Klein
 # email: your-email@domain.com
 description: > # this means to ignore newlines until "twitter_username:"
-  I'm a CS student at ETH in Zurich. I find short but meaningful descriptions tough.
+  I like computer science and I find short but meaningful descriptions tough.
 
 # social links
 twitter_username: kevkle
-agithub_username:  kklein
+github_username:  kklein
 # rss: rss
 # dribbble_username: jekyll
 # facebook_username: jekyll
