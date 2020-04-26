@@ -38,11 +38,11 @@ achieved by a chatbot. The desired behavior:
 
 Implementing such a bot came with fairly low effort as I found both the [python telegram bot
 api](https://python-telegram-bot.org/) as well as the [gmusicapi](
-https://github.com/simon-weber/gmusicapi) very userfriendly. Deploying the bot locally with a
+https://github.com/simon-weber/gmusicapi) very user-friendly. Deploying the bot locally with a
 polling mechanism has also proven to be relatively straightforward.
 
-Remote deployment seemed a bit trickier at first, for google play music authentication is typically
+Remote deployment seemed a bit trickier at first, for Google play music authentication is typically
 handled via oauth browser authentication. Thanks to the help of [Simon
 Weber](https://www.simonmweber.com/) I was able to make it run on Google Cloud Functions. This has
-actually been a surprisingly seemles and pleasant experience. Details regarding the authentication
+actually been a surprisingly seamless and pleasant experience. Details regarding the authentication
 can be found in the [project repo](https://github.com/kklein/gmusic-bot).
