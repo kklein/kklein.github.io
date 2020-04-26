@@ -14,7 +14,7 @@ This post describes the application of a Probabilistic Graphical Model for simpl
 as suggested in [Bishop](https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/)'s
 chapter 8.3.8. I will attempt to introduce some notions for general context without derivations.
 Googling will lead to plenty of useful resources. On an introductory level, I enjoyed
-[Daphne Koller class](https://cs.stanford.edu/~ermon/cs228/index.html).
+[Daphne Koller's class](https://cs.stanford.edu/~ermon/cs228/index.html).
 
 ## Context: Probabilistic Graphical Models
 
