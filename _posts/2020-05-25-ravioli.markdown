@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Red eggs"
-date:   2020-05-20 21:38:07 +0200
+title:  "Caramelized onion and artichoke ravioli"
+date:   2020-05-25 15:38:07 +0200
 categories: jekyll update
 comments: false
-published: false
+published: true
 ---
 ## Ingredients
 Dough
@@ -29,10 +29,12 @@ Filling
 - seasoning
 
 ## Method
-PASTA
 
-Slice the onion and start frying them in butter and oil. Eventually add finely chopped garlic, some thyme and
-possibly some chili flakes. Once your pan is low on moisture, add some red wine. Make sure not to be on too high
+Use a standard approach to prepare the pasta dough, see for e.g. 
+[this recipe](https://leitesculinaria.com/40229/recipes-homemade-pasta-dough.html).
+
+Slice the onions and start frying them in butter and oil. Eventually add finely chopped garlic, some thyme and
+possibly some chili flakes. Add some red wine once your pan is low on moisture. Make sure not to be on too high
 heat as you want the onions to fry and caramelize for a while - without starting to burn. Optionally add some sugar
 at some point.
 
@@ -41,6 +43,12 @@ Let the onions cool off a bit and chop the artichoke hearts in the meantime.
 Crumble the ricotta, grate some nutmeg and lemon zest. Combine all of the filling ingredients, add seasoning and 
 some lemon juice to your liking. 
 
-FILL AND COOK PASTA
+Gently fill your pasta and cook them.
 
-Optional: grattin, place on bed of rocket.
+![filled](/imgs/ravioli/filled.jpg){:class="img-responsive"}
+
+I decided to gratinate the pasta and placed them over a bed of arugula.
+
+![grattin](/imgs/ravioli/grattin.jpg){:class="img-responsive"}
+
+Many thanks to Julie.
