@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Red eggs"
-date:   2020-05-16 21:38:07 +0200
+title:  "Orange pink eggs"
+date:   2020-06-06 21:38:07 +0200
 categories: jekyll update
 comments: false
-published: false
+published: true
 ---
-Yadda yadda. 
+I have a feeling that hard-boiled eggs are conventially viewed as unsexy. In spite of that,  I gave pickling them a shot.
 
 ## Ingredients
 - 8 eggs
@@ -42,5 +42,15 @@ Add your spice mixture and the vinegar into your mason jar.
 
 
 Peel your hard-boiled eggs and add them, too.
+
+![spices](/imgs/eggs/spices.jpg){:class="img-responsive"}
+
+I let them pickle for roughly 7-10 days. They looked really cool - orange on the outside and pink on the inside.
+They ended up being fairly acidic, partly overshadowing the taste of spices. I think it be cool if one could spare
+some of the vinegar, although I'm not sure what this would imply for their shelf life.
+
+![outside](/imgs/eggs/outside.jpg){:class="img-responsive"}
+
+![inside](/imgs/eggs/inside.jpg){:class="img-responsive"}
 
 
