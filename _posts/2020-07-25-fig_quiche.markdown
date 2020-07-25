@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Fig quiche"
-date:   2020-05-25 15:38:07 +0200
+date:   2020-07-25 12:38:07 +0200
 categories: jekyll update
 comments: false
 published: true
@@ -47,4 +47,4 @@ Place in the oven at around 220 degrees C until looking like a milion bucks.
 * Having some nuts, e.g. pecans, in the quiche could also be interesting taste-wise. Yet, 
 I'm not sure if the crunchy texture would work well in the midst of creaminess.
 
-<b id="f0">[0]</b> 'Light or heavy cream?' you may ask. Don't you know the answer? :) <sup id="a1">[[1]](#f1)</sup>.
+<b id="f0">[0]</b> 'Light or heavy cream?' you may ask. Don't you know the answer? :)
