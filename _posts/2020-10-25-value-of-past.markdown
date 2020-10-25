@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Value of the Past"
-date:   2020-10-25 15:38:07 +0200
+date:   2020-10-25 13:38:07 +0200
 categories: jekyll update
 comments: false
 ---
