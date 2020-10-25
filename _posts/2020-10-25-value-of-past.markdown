@@ -39,4 +39,4 @@ Going forward I'll try to use the heuristic of asking the the proxy that is the 
 > If yes: Re-evaluate feasibility or redefine plan.
 > If no: It shall be done.
 
-<b id="f0">[0]</b><a href="url"> https://nav.al/unacceptable </a> [↩](#a0)
+<b id="f0">[0]</b><a href="https://nav.al/unacceptable"> https://nav.al/unacceptable </a> [↩](#a0)
