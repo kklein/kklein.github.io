@@ -66,14 +66,14 @@ this relationship is naturally represented by a fully connected [Markov chain](h
 Put explicitly, the approach corresponds to the following:
 
 ```
-1. Smooth input image
+1. Smoothen input image
 2. Learn conditional probabilities via conditional histogram on input image
 3. Create a blank output image of arbitrary resolution
 4. Pick a random pixel and color it according to some arbitrary distribution
    over the set of possible colors
 5. Start a breadth-first exploration and color every neighbor by sampling
    according to the conditional probability table of the current color
-6. Smooth output image
+6. Smoothen output image
 ```
 
 Note that the 5th step corresponds to starting a (respectively, many) random walk(s) on the Markov chain for every neighbor.
