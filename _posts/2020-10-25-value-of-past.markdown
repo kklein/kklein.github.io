@@ -45,5 +45,5 @@ Thanks to Ruifeng for pointing out the following beautiful quote from Claude Sha
 
 <b id="f0">[0]</b><a href="https://nav.al/unacceptable"> Unacceptable, Naval </a> [↩](#a0)
 
-<b id="f0">[0]</b><a href="https://www.gwern.net/docs/cs/1959-shannon.pdf"> Coding Theorems for a Discrete Source With a Fidelity Criterion, Claude Shannon </a> [↩](#a0)
+<b id="f1">[1]</b><a href="https://www.gwern.net/docs/cs/1959-shannon.pdf"> Coding Theorems for a Discrete Source With a Fidelity Criterion, Claude Shannon </a> [↩](#a1)
 
