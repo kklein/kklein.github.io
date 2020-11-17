@@ -39,4 +39,11 @@ Going forward I'll try to use the heuristic of asking the the proxy that is the 
 > If yes: Re-evaluate feasibility or redefine plan.
 > If no: It shall be done.
 
-<b id="f0">[0]</b><a href="https://nav.al/unacceptable"> https://nav.al/unacceptable </a> [↩](#a0)
+Thanks to Ruifeng for pointing out the following beautiful quote from Claude Shannon <sup id="a1">[[1]](#f1)</sup>:
+
+> Thus we may have knowledge of the past but cannot control it; we may control the future but have no knowledge of it.
+
+<b id="f0">[0]</b><a href="https://nav.al/unacceptable"> Unacceptable, Naval </a> [↩](#a0)
+
+<b id="f0">[0]</b><a href="https://www.gwern.net/docs/cs/1959-shannon.pdf"> Coding Theorems for a Discrete Source With a Fidelity Criterion, Claude Shannon </a> [↩](#a0)
+
