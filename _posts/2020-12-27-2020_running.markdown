@@ -14,8 +14,8 @@ Yet another year's almost over. Let's have a look at my year 2020 in running, ju
 |--------------|-------:|-------:|-------:|
 |distance [km] |    430 |    962 |   1295 | 
 | avg distance [km] |  6.61 |   9.08 |  10.53 |
-| #runs | 65 | 107 | 123 |
-| Share of running among sport activities| 80.25% | 79.26% | 58.57% |
+| number of runs | 65 | 107 | 123 |
+| share of running among sport activities| 80.25% | 79.26% | 58.57% |
 
 I picked up going to the gym in late 2019 and started cycling every now and then in 2020, hence
 the lower share of running. I'm desperately curious about the counterfactual of how my running
