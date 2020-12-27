@@ -6,7 +6,7 @@ categories: jekyll update
 comments: false
 ---
 
-Yet another year's almost over. Let's have a look at my year 2020 in running, just as I did [last year](http://kevinkle.in/jekyll/update/2019/12/27/2019_running.html) in 2019.
+Yet another year's almost over. Let's have a look at my year 2020 in running, just as I did [in 2019](http://kevinkle.in/jekyll/update/2019/12/27/2019_running.html).
 
 # Context
 
@@ -14,10 +14,16 @@ Share of running compared to other sports activities.
 
 # Yearly comparison
 
-|              |   2017 |   2018 |   2019 |   2020 |
-|--------------|-------:|-------:|-------:|-------:|
-|distance [km] |    354 |    430 |    962 |   1295 | 
-| avg distance [km] |   5.62 |   5.61 |   9.08 |  10.53 |
+|              |   2018 |   2019 |   2020 |
+|--------------|-------:|-------:|-------:|
+|distance [km] |    430 |    962 |   1295 | 
+| avg distance [km] |  6.61 |   9.08 |  10.53 |
+| #runs | 65 | 107 | 123 |
+| Share of running among sport activities| 80.25% | 79.26% | 58.57% |
+
+I picked up going to the gym in late 2019 and started cycling every now and then in 2020, hence
+the lower share of running. I'm desperately curious about the counterfactual of how my running
+would have turned out if not for the other activities.
 
 # Individual runs
 
