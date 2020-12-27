@@ -60,7 +60,7 @@ Shifting the focus back to good news, let's look into the longest runs.
 | 9 | 18.25 |
 | 10 | 18.02 |
 
-Considering that only before 2019, my 2nd longest run ever had been 12.97 km, this is a
+Considering that only before 2019, my second-longest run ever had been 12.97 km, this is a
 significant change even though it didn't feel like one. Nice.
 
 We also just learned that the longest run or maximum distance has been 22.20 km. Generalizing
@@ -68,13 +68,22 @@ the question, we might want to ask:
 
 > What was the maximum distance run in _k_ consecutive days? <sup id="a0">[[0]](#f0)</sup>
 
-|#days| 1| 2| 3| 4| 5| 6| 7| 8| 9| 10|
-|distance[km]|22.2| 37.67| 48.97| 61.5| 65.88| 75.5| 76.53| 90.6| 109.34| 109.34|
-
-|#days| 11| 12| 13| 14| 15| 16| 17| 18| 19| 20| 21 |
-|distance[km]|109.34| 109.34| 118.17| 127.68| 127.68| 141.32| 147.86| 147.86| 157.43| 163.93| 171.66|
+| number of days | distance [km] | number of days | distance [km] |
+|----:|----:|----:|----:|
+| 1| 22.2| 9, 10, 11, 12|109.34|
+| 2| 37.67| 13 | 118.17 |
+| 3| 48.97| 14, 15 | 127.68 |
+| 4| 61.5| 16 | 141.32 |
+| 5| 65.88| 17, 18 |  147.86 |
+| 6| 75.5| 19 |  157.43 |
+| 7| 76.53| 20 |  163.93 |
+| 8| 90.6|21 | 171.66|
 
 ![max distance consecutive days](/imgs/2020_running/max_window_distances.png){:class="img-responsive"}
+
+I was surprised to see a somewhat linear-looking shape. I expected a greater tendency to
+sub-linear growth, as I tend to have bursts of running - at times running what feel like a lot
+in a few days - followed by perceived slacking off.
 
 One thing must not go missing in a qualitative, mostly visual, somewhat superficial, small-n analysis: a histogram.
 
@@ -89,11 +98,11 @@ Just as with the individual runs, we still see a fairly broad spread in the dist
 
 ![Weekly histogram](/imgs/2020_running/weekly_distances_histogram.png){:class="img-responsive"}
 
-The same pictures is painted by the historam/empirical denisities. Will this variation even out
+The same picture is painted by the histogram/empirical densities. Will this variation even out
 if aggregating over months?
 
 
-# Montly running
+# Monthly running
 
 ![Monthly distance](/imgs/2020_running/monthly_distances.png){:class="img-responsive"}
 
@@ -110,8 +119,8 @@ densities indicate a higher peak in 2020:
 
 So we observe a higher peak for 2018, at lower distance and a high peak for 2020 at a greater
 distance. 2019 being more widespread could allow for the post-hoc rationalization of 2019
-being a 'transitionary year': similar to the somewhat homegeneous 2018 at first but then setting
-the trend of the similarly homegeneous 2020.
+being a 'transitory year' similar to the somewhat homogeneous 2018 at first but then setting
+the trend of the similarly homogeneous 2020.
 
 
 <b id="f0">[0]</b> Oh yes! This actual is a 'real life' application of a max sum sliding window
