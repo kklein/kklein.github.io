@@ -84,7 +84,7 @@ the question, we might want to ask:
 ![max distance consecutive days](/imgs/2020_running/max_window_distances.png){:class="img-responsive"}
 
 I was surprised to see a somewhat linear-looking shape. I expected a greater tendency to
-sub-linear growth, as I tend to have bursts of running - at times running what feel like a lot
+sub-linear growth, as I tend to have bursts of running - at times running what feels like a lot
 in a few days - followed by perceived slacking off.
 
 One thing must not go missing in a qualitative, mostly visual, somewhat superficial, small-n analysis: a histogram.
@@ -125,7 +125,7 @@ if aggregating over months?
 
 ![Monthly distance](/imgs/2020_running/monthly_distances.png){:class="img-responsive"}
 
-Yes indeed. While the previous years still came with greater spread in cumulative distance
+Yes indeed. While the previous year still came with greater spread in cumulative distance
 across months, 2020 looks pretty stable around ~90 km. Looking at the average run distance
 across months we also observe greater concentration around the mean:
 
@@ -136,7 +136,7 @@ densities indicate a higher peak in 2020:
 
 ![Monthly densities](/imgs/2020_running/monthly_densities.png){:class="img-responsive"}
 
-So we observe a higher peak for 2018, at lower distance and a high peak for 2020 at a greater
+So we observe a peak for 2018, at lower distance and a peak for 2020 at a greater
 distance. 2019 being more widespread could allow for the post-hoc rationalization of 2019
 being a 'transitory year' similar to the somewhat homogeneous 2018 at first but then setting
 the trend of the similarly homogeneous 2020.
