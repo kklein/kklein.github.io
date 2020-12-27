@@ -8,10 +8,6 @@ comments: false
 
 Yet another year's almost over. Let's have a look at my year 2020 in running, just as I did [in 2019](http://kevinkle.in/jekyll/update/2019/12/27/2019_running.html).
 
-# Context
-
-Share of running compared to other sports activities.
-
 # Yearly comparison
 
 |              |   2018 |   2019 |   2020 |
