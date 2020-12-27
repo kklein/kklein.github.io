@@ -91,12 +91,29 @@ One thing must not go missing in a qualitative, mostly visual, somewhat superfic
 
 ![run histogram](/imgs/2020_running/run_histogram.png){:class="img-responsive"}
 
+Considering the wide spread both observed in the histogram as well as the plot of
+of individual runs, I'm wondering
+
+> Are there 'classes' of runs, depending on the time of the day?
+
+So let's look into empirical distributions of distances by hour of the day. I used the start time of a run.
+
+![hourly boxplot](/imgs/2020_running/hourly_distance_boxplot.png){:class="img-responsive"}
+
+Well, not evidently, no. Talking about hours of the days:
+
+> When did I go for runs?
+
+![hourly histogram](/imgs/2020_running/hourly_distance_histogram.png){:class="img-responsive"}
+
+Looks like I'm just an average Joe, really.
+
 # Weekly running
 Extending the granularity of our data points a little, these are the running distances per week:
 
 ![Weekly distances](/imgs/2020_running/weekly_distances.png){:class="img-responsive"}
 
-Just as with the individual runs, we still see a fairly broad spread in the distance dimension.
+Just as with the individual runs, we observe a large variance of distances covered.
 
 ![Weekly histogram](/imgs/2020_running/weekly_distances_histogram.png){:class="img-responsive"}
 
@@ -123,6 +140,8 @@ So we observe a higher peak for 2018, at lower distance and a high peak for 2020
 distance. 2019 being more widespread could allow for the post-hoc rationalization of 2019
 being a 'transitory year' similar to the somewhat homogeneous 2018 at first but then setting
 the trend of the similarly homogeneous 2020.
+
+Many thanks to Lorenz for suggestions.
 
 
 <b id="f0">[0]</b> Oh yes! This actual is a 'real life' application of a max sum sliding window
