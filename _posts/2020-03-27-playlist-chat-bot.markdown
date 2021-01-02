@@ -46,3 +46,5 @@ handled via oauth browser authentication. Thanks to the help of [Simon
 Weber](https://www.simonmweber.com/) I was able to make it run on Google Cloud Functions. This has
 actually been a surprisingly seamless and pleasant experience. Details regarding the authentication
 can be found in the [project repo](https://github.com/kklein/gmusic-bot).
+
+Update 21/01/02: I updated the bot to rely on YouTube music instead of Google Play music.
