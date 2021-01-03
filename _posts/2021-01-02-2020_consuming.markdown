@@ -5,7 +5,7 @@ date:   2021-01-02 00:38:07 +0200
 categories: jekyll update
 comments: false
 ---
-Just rambling about some books, podcasts and records I've been exposed to a bunch over 2020. Not exhaustive, I actually read two books a day and do all sorts of great things a lot all the time that are not listed here trust me believe me please yadda yadda yadda.
+Just rambling about some books, podcasts and records I've been exposed to a bunch over 2020.
 
 # Books
 
