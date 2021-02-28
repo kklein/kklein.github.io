@@ -19,6 +19,7 @@ Depth-first search or DFS implies (at least) two things:
 This bares the question: What's the tree and what are we searching for?
 
 1. The tree
+
 A tree must consist of nodes and edges. We define the nodes to represent a 'state' of the game. A state of the game is meant to be a snapshot of the Sudoku board, i.e. a mapping from cells, e.g. 2nd row, 6th column, to values, e.g. 7 or 'empty'. Every edge in the tree represents an 'action', i.e. the addition or removal of a cell value.
 
 Hence, given a state of the board, represented by a node, which node are its children?
