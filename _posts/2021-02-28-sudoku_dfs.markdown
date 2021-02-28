@@ -74,7 +74,7 @@ board = [
 ]
 ```
 
-All three non-obious 'rules' of Sudoku rely on checking whether no integer between 1 and 9 occurs twice. In a way, these are the 'same' rule for a varying kind of 'collection': rows, columns, squares. 
+All three non-obvious 'rules' of Sudoku rely on checking whether no integer between 1 and 9 occurs twice. In a way, these are the 'same' rule for a varying kind of 'collection': rows, columns, squares. 
 Hence, we can write a function which takes such a collection and checks for uniqueness of said values:
 
 ```python
