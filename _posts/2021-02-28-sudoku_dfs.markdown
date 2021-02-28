@@ -1,3 +1,4 @@
+---
 layout: post
 title:  "Sudoku with Depth-First Search"
 date:   2021-02-28 19:00:07 +0200
