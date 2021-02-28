@@ -6,11 +6,11 @@ categories: jekyll update
 comments: false
 ---
 
-# Abstract
+## Abstract
 
 Solving a Sudoku board can be done in many ways. Let's explore a depth-first search approach in this post.
 
-# Idea
+## Idea
 
 Depth-first search or DFS implies (at least) two things:
 * a graph, or rather, a tree
@@ -18,7 +18,7 @@ Depth-first search or DFS implies (at least) two things:
 
 This bares the question: What's the tree and what are we searching for?
 
-## The tree
+# The tree
 
 A tree must consist of nodes and edges. We define the nodes to represent a 'state' of the game. A state of the game is meant to be a snapshot of the Sudoku board, i.e. a mapping from cells, e.g. 2nd row, 6th column, to values, e.g. 7 or 'empty'. Every edge in the tree represents an 'action', i.e. the addition or removal of a cell value.
 
@@ -41,7 +41,7 @@ For illustrational purposes, let's look into an example of a 3x3, instead of a 9
 Note that we hit a dead-end quite quickly.
 
 
-## The search
+# The search
 
 Now having an idea what the semantics of our underlying tree are, what are we looking for in this tree? 
 
@@ -54,7 +54,7 @@ Moreover, we know that Sudoku comes with a unique solution, hence we must not ca
 As a side note, this problem can clearly also be tackled with breadth-first search. The latter's usually attractive of finding the shortest path is not relevant in this particular application, since all chains of actions arriving at the solution are of equal length: the number of empty fields.
 
 
-# Implementation
+## Implementation
 
 All things Sudoku start off with a board, right? While some other data structures might be handier for this task in some regards, I just went with a nested list for the sake of sticking with vanilla python. Note that 0 is employed as an indicator for empty cells.
 
@@ -175,7 +175,7 @@ def solve(board):
     board[next_empty[0]][next_empty[1]] = 0
 ```
 
-# Disclaimers
+## Disclaimers
 
 Please note that this is brute in terms of the algorithm and naive in terms of the implementation.
 It's solely meant to be a somewhat easy-to-follow and somewhat neat application of an algorithm many people have come across onto a problem most people have probably come across.
