@@ -22,17 +22,18 @@ This bares the question: What's the tree and what are we searching for?
 
 A tree must consist of nodes and edges. We define the nodes to represent a 'state' of the game. A state of the game is meant to be a snapshot of the Sudoku board, i.e. a mapping from cells, e.g. 2nd row, 6th column, to values, e.g. 7 or 'empty'. Every edge in the tree represents an 'action', i.e. the addition or removal of a cell value.
 
-Hence, given a state of the board, represented by a node, which node are its children?
+Hence, given a state of the board, represented by a node, which nodes are its children?
 
-In order to reply to that question, we must take into consideration Sudoku's rules:
+In order to answer to that question, we must take the Sudoku rules into consideration:
 * Pre-written digits cannot be overridden
-* Digits provided by the solver must adhere to its consistency constraints [link]
+* Only integers from 1 to 9 can be used.
+* None of these integers may occur twice in the same row, column or square (only considering the 9 non-overlapping 3x3 squares)
 
-With that in mind, starting from a given node, i.e. state of the board, its children could consist of derived states which have one if its empty cells filled with a digit that conforms to aforementioned norms.
+With that in mind, starting from a given node S, i.e. a state of the board, S's children could consist of derived states which have one S's empty cells filled with a digit that conforms to aforementioned rules.
 
-These norms can be thought of a trivial form of 'pruning', getting rid of all states that are already clearly not promising early on in the tree.
+The immediate application of these rules can be thought of as a trivial form of 'pruning', getting rid of all states that are already clearly not promising early on in the tree.
 
-Moreover, we will enforce an arbitrary structure on the 'parent-child' relationship: instead of allowing all empty cells to be filled _in the next action_, we will only allow the 'next' empty cell to be filled. W.l.o.g. we define next to be in a left-to-right, top-to-bottom scan. 
+Moreover, we will enforce an arbitrary structure on the 'parent-child' relationship: instead of allowing any empty cells to be filled _in the next action_, we will only allow the 'next' empty cell to be filled. W.l.o.g. we define 'next' according to a left-to-right, top-to-bottom scan. 
 
 For illustrational purposes, let's look into an example of a 3x3, instead of a 9x9 board:
 
@@ -43,20 +44,21 @@ Note that we hit a dead-end quite quickly.
 
 # The search
 
-Now having an idea what the semantics of our underlying tree are, what are we looking for in this tree? 
+Now having an idea about what the semantics of our underlying tree look like, what are we looking for in this tree? 
 
 Given that every node of the tree represents not only an arbitrary state of the board but rather a
-state of the board, which is consistent with the Sudoku rules, we can focus on Sudoku's actually goal: filling the board. Filling the board is equivalent to saying that no cell is left empty.
+state of the board consistent with Sudoku rules, we may now focus on Sudoku's actual goal: completing the board. This is equivalent to saying that no cell is left empty.
+
 Hence, in this tree, we look for a node whose state of the board comes without empty cells.
 
-Moreover, we know that Sudoku comes with a unique solution, hence we must not care for distinguishing between several cells fulfilling this constraint.
+Moreover, we know that every suitable Sudoku puzzle comes with a unique solution, hence we must not care for distinguishing between several nodes statisfying this constraint.
 
-As a side note, this problem can clearly also be tackled with breadth-first search. The latter's usually attractive of finding the shortest path is not relevant in this particular application, since all chains of actions arriving at the solution are of equal length: the number of empty fields.
+As a side note, this problem can clearly also be tackled with breadth-first search. The latter's usual appeal of finding the shortest path is not relevant in this particular application since all chains of actions arriving at the solution are of equal length: the number of empty cells.
 
 
 ## Implementation
 
-All things Sudoku start off with a board, right? While some other data structures might be handier for this task in some regards, I just went with a nested list for the sake of sticking with vanilla python. Note that 0 is employed as an indicator for empty cells.
+All things Sudoku start off with a board. While some other data structures might be handier for this task in some regards, I just went with a nested list for the sake of sticking with vanilla python. Note that 0 is employed as an indicator for empty cells.
 
 ```python
 board = [
@@ -72,7 +74,7 @@ board = [
 ]
 ```
 
-All three 'rules' of Sudoku rely on checking whether no digit from the range of 1 to 9 occurs twice. The only variant in the rule is the kind of 'collection': rows, columns, squares. 
+All three non-obious 'rules' of Sudoku rely on checking whether no integer between 1 and 9 occurs twice. In a way, these are the 'same' rule for a varying kind of 'collection': rows, columns, squares. 
 Hence, we can write a function which takes such a collection and checks for uniqueness of said values:
 
 ```python
@@ -120,9 +122,9 @@ def is_valid_board(board):
     return True
 ```
 
-So now we're able to tell whether a given board satisfies the sudoku conditions - sweet!
+So now we're able to tell whether a given board satisfies the Sudoku conditions - sweet!
 
-As mentioned previously, our transition from state to state rely on trying out different transition options for the _next_ empty cell. Remember the we defines 'next' to refer to a left-to-right, top-to-bottom scan: 
+As previously mentioned, our transitions from state to state rely on trying out different candidates for the _next_ empty cell. Remember the we defined 'next' with regards to a left-to-right, top-to-bottom scan: 
 
 ```python
 def get_next_empty_cell_indices(board):
@@ -133,22 +135,22 @@ def get_next_empty_cell_indices(board):
     return None
 ```
 
-Onto the real meat: the search! DFS can easily be implemented by explicit function recursion or by the use of a while loop and a stack. I opted for the earlier since I thought it was easier to read.
+Onto the real meat: the search! DFS can easily be implemented by explicit function recursion or by the use of a while loop and a stack. I opted for the former since I thought it was easier to read.
 
-Our recursive function assumes to be given a legitimate starting board and should check for validity of new suggestions before handing the board over to the new function call. Hence we don't need to check validity at the beginning of a function call.
+Our recursive function assumes to be given a valid starting board and should check for validity of new candidates before handing the board over to the new function call. Hence we don't need to check validity at the beginning of a function call.
 
 Therefore the next step is to identify what the indices of the next empty cell are:
 
 ```python
 def solve(board):
-    next_empty = get_next_empty_cell_indices(board)
+    next_empty_indice = get_next_empty_cell_indices(board)
 ```
 
-Just as CS 101 told as, every recursion ought to have a base case or success condition or whatever you want to call it. As we've argued before, we are searching for a state of the board in which no more cell is empty. `get_next_empty_cell` returns `None` if no next index pair is found, hence this is our goal. 
+Just as CS 101 told us, every recursion ought to have a base case or success condition or whatever you want to call it. As we've argued before, we are searching for a state of the board in which no more cell is empty. `get_next_empty_cell_indices` returns `None` if no next index pair is found. Hence retrieving `None` is a proxy for having achieved our goal. 
 
 ```python
 def solve(board):
-    next_empty = get_next_empty_cell_indices(board)
+    next_empty_indices = get_next_empty_cell_indices(board)
     if next_empty is None:
         print("Solved!")
         return board
@@ -163,18 +165,19 @@ Yet, most of the time, we are not done yet. In that case, we need to check all c
 VALUES = range(1, 10)
 
 def solve(board):
-    next_empty = get_next_empty_cell_indices(board)
-    if next_empty is None:
+    next_empty_indices = get_next_empty_cell_indices(board)
+    if next_empty_indeces is None:
         print("Solved!")
         return board
+    row_index, column_index = next_empty_indices
     for candidate in VALUES:
-        board[next_empty[0]][next_empty[1]] = candidate
+        board[row_index][column_index] = candidate
         if not is_valid_board(board):
             continue
         solved_board = solve(board)
         if solved_board is not None:
             return solved_board
-    board[next_empty[0]][next_empty[1]] = 0
+    board[row_index][column_index] = 0
 ```
 
 ## Disclaimers
@@ -182,4 +185,4 @@ def solve(board):
 Please note that this is brute in terms of the algorithm and naive in terms of the implementation.
 It's solely meant to be a somewhat easy-to-follow and somewhat neat application of an algorithm many people have come across onto a problem most people have probably come across.
 
-Code at [link]
+Code at [https://github.com/kklein/sudoku](https://github.com/kklein/sudoku).
