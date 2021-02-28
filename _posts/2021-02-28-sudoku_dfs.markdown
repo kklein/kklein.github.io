@@ -87,17 +87,19 @@ Yet, we don't only want to check whether _a_ row, _a_ column or _a_ square is 'v
 ```python
 
 def get_columns(board):
-    columns = [[] for _ in range(len(board))]
-    for row_index in range(len(board)):
-        for column_index in range(len(board)):
+    dimensions = range(len(board))
+    columns = [[] for _ in dimensions]
+    for row_index in dimensions:
+        for column_index in dimensions:
             columns[column_index].append(board[row_index][column_index])
     return columns
 
 
 def get_squares(board):
-    squares = [[] for _ in range(len(board))]
-    for row_index in range(len(board)):
-        for column_index in range(len(board)):
+    dimensions = range(len(board))
+    squares = [[] for _ in dimensions]
+    for row_index in dimensions:
+        for column_index in dimensions:
             square_index = row_index // 3 * 3 + column_index // 3
             squares[square_index].append(board[row_index][column_index])
     return squares
