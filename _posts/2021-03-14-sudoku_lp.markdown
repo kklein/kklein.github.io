@@ -7,21 +7,23 @@ comments: false
 ---
 
 
-#Abstract
+# Abstract
+
 As discussed in [this previous post](http://kevinkle.in/jekyll/update/2021/02/28/sudoku_dfs.html),
 a given sudoku puzzle can be modelled in a multitude of ways. Different algorithms ought to still
 lead to the same solution, since a correct sudoku puzzle comes with a unique solution. In this
 post we'll rely on optimization's post child: [Linear programming](https://en.wikipedia.org/wiki/Linear_programming).
 
-#Idea
+# Idea
+
 A linear program, subsequently referred to as LP, comes with three central building blocks:
 * An objective function
 * Typically many variables, each, a priori, non-integer numbers
 * Linear constraints on the variables
 
-Since, thanks to our assumption of a well-posed puzzle we know that:
-* There is a solution to the problem
-* The solution is unique
+Thanks to our assumption of a well-posed puzzle we know that:
+* There is a solution to the problem.
+* The solution is unique.
 
 We know for sure that the solution to the LP should be the correct solution. An open question is how to exactly model sudoku as an LP. In order to map aspects of the game onto LP language, I asked myself the following question:
 > In how far is aspect X a nice-to-have and in how far is it a necessity?
@@ -29,7 +31,7 @@ If the former, I'd like to model that aspect of the game through the objective f
 
 It turns out that I translated all aspects of the game into constraints. This yields a not-so typical LP: an LP without an objective function. A solution to the constraints exists and any such solution is _the_ solution we're after.
 
-#Implementation
+# Implementation
 
 I used the `pulp` python package in order to create the LP.
 
