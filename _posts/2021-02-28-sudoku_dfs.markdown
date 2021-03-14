@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Sudoku with Depth-First Search"
+title:  "Sudoku #1: Depth-First Search"
 date:   2021-02-28 19:00:07 +0200
 categories: jekyll update
 comments: false
