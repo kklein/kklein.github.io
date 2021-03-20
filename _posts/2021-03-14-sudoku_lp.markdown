@@ -179,7 +179,7 @@ add_constraints_to_lp(lp, get_square_constraints(indicators))
 ```
 ... and of course actually solve it. :)
 ```python
-lp.solve
+lp.solve()
 ```
 We can now read out the solution from the LP instance and insert it back into our board
 data structure:
