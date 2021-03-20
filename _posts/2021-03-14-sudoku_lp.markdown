@@ -121,45 +121,48 @@ def get_row_constraints(indicators):
 ```
 
 4. Every column may not contain any legitimate value more than once.
-```python
-def get_column_constraints(indicators):
-    """Ensure that every column has no value more than once."""
-    constraints = [
-        pulp.lpSum(
-            [indicators[row_index][column_index][value] for row_index in INDICES]
-        )
-        == 1
-        for value in VALUES
-        for column_index in INDICES
-    ]
-    return constraints
-```
+    ```python
+    def get_column_constraints(indicators):
+        """Ensure that every column has no value more than once."""
+        constraints = [
+            pulp.lpSum(
+                [indicators[row_index][column_index][value] for row_index in INDICES]
+            )
+            == 1
+            for value in VALUES
+            for column_index in INDICES
+        ]
+        return constraints
+    ```
 
 5. Every designated 3x3 square may not contain any legitimate value more than once.
-```python
-def get_row_column_indices(square_index):
-    start_row_index = (square_index // 3) * 3
-    start_column_index = (square_index % 3) * 3
-    return [
-        (row_index, column_index)
-        for row_index in range(start_row_index, start_row_index + 3)
-        for column_index in range(start_column_index, start_column_index + 3)
-    ]
+
+    ```python
+    def get_row_column_indices(square_index):
+        start_row_index = (square_index // 3) * 3
+        start_column_index = (square_index % 3) * 3
+        return [
+            (row_index, column_index)
+            for row_index in range(start_row_index, start_row_index + 3)
+            for column_index in range(start_column_index, start_column_index + 3)
+        ]
 
 
-def get_square_constraints(indicators):
-    """Ensure that each of the 9 designated squares contains no value
-    more than once."""
-    constraints = [
-        pulp.lpSum(
-            indicators[row_index][column_index][value]
-            for row_index, column_index in get_row_column_indices(square_index)
-        )
-        == 1
-        for value in VALUES
-        for square_index in INDICES
-    ]
-    return constraints```
+    def get_square_constraints(indicators):
+        """Ensure that each of the 9 designated squares contains no value
+        more than once."""
+        constraints = [
+            pulp.lpSum(
+                indicators[row_index][column_index][value]
+                for row_index, column_index in get_row_column_indices(square_index)
+            )
+            == 1
+            for value in VALUES
+            for square_index in INDICES
+        ]
+        return constraints
+    ```
+
 
 All that is left to do is to add those constraints to our LP instance ...
 
