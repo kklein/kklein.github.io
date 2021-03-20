@@ -11,7 +11,7 @@ comments: false
 As discussed in [this previous post](http://kevinkle.in/jekyll/update/2021/02/28/sudoku_dfs.html),
 a given Sudoku puzzle can be modeled in a multitude of ways. Different algorithms ought to still
 lead to the same solution, since a correct Sudoku puzzle comes with a unique solution. In this
-post we'll rely on optimization's post child: [Linear programming](https://en.wikipedia.org/wiki/Linear_programming).
+post we'll rely on optimization's poster child: [Linear programming](https://en.wikipedia.org/wiki/Linear_programming).
 
 # Idea
 A linear program, subsequently referred to as LP, comes with three central building blocks:
@@ -159,8 +159,7 @@ def get_square_constraints(indicators):
         for value in VALUES
         for square_index in INDICES
     ]
-    return constraints
-```
+    return constraints```
 
 All that is left to do is to add those constraints to our LP instance ...
 
