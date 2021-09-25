@@ -27,7 +27,7 @@ Serves 3 hungry fellows.
 - corn starch
 
 ### Salad
-- ~500g carrors
+- ~500g carrots
 - 2 large cucumbers
 - sesame oil
 - soy sauce
@@ -41,7 +41,7 @@ Make sure to remove a fair amount of liquid from your tofu by patting it with ki
 
 Now the battering shall begin! I find that the good old one-hand-per-battering-dish technique deserves special merit. Take a bit of tofu at a time, let it soak on all sides in the liquid and cover it in corn flakes by gently rolling it in each of your dishes separately. 
 
-Once your batch of tofu bits are done you might or might not want to dust them with sweet paprika powder. I also tried a curry powder but wasn't fully sold on it. Then, you might either fry them in a pan or put them in the oven (I went for ~10' on each side at 180 degrees Celsius). In any case, try to be very gentle when handling the tofu - you do not want to lose its precious flakes. Since the tofu doesn't 'need' any cooking, you can just look for the crunchiness of the flakes that you're after.
+Once your batch of tofu bits are done you might or might not want to dust them with sweet paprika powder. I also tried a curry powder but wasn't fully sold on it. Then, you might either fry them in a pan or put them in the oven (I went for ~10' on each side at 180 degrees Celsius). In any case, try to be very gentle when handling the tofu - you do not want it to lose its precious flakes. Since the tofu doesn't 'need' any cooking, you can just look for the crunchiness of the flakes that you're after.
 
 Preparing the sauce really only consists of mixing together the ingredients and gently heating them in a pot. I merely used the soy milk and corn starch to thin it out the taste and to adapt viscosity.
 
