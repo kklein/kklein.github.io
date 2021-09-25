@@ -51,9 +51,9 @@ I can recommend using a peeler to create long thin strips of carrot and cucumber
 * To my great surprise, I actually ended up preferring the oven-baking method over pan-frying. Despite the tofu having become a bit dryer, the crunchiness of the flakes was unbeatable.
 * The light and fresh salad is worth a thousand bucks with this otherwise very much heavy-hitting meal.
 
-![tofu](/imgs/flaky_tofu/tofu.jpg){:class="img-responsive"}
+![tofu](/imgs/flaky-tofu/tofu.jpg){:class="img-responsive"}
 
-![black bean sauce](/imgs/flaky_tofu/sauce.jpg){:class="img-responsive"}
+![black bean sauce](/imgs/flaky-tofu/sauce.jpg){:class="img-responsive"}
 
 
 Many thanks to Nick.
