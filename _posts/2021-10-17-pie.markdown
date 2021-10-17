@@ -1,16 +1,17 @@
 ---
 layout: post
-title:  "Automn pie"
+title:  "Automn Pie"
 date:   2021-10-17 10:00:07 +0200
 categories: jekyll update
 comments: false
 ---
 
+This is a really hearty dish. I'd claim that the filling of the pie can easily be prepared in advance.
+
 ## Ingredients
 
 Serves 4 okay-ish hungry people.
 
-### Tofu
 - 1kg smoked tofu
 - 1kg green beans
 - 500 ml coconut milk
@@ -32,7 +33,7 @@ Strain your chickpeas and separate them out in a baking tray. Put them in the ov
 
 Slice the onions, dice the garlic and cut your carrots into half-circles. Trim off the ends of your garden beans and halve them width-wise. 
 
-Start sautéing the carrots and continuously add onions, beans, cumin seeds, fennel seeds and garlic in that order. Start off with olive oil and once the vegetables are starting to pick up the heat deglaze with a dash of a, preferably hearty, red wine. Rinse and repeat. Towards the end, add black bean sauce and soy sauce.
+Start sautéing the carrots and continuously add onions, beans, cumin seeds, fennel seeds and garlic in that order. Start off with olive oil and once the vegetables are starting to pick up the heat deglaze with a dash of a, preferably earthy, red wine. Rinse and repeat. Towards the end, add black bean sauce and soy sauce.
 
 In a different pan, slightly fry the 1cm-cubed smoked tofu. Once it starts getting crispy, add plenty of tomato purée, honey and soy sauce.
 
