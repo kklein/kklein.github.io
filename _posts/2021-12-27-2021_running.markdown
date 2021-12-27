@@ -6,7 +6,7 @@ categories: jekyll update
 comments: false
 ---
 
-As another year is coming to a end I'm curious: What has my running looked like this year? I did something similar in [2020](http://kevinkle.in/jekyll/update/2020/12/26/2020_running.html) as well as in [2019](http://kevinkle.in/jekyll/update/2019/12/27/2019_running.html).
+As another year is coming to an end I'm curious: What has my running looked like this year? I did something similar in [2020](http://kevinkle.in/jekyll/update/2020/12/26/2020_running.html) as well as in [2019](http://kevinkle.in/jekyll/update/2019/12/27/2019_running.html).
 
 # The gist of it
 
