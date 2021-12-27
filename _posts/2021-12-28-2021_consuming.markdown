@@ -1,106 +1,113 @@
 ---
 layout: post
 title:  "2021 in Consuming"
-date:   2021-12-29 00:38:07 +0200
+date:   2021-12-27 00:38:07 +0200
 categories: jekyll update
 comments: false
-published: false
+published: true
 ---
-Just rambling about some books, podcasts and records I've been exposed to a bunch over 2020.
+Just rambling about some books, music and podcasts I've been exposed to in 2021. I've done a similar thing in [2020](http://kevinkle.in/jekyll/update/2021/01/01/2020_consuming.html).
 
-# Books
+## Books
 
-* First Person Singular - Haruki Murakami
+# First Person Singular - Haruki Murakami
+TODO
 
-* Algorithms to Live By -  Brian Christian, Tom Griffith
+# Algorithms to Live By -  Brian Christian, Tom Griffith
+TODO
 
-* The Almanack of Naval -  Eric Jorgenson
+# The Almanack of Naval -  Eric Jorgenson
+TODO
 
-* A Supposedly Fun Thing I'll Never Do Again: Essays and Arguments - David Foster Wallace
+# A Supposedly Fun Thing I'll Never Do Again: Essays and Arguments - David Foster Wallace
 I much prefered the short story about the dynamics of professional tennis over DFW's hesitant adventures on the high seas. The distinguishing quality might have been that the tennis story felt like a nest positive description while the cruise essay seemed purely negative. My impression is that DFW also tries to convey a lot of criticism and scepticism towards tennis, yet can't help but let some raw rays of juvenile sunshine through his cover of rationality. This was cute. Maybe the classic 'you dislike with other what you dislike with yourself' hits here: he might have reminded me of my occasional doom and gloom a tad too much. :)
 
-* Ham on Rye - Charles Bukowski
+# Ham on Rye - Charles Bukowski
 I devoured this (no pun intended). Does having (some) sympathy for Charles Bukowski make me a 'bad person'?
 
-* Behave - Robert Sapolsky
+# Behave - Robert Sapolsky
 I would indeed want Robert Sapolsky to be my uncle. He makes me wonder what the antonym of 'oblivious' is. I want to learn from him, laugh with him, hug him - preferably all at the same time. Now after these positive words I hope to be off the hook: this book wasn't for me. The first, very long, two thirds of the book felt like a list of abstracts: some biology facts from a study but not quite the whole thing. This format culminated in a very dissatisfying situation for me personally: the strain and concentration of reading scientific literature without the ensuing depth of knowledge and insight; the fleeting nature and perceived irrelevance of anecdotes and individual studies without the scrumptious story-telling of a pure pop-science writer. The last thirds was more satisfying to read but. Yet came with a kind of content, lightly dabbling in recent history, cognitive science and psychology, that I've likely already had my fair share of in these recent years - maybe packaged better elsewhere.
 
-* Normal People - Sally Rooney
+# Normal People - Sally Rooney
 Incredibly captivating - I most certainly haven't read anything like this. Beautifully tragic.
 
 
-# Podcasts
+## Records
 
-* Conversations with Tyler - Tyler Cowen
-While I haven't been as lucky with it as in previous years, I would still consider it a safe bet. I found Tyler to be incredibly wholesome when describing the visual features of dogs employed in truffle hunts. :)
-
-* Huberman Lab - Andrew Huberman
-TODO
-
-* Broken Record - Rick Rubin, Malcolm Gladwell, Bruce Headlam, Justin Richmond
-The episode with Kevin Abstract stuck in my mind. Their discussion would only require minimal abstraction to serve as a general meditation on project management. Surprisingly unsurprisingly Rick Rubin suggested artificial constraints, in this case in the form of severe time pressure, as a catalyst for creativity. I thought it was very interesting to hear Kevin Abstract's dry acknowledgment on how Brockhampton has collectively and continuously lost excitement about the process of making music.
-
-* Beyond Victory - Nico Rosberg
-Low information density but sometimes quite enjoyable nevertheless. I was pleasantly surprised by the interview with Toto Wolff for it seemed fairly general.
-
-# Records
-
-* Veteran - Jpegmafia
+# Veteran - Jpegmafia
 Was going to be my favorite album of the year until...
 
-* All My Heros Are Cornballs - Jpegmafia
+# All My Heros Are Cornballs - Jpegmafia
 I think this is the first time I actually discovered something thanks to Anthony Fantano hype that I ended up being in love with. I have to say I have gotten really obsessed with pegi at this point. I have really enjoyed his appearance at the [Cambridge Union](https://www.youtube.com/watch?v=3UjNTHSIqU8).
 
-* LP! - Jpegmafia
+# LP! - Jpegmafia
 Just when I thought I had hit my Jpegmafia summit of enthusiasm, he released this record. I am blown away by this man. This album, 'REBOUND!' to be precise, even made me tolerate (possibly like?) horns in a rap track - a stern previous taboo of mine.
 
-* Portishead - Dummy
-I'm always fascinated by 'artists' artists'. Still, it took me a long time to finally drill down on Dummy. I had heard Kanye, Asap Rocky and Thom Yorke rave about it. In line with my ... I find this fascinating - yet it remains at a distance.
+# Portishead - Dummy
+I'm always fascinated by 'artists' artists'. Still, it took me a long time to finally drill down on 'Dummy'. I had heard Kanye, Asap Rocky and Thom Yorke rave about it. All the while finding fascinating and coming back to it every now and then, we haven't gotten too close up until now.
 
-* Colour - Matthew Halsall
-When reaching for jazz I typically end up with older stuff. With Matthew Halsall I now have someone up my sleeve whom I could actually still go to a concert from.
+# Colour - Matthew Halsall
+When reaching for jazz I typically end up with older stuff. With Matthew Halsall I now have someone up my sleeve whom I could actually still see live.
 
-* The Life of Pablo - Kanye West
+# The Life of Pablo - Kanye West
 I find this album very enjoyable to listen to - no more, no less.
 
-* Dreams - Gabor Szabo
-I've finally found this album again - it must have been many years ago since I last came across (and lost track of) it. Wonderfully playful and lighthearted while never seeming superficial.
+# Dreams - Gabor Szabo
+I've finally rediscovered this album - it must have been many years ago since I last came across and lost track of it. Wonderfully playful and lighthearted while never seeming superficial.
 
-* Roadrunner - Brockhampton
-Just like almost any other work of theirs, this somehow doesn't _feel_ like an album to me. I figure I have above-average tolerane for a not overly spectacular song inbetween lighthouses if it fits in with the picture. Tracks like 'COUNT ON ME', 'I'LL TAKE YOU ON' and 'OLD NEWS' really pull me out of the flow. Nevertheless, I've came back to this record a lot for 'BUZZCUT', 'CHAIN ON', 'THE LIGHT' and 'WHAT'S THE OCCASION' and 'BANKROLL' just feel incredibly catchy.
+# Roadrunner - Brockhampton
+Just like almost any other work of theirs, this somehow doesn't _feel_ like an album to me. I figure I have above-average tolerane for a not overly spectacular song inbetween lighthouses if it fits in the greater scheme of things. Yet, tracks like 'COUNT ON ME', 'I'LL TAKE YOU ON' and 'OLD NEWS' really pull me out of the flow. Nevertheless, I've came back to this record a lot for 'BUZZCUT', 'CHAIN ON', 'THE LIGHT' and 'WHAT'S THE OCCASION' and 'BANKROLL'; these are just incredibly catchy.
 
-* Listen to My Song: The Music City Sessions - Darondo
-I can very easily get too much of it. If I don't this is pure gold. If I was rapping I think I'd be perfectly happy restraining myself to samples from this record.
+# Listen to My Song: The Music City Sessions - Darondo
+I can very easily get too much of it. If I don't, this is pure gold. If I was rapping I think I'd be perfectly happy restraining myself to samples from this record.
 
-* Atrocity Exhibition - Danny Brown
-At first, I had a hard time to look past the vocal similarity Cypress Hill - of which I don't naturally long for more of. Once I was able to pick up more facets of the music, I started appreciating it. This album remains demanding.
+# Atrocity Exhibition - Danny Brown
+At first, I had a hard time to look past the vocal similarity with Cypress Hill - which I don't naturally long for. Once I was able to pick the many remaining facets, I started appreciating it. This album remains demanding.
 
-* Crawler - Idles
-The release of the first single, Car Crash, gave me a weird feeling. I definitely liked the track but couldn't imagine what the album behind it could look like. The baseline accompanied by whispering gave me some System of a Down vibes. Evoking this feeling is cool at first sight but likely not sustainable or desirable on their end.
-This album is not made for me. Neither was it hitting me in a visceral way that 'Mother', '1049 Gotho' or 'Never Fight a Man With a Perm' did, nor did it make me chuckle out of suprise they way quite a few tracks off of 'Joy as an Act of Resistance' did. Does the 'the first two albums are the only good' curse hit the Idles as well?
+# Crawler - Idles
+The release of the first single, 'Car Crash', made me feel strange. I definitely liked the track but couldn't imagine what the album behind it could look like. The baseline accompanied by whispering gave me some System of a Down vibes. Evoking this feeling is cool at first sight but likely not sustainable or desirable on their end.
+In conclusion: this album is not made for me. Neither was it hitting me in a visceral way that 'Mother', '1049 Gotho' or 'Never Fight a Man With a Perm' did, nor did it make me chuckle out of surprise they way quite a few tracks off of 'Joy as an Act of Resistance' did. Does the 'the first two albums are the only good' curse hit the Idles as well?
 
-* Cymande - Cymande
+# Cymande - Cymande
 Very satisfying.
 
-* Call Me If You Get Lost - Tyler the Creator
-I can usually admire music for two distinct reasons: a visceral transmission of raw, unfiltered, overwhelming emotion or as a refined, piece of craftsmanship appreciated from a safe distance. Astonishingly, his two previous albums made me have both - albeit never on the same track. This album didn't evoke any of both in me. I really wanted to like it. Also: a bit too much 80s for my taste.
+# Call Me If You Get Lost - Tyler the Creator
+I can usually admire music for two distinct reasons: as a visceral transmission of raw, unfiltered, overwhelming emotion or as a refined, piece of craftsmanship appreciated from a safe distance. Astonishingly, his two previous albums made me have both - albeit never on the same track. This album didn't evoke any of both in me. I really wanted to like it. Also: a bit too much 80s for my taste.
 
-# Music: Diverse
+## Music: Diverse
 
-* [Sarah Kreis @ Bucht der Träumer 2018](https://soundcloud.com/sarahkreis/sarah-kreis-bucht-der-traumer?si=340f04c6ff2f4ebe881e2e2e8be2409c&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)
-I'm pretty sure this was the first recorded set of Sarah Kreis which I listened to. To this day it's still my favorite one - her [set with Caleesi in Oaxaca from 2019](https://soundcloud.com/sarahkreis/caleesi-sarah-kreis-mezcal-amores-2019?si=1353248c2b8c4ec4a8b78522ace913d4&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing) likely coming in second.
+# [Sarah Kreis @ Bucht der Träumer 2018](https://soundcloud.com/sarahkreis/sarah-kreis-bucht-der-traumer?si=340f04c6ff2f4ebe881e2e2e8be2409c&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing)
+I'm pretty sure this was the first recorded set from Sarah Kreis I listened to. To this day it's still my favorite one - her [set with Caleesi in Oaxaca from 2019](https://soundcloud.com/sarahkreis/caleesi-sarah-kreis-mezcal-amores-2019?si=1353248c2b8c4ec4a8b78522ace913d4&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing) likely coming in second.
 
-* Peach - Kevin Abstract
-So, I guess I like a _pop_ song, now? I wouldn't mind only having verses on this one.
+# Peach - Kevin Abstract
+So, I guess I like a _pop_ song? I wouldn't mind only having verses on this one.
 
-* [Gilles Peterson, Boiler Room London](https://music.youtube.com/watch?v=6NVmWbQZ8yU&list=RDAMVM6NVmWbQZ8yU)
+# [Gilles Peterson, Boiler Room London](https://music.youtube.com/watch?v=6NVmWbQZ8yU&list=RDAMVM6NVmWbQZ8yU)
 I figure this has to be the Swiss Army Knife™ of music for social settings: almost never perfect, almost always useful.
 
-* [Silver Couplets - The Districts (Live)](https://music.youtube.com/watch?v=zT-eeg5pTIU&list=RDAMVMzT-eeg5pTIU)
-I don't really have to say much, I just like it a lot.
+# [Silver Couplets - The Districts (Live)](https://music.youtube.com/watch?v=zT-eeg5pTIU&list=RDAMVMzT-eeg5pTIU)
+I don't really have much to say, I just like it a lot.
 
-* [Funeral Beds - The Districts (HotBox session)](https://music.youtube.com/watch?v=fTLqyoVV9EU&list=RDAMVMfTLqyoVV9EU)
+# [Funeral Beds - The Districts (HotBox session)](https://music.youtube.com/watch?v=fTLqyoVV9EU&list=RDAMVMfTLqyoVV9EU)
 Makes me feel much younger than I am.
 
-* [Modern Girls and Old-Fashioned Men - The Strokes](https://music.youtube.com/watch?v=B7siAd8KZkA&feature=share)
+# [Modern Girls and Old-Fashioned Men - The Strokes](https://music.youtube.com/watch?v=B7siAd8KZkA&feature=share)
 Almost ironic that after lamenting about a long drought of material up until 2020 I happened to 'discover' a song of theirs from 2004. I find that the scratchy and low-fi intro hasn't aged so well but am generally very fond of the vocal melodies of the verses. 
+
+## Podcasts
+
+# Conversations with Tyler - Tyler Cowen
+TODO
+
+# Econ Talk - Russ Roberts
+While I haven't been as lucky with it as in previous years, I'd still be comfortable with recommending it. I found Russ Roberts to be incredibly wholesome when not being able to contain his chuckling while describing the visual features of [dogs employed in truffle hunts](https://www.econtalk.org/rowan-jacobsen-on-truffle-hound/). :)
+
+# Beyond Victory - Nico Rosberg
+Low information density but sometimes quite enjoyable nevertheless. I'm not sure what this is telling about me and what it is telling about the podcast but it did feel like a guilty pleasure. I was pleasantly surprised by the interview with Toto Wolff for it seemed fairly general.
+
+# Huberman Lab - Andrew Huberman
+TODO
+
+# Broken Record - Rick Rubin, Malcolm Gladwell, Bruce Headlam, Justin Richmond
+[The episode with Kevin Abstract](https://www.stitcher.com/show/broken-record/episode/brockhamptons-kevin-abstract-85223203) stuck in my mind. Their discussion would only require minimal abstraction to serve as a general meditation on project management. Surprisingly unsurprisingly Rick Rubin suggested artificial constraints, in this case in the form of severe time pressure, as a catalyst for creativity. I thought it was very interesting to hear Kevin Abstract's dry acknowledgment on how Brockhampton has collectively and continuously lost excitement about the process of making music.
+
