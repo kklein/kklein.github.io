@@ -77,16 +77,6 @@ heart rate and pace data.
 
 "Something, something negatives results", right?
 
-Code for theses analyses can be found [here](https://github.com/kklein/gcal-analysis).
-
-
-
-
-
-
-
-
-
-
-
+Code for the analyses based on my calendar data can be found [here](https://github.com/kklein/gcal-analysis). Code for the heart rate analysis based on the Strava API
+can be found [here](https://github.com/kklein/strava).
 
