@@ -4,7 +4,7 @@ title:  "2021 in Consuming"
 date:   2021-12-27 00:38:07 +0200
 categories: jekyll update
 comments: false
-published: true
+published: false
 ---
 Just rambling about some books, music and podcasts I've been exposed to in 2021. I've done a similar thing in [2020](http://kevinkle.in/jekyll/update/2021/01/01/2020_consuming.html).
 
