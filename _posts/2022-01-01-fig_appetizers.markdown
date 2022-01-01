@@ -16,7 +16,7 @@ Quick to make, satisfying to eat.
 
 ## Method
 
-Cut some parts of the puff pastry. I figure both rectangles and squares should work. While all sizes 'go', I think that in principle one wants to use as little dough per fixed filling size as possible.
+Cut some parts of the puff pastry. I figure both rectangles and squares should work. While all sizes 'go', I think that in principle one wants to use as little dough per fixed filling size as possible. In the same vein, I would try to make the pastry as thin as possible.
 
 ![Folding prep](/imgs/fig_appetizers/folding.jpg){:class="img-responsive"}
 
