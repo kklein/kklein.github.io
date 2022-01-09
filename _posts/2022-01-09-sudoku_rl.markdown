@@ -1,0 +1,182 @@
+---
+layout: post
+title:  "Sudoku #3: Reinforcement Learning with Gym"
+date:   2022-01-09 19:00:07 +0200
+categories: jekyll update
+comments: false
+---
+
+<script type="text/javascript" async
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?
+config=TeX-AMS-MML_HTMLorMML"></script>
+
+I previously outlined some ideas on how to solve sudukos. One revolved around [depth-first search in trees](http://kevinkle.in/jekyll/update/2021/02/28/sudoku_dfs.html), one around [linear programming](http://kevinkle.in/jekyll/update/2021/03/14/sudoku_lp.html). This time I tried my luck with a more adventurous, data-driven approach: Reinforcement Learning. First things first: the approach only works well for 4x4 grids - not for 9x9. Please note that the approached subsequently outlined couldn't be further from a recommendable approach to solving sudoku puzzles. Rather, it is a curious exercise concerned with using the tool of Reinforcement Learning, arguable somewhat artificially, for solving easy sudoku puzzles.
+
+## Overview
+
+In [Reinforcement Learning](https://en.wikipedia.org/wiki/Reinforcement_learning), an agent is placed in an environment. Given a state, the agent can choose from a set of actions - to which the environment will 'respond' with a 'reward' as well as a new 'state'. By trying out many combinations of states and actions and observing the resulting rewards, the agent can hopefully learn which actions make sense when.
+
+Since the notions of agent, state, reward are of a very general nature, one needs to define what they mean to represent concretely in a Reinforcement Learning application. This is were [OpenAI's gym](https://gym.openai.com/) comes into play: it allows to conveniently define and instantiate environments. These environments complying with gym's universal interface comes with the advantage of being able to plug a wide variety of Machine Learning models onto this environment without much hassle. Put differently (bluntly): gym defines an interface which, if we adhere to it, allows us to use off-the-shelf models to train our agent.
+
+To my surprise, I didn't stumble onto many resources and prior work when it comes to the pairing of Sudoku and Reinforcement Learning. Anav Mehta explored [some approaches](https://arxiv.org/abs/2102.06019). There were even some [gym sudoku environments](https://github.com/artonge/gym-sudoku) available, though I couldn't find much about how to solve them reliably. Since this small project was meant as an exploration of gym, rather than Reinforcement Learning in general, I refrained from investing effort on agent model training but rather just played around with environment definition.
+
+## Problem definition
+
+While 'solving' a sudoku puzzle typically refers to
+
+1. a 9x9 grid
+2. starting off with a grid with >1 missing cell values
+
+
+the scenario outlined here is a relaxed version thereof. We will consider
+
+1. both 4x4 and 9x9 grids
+2. only seek to fill in a single (you can think of it as the 'last missing') cell value.
+
+
+## Generating examples
+
+In order for our agent to learn from examples, we need to generate examples. Most approaches for generating sudoku boards I could find on google seemed to be based on starting off with empty boards and solving the puzzle from their. Since this project is about _solving sudokus_ I felt it would have been a little self-deprecating to _use a solver_ in the process thereof. :)
+
+Hence I resorted to a different approach: Generating a valid sudoku board with a simple heuristic and applying random permutations on it which preserve the rules of the game.
+
+# Generating a valid board
+
+Let's start off with a an increasing row:
+```python
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+If we now replicate this row 8 times and always shift the values one index to the left/right, we already satisfy the column and row conditions.
+
+```python
+size = 9
+[[(i + offset) % (size) for i in range(0, size)] for offset in range(0, size)]
+```
+yields
+```
+[[0, 1, 2, 3, 4, 5, 6, 7, 8],
+ [1, 2, 3, 4, 5, 6, 7, 8, 0],
+ [2, 3, 4, 5, 6, 7, 8, 0, 1],
+ [3, 4, 5, 6, 7, 8, 0, 1, 2],
+ [4, 5, 6, 7, 8, 0, 1, 2, 3],
+ [5, 6, 7, 8, 0, 1, 2, 3, 4],
+ [6, 7, 8, 0, 1, 2, 3, 4, 5],
+ [7, 8, 0, 1, 2, 3, 4, 5, 6],
+ [8, 0, 1, 2, 3, 4, 5, 6, 7]]
+ ```
+Which is a 0-indexed sudoku board - except for 'block' conditions being violated. In other words: All of the 9 3x3 blocks contain several occurrences of the same value. No good.
+
+ In order to satisfy the block condition we apply some simple row shuffling:
+ * We want the first block to end up with the 'first' row from every block.
+ * We want the second block to end up with the 'second' row from every block.
+ * We want the third block to end up with the 'third' row from every block.
+
+I'm sure there's way neater - in any sense of neatness - approaches to doing this but e.g. this piece of code can get you there:
+```python
+size = 
+rows = [
+    [(i + offset) % (size) for i in range(0, size)] for offset in range(0, size)
+]
+board = np.array(rows, dtype=np.uint8)
+indeces = np.fromiter(
+	reduce(
+		chain,
+		map(
+			lambda block_index: range(
+				block_index, block_index + ((n_blocks - 1) * n_blocks + 1), n_blocks
+			),
+			range(n_blocks),
+		),
+	),
+	dtype=np.uint8,
+)
+reordered_board = board[indeces, :] + 1
+```
+Note that `range` is used with three parameters here: `start`, `stop` and `step`. Setting `step=n_blocks`, i.e. to 3, ensures that we bring together 'firsts', 'seconds' and 'thirds'. Running this and gives us a valid, 1-indexed sudoku board:
+
+```python
+[[1, 2, 3, 4, 5, 6, 7, 8, 9],
+[4, 5, 6, 7, 8, 9, 1, 2, 3],
+[7, 8, 9, 1, 2, 3, 4, 5, 6],
+[2, 3, 4, 5, 6, 7, 8, 9, 1],
+[5, 6, 7, 8, 9, 1, 2, 3, 4],
+[8, 9, 1, 2, 3, 4, 5, 6, 7],
+[3, 4, 5, 6, 7, 8, 9, 1, 2],
+[6, 7, 8, 9, 1, 2, 3, 4, 5],
+[9, 1, 2, 3, 4, 5, 6, 7, 8]]
+```
+
+Cool. Since we will use this valid board as a starting point for all of our random boards, we will want to make sure all of this doesn't need to be rerun every time we want to generate a random board. For that purpose I find it convenient to decorate the function running this code with [`@functools.cache`](https://docs.python.org/3/library/functools.html#functools.cache):
+
+```python
+@functools.cache
+def valid_board(n_blocks: int) -> np.ndarray:
+...
+```
+
+# Random boards
+Now that we have _a_ valid board, would like to procedurally generate boards at random from a variety of boards. In order to do so we observe convenient properties of sudoku boards:
+* We can shuffle all row/columns arbitrarily within a block.
+* We can shuffle all row/column blocks arbitrarily.
+
+Yet, these operations cannot, a priori, be combined arbitrarily. What can be combined arbitrarily, is between-block and within-block shuffling of rows as well as between-block and within-block shuffling of columns. Put bluntly: When only shuffling columns or only shuffling rows as outlined before, all is always well.
+
+Hence I decided to flip a coin every time a board was supposed to be generated: either to column or row shuffling (in `numpy` lingo, that is):
+```python
+axis = np.random.binomial(1, 0.5)
+```
+In order to permute blocks, one can use simple `numpy` slicing. E.g. when shuffling row block #2 and block #3, one can do as follows:
+```python
+new_board[3:6, :] = old_board[6:9, :]
+new_board[6:9, :] = old_board[3:6, :]
+```
+In order to determine how we want to permute/shuffle blocks, we can simply use `numpy.random.permutation`:
+```python
+def permute_indeces(indeces: np.ndarray) -> np.ndarray:
+    permutation = np.random.permutation(range(len(indeces)))
+    return indeces[permutation]
+```
+Combining the slicing mentioned before as well as the permutation highlighted just now, we can both shuffle entire row/column-blocks as well as rows/columns within blocks.
+
+Tying this together could look as follows:
+
+```python
+def random_board(n_blocks: int) -> np.ndarray:
+    old_board = valid_board(n_blocks)
+    new_board = old_board.copy()
+
+    # Either permute rows or columns. If 1, permute rows.
+    axis = np.random.binomial(1, 0.5)
+
+    permute_blocks(old_board, new_board, n_blocks, axis=axis)
+    permute_within_block_vectors(new_board, n_blocks, axis=axis)
+
+    return new_board
+```
+
+An example looks as follow:
+
+```python
+[[2, 3, 1, 8, 9, 7, 6, 4, 5],
+[5, 6, 4, 2, 3, 1, 9, 7, 8],
+[8, 9, 7, 5, 6, 4, 3, 1, 2],
+[3, 4, 2, 9, 1, 8, 7, 5, 6],
+[6, 7, 5, 3, 4, 2, 1, 8, 9],
+[9, 1, 8, 6, 7, 5, 4, 2, 3],
+[4, 5, 3, 1, 2, 9, 8, 6, 7],
+[7, 8, 6, 4, 5, 3, 2, 9, 1],
+[1, 2, 9, 7, 8, 6, 5, 3, 4]]
+```
+
+At the latest when flipping through some of these examples, one notices that there is a fair amount of pattern, one might say 'bias', in these examples. So already here, we should be skeptical about our model: it could very well be that it doesn't learn to generalize due to this and will therefore perform poorly on unseen examples. 
+
+I'm not sure how much overlap there is between column-permuted and row-permuted boards. Let's only consider the number of row-permuted boards for now. There are 3! ways of shuffling the blocks. There are 3! ways of shuffling the rows per block. This should give us (3!)^4 = 1296 different boards. We will at most have total overlap between column-shuffled and row-shuffled boards. We will at least have overlap of cardinality 1 between columns-shuffled and row-shuffled boards, i.e. no permutation at all. I.e. our sample space has cardinality in [1296, 2 x 1296-1]. It's been shown surprisingly recently that there are [roughly 6.671 x 10^21](http://www.afjarvis.staff.shef.ac.uk/sudoku/sudoku.pdf) valid board - a bit of a stretch to say the least. :)
+
+## Gym environment
+
+## Training and inference
+
+## Results
+
+
+Code at [https://github.com/kklein/sudoku](https://github.com/kklein/sudoku).
