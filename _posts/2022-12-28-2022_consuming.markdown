@@ -1,3 +1,4 @@
+
 ---
 layout: post
 title:  "2022 in Consuming"
@@ -25,4 +26,6 @@ Just rambling about some books, music and podcasts I've been exposed to in 2021.
 # [The Price of Discipline](https://perell.com/essay/the-price-of-discipline/)
 
 ## Papers
+# [Long-term real-world effectiveness of allergyimmunotherapy in patients with allergic rhinitis andasthma: Results from the REACT study, a retrospectivecohort study](https://reader.elsevier.com/reader/sd/pii/S2666776221002611?token=7DF5AAF0C5341049C1C2894B9DBE53B0F117CE47A2581AECB729E6FEF3B4287387A8042B06A0383C198B9CDEBCC74D7F&originRegion=eu-west-1&originCreation=20220102154029)
 
+Restrospective use of health insurance claims data. Used propensity score matching.
