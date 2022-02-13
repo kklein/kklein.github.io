@@ -1,32 +1,25 @@
 ---
 layout: post
 title:  "Sudoku #3: Poor Man's RL"
-date:   2022-01-25 19:00:07 +0200
+date:   2022-02-13 8:00:07 +0200
 categories: jekyll update
 comments: false
-published: false
+published: true
 ---
 
-<script type="text/javascript" async
-src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?
-config=TeX-AMS-MML_HTMLorMML"></script>
-
-TODO: Replace all n_blocks by 9 and state that assumption in the beginning.
-TODO: Always lower- or capital-case sudoku.
-
-I previously outlined some ideas on how to solve sudukos. One revolved around [depth-first search in trees](http://kevinkle.in/jekyll/update/2021/02/28/sudoku_dfs.html), one around [linear programming](http://kevinkle.in/jekyll/update/2021/03/14/sudoku_lp.html). This time I tried my luck with a more adventurous, data-driven approach: Reinforcement Learning. First things first: the approach only works well for 4x4 grids - not for 9x9. Please note that the approached subsequently outlined couldn't be further from a recommendable approach to solving sudoku puzzles. Rather, it is a curious exercise concerned with using the tool of Reinforcement Learning, arguable somewhat artificially, for solving easy sudoku puzzles.
+Previously, I've outlined some ideas on how to solve Suduko puzzles. One revolved around [depth-first search in trees](http://kevinkle.in/jekyll/update/2021/02/28/Sudoku_dfs.html), one around [linear programming](http://kevinkle.in/jekyll/update/2021/03/14/Sudoku_lp.html). This time I tried my luck with a more adventurous, data-driven approach: Reinforcement Learning. First things first: the approach only works well for 4x4 grids - not for the typical 9x9. Please note that the approached subsequently outlined couldn't be further from a recommendable approach to solving Sudoku puzzles. Rather, it is a curious exercise concerned with using the tool of Reinforcement Learning, arguable somewhat artificially, for solving particularly easy Sudoku puzzles.
 
 ## Overview
 
-In [Reinforcement Learning](https://en.wikipedia.org/wiki/Reinforcement_learning), an agent is placed in an environment. Given a state, the agent can choose from a set of actions - to which the environment will 'respond' with a 'reward' as well as a new 'state'. By trying out many combinations of states and actions and observing the resulting rewards, the agent can hopefully learn which actions make sense when.
+In [Reinforcement Learning](https://en.wikipedia.org/wiki/Reinforcement_learning), an agent is placed in an environment. Given a state, the agent can choose from a set of actions - to which the environment will 'respond' with a 'reward' as well as a new 'state'. By trying out many combinations of states and actions and observing the resulting rewards, the agent can hopefully learn which actions make sense, when.
 
-Since the notions of agent, state, reward are of a very general nature, one needs to define what they mean to represent concretely in a Reinforcement Learning application. This is were [OpenAI's gym](https://gym.openai.com/) comes into play: it allows to conveniently define and instantiate environments. These environments complying with gym's universal interface comes with the advantage of being able to plug a wide variety of Machine Learning models onto this environment without much hassle. Put differently (bluntly): gym defines an interface which, if we adhere to it, allows us to use off-the-shelf models to train our agent.
+Since the notions of agent, state, reward are of a very general nature, one needs to define what they mean to represent concretely in a Reinforcement Learning application. This is were [OpenAI's gym](https://gym.openai.com/) comes into play: it allows for a convenient definition and instantiation of environments. These environments complying with gym's universal interface comes with the advantage of being able to plug a wide variety of Machine Learning models into this environment without much hassle. Put differently: gym defines an interface which, if we adhere to it, allows us to use off-the-shelf models to train our agent.
 
-To my surprise, I didn't stumble onto many resources and prior work when it comes to the pairing of Sudoku and Reinforcement Learning. Anav Mehta explored [some approaches](https://arxiv.org/abs/2102.06019). There were even some [gym sudoku environments](https://github.com/artonge/gym-sudoku) available, though I couldn't find much about how to solve them reliably. Since this small project was meant as an exploration of gym, rather than Reinforcement Learning in general, I refrained from investing effort on agent model training but rather just played around with environment definition.
+To my surprise, I didn't stumble onto many resources and prior work when it comes to the pairing of Sudoku and Reinforcement Learning. Anav Mehta explored [some approaches](https://arxiv.org/abs/2102.06019). There were even some [gym Sudoku environments](https://github.com/artonge/gym-Sudoku) available, though I couldn't find much about how to solve, i.e. train an agent, them reliably. Since this small project was meant as an exploration of gym, rather than Reinforcement Learning in general, I refrained from investing effort on agent model training but rather just played around with the environment definition.
 
 ## Problem definition
 
-While 'solving' a sudoku puzzle typically refers to
+While 'solving' a Sudoku puzzle typically refers to
 
 1. a 9x9 grid
 2. starting off with a grid with >1 missing cell values
@@ -40,13 +33,13 @@ the scenario outlined here is a relaxed version thereof. We will consider
 
 ## Generating examples
 
-In order for our agent to learn from examples, we need to generate examples. Most approaches for generating sudoku boards I could find on google seemed to be based on starting off with empty boards and solving the puzzle from their. Since this project is about _solving sudokus_ I felt it would have been a little self-deprecating to _use a solver_ in the process thereof. :)
+In order for our agent to be able to (hopefully) learn from examples, we first need to generate examples. Most approaches for generating Sudoku boards I could find on google seemed to be based on starting off with empty boards and solving the puzzle from there. Since this project is about _solving Sudoku puzzles_ I felt it would have been a little self-deprecating to use a _solver_ in the process thereof. :)
 
-Hence I resorted to a different approach: Generating a valid sudoku board with a simple heuristic and applying random permutations on it which preserve the rules of the game.
+Hence I resorted to a different approach: Generating a valid Sudoku board with a simple heuristic and applying random permutations to it, preserving the rules of the game.
 
 # Generating a valid board
 
-Let's start off with a an increasing row:
+Let's start off with a row:
 ```python
 [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
@@ -56,7 +49,7 @@ If we now replicate this row 8 times and always shift the values one index to th
 size = 9
 [[(i + offset) % (size) for i in range(0, size)] for offset in range(0, size)]
 ```
-yields
+yielding
 ```
 [[0, 1, 2, 3, 4, 5, 6, 7, 8],
  [1, 2, 3, 4, 5, 6, 7, 8, 0],
@@ -68,7 +61,7 @@ yields
  [7, 8, 0, 1, 2, 3, 4, 5, 6],
  [8, 0, 1, 2, 3, 4, 5, 6, 7]]
  ```
-Which is a 0-indexed sudoku board - except for 'block' conditions being violated. In other words: All of the 9 3x3 blocks contain several occurrences of the same value. No good.
+Which is a 0-indexed Sudoku board - except for 'block' conditions being violated. In other words: All of the 9 3x3 blocks contain several occurrences of the same value. No good.
 
  In order to satisfy the block condition we apply some simple row shuffling:
  * We want the first block to end up with the 'first' row from every block.
@@ -77,7 +70,7 @@ Which is a 0-indexed sudoku board - except for 'block' conditions being violated
 
 I'm sure there's way neater - in any sense of neatness - approaches to doing this but e.g. this piece of code can get you there:
 ```python
-size = 
+size = 9
 rows = [
     [(i + offset) % (size) for i in range(0, size)] for offset in range(0, size)
 ]
@@ -96,7 +89,7 @@ indeces = np.fromiter(
 )
 reordered_board = board[indeces, :] + 1
 ```
-Note that `range` is used with three parameters here: `start`, `stop` and `step`. Setting `step=n_blocks`, i.e. to 3, ensures that we bring together 'firsts', 'seconds' and 'thirds'. Running this and gives us a valid, 1-indexed sudoku board:
+Note that `range` is used with three parameters here: `start`, `stop` and `step`. Setting `step=n_blocks`, i.e. to 3, ensures that we bring together 'firsts', 'seconds' and 'thirds'. Running this and gives us a valid, 1-indexed Sudoku board:
 
 ```python
 [[1, 2, 3, 4, 5, 6, 7, 8, 9],
@@ -118,8 +111,8 @@ def valid_board(n_blocks: int) -> np.ndarray:
 ...
 ```
 
-# Random boards
-Now that we have _a_ valid board, would like to procedurally generate boards at random from a variety of boards. In order to do so we observe convenient properties of sudoku boards:
+# Generating random boards
+Now that we have _a_ valid board, would like to procedurally generate boards at random from a variety of boards. In order to do so we observe convenient properties of Sudoku boards:
 * We can shuffle all row/columns arbitrarily within a block.
 * We can shuffle all row/column blocks arbitrarily.
 * We can apply arbitrary permutations to the digits 1 to 9.
@@ -146,6 +139,8 @@ Combining the slicing mentioned before as well as the permutation highlighted ju
 Tying this together could look as follows:
 
 ```python
+# n_blocks indicates the size of a board.
+# A board comprises n_boards**4 cells. 
 def random_board(n_blocks: int) -> np.ndarray:
     old_board = valid_board(n_blocks)
     new_board = old_board.copy()
@@ -218,19 +213,19 @@ yielding, .e.g:
 ```
 
 I figure that a fairly natural question to ask at this point is how many different samples could be generated this way.
-I'm not sure about the overlap of the those approaches. The number of permutations for 1 to 9 is a simple lower bound: 9!, i.e. 362880 (or so tells me Google). We can obtain an upper bound by assuming no overlap.
+I'm not sure about the overlap of the three permutation approaches. The number of permutations for 1 to 9 is a simple lower bound: 9!, i.e. `362_880` (or so tells me Google). We can obtain an upper bound by assuming no overlap.
 
-Let's consider the number boards generated via row permutation. There are 3! ways of shuffling the blocks. There are 3! ways of shuffling the rows per block. This should give us (3!)^4 = 1296 different boards. Assuming we create just as many distinct board via column permutation, we obtain an upper bound of 9!(3!)^8 ~ 600 billion, i.e. ~6 * 10^11, boards.
+Let's consider the number of boards generated via row permutation. There are 3! ways of shuffling the blocks. There are 3! ways of shuffling the rows per block. This should give us (3!)^4 = 1296 different boards. Assuming we create just as many distinct board via column permutation, we obtain an upper bound of 9!(3!)^8 ~ 600 billion, i.e. ~6 * 10^11, boards.
 
-It's been shown surprisingly recently that there are [roughly 6.671 x 10^21](http://www.afjarvis.staff.shef.ac.uk/sudoku/sudoku.pdf) valid board - a bit of a stretch to say the least - even granting the very generous assumption of not having overlaps between permutations. :)
+It's been shown surprisingly recently that there are [roughly 6.671 x 10^21](http://www.afjarvis.staff.shef.ac.uk/Sudoku/Sudoku.pdf) valid boards. A bit of a stretch - to say the least - from what can be generated with the aforementioned procedure; even granting the very generous assumption of not having overlaps between permutations.
 
 ## Gym environment
 
-We define a `SudokuEnv` gym environment as a function of the number of blocks. For a standard Sudoku board, this would equal 3. The observations are sudoku boards with at most one hole, represented by a 0. Hence we expect a grid with a minimal value of 0, a maximal value of `n_blocks ^ 2`, e.g. 9, and a shape of `n_blocks^2 x b_blocks^2`. 
+We define a `SudokuEnv` gym environment as a function of the number of blocks. For a standard Sudoku board, this would equal 3. The observations are Sudoku boards with at most one hole, represented by a 0. Hence we expect a grid with a minimal value of 0, a maximal value of `n_blocks ^ 2`, e.g. 9, and a shape of `n_blocks^2 x n_blocks^2`.
 
-Importantly, since we assume there to only be one hole in the grid, we restrict the action space from what might seem more natural from a human perspective: instead of choosing where to insert a number, we merely model what number to choose for the given hole. The action space, thereby, becomes 1 to 9.
+Importantly, since we assume only one hole in the grid, we can define the action space fairly narrowly: instead of choosing where to insert a number, we merely model what number to choose for the given hole. The action space, thereby, becomes the integers between 1 and `n_blocks^2`.
 
-As a sort of analytical housekeeping, we want to store information on which actions have been chosen how frequently in an environment - across different boards. As some people do in the sequential decision design and bandits literature, we'll call this 'empirical measurement plan':
+As some sort of analytical bookkeeping, we want to store information on which actions have been chosen how frequently in an environment - across different boards. As some people do in the sequential decision design and bandits literature, we'll call this 'empirical measurement plan':
 
 ```python
 class SudokuEnv(gym.Env):
@@ -240,7 +235,7 @@ class SudokuEnv(gym.Env):
         self.observation_space = gym.spaces.Box(
             low=0, high=size, shape=(size, size), dtype=np.uint8
         )
-        # The start keyword is not supported in gym version 0.21.0
+        # The start keyword will only be supported in gym version >0.21.0
         # self.action_space = gym.spaces.Discrete(size, start=1)
         self.action_space = gym.spaces.Discrete(size)
         self._setup_boards()
@@ -254,8 +249,7 @@ class SudokuEnv(gym.Env):
         self.hole_indeces = hole_indeces(self.initial_board)
 ```
 
-The only substantial thing left to do is to implement a method implementing the act of realizing an action. It mostly revolves around checking whether the chosen digit for the hole at hand actually solves the sudoku board:
-
+The only substantial thing left to do is to implement the `step` method, defining the logic around the action-taking. It mostly revolves around checking whether the chosen digit for the hole at hand actually solves the Sudoku board:
 
 ```python
     def step(self, action: int) -> tuple[np.ndarray, float, bool, dict]:
@@ -278,6 +272,7 @@ The only substantial thing left to do is to implement a method implementing the 
             },
         )
 ```
+
 Note that somewhat arbitrary design decision to 'undo' the action if the hole has not been successfully filled. For the sake of completeness, we should also have a `reset` method:
 
 ```python
@@ -289,11 +284,11 @@ Note that somewhat arbitrary design decision to 'undo' the action if the hole ha
 
 ## Training and inference
 
-So far, we have only talked about the environment. As mentioned before, `gym` limits itself to the definition of an environment. The learning of an agent is delegated. I decided to use an off-the-shelf agent model from [`stable_baselines3](https://stable-baselines3.readthedocs.io/en/master/), relying on a [multi layer perceptron policy approximation](https://stable-baselines3.readthedocs.io/en/master/modules/dqn.html#stable_baselines3.dqn.MlpPolicy). The off-the-shelfness is likely a bad deal for actual performance but actually pretty much off the shelf:
+So far, we have only talked about the environment. As mentioned before, `gym` limits itself to the definition of an environment. The learning of an agent is delegated. I decided to use an off-the-shelf agent model from [`stable_baselines3](https://stable-baselines3.readthedocs.io/en/master/), relying on a [multi layer perceptron policy approximation](https://stable-baselines3.readthedocs.io/en/master/modules/dqn.html#stable_baselines3.dqn.MlpPolicy). The off-the-shelfness is likely a bad deal for actual performance but is indeed convenient:
 
 ```python
 from stable_baselines3 import DQN
-from sudoku_env import SudokuEnv
+from Sudoku_env import SudokuEnv
 
 N_BLOCKS = 3
 N_TIMESTEPS = 1_000_000
@@ -302,7 +297,7 @@ env = SudokuEnv(n_blocks=N_BLOCKS)
 
 trained_model = DQN("MlpPolicy", env, verbose=1)
 
-file_name = f"sudoku_{N_BLOCKS}_{N_TIMESTEPS/1_000_000}m"
+file_name = f"Sudoku_{N_BLOCKS}_{N_TIMESTEPS/1_000_000}m"
 
 trained_model.learn(total_timesteps=N_TIMESTEPS)
 trained_model.save(file_name)
@@ -313,7 +308,7 @@ Once this agent model is trained, we can conveniently load it at a different tim
 ```python
 from stable_baselines3 import DQN
 
-from sudoku_env import SudokuEnv
+from Sudoku_env import SudokuEnv
 
 N_BLOCKS = 3
 
@@ -329,11 +324,11 @@ obs, _, done, _ = env.step(action)
 ## Results
 Tl;dr: it didn't work.
 
-For a `block_size` of 2, i.e. 4x4 Sudoku boards, training aforementioned model with 1m training steps leads to a model with an accuracy of 100% - evaluation samples being drawn from the same board-generation process than is used for training samples. It is therefore very possible that the model simply memorizes all constellations. It would be interesting to investigate this by either
+For a `n_blocks` of 2, i.e. 4x4 Sudoku boards, training aforementioned model with 1m training steps leads to a model with an accuracy of 100% - evaluation samples being drawn from the same board-generation process than is used for training samples. It is therefore very possible that the model simply memorizes all constellations. It would be interesting to investigate this by either
 * Excluding some samples from the training set and thereby constructing a holdout/test set.
-* Tweaking some training constellations as to be 'wrong' sudoku boards. If they are plainly replicated, thereby violating the rules of Sudoku, one can be sure that the model didn't actually distill an approach on how to _solve_ Sudoku.
+* Tweaking some training constellations as to be 'wrong' Sudoku boards. If they are plainly replicated, thereby violating the rules of Sudoku, one can be sure that the model didn't actually distill an approach on how to _solve_ a Sudoku puzzle.
 
-For a `block_size` of 3, i.e. 9x9 Sudoku boards, training aforementioned model with 10m training steps leads to a model with an accuracy of 15% on 1000 samples - hardly better than random guessing. The empirical measurement plan of the training process comes very close to a uniform distribution over the action space.
+For a `n_blocks` of 3, i.e. 9x9 Sudoku boards, training aforementioned model with 10m training steps leads to a model with an accuracy of 15% on 1000 samples - hardly better than random guessing. The empirical measurement plan of the training process comes very close to a uniform distribution over the action space.
 
 Two sample states with sample actions chosen:
 
@@ -365,9 +360,9 @@ HIT!
 
 ## Conclusion
 
-This was a cool exercise to think a bit about the generation of valid sudoku boards as well as to warm up with `gym`'s environment interface. The actual problem solving, machine learning work would only start here.
+This was a cool exercise to think a bit about the generation of valid Sudoku boards as well as to warm up with `gym`'s environment interface. The actual problem solving, machine learning work would only start here.
 
-Moving forward, I figure one of the first things to look into would be to understand the neural network used by stable baselines better. Maybe its architecture obviously doesn't make any sense for this problem? Maybe we should look at the board like an image and rely on convolution? Is the model at all at all _improving_ across training steps?
+Moving forward, I figure one of the first things to look into would be to understand the neural network used by stable baselines better. Maybe its architecture obviously doesn't make any sense for this problem? Maybe one should look at the board as an image and rely on convolution? Is the model at all _improving_ across training steps?
 
 Also, as we all know, input data quality is quintessential. It might therefore make sense to _test_ the data generation. Statistical tests, in stark contrast to formal reasoning, could be done by applying a board verification (e.g. as was used in previous posts) on a large sample of generated samples.
 
