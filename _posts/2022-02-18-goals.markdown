@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Goals are Arbitrary"
+title: "Goals Are Arbitrary"
 date: 2022-02-26 9:38:07 +0200
 categories: jekyll update
 comments: false
