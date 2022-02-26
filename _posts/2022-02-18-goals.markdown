@@ -1,0 +1,39 @@
+---
+layout: post
+title: "Goals are Arbitrary"
+date: 2022-02-18 12:38:07 +0200
+categories: jekyll update
+comments: false
+published: true
+---
+
+I have the pleasure of having impressive friends who have completed and continue to complete spectacular athletic feats. Some crossed the alps with a single speed steel tandem bike. Some run 10k in 35'. Some run half-marathons with more than 2000m of elevation literally called [inferno](https://www.inferno.ch/en-GB/Competition/half-marathon-relay-race). And then, of course, there is the camp of people who go about this whole ironman business.
+
+Personally, I've always had a difficult relation to 'goals'. I've tended to cling onto them a lot - more often than not only to be disappointed at the moment of completion. I've found it hard to detach myself from my goals, leading to a willingness to bear large costs. This willingness, has been, I think, irrational in expectation.
+
+This realization made be slightly bitter and deny the pursuit of clearly defined achievements and goals. Rather, I sought to shift my focus onto processes. I figure there are more or less esoteric ways of looking at this but at the end of the day the idea was to, somewhat hedonistically, try to take pleasure in things that are rather than purely trying to strive for things might be - often for the sake of striving for things.
+
+After an extended period of denial, I wanted to open up to goals again. After all, as far as I can tell, any good calibration process resembles a pendulum first swinging into both extremes, then settling in a _reasonable_ place in-between.
+
+More concretely, I had to acknowledge that there is some magic to goals. While pursuing them _in my way_ had seemed to be, in expectation, a net negative undertaking, I was under the impression that qualitatively, some desirable things are much easier done when attached to a goal <sup id="a0">[[0]](#f0)</sup>. Even though I'd like to, I can't deny the fact that goals can seemingly make something out of nothing; the taste of victory can mysteriously conjure previous unknown energies.
+
+Not wanting to swing back into the other extreme again, I tried to think of how to hedge against the downsides of the pursuit of goals. Arguably somewhat bluntly, I figured that I could protect myself from over-attachment to a goal and the numbing fear of failure by strongly embracing the fact that goals are arbitrary and by hardly disclosing my goals to other people beforehand. While I would truly love to claim that the latter was redundant, I simply cannot. I think it actually does intrinsically rub me against the grain to fail. Yet, I also think that others knowing about my failure adds onto it.
+
+Hence, I set out to define some physical challenges which sounded interesting to me <sup id="a1">[[1]](#f1)</sup> and were not overly casual. Also, I decided to do them by myself, typically fasted and usually without having talked about them much or at all beforehand.
+
+1. Cycling from my parent's place to my grandmother's place - along the French and German border of Luxembourg - and back.
+2. Running to my Christmas dinner - through the woods of Luxembourg from my parent's place to my grandmother's place.
+3. Running the seven hills surrounding Zurich in one go - starting at my place and finishing at my place.
+4. Running a marathon on a track.
+5. Running Zurich's 'city mountain' three times in a row.
+
+The first three I completed, the fourth I failed and the fifth is outstanding.
+
+The first three felt like a great success of the overarching process. I discovered facets around familiar places. I spent a lot of time outside. I had a lot of time to think. I burned some calories. But most importantly I never felt pressured, there were just no negative feelings. I would consider myself experienced when it comes strenuous physical exercise under social pressure. During such episodes, I was constantly worried and anxious to not live up to the set standards, which would've rendered me unworthy. Yet, this was in very stark contrast. I sure set out to complete what I had in mind - but after all I had the profound confidence that nothing bad would happen if I didn't. I would still have had spent time outdoors moving my body - independently of whether I 'achieved' the goal. In a way, this was a smoothing of the reward function: the binary success criterion/step-function turned into a steadily monotonically increasing function. Sure - there still was a small step in this function at the location of completion, but the importance of it diminished significantly.
+
+This became even more clear while failing. I set out to run at a low heart rate on the track - believing that more or less any realistically possible pace would get me to the marathon distance. Then life happened and suddenly my time window had been trimmed down by external forces. I had to make a call: either to run fast in order to achieve my goal or to run slowly, sticking with my general principles of how to approach running. I opted for using all of my time available to run on the track - at a low pace and heart rate. This then culminated in roughly 32km - quite a stretch from what I aimed to run. I will admit that I felt some disappointment - that there had been an imaginary newspaper headline revolving around a likely mentally distressed person running exactly 100 laps on track number 6, torn into pieces. In other words: there was a downside to failure and thereby to even trying to achieve that goal. Importantly, I would claim that the downside was significantly less powerful than for a more conventional goal. Consider someone publicly announcing to partake in a marathon race. I would wager to say that a failure in such a circumstance would hurt much more. Moreover, I would find it way harder to appreciate the 32km run and the time spent outdoors when failing in a race than when failing next to some particularly curious and outspoken crows on the track next door. Granted, the likelihood of failure might be a different one for the race - and so might be the upside of success. Which brings me to my point: I'm not saying more conventional goals shared with other people don't make any sense. I'm saying that I shouldn't prioritize them too highly and most importantly expand my mental model of goals, consider alternatives and try to think about 'goals' for myself. It just might sometimes be a better deal to do 'goals' differently.
+
+
+<b id="f0">[0]</b> I figure this is not unlike irrational optimism of founders that [people in the startup ecosystem sometimes talk about](https://twitter.com/paulg/status/1131485613918740480). This optimism may lead to overconfidence and overestimation of one's own success probabilities - which is detrimental to the entrepreneur's expected financial outcome. Yet, for venture capitalists, it seems quintessential: they live off of Power-law distributed events, as Peter Thiel might say. [↩](#a0)
+
+<b id="f1">[1]</b> This typically includes a slight hint of absurdity. [↩](#a1)
