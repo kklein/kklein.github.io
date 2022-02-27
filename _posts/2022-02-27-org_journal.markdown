@@ -9,13 +9,13 @@ published: true
 
 I have long been an avid enthusiast of journaling. This has mostly been for the sheer sake of journaling. In other words: once written, never to be read. 
 
-At the same time I would like to use information about my past when making decisions for the future. When simply winging this inference on empirical data, I'm always worried about a multitude of warpings that _could_ altered my recollection of these experiences (in other words: a noisy communication channel to the ground truth data). Think of recency bias or just plain nostalgia.
+At the same time I would like to use information about my past when making decisions for the future. When simply winging this inference on empirical data, I'm always worried that some warping _could_ have altered my recollection of these experiences (in other words: a noisy communication channel) and thereby bias my inference mechanism unjustly. Think of [recency bias](https://en.wikipedia.org/wiki/Recency_bias), the [peak-end](https://en.wikipedia.org/wiki/Peak%E2%80%93end_rule) rule or just plain [nostalgia](https://music.youtube.com/playlist?list=OLAK5uy_k-5GOx1dFi1kfnB2LMuCk_7a_r5Ow5us8).
 
-For that reason, I started using some point started using a [journal/diary/planner](https://einguterplan.de/agoodplan) in addition to my very much purposefully chaotic default journaling. Said journal allows for explicit evaluation of a predefined set of dimensions on a daily basis. Moreover, it facilitates systematically revisiting past weeks and months. While I found this particular specimen to be very well made, it turned out to be, after a trial phase of two and a half years, to be impractical.
+For that reason, I started using a dedicated, structured [journal/diary/planner](https://einguterplan.de/agoodplan) in addition to my very much purposefully chaotic default journaling. Said journal allows for explicit evaluation of a predefined set of dimensions on a daily basis. Moreover, it facilitates systematically revisiting past weeks and months. While I found this particular specimen to be very well made, it turned out to be, after a trial phase of two and a half years, impractical for my purposes.
 
-I love the sensation of writing on egg-shell colored, soft, thick paper. It almost tickles my brain. Very strangely, I even enjoy the touching the exterior of a thin, soft-cover, leather notebook. (Ok I'll stop it now.)  Aside from these romantic tendencies towards the haptic aspect of physical writing, I also just like the concept of putting a thought on paper and putting the paper 'away'. This is all fun and games when it comes to unstructured journaling; either a valve for what's been damming up or just a catalyst for ripening thoughts. Yet, for retrospective evaluations, this is not great - for two reasons.
+I love the sensation of writing on egg-shell colored, soft, thick paper. It almost tickles my brain. Surprisingly, I even enjoy touching the exterior of a thin, soft-cover, leather notebook. (Ok I'll stop it now.)  Aside from these romantic tendencies towards the haptic aspects of physical writing, I also just like the concept of putting a thought on paper and putting the paper 'away'. This is all fun and games when it comes to unstructured journaling; either a valve for what's been damming up or just a catalyst for ripening thoughts. Yet, for retrospective evaluations, this is not great - for two reasons.
 
-First, the dependency on the physical notebook is deterring. Sure - while one could in principle always take notes 'elsewhere' while traveling and copy them to the ground truth notebook, it's just very inconvenient. Just as it's inconvenient to be forced to always carry your - likely not so thin - 'retrospective evaluation notebook'. Second, evaluation is just so much easier when the underlying data is effortlessly parsable by software. In short: software beets hardware.
+First, the dependency on the physical notebook is deterring. Sure; while one could in principle always take notes 'elsewhere' while traveling and copy them to the ground truth notebook, it's just very inconvenient. Just as it's inconvenient to be forced to always carry your - likely not so thin - 'retrospective evaluation notebook'. Second, evaluation is just so much easier when the underlying data is effortlessly parsable by software. In short: software beets hardware.
 
 While still somewhat of a newcomer to it, I feel a lot of sympathy towards [Org Mode](https://orgmode.org/). Org Mode is a 'mode' - think of it as a configuration - for Emacs. It outputs plain text files - just as with e.g. markdown or rst. One can edit these files with any text editor - yet when using Emacs' Org Mode, the editing becomes particularly powerful.
 
@@ -25,6 +25,8 @@ I set out to define a rudimentary Org Mode file structure for three kinds of fil
 * A template for evaluating a month in retrospect.
 
 These look as such:
+
+Week template
 
 ```
 * Focus
@@ -52,8 +54,11 @@ These look as such:
   :Fasting:  x
   :END:
 
+* Wednesday
+...
 ```
 
+Pre-month template
 ```
 * Goals and wishes
 ** Work
@@ -63,6 +68,7 @@ These look as such:
 * Will be challenging
 ```
 
+Post-month template
 ```
 * This happened
 * I'm thankful for
@@ -72,10 +78,10 @@ These look as such:
 
 Note that the week template uses `PROPERTIES`. While the `PROPERTIES` are also just text, declaring them as such makes it handier to parse them later on. Furthermore, there is special support for these `PROERTIES` in Org Mode software that aren't just text editors, e.g. mobile apps.
 
-I wrote a (script)[https://github.com/kklein/org-journal/blob/main/setup.py] to apply that template to every week and month of the year. Hence `$ ls ~/org/weeks/` returns the following:
+I wrote a [script](https://github.com/kklein/org-journal/blob/main/setup.py) to apply that template to every week and month of the year. Hence `$ ls ~/org/weeks/` returns the following:
 
 ```
-.org  1.org  10.org 11.org 12.org 13.org 14.org 15.org 16.org 17.org 18.org 19.org 2.org  20.org 21.org 22.org 23.org 24.org 25.org 26.org 27.org 28.org 29.org 3.org  30.org 31.org 32.org 33.org 34.org 35.org 36.org 37.org 38.org 39.org 4.org  40.org 41.org 42.org 43.org 44.org 45.org 46.org 47.org 48.org 49.org 5.org  50.org 51.org 52.org 6.org  7.org  8.org  9.org
+1.org  10.org 11.org 12.org 13.org 14.org 15.org 16.org 17.org 18.org 19.org 2.org  20.org 21.org 22.org 23.org 24.org 25.org 26.org 27.org 28.org 29.org 3.org  30.org 31.org 32.org 33.org 34.org 35.org 36.org 37.org 38.org 39.org 4.org  40.org 41.org 42.org 43.org 44.org 45.org 46.org 47.org 48.org 49.org 5.org  50.org 51.org 52.org 6.org  7.org  8.org  9.org
 ```
 
 and similarly `$ ls ~/org/months/` returns:
