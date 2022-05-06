@@ -1,0 +1,13 @@
+body {
+  padding: 20px;
+  font-family: Helvetica;
+  background-color: #D3D3D3;
+}
+
+div {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 20px;
+  font-size: 100px;
+  text-align: center;
+}
