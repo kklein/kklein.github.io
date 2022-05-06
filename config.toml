@@ -3,6 +3,10 @@ languageCode = 'en-us'
 title = 'Blog'
 theme = "archie"
 paginate = 50
+copyright = "© Kevin Klein"
+staticDir = "static"
+googleAnalytics = "UA-122721044-1"
+
 
 [[params.social]]
 name = "GitHub"
@@ -28,8 +32,4 @@ weight = 2
 name = "Projects"
 url = "/projects"
 weight = 3
-
-
-staticDir = "static"
-googleAnalytics = "UA-122721044-1"
 
