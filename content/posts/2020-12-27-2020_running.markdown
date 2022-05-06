@@ -26,7 +26,7 @@ would have turned out if not for the other activities.
 First, let's get a feel for what we are talking about by looking into all runs throughout
 the year:
 
-![individual runs](/imgs/2020_running/individual_runs.png){:class="img-responsive"}
+![individual runs](/imgs/2020_running/individual_runs.png) 
 
 It becomes apparent that the spread in distances is fairly wide and that there is
 no glaring training effect, indicated by a growing average with high concentration. Also,

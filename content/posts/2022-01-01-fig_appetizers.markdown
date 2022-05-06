@@ -18,7 +18,7 @@ Quick to make, satisfying to eat.
 
 Cut some parts of the puff pastry. I figure both rectangles and squares should work. While all sizes 'go', I think that in principle one wants to use as little dough per fixed filling size as possible. In the same vein, I would try to make the pastry as thin as possible.
 
-![Folding prep](/imgs/fig_appetizers/folding.jpg){:class="img-responsive"}
+![Folding prep](/imgs/fig_appetizers/folding.jpg) 
 
 Spread a mixture of ricotta, roughly ground black pepper, salt and ground nutmeg. Top with pieces of fig and some rocket. I later discovered that this works much better if one clump up the rocket first.
 
@@ -26,7 +26,7 @@ One can either try to fold them or to knit them together like a dumpling. I trie
 
 Bake according to your puff pastry instructions til looking good.
 
-![Result](/imgs/fig_appetizers/result.jpg){:class="img-responsive"}
+![Result](/imgs/fig_appetizers/result.jpg) 
 
 ## Closing remarks
 

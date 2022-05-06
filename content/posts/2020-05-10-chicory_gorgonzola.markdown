@@ -48,7 +48,7 @@ combination of grill and hot air circulation. A temperature of around
 180 degrees Celsius for around half an hour worked fine for me. Mix
 and stir from time to time and drizzle some honey halfway through.
 
-![Chicory](/imgs/chicory/chicory.jpg){:class="img-responsive"}
+![Chicory](/imgs/chicory/chicory.jpg) 
 
 Brown slices of onion in a mix of butter and olive oil. Add
 finely chopped garlic, some chili flakes as well as some
