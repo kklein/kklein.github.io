@@ -1,0 +1,371 @@
+---
+title:  "Sudoku #3: Poor Man's RL"
+date:   2022-02-13 8:00:07 +0200
+comments: false
+published: true
+description: I explored OpenAI's gym library to model Sudoku as a Reinforcement Learning problem.
+tags: [math, tech]
+---
+
+Previously, I've outlined some ideas on how to solve Suduko puzzles. One revolved around [depth-first search in trees](http://kevinkle.in/jekyll/update/2021/02/28/Sudoku_dfs.html), one around [linear programming](http://kevinkle.in/jekyll/update/2021/03/14/Sudoku_lp.html). This time I tried my luck with a more adventurous, data-driven approach: Reinforcement Learning. First things first: the approach only works well for 4x4 grids - not for the typical 9x9. Please note that the approached subsequently outlined couldn't be further from a recommendable approach to solving Sudoku puzzles. Rather, it is a curious exercise concerned with using the tool of Reinforcement Learning, arguable somewhat artificially, for solving particularly easy Sudoku puzzles.
+
+## Overview
+
+In [Reinforcement Learning](https://en.wikipedia.org/wiki/Reinforcement_learning), an agent is placed in an environment. Given a state, the agent can choose from a set of actions - to which the environment will 'respond' with a 'reward' as well as a new 'state'. By trying out many combinations of states and actions and observing the resulting rewards, the agent can hopefully learn which actions make sense, when.
+
+Since the notions of agent, state, reward are of a very general nature, one needs to define what they mean to represent concretely in a Reinforcement Learning application. This is were [OpenAI's gym](https://gym.openai.com/) comes into play: it allows for a convenient definition and instantiation of environments. These environments complying with gym's universal interface comes with the advantage of being able to plug a wide variety of Machine Learning models into this environment without much hassle. Put differently: gym defines an interface which, if we adhere to it, allows us to use off-the-shelf models to train our agent.
+
+To my surprise, I didn't stumble onto many resources and prior work when it comes to the pairing of Sudoku and Reinforcement Learning. Anav Mehta explored [some approaches](https://arxiv.org/abs/2102.06019). There were even some [gym Sudoku environments](https://github.com/artonge/gym-Sudoku) available, though I couldn't find much about how to solve, i.e. train an agent, them reliably. Since this small project was meant as an exploration of gym, rather than Reinforcement Learning in general, I refrained from investing effort on agent model training but rather just played around with the environment definition.
+
+## Problem definition
+
+While 'solving' a Sudoku puzzle typically refers to
+
+1. a 9x9 grid
+2. starting off with a grid with >1 missing cell values
+
+
+the scenario outlined here is a relaxed version thereof. We will consider
+
+1. both 4x4 and 9x9 grids
+2. only seek to fill in a single (you can think of it as the 'last missing') cell value.
+
+
+## Generating examples
+
+In order for our agent to be able to (hopefully) learn from examples, we first need to generate examples. Most approaches for generating Sudoku boards I could find on google seemed to be based on starting off with empty boards and solving the puzzle from there. Since this project is about _solving Sudoku puzzles_ I felt it would have been a little self-deprecating to use a _solver_ in the process thereof. :)
+
+Hence I resorted to a different approach: Generating a valid Sudoku board with a simple heuristic and applying random permutations to it, preserving the rules of the game.
+
+# Generating a valid board
+
+Let's start off with a row:
+```python
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+If we now replicate this row 8 times and always shift the values one index to the left/right, we already satisfy the column and row conditions.
+
+```python
+size = 9
+[[(i + offset) % (size) for i in range(0, size)] for offset in range(0, size)]
+```
+yielding
+```
+[[0, 1, 2, 3, 4, 5, 6, 7, 8],
+ [1, 2, 3, 4, 5, 6, 7, 8, 0],
+ [2, 3, 4, 5, 6, 7, 8, 0, 1],
+ [3, 4, 5, 6, 7, 8, 0, 1, 2],
+ [4, 5, 6, 7, 8, 0, 1, 2, 3],
+ [5, 6, 7, 8, 0, 1, 2, 3, 4],
+ [6, 7, 8, 0, 1, 2, 3, 4, 5],
+ [7, 8, 0, 1, 2, 3, 4, 5, 6],
+ [8, 0, 1, 2, 3, 4, 5, 6, 7]]
+ ```
+Which is a 0-indexed Sudoku board - except for 'block' conditions being violated. In other words: All of the 9 3x3 blocks contain several occurrences of the same value. No good.
+
+ In order to satisfy the block condition we apply some simple row shuffling:
+ * We want the first block to end up with the 'first' row from every block.
+ * We want the second block to end up with the 'second' row from every block.
+ * We want the third block to end up with the 'third' row from every block.
+
+I'm sure there's way neater - in any sense of neatness - approaches to doing this but e.g. this piece of code can get you there:
+```python
+size = 9
+rows = [
+    [(i + offset) % (size) for i in range(0, size)] for offset in range(0, size)
+]
+board = np.array(rows, dtype=np.uint8)
+indeces = np.fromiter(
+	reduce(
+		chain,
+		map(
+			lambda block_index: range(
+				block_index, block_index + ((n_blocks - 1) * n_blocks + 1), n_blocks
+			),
+			range(n_blocks),
+		),
+	),
+	dtype=np.uint8,
+)
+reordered_board = board[indeces, :] + 1
+```
+Note that `range` is used with three parameters here: `start`, `stop` and `step`. Setting `step=n_blocks`, i.e. to 3, ensures that we bring together 'firsts', 'seconds' and 'thirds'. Running this and gives us a valid, 1-indexed Sudoku board:
+
+```python
+[[1, 2, 3, 4, 5, 6, 7, 8, 9],
+[4, 5, 6, 7, 8, 9, 1, 2, 3],
+[7, 8, 9, 1, 2, 3, 4, 5, 6],
+[2, 3, 4, 5, 6, 7, 8, 9, 1],
+[5, 6, 7, 8, 9, 1, 2, 3, 4],
+[8, 9, 1, 2, 3, 4, 5, 6, 7],
+[3, 4, 5, 6, 7, 8, 9, 1, 2],
+[6, 7, 8, 9, 1, 2, 3, 4, 5],
+[9, 1, 2, 3, 4, 5, 6, 7, 8]]
+```
+
+Cool. Since we will use this valid board as a starting point for all of our random boards, we will want to make sure all of this doesn't need to be rerun every time we want to generate a random board. For that purpose I find it convenient to decorate the function running this code with [`@functools.cache`](https://docs.python.org/3/library/functools.html#functools.cache):
+
+```python
+@functools.cache
+def valid_board(n_blocks: int) -> np.ndarray:
+...
+```
+
+# Generating random boards
+Now that we have _a_ valid board, would like to procedurally generate boards at random from a variety of boards. In order to do so we observe convenient properties of Sudoku boards:
+* We can shuffle all row/columns arbitrarily within a block.
+* We can shuffle all row/column blocks arbitrarily.
+* We can apply arbitrary permutations to the digits 1 to 9.
+
+Yet, the first two operations cannot, a priori, be combined arbitrarily. What can be combined arbitrarily, is between-block and within-block shuffling of rows as well as between-block and within-block shuffling of columns. Put bluntly: When only shuffling columns or only shuffling rows as outlined before, all is always well.
+
+Hence I decided to flip a coin every time a board was supposed to be generated: either to column or row shuffling (in `numpy` lingo, that is):
+```python
+axis = np.random.binomial(1, 0.5)
+```
+In order to permute blocks, one can use simple `numpy` slicing. E.g. when shuffling row block #2 and block #3, one can do as follows:
+```python
+new_board[3:6, :] = old_board[6:9, :]
+new_board[6:9, :] = old_board[3:6, :]
+```
+In order to determine how we want to permute/shuffle blocks, we can simply use `numpy.random.permutation`:
+```python
+def permute_indeces(indeces: np.ndarray) -> np.ndarray:
+    permutation = np.random.permutation(range(len(indeces)))
+    return indeces[permutation]
+```
+Combining the slicing mentioned before as well as the permutation highlighted just now, we can both shuffle entire row/column-blocks as well as rows/columns within blocks.
+
+Tying this together could look as follows:
+
+```python
+# n_blocks indicates the size of a board.
+# A board comprises n_boards**4 cells. 
+def random_board(n_blocks: int) -> np.ndarray:
+    old_board = valid_board(n_blocks)
+    new_board = old_board.copy()
+
+    # Either permute rows or columns. If 1, permute rows.
+    axis = np.random.binomial(1, 0.5)
+
+    permute_blocks(old_board, new_board, n_blocks, axis=axis)
+    permute_within_block_vectors(new_board, n_blocks, axis=axis)
+
+    return new_board
+```
+
+An example looks as follow:
+
+```python
+[[2, 3, 1, 8, 9, 7, 6, 4, 5],
+[5, 6, 4, 2, 3, 1, 9, 7, 8],
+[8, 9, 7, 5, 6, 4, 3, 1, 2],
+[3, 4, 2, 9, 1, 8, 7, 5, 6],
+[6, 7, 5, 3, 4, 2, 1, 8, 9],
+[9, 1, 8, 6, 7, 5, 4, 2, 3],
+[4, 5, 3, 1, 2, 9, 8, 6, 7],
+[7, 8, 6, 4, 5, 3, 2, 9, 1],
+[1, 2, 9, 7, 8, 6, 5, 3, 4]]
+```
+
+Additionally, we can apply arbitrary permutations to the digits 1 to 9. In other words, we can have a mapping, a bijective function, from the digits of 1..9 to 1..9. A way of doing
+this is the tweak the function `valid_board` slightly from
+
+```python
+def valid_board(n_blocks: int) -> np.ndarray:
+	...
+	rows = [
+		[(i + offset) % (size) for i in range(0, size)] for offset in range(0, size)
+	]
+	...
+```
+
+to
+
+```python
+def valid_board(n_blocks: int, mapping: Sequence) -> np.ndarray:
+	...
+	rows = [
+		[mapping[(i + offset) % (size)] for i in range(0, size)] for offset in range(0, size)
+	]
+	...
+```
+
+and call it e.g. as such:
+
+```python
+mapping = np.random.permutation(range(9))
+board = valid_board(3, mapping)
+```
+
+yielding, .e.g:
+
+```python
+[[2, 3, 8, 6, 9, 1, 5, 7, 4],
+[6, 9, 1, 5, 7, 4, 2, 3, 8],
+[5, 7, 4, 2, 3, 8, 6, 9, 1],
+[3, 8, 6, 9, 1, 5, 7, 4, 2],
+[9, 1, 5, 7, 4, 2, 3, 8, 6],
+[7, 4, 2, 3, 8, 6, 9, 1, 5],
+[8, 6, 9, 1, 5, 7, 4, 2, 3],
+[1, 5, 7, 4, 2, 3, 8, 6, 9],
+[4, 2, 3, 8, 6, 9, 1, 5, 7]]
+```
+
+I figure that a fairly natural question to ask at this point is how many different samples could be generated this way.
+I'm not sure about the overlap of the three permutation approaches. The number of permutations for 1 to 9 is a simple lower bound: 9!, i.e. `362_880` (or so tells me Google). We can obtain an upper bound by assuming no overlap.
+
+Let's consider the number of boards generated via row permutation. There are 3! ways of shuffling the blocks. There are 3! ways of shuffling the rows per block. This should give us (3!)^4 = 1296 different boards. Assuming we create just as many distinct board via column permutation, we obtain an upper bound of 9!(3!)^8 ~ 600 billion, i.e. ~6 * 10^11, boards.
+
+It's been shown surprisingly recently that there are [roughly 6.671 x 10^21](http://www.afjarvis.staff.shef.ac.uk/Sudoku/Sudoku.pdf) valid boards. A bit of a stretch - to say the least - from what can be generated with the aforementioned procedure; even granting the very generous assumption of not having overlaps between permutations.
+
+## Gym environment
+
+We define a `SudokuEnv` gym environment as a function of the number of blocks. For a standard Sudoku board, this would equal 3. The observations are Sudoku boards with at most one hole, represented by a 0. Hence we expect a grid with a minimal value of 0, a maximal value of `n_blocks ^ 2`, e.g. 9, and a shape of `n_blocks^2 x n_blocks^2`.
+
+Importantly, since we assume only one hole in the grid, we can define the action space fairly narrowly: instead of choosing where to insert a number, we merely model what number to choose for the given hole. The action space, thereby, becomes the integers between 1 and `n_blocks^2`.
+
+As some sort of analytical bookkeeping, we want to store information on which actions have been chosen how frequently in an environment - across different boards. As some people do in the sequential decision design and bandits literature, we'll call this 'empirical measurement plan':
+
+```python
+class SudokuEnv(gym.Env):
+    def __init__(self, n_blocks: int):
+        self.n_blocks = n_blocks
+        size = n_blocks ** 2
+        self.observation_space = gym.spaces.Box(
+            low=0, high=size, shape=(size, size), dtype=np.uint8
+        )
+        # The start keyword will only be supported in gym version >0.21.0
+        # self.action_space = gym.spaces.Discrete(size, start=1)
+        self.action_space = gym.spaces.Discrete(size)
+        self._setup_boards()
+        self.n_steps = 0
+        self.empirical_measurement_plan = {action: 0 for action in range(1, size + 1)}
+
+    def _setup_boards(self):
+        self.board_solved = random_board(self.n_blocks)
+        self.initial_board = almost_solved_board(self.board_solved)
+        self.board = self.initial_board.copy()
+        self.hole_indeces = hole_indeces(self.initial_board)
+```
+
+The only substantial thing left to do is to implement the `step` method, defining the logic around the action-taking. It mostly revolves around checking whether the chosen digit for the hole at hand actually solves the Sudoku board:
+
+```python
+    def step(self, action: int) -> tuple[np.ndarray, float, bool, dict]:
+        # See comment in `__init__`.
+        action += 1
+        self.empirical_measurement_plan[action] += 1
+        self.n_steps += 1
+        x_index, y_index = self.hole_indeces
+        self.board[x_index, y_index] = action
+        done, reward = compare(self.board, self.board_solved)
+        if not done:
+            self.board[x_index, y_index] = 0
+        return (
+            self.board,
+            float(reward),
+            done,
+            {
+                "n_steps": self.n_steps,
+                "empirical_measurement_plan": self.empirical_measurement_plan,
+            },
+        )
+```
+
+Note that somewhat arbitrary design decision to 'undo' the action if the hole has not been successfully filled. For the sake of completeness, we should also have a `reset` method:
+
+```python
+    def reset(self) -> np.ndarray:
+        self._setup_boards()
+        self._n_steps = 0
+        return self.board
+```
+
+## Training and inference
+
+So far, we have only talked about the environment. As mentioned before, `gym` limits itself to the definition of an environment. The learning of an agent is delegated. I decided to use an off-the-shelf agent model from [`stable_baselines3](https://stable-baselines3.readthedocs.io/en/master/), relying on a [multi layer perceptron policy approximation](https://stable-baselines3.readthedocs.io/en/master/modules/dqn.html#stable_baselines3.dqn.MlpPolicy). The off-the-shelfness is likely a bad deal for actual performance but is indeed convenient:
+
+```python
+from stable_baselines3 import DQN
+from Sudoku_env import SudokuEnv
+
+N_BLOCKS = 3
+N_TIMESTEPS = 1_000_000
+
+env = SudokuEnv(n_blocks=N_BLOCKS)
+
+trained_model = DQN("MlpPolicy", env, verbose=1)
+
+file_name = f"Sudoku_{N_BLOCKS}_{N_TIMESTEPS/1_000_000}m"
+
+trained_model.learn(total_timesteps=N_TIMESTEPS)
+trained_model.save(file_name)
+```
+
+Once this agent model is trained, we can conveniently load it at a different time, from a different place and run inference based on it:
+
+```python
+from stable_baselines3 import DQN
+
+from Sudoku_env import SudokuEnv
+
+N_BLOCKS = 3
+
+loaded_model = DQN.load(file_name)
+
+env = SudokuEnv(n_blocks=N_BLOCKS)
+obs = env.board
+
+action, _states = model.predict(obs, deterministic=True)
+obs, _, done, _ = env.step(action)
+```
+
+## Results
+Tl;dr: it didn't work.
+
+For a `n_blocks` of 2, i.e. 4x4 Sudoku boards, training aforementioned model with 1m training steps leads to a model with an accuracy of 100% - evaluation samples being drawn from the same board-generation process than is used for training samples. It is therefore very possible that the model simply memorizes all constellations. It would be interesting to investigate this by either
+* Excluding some samples from the training set and thereby constructing a holdout/test set.
+* Tweaking some training constellations as to be 'wrong' Sudoku boards. If they are plainly replicated, thereby violating the rules of Sudoku, one can be sure that the model didn't actually distill an approach on how to _solve_ a Sudoku puzzle.
+
+For a `n_blocks` of 3, i.e. 9x9 Sudoku boards, training aforementioned model with 10m training steps leads to a model with an accuracy of 15% on 1000 samples - hardly better than random guessing. The empirical measurement plan of the training process comes very close to a uniform distribution over the action space.
+
+Two sample states with sample actions chosen:
+
+```
+[[3 0 6 5 7 1 2 9 4]
+ [2 9 4 3 8 6 5 7 1]
+ [5 7 1 2 9 4 3 8 6]
+ [6 5 7 1 2 9 4 3 8]
+ [4 3 8 6 5 7 1 2 9]
+ [1 2 9 4 3 8 6 5 7]
+ [7 1 2 9 4 3 8 6 5]
+ [9 4 3 8 6 5 7 1 2]
+ [8 6 5 7 1 2 9 4 3]]
+9
+MISS :S
+----
+[[4 2 5 9 8 1 7 6 3]
+ [7 6 3 4 2 5 9 8 1]
+ [9 8 1 7 6 3 4 2 5]
+ [8 1 7 6 3 4 2 5 9]
+ [2 5 9 8 1 7 6 3 0]
+ [6 3 4 2 5 9 8 1 7]
+ [5 9 8 1 7 6 3 4 2]
+ [1 7 6 3 4 2 5 9 8]
+ [3 4 2 5 9 8 1 7 6]]
+4
+HIT!
+```
+
+## Conclusion
+
+This was a cool exercise to think a bit about the generation of valid Sudoku boards as well as to warm up with `gym`'s environment interface. The actual problem solving, machine learning work would only start here.
+
+Moving forward, I figure one of the first things to look into would be to understand the neural network used by stable baselines better. Maybe its architecture obviously doesn't make any sense for this problem? Maybe one should look at the board as an image and rely on convolution? Is the model at all _improving_ across training steps?
+
+Also, as we all know, input data quality is quintessential. It might therefore make sense to _test_ the data generation. Statistical tests, in stark contrast to formal reasoning, could be done by applying a board verification (e.g. as was used in previous posts) on a large sample of generated samples.
+
+Maybe at a later point in time. :)
+
+Code at [https://github.com/kklein/sudoku](https://github.com/kklein/sudoku).

@@ -1,0 +1,201 @@
+---
+title:  "Sudoku #2: Linear Programming"
+date:   2021-03-14 11:00:07 +0200
+description: I modeled solving a Sudoku board as a constraint optimization problem.
+comments: false
+tags: [tech, math]
+---
+
+
+# Abstract
+As discussed in [this previous post](http://kevinkle.in/jekyll/update/2021/02/28/sudoku_dfs.html),
+a given Sudoku puzzle can be modeled in a multitude of ways. Different algorithms ought to still
+lead to the same solution, since a correct Sudoku puzzle comes with a unique solution. In this
+post we'll rely on optimization's poster child: [Linear programming](https://en.wikipedia.org/wiki/Linear_programming).
+
+# Idea
+A linear program, subsequently referred to as LP, comes with three central building blocks:
+* An objective function
+* Typically many variables, each, a priori, non-integer numbers
+* Linear constraints on the variables
+
+Since, thanks to our assumption of a well-posed puzzle we know that:
+* There is a solution to the problem
+* The solution is unique
+
+We know for sure that the solution to the LP should be the correct solution. An open question is how to exactly model Sudoku as an LP. In order to map aspects of the game onto LP language, I asked myself the following question:
+> In how far is aspect X a nice-to-have and in how far is it a necessity?
+
+If the former, I'd like to model that aspect of the game through the objective function. If the latter, I'd like to model it via LP constraints.
+
+It turns out that I translated all aspects of the game into constraints. This yields a not-so typical LP: an LP without an objective function. A solution to the constraints exists and any such solution is _the_ solution we're after.
+
+# Implementation
+
+I used the `pulp` python package in order to create the LP.
+
+First things first, let's start off with a Sudoku board. Again, I represented it in a nested list where `0`s represent holes.
+
+```python
+board = [
+    [7, 8, 0, 4, 0, 0, 1, 2, 0],
+    [6, 0, 0, 0, 7, 5, 0, 0, 9],
+    [0, 0, 0, 6, 0, 1, 0, 7, 8],
+    [0, 0, 7, 0, 4, 0, 2, 6, 0],
+    [0, 0, 1, 0, 5, 0, 9, 3, 0],
+    [9, 0, 4, 0, 6, 0, 0, 0, 5],
+    [0, 7, 0, 3, 0, 0, 0, 1, 2],
+    [1, 2, 0, 0, 0, 7, 4, 0, 0],
+    [0, 4, 9, 2, 0, 6, 0, 0, 7],
+]
+```
+Thereby our row and column indices range from 0 to 8 and our legitimate Sudoku values range from 1 to 9:
+```python
+INDICES = range(0, 9)
+VALUES = range(1, 10)
+```
+We then instantiate a pulp `LpProblem`, giving it nothing but a name:
+```python
+lp = pulp.LpProblem("sudoku")
+```
+In usual scenarios, we might have wanted to define whether it is a minimization or maximization
+problem. Yet, since we don't have an objective function, this really doesn't matter for us.
+Talking about objective functions...
+```python
+def get_objective_function():
+    return 0
+
+lp += get_objective_function()
+```
+As we pointed out in the idea section, we need variables. While there is some degree of freedom in the definition of variables, I'm under the impression that I went for a fairly relatable call:
+Having a binary indicator for each cell-value pair. Hence, the indicator expresses whether a certain cell has a certain value or not. Our variables are therefore a cross-product of row indices, column indices and legitimate values:
+```python
+def get_board_variables():
+    return pulp.LpVariable.dicts(
+        "cell_values", (INDICES, INDICES, VALUES), cat="Binary"
+    )
+
+indicators = get_board_variables()
+```
+The real meat are of course the constraints:
+
+1. The written cells of the starting board must not be altered.
+```python
+def get_starting_constraints(indicators, board):
+    """Ensure the starting state of the board is not altered."""
+    constraints = [
+        indicators[row_index][column_index][board[row_index][column_index]] == 1
+        for row_index in INDICES
+        for column_index in INDICES
+        if board[row_index][column_index] != 0
+    ]
+    return constraints
+```
+    
+2. Every cell must have exactly one legitimate value.
+```python
+def get_cell_value_constraints(indicators):
+    """Ensure that every cell has exactly one value from VALUES."""
+    constraints = [
+        pulp.lpSum([indicators[row_index][column_index][value] for value in VALUES])
+        == 1
+        for row_index in INDICES
+        for column_index in INDICES
+    ]
+    return constraints
+```
+
+3. Every row may not contain any legitimate value more than once.
+```python
+def get_row_constraints(indicators):
+    """Ensure that every row has no value more than once."""
+    constraints = [
+        pulp.lpSum(
+            [indicators[row_index][column_index][value] for column_index in INDICES]
+        )
+        == 1
+        for value in VALUES
+        for row_index in INDICES
+    ]
+    return constraints
+```
+
+4. Every column may not contain any legitimate value more than once.
+    ```python
+    def get_column_constraints(indicators):
+        """Ensure that every column has no value more than once."""
+        constraints = [
+            pulp.lpSum(
+                [indicators[row_index][column_index][value] for row_index in INDICES]
+            )
+            == 1
+            for value in VALUES
+            for column_index in INDICES
+        ]
+        return constraints
+    ```
+
+5. Every designated 3x3 square may not contain any legitimate value more than once.
+
+    ```python
+    def get_row_column_indices(square_index):
+        start_row_index = (square_index // 3) * 3
+        start_column_index = (square_index % 3) * 3
+        return [
+            (row_index, column_index)
+            for row_index in range(start_row_index, start_row_index + 3)
+            for column_index in range(start_column_index, start_column_index + 3)
+        ]
+
+
+    def get_square_constraints(indicators):
+        """Ensure that each of the 9 designated squares contains no value
+        more than once."""
+        constraints = [
+            pulp.lpSum(
+                indicators[row_index][column_index][value]
+                for row_index, column_index in get_row_column_indices(square_index)
+            )
+            == 1
+            for value in VALUES
+            for square_index in INDICES
+        ]
+        return constraints
+    ```
+
+
+All that is left to do is to add those constraints to our LP instance ...
+
+```python
+def add_constraints_to_lp(lp, constraints):
+    for constraint in constraints:
+        lp += constraint
+        
+add_constraints_to_lp(lp, get_starting_constraints(indicators, board))
+add_constraints_to_lp(lp, get_cell_value_constraints(indicators))
+add_constraints_to_lp(lp, get_row_constraints(indicators))
+add_constraints_to_lp(lp, get_column_constraints(indicators))
+add_constraints_to_lp(lp, get_square_constraints(indicators))
+```
+... and of course actually solve it. :)
+```python
+lp.solve()
+```
+We can now read out the solution from the LP instance and insert it back into our board
+data structure:
+
+```python
+def insert_solution(board, indicators):
+    for row_index in INDICES:
+        for column_index in INDICES:
+            for value in VALUES:
+                if pulp.value(indicators[row_index][column_index][value]) != 1:
+                    continue
+                board[row_index][column_index] = value
+
+insert_solution(board, indicators)
+```
+
+Done!
+
+Code can be found at [https://github.com/kklein/sudoku/lp.py](https://github.com/kklein/sudoku/lp.py).

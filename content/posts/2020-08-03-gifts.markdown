@@ -1,0 +1,50 @@
+---
+title:  "On Gifts"
+date:   2020-08-03 15:38:07 +0200
+comments: false
+description: "Don't buy beans for a hobby roaster."
+---
+
+TL;DR: Spend thought not money. Think about your edge. Don't buy beans for a hobby roaster.
+
+I've often felt strongly about gifts made and received and always had some vague intuitions floating around in my head concerning distinctive properties.
+Finally have I sought to distill them and make them more explicit.
+
+Reflecting on past gift-finding processes, I came to realize that I would often feel dissatisfied when most of the value of 
+a gift would stem from money. I'd much rather have the value be derived from thought, concern and genuine interest about someone.
+This topic concerns itself with the _kind of effort_. Within this kind of currency, efforts can still be misdirected. Pondering without
+getting anywhere is likely a common phenomenon. What's the purpose of spending the 'right' kind of effort
+without ensuing reward? Hence, within the realm of spending thought on someone, I would attempt to direct them towards my own edge. In the
+context of gifts my own edge seems to be:
+
+- What I know a lot about in general, in particular at least as much as the receiver
+- What I know about the receiver that possibly not many other givers know
+
+I wish to emphaszie the former after having fallen victim to a fallacy more than once too often: gifting wine to a wine lover. Now there is a chance
+that I'm a true and battle-proven wine afficionado, too. In that case, nevermind. In all other cases this person will have developed
+strong preferences by sheer hours of exposure and attention to detail, quite literally acquired a taste. My blunt 'guess' seems way more likely to
+miss than to hit. Clearly are there exceptions to this, e.g. me knowing about a detailed preference beforehand. But then, what exactly is the value
+I am creating with a gift falling perfectly in line with something the receiver has had before, knows and could likely buy at the press of a button?
+
+The latter seems fairly straight-forward to me. It seems like a classical pie expansion, win-win situation to me: the receiver can easily feel 
+appreciated, catered with attention and acknowledged as the snowflake that he or she is; I feel like doing a good job, creating value for my friend and
+possibly even standing out from the crowd.
+
+At the end of the day a good present is a present that makes everybody feel good about it and this is hard to capture in more explicit words. Yet, a priori,
+I will now look for the following properties:
+
+- The main currency <sup id="a0">[[0]](#f0)</sup> paid is thought and time, not money <sup id="a1">[[1]](#f1)</sup>.
+- The gift is unlikely to be gifted to the receiver by other givers.
+- The gift is unlikely to be gifted by me to a different receiver.
+
+The latter two properties seem like a reasonable heuristic for me having leveraged my edge <sup id="a2">[[2]](#f2)</sup>. That, in turn, seems like
+a great precondition to creating true value. But it can of course still all go horribly wrong. :)
+
+
+<b id="f0">[0]</b> 'Main' is arguably very vague here. The heuristic of 'what feels like the greatest cost?' could be used here.
+
+<b id="f1">[1]</b> Except that... [time is money](http://kevinkle.in/jekyll/update/2020/03/26/tim_update.html).
+
+<b id="f2">[2]</b> Certainly not necessary, maybe not even sufficient conditions.
+
+

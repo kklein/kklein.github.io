@@ -1,0 +1,33 @@
+baseURL = 'http://kevinkle.in/'
+languageCode = 'en-us'
+title = 'Blog'
+theme = "archie"
+paginate = 50
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/kklein"
+
+[[params.social]]
+name = "Twitter"
+icon = "twitter"
+url = "https://twitter.com/kevkle"
+
+[[menu.main]]
+name = "Hello"
+url = "/about"
+weight = 1
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 2
+
+[[menu.main]]
+name = "Projects"
+url = "/projects"
+weight = 3
+
+
+staticDir = "static"

@@ -1,0 +1,19 @@
+---
+title:  "On Advice"
+date:   2018-10-05 18:00:00 +0200
+comments: false
+description: "I contemplated on the dimension of specificity."
+tags: [thoughts]
+---
+
+Sometimes concrete advice is fairly context-insensitive: [Dale Carnegie](https://en.wikipedia.org/wiki/How_to_Win_Friends_and_Influence_People) suggests to always greet people in the fashion of a dog. Such advice might be useful at times, yet I believe that the upper bound of created value by such concrete yet context-insensitive advice is low.
+
+My impression is that most valuable decisions are context-sensitive by nature, i.e. relying on a lot of individual, complex information. The overwhelming complexity and volume of context can be mistakenly overlooked when formulating advice. A person's full context, i.e. the state of the world, usually can't easily be folded into a simple, exchangeable description. Therefore external advisers use a poor approximation of the context and miss out on crafting fitting, useful, context-sensitive suggestions.
+
+Hence I have become critical of advice that is very specific and concrete.
+
+The advice I strive to both obtain and give is general and simple by default. Yet, in order to be _used_, advice inevitably needs to reach a certain level of concreteness. Consequently this kind of advice requires effort from the advisee: it needs to be translated and adapted to the his true context by himself. He needs to render the general advice specific. Such general advice is similar to many well-established concepts. I find that [Stephen Covey](https://en.wikipedia.org/wiki/The_7_Habits_of_Highly_Effective_People) uses a fairly interesting comparison that roughly goes like this: When lost in a thick forest, do you prefer directions from someone who _at best_ very roughly knows where you are or a compass?
+
+What I refer to as 'general advice' could be a 'principle' of Covey's. Example: He points out that in most cases, a person's circle of influence is a subset of the circle of interest and much smaller in size. Covey goes on to argue that by consciously reducing the circle of interest, one can increase the circle of influence. Figuring out how this general piece of advice/principle/concept can be translated to one's concrete life, how the principles can be implemented, remains the duty of oneself.
+
+Reworked on 19/06/11.
