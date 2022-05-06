@@ -31,3 +31,5 @@ weight = 3
 
 
 staticDir = "static"
+googleAnalytics = "UA-122721044-1"
+
