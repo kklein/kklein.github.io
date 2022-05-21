@@ -3,6 +3,7 @@ title:  "The Value of the Past"
 date:   2020-10-25 15:38:07 +0200
 comments: false
 description: I contemplated on the usefulness of past observations when assessing normative visions.
+tags: [thoughts]
 ---
 
 When looking into the future, the definition of ambitions is often intertwined with an assessment of their feasibility. There are two, frequently opposing, guiding principles at work:
@@ -19,9 +20,7 @@ Romanticism aside, definitions of approaches might come with flaws. There might 
 I hope to combine the hope and innocence of premise 1 and the relation to reality of premise 2. Let's look at an example.
 
 * Observation: Whenever I'm with Marc I end up drinking alcohol. I dislike that because the habituation makes me suffer from the downside of alcohol while removing the upside of its enjoyment. Moreover, I'm a bit worried as to what this says about Marc and I's relationship. <sup id="a0">[[0]](#f0)</sup>
-
 * Goal: Don't drink while seeing Marc for next half a year.
-
 * Approach: I will always bring enjoyable, alcohol-free drinks when meeting Marc. Also, I will voice my intention at the first encounter.
 
 So far so good. Let's add to that the empirical observation that I somethings figured it'd be cool to drink less. Yet, in such moments, at the latest when being offered a drink in a social setting, I complied and failed to drink less.

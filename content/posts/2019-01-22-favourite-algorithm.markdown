@@ -62,9 +62,9 @@ Our random assignment process used to compute the expected value tells us that:
 \frac{1}{2} \mathbb{E}[M|l_1=\alpha_1, ..., l_{i-1}=\alpha_{i-1}, l_i=0] + \frac{1}{2}
 \mathbb{E}[M|l_1=\alpha_1, ..., l_{i-1}=\alpha_{i-1}, l_i=1]\\]
 
-\\[\Rightarrow max(\mathbb{E}[M|l_1=\alpha_1, ..., l_{i-1}=\alpha_{i-1}, l_i=0],\
-\mathbb{E}[M|l_1=\alpha_1, ..., l_{i-1}=\alpha_{i-1}, l_i=1]) \geq \\\
-\mathbb{E}[M|l_1=\alpha_1, ..., l_{i-1}=\alpha_{i-1}]
+\\[ \Rightarrow max(\mathbb{E}[M|l_1=\alpha_1, ..., l_{i-1}=\alpha_{i-1}, l_i=0],
+\mathbb{E}[M|l_1=\alpha_1, ..., l_{i-1}=\alpha_{i-1}, l_i=1]) \\\
+\geq \mathbb{E}[M|l_1=\alpha_1, ..., l_{i-1}=\alpha_{i-1}]
 \\]
 
 Therefore we know that _iteratively_ setting literals to the truth value maximizing the conditional expectation will always give us  \\(\mathbb{E}[M]\|l=\alpha] \geq \mathbb{E}[M] = \frac{7}{8}m\\).

@@ -22,7 +22,7 @@ Concretely, this gives rise to the goal of _minimizing_ the following quantities
 - desiring non-invitees
 
 Thus, recalling the option to weigh those terms differently, we obtain the following loss function:
-\\[\mathcal{L} := \alpha \cdot \text{\#non-desiring invitees} + (1 - \alpha) \cdot \text{\#desiring non-invitees}\\]
+\\[\mathcal{L} := \alpha \cdot \text{\\#non-desiring invitees} + (1 - \alpha) \cdot \text{\\#desiring non-invitees}\\]
 with \\(\alpha \in [0, 1]\\).
 
 If we had perfect a priori knowledge about candidates desires and would either invite according to it or its negation, our loss function would evaluate to \\(0\\) or \\(n\\) respectively. As those represent 'best' and 'worst' cases, we can set our expectation of algorithm performance to be within the range \\([0, n]\\).
@@ -36,32 +36,32 @@ If we had perfect a priori knowledge about candidates desires and would either i
 Let's start off with some naive deterministic algorithms before we delve into randomized approaches.
 
 # Naive 1: Invite all candidates
-\begin{align}
-\mathbb{E}[\mathcal{L}] &= \alpha \mathbb{E}[\text{\#non-desiring candidates}]\\\
+$$\begin{aligned}
+\mathbb{E}[\mathcal{L}] &= \alpha \mathbb{E}[\text{\\#non-desiring candidates}]\\\
 			&= \alpha n (1-q)
-\end{align}
+\end{aligned}$$
 
 # Naive 2: Invite nobody
-\begin{align}
-\mathbb{E}[\mathcal{L}] &= (1 - \alpha) \mathbb{E}[\text{\#desiring candidates}] \\\
+$$\begin{aligned}
+\mathbb{E}[\mathcal{L}] &= (1 - \alpha) \mathbb{E}[\text{\\#desiring candidates}] \\\
 			&= (1 - \alpha)n q
-\end{align}
+\end{aligned}$$
 
 # Randomized 1: Invite candidates i.i.d. with \\(\Pr[\text{invite}]=p\\)
-\begin{align}
-\mathbb{E}[\mathcal{L}] &= \alpha \mathbb{E}[\text{\#non-desiring candidates}] \Pr[\text{invite}] + (1 - \alpha) \mathbb{E}[\text{\#desiring candidates}] \Pr[\text{no invite}] \\\
+$$\begin{aligned}
+\mathbb{E}[\mathcal{L}] &= \alpha \mathbb{E}[\text{\\#non-desiring candidates}] \Pr[\text{invite}] + (1 - \alpha) \mathbb{E}[\text{\\#desiring candidates}] \Pr[\text{no invite}] \\\
 			&= \alpha n (1 - q) p +  (1 - \alpha)n q (1 - p)
-\end{align}
+\end{aligned}$$
 
 
 Naturally, one might wonder what shape the optimal \\(p\\) takes on, as a function of \\(\alpha\\) and \\(q\\).
 
-\begin{align}
+$$\begin{aligned}
 \hat{p} :&= argmin_{p}\\ \mathcal{L} \\\
         &= argmin_{p}\\ \alpha n (1 - q) p +  (1 - \alpha)n q (1 - p) \\\
         &= argmin_{p}\\ p (\alpha (1 - q) + (1 - \alpha)q(-1)) \\\
         &= argmin_{p}\\ p (\alpha - q)
-\end{align}
+\end{aligned}$$
 
 Recalling that \\(p\\) is a probability, we know it is bounded by \\([0, 1] \\). Hence there are three cases:
 - \\(\hat{p} := 0\\) if \\(\alpha > q\\)
@@ -100,34 +100,34 @@ The iterative process of updating \\(p_i\\) can be thought of as a random walk o
 
 By definition, the likelihood of candidate \\(i\\) receiving an invitation depends on the state we find ourselves in in timestep \\(i\\). Referring to a state and its associated value \\(p_i\\) by \\(S_i\\), our question of the total amount of invitees translates to:
 
-\\[\mathbb{E}[\text{\#invitees}] = \mathbb{E}[\sum_{i=1}^n S_i]\\]
+\\[\mathbb{E}[\text{\\#invitees}] = \mathbb{E}[\sum_{i=1}^n S_i]\\]
 
 Before addressing the evaluation of this quantity, we first derive a helpful notion: the expected state in timestep \\(i\\).
-\begin{align}
-\mathbb{E}[S_i] &= \mathbb{E}[p_1 + \delta \cdot \text{\#'right' transitions so far} - \delta \cdot \text{\#'left' transitions so far}]\\\
-                &= p_1 + \delta \cdot \mathbb{E}[\text{\#'right' transitions so far}] - \delta \cdot \mathbb{E}[\text{\#'left' transitions so far}] \text{ (L.O.E.)}\\\
+$$\begin{aligned}
+\mathbb{E}[S_i] &= \mathbb{E}[p_1 + \delta \cdot \text{\\#'right' transitions so far} - \delta \cdot \text{\\#'left' transitions so far}]\\\
+                &= p_1 + \delta \cdot \mathbb{E}[\text{\\#'right' transitions so far}] - \delta \cdot \mathbb{E}[\text{\\#'left' transitions so far}] \text{ (L.O.E.)}\\\
                 &= p_1 + \delta (i-1)q - \delta(i-1)(1-q)
-\end{align}
+\end{aligned}$$
 
 Coming back to our underlying question, we obtain:
-\begin{align}
-\mathbb{E}[\text{\#invitees}] &= \mathbb{E}[\sum_{i=1}^n S_i] \\\
+$$\begin{aligned}
+\mathbb{E}[\text{\\#invitees}] &= \mathbb{E}[\sum_{i=1}^n S_i] \\\
                               &= \sum_{i=1}^n \mathbb{E}[S_i] \text{ (L.O.E.)} \\\
                               &= \sum_{i=1}^n p_1 + \delta (i-1)q - \delta(i-1)(1-q) \\\
                               &= n p_1 + \delta \frac{n(n-1)}{2}(2q - 1) \\\
                               &= n (p_1 + \delta \frac{n-1}{2}(2q - 1))
-\end{align}
+\end{aligned}$$
 
 For the sake of compactness, let us define \\(r := p_1 + \delta \frac{n-1}{2}(2q - 1)\\).
 Plugging this into our loss function, we learn that:
 
-\begin{align}
-\mathbb{E}[\mathcal{L}] &= \alpha \mathbb{E}[\text{\#non-desiring candidates}] \Pr[\text{invite}] + (1 - \alpha) \mathbb{E}[\text{\#desiring candidates}] \Pr[\text{no invite}] \\\
+$$\begin{aligned}
+\mathbb{E}[\mathcal{L}] &= \alpha \mathbb{E}[\text{\\#non-desiring candidates}] \Pr[\text{invite}] + (1 - \alpha) \mathbb{E}[\text{\\#desiring candidates}] \Pr[\text{no invite}] \\\
 			&= \alpha n (1 - q) r + (1 - \alpha) n q (1 - r)
-\end{align}
+\end{aligned}$$
 
 ... so did we really improve on the first randomized, non-adaptive approach, with fixed \\(p\\)? A closer examination of \\(r\\) yields the insight. We see that \\(r < p_1\\) if \\(q < \frac{1}{2}\\) and \\(r > p_1\\) if \\(q > \frac{1}{2}\\). In other words, this approach is an enhancement over the former if either is satisfied:
-- \\(\alpha > q\\) and \\(\frac{1}{2} > q\\) 
+- \\(\alpha > q\\) and \\(\frac{1}{2} > q\\)
 - \\(\alpha < q\\) and \\(\frac{1}{2} < q\\).
 
 On the one hand, it might seem like a disappointment that it is not always an improvement over the randomized approach with fixed probability. On the other hand, we now see (more clearly) why such hopes were unfounded: Our update rule is independent of \\(\alpha\\). Yet, \\(\alpha\\) determines the loss function. An alternative approach, paving the way towards strict superiority and leveraging \\(\alpha\\) in the update step seems very feasible, albeit possibly less simple and clean. :)

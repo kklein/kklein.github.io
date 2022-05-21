@@ -1,5 +1,5 @@
 ---
-title:  "Not buying tableware"
+title:  "Not Buying Tableware"
 date:   2020-01-23 19:38:07 +0200
 description: Why am I defaulting to buying things I like to see?
 comments: false
@@ -9,7 +9,7 @@ While mindlessly strolling around the leftover 18th century fortifications of a 
 
 I didn't start off with the intention of buying something. I just bumped into some objects and found those to be beautiful - in a pure, naive, maybe innocent way. How had this turned into a tedious search for a function mapping object-person pairs to likelihoods of appreciation? <sup id="a0">[[0]](#f0)</sup>
 
-Well, clearly, the displayal of the tableware was not in the context of a museum or gallery but rather in that of a commercial exchange. In other words the framing turned my refreshing and uncynical enthusiasm for an object - a rare sight - into a minor headache. 
+Well, clearly, the displayal of the tableware was not in the context of a museum or gallery but rather in that of a commercial exchange. In other words the framing turned my refreshing and uncynical enthusiasm for an object - a rare sight - into a minor headache.
 
 Note that the root of the headache was to _find a use_ for the object. It seems to me that there are two obvious approaches to dampen this wound:
 - Buy the object without a use, i.e. basically throw it away in expectation, over short or long term.

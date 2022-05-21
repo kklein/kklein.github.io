@@ -1,5 +1,5 @@
 ---
-title:  "Log, right?"
+title:  "Log, Right?"
 date:   2020-01-16 19:38:07 +0200
 description: "Naming things remains hard."
 comments: false

@@ -1,5 +1,5 @@
 ---
-title:  "Orange pink eggs"
+title:  "Orange Pink Eggs"
 date:   2020-06-06 21:38:07 +0200
 description: ""
 comments: false

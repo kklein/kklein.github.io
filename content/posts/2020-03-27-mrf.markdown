@@ -48,17 +48,17 @@ the question of how they relate arises naturally. This question is as interestin
 to presenting a fact indicating their distinct abilities.
 
 Let's define three types of 'maps' and illustrate how they interact with one another. Assume the distribution comes with random
-variables $$A, B, C$$.
+variables \\(A, B, C\\).
 
-* D(ependency)-map: $$A \not\perp B \| C$$ in distribution $$\Rightarrow$$ $$A \not\perp B \| C$$ in graph
-* I(ndepdence)-map: $$A \not\perp B \| C$$ in distribution $$\Leftarrow$$ $$A \not\perp B \| C$$ in graph
-* P(erfect) map: $$A \not\perp B \| C$$ in distribution $$\Leftrightarrow$$ $$A \not\perp B \| C$$ in graph
+* D(ependency)-map: \\(A \not\perp B \| C\\) in distribution \\(\Rightarrow A \not\perp B \| C\\) in graph
+* I(ndepdence)-map: \\(A \not\perp B \| \\) in distribution \\(\Leftarrow A \not\perp B \| C\\) in graph
+* P(erfect) map: \\(A \not\perp B \| C\\) in distribution \\(\Leftrightarrow A \not\perp B \| C\\) in graph
 
 We previously made the statement that directed and undirected graphs can, a priori, capture
 different conditional independencies. This can be formalized by looking into the set of perfect maps
 of directed and undirected graphs respectively. Let's call the set of all perfects maps
-$$\mathcal{P}$$, the set of all perfect maps captured by directed graphs $$\mathcal{P}_{DG}$$ and
-$$\mathcal{P}_{UG}$$ analogously. The relationship of said sets can be illustrated as follows:
+\\(\mathcal{P}\\), the set of all perfect maps captured by directed graphs \\(P_{DG}\\) and
+\\(\mathcal{P}_{UG}\\) analogously. The relationship of said sets can be illustrated as follows:
 
 ![map sets](/imgs/mrf/map_sets.png)
 
@@ -68,22 +68,22 @@ In MRFs, the joint distribution can be expressed as a product of potential funct
 of the technique: for per-node operations, dependencies are reduced from a 'times all other nodes' to a 'times all other nodes of maximal cliques this node belongs to'. <sup id="a0">[[0]](#f0)</sup>
 Let's (hopefully) clarify this with a motivational example.
 
-Given the set of Random Variables $$X_1, ..., X_N$$. Assume we are given the information that the distribution can be modeled via MRFs with a chain graph and potential functions $$\psi_{i, i+1}$$. Note that maximal cliques are any pairs of neighbors.
+Given the set of Random Variables \\(X_1, ..., X_N\\). Assume we are given the information that the distribution can be modeled via MRFs with a chain graph and potential functions \\(\psi_{i, i+1}\\). Note that maximal cliques are any pairs of neighbors.
 
 ![chain graph](/imgs/mrf/chain_graph.png)
 
-The goal is to answer the query: For a given $$x_i'$$, what is $$p(X_i=x_i')$$?
+The goal is to answer the query: For a given \\(x_i'\\), what is \\(p(X_i=x_i')\\)?
 
 A naive approach would go as follows: evaluate and marginalize the joint distribution. In other words:
 \\[p(x_i') = \sum_{x_1'}\sum_{x_2'} \dots \sum_{x_{i-1}'}\sum_{x_{i+1}'} \dots \sum_{X_N'} p(x_1', x_2', \dots, x_{i-1}', x_i', x_{i+1}', \dots, x_{N}')\\]
-Assuming that every random variable is discrete and can take on $$O(k)$$ many values, this approach leads to $$O(k^N)$$ evaluations of the joint distribution.
+Assuming that every random variable is discrete and can take on \\(O(k)\\) many values, this approach leads to \\(O(k^N)\\) evaluations of the joint distribution.
 
 Leveraging the conditional independencies express through the MRF we can do much better. While we still rely on marginalization, we can do it in a more efficient way by rearranging sum terms.
 
 \\[p(x_i') = \frac{1}{Z} \sum_{x_1'}\sum_{x_2'} \psi_{1,2}(x_1', x_2') \sum_{x_3'}\psi_{2,3}(x_2', x_3') \sum_{x_4'}\psi_{3,4}(x_3', x_4') \dots  \sum_{x_N'} \psi_{N-1, N}(x_{N-1}', X_N')\\]
-with $$Z$$ being a normalization term.
+with \\(Z\\) being a normalization term.
 
-Observe that this computation comes with merely $$O(K^2N)$$ evaluations of the potential functions.
+Observe that this computation comes with merely \\(O(K^2N)\\) evaluations of the potential functions.
 
 Now this may leave quite a few questions open, such as: What's the deal with the potential function? What's the
 transition of 'evaluations of the potential function' to number of parameters? While those are central concerns,
@@ -93,14 +93,13 @@ great literature, which will provide answers, yourself.
 ## Application: Image denoising
 
 ### Givens
-* An observed black-and white image $$Y \in \{-1, 1\}^{N \times M}$$
+* An observed black-and white image \\(Y \in \\{-1, 1\\}^{N \times M}\\)
 
 ### Assumptions
-* The observed image $$Y$$ is the result of an underlying 'true' image $$X \in \{-1, 1\}^{N \times M}$$ suffering noise pollution.
-* The noise flips every pixel i.i.d. with fixed probability $$p$$. I.e.
-
-  $$Y_{ij} = X_{ij} + \epsilon_{ij}$$ with
-  $$ \epsilon_{ij} =
+* The observed image \\(Y\\) is the result of an underlying 'true' image \\(X \in \\{-1, 1\\}^{N \times M}\\) suffering noise pollution.
+* The noise flips every pixel i.i.d. with fixed probability \\(p\\). I.e.
+  \\(Y_{ij} = X_{ij} + \epsilon_{ij}\\) with
+  $$\epsilon_{ij} =
     \begin{cases}
     -2 X_{ij},& \text{ with probability } p\\
     0 &\text{ with probability } 1 - p
@@ -109,55 +108,58 @@ great literature, which will provide answers, yourself.
 of all non-adjacent pixel conditioned on all adjacent pixels.
 
 ### Goal
-* Intuition: Reconstruct the underlying image $$X_{ij}$$ by investigating the noisy observation $$Y_{ij}$$.
-* Explicit: Generate $$\hat{Y}$$ with $$\sum_{ij} \|(Y_{ij} - \hat{Y_{ij}})\|$$ a small as possible.
+* Intuition: Reconstruct the underlying image \\(X_{ij}\\) by investigating the noisy observation \\(Y_{ij}\\).
+* Explicit: Generate \\(\hat{Y}\\) with \\(\sum_{ij} \|(Y_{ij} - \hat{Y_{ij}})\|\\) a small as possible.
 
 ### Model
-* Graph:
 
+- Graph:
   ![probability updates](/imgs/mrf/mrf_graph.png)
 
+updating e
+updating every pixel 10 times. Again, the 'very pixel 10 times. Again, the '
 
   We observe that there are two types of edges in the graph:
-  - edges between $$X$$ and $$Y$$, e.g. $$X_{ij}$$ and $$Y_{ij}$$
-  - edges within $$X$$ and $$y$$ respectively, e.g. $$X_{ij}$$ and $$X_{i+1,j}$$
+  - edges between \\(X\\) and \\(Y\\), e.g. \\(X_{ij}\\) and \\(Y_{ij}\\)
+  - edges within \\(X\\) and \\(Y\\) respectively, e.g. \\(X_{ij}\\) and \\(X_{i+1,j}\\)
 
   The former result from the nature of the noise process: an observed pixel is directly linked to the underlying pixel. The latter result from the assumption that the immediate neighborhood of a pixel is its [Markov blanket](https://en.wikipedia.org/wiki/Markov_blanket). In other words, knowing the neighbors of the pixel, no other pixel will add any information about the pixel under consideration.
 
   As compared to the complete graph, we clearly have _very few_ edges in this graph. Moreover, we only have a constant [degree](https://en.wikipedia.org/wiki/Degree_(graph_theory)). This will turn out very handy.
 
   The transition from both kinds of edges allows for a very natural transition to two kinds of maximal cliques:
-  - cliques between $$X$$ and $$Y$$, e.g. $$X_{ij}$$ and $$Y_{ij}$$
-  - cliques within $$X$$ and $$Y$$ respectively, e.g. $$X_{ij}$$ and $$X_{i+1,j}$$
+	  - cliques between \\(X\\) and \\(Y\\), e.g. \\(X_{ij}\\) and \\(Y_{ij}\\)
+	  - cliques within \\(X\\) and \\(Y\\) respectively, e.g. \\(X_{ij}\\) and \\(X_{i+1,j}\\(
 
-* Potential functions:
+- Potential functions:
 
-  The potential functions directly follow from the previous observations of types of maximal cliques. Per pixel $$(i, j)$$, we can express both potential functions:
+The potential functions directly follow from the previous observations of types of maximal cliques. Per pixel \\((i, j)\\), we can express both potential functions:
   - \\(\Psi_a (X_{ij}, Y_{ij}) = -\eta_a X_{ij} Y_{ij}\\)
   - \\(\Psi_b (X_{ij}, X_{i'j'}) = -\eta_b X_{ij} X_{i'j'} \text{ for } (i', j') \in \text{ neighborhood}(i,j)\\)
-  
+
 * Energy function:
 
-  While the potential functions are defined per pixel, the energy function is defined over the image, with
-  $$(i', j')$$ stemming from the neighborhood of $$(i ,j)$$ once again.
+While the potential functions are defined per pixel, the energy function is defined over the image, with
+\\((i', j')\\) stemming from the neighborhood of \\((i ,j)\\) once again.
 \\(E(X,Y)) = \sum_{i, j} \Psi_a (X_{ij}, Y_{ij}) + \sum_{(i, j), (i', j')} \Psi_b (X_{ij}, X_{i'j'}) \\)
 
 * Optimization algorithm:
 
-  Having established the energy function, the next step is to define a way of minimizing/maximizing it.
-  Bishop suggests a very simple greedy algorithm. Its upside is that it enhances in every step, converges and is local. Its downside is that it doesn't
+Having established the energy function, the next step is to define a way of minimizing/maximizing it.
+Bishop suggests a very simple greedy algorithm. Its upside is that it enhances in every step, converges and is local. Its downside is that it doesn't
 necessarily converge to the global optimum. 
-    * initialize $$\hat{Y}=X$$
-    * repeat until convergence:
-        * choose $$i, j$$
-        * \\(y_{i, j} := argmax_{\hat{y}_{i, j}} E(X, Y)\\)
+  * initialize \\(\hat{Y}=X\\)
+  * repeat until convergence:
+    * choose \\(i, j\\)
+    * \\(y_{i, j} := argmax_{\hat{y}_{i, j}} E(X, Y)\\)
 
-    Note that the locality of this algorithm is thanks to $$y_{i,j}$$'s effect on $$E$$ is limited to its neighborhood. In other words, the rest of the
+Note that the locality of this algorithm is thanks to \\(y_{i,j}\\)'s effect on \\(E\\) is limited to its neighborhood. In other words, the rest of the
 graph can be disregarded. This locality allows for convenient parallelization. Let's finish off with the looking into experiment results.
 
 * Experiment:
+
 Starting with a black and white Mondrian, I introduced noise by flipping pixels with a probability of .2. The algorithm was run with a non-adaptive stopping criterion of
-updating every pixel 10 times. Again, the 'true image' corresponds to $$Y$$, the 'noisy image' to $$X$$ and the 'denoised image' to $$\hat{Y}$$.
+updating every pixel 10 times. Again, the 'true image' corresponds to \\(Y\\), the 'noisy image' to \\(X\\) and the 'denoised image' to \\(\hat{Y}\\).
 
 ![chain graph](/imgs/mrf/true.png)
 ![chain graph](/imgs/mrf/noisy.png)

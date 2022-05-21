@@ -1,9 +1,10 @@
 ---
-title:  "Fig quiche"
+title:  "Fig Quiche"
 date:   2020-07-25 12:38:07 +0200
 description: ""
 comments: false
 published: true
+tags: [recipe]
 ---
 
 ## Ingredients
