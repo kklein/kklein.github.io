@@ -3,7 +3,7 @@ title:  "PB Granola"
 date:   2022-05-20 8:00:00 +0200
 comments: false
 published: true
-description: "If there's something we can learn from Snickers it's that peanuts and chocolate work."
+description: "If there's something we can learn from Snickers, it's that peanuts and chocolate work."
 tags: [recipe]
 ---
 
@@ -24,13 +24,13 @@ tags: [recipe]
 
 # Method
 
-Roughly chop the nuts and finely chop the chocolate. Mix all together, making sure the coconut oil melts in the process of doing so. Please make sure to taste and adjust your mixture. It's hard to truly go wrong unless you add a ridiculous amount of salt or honey.
-Tightly pack the mixture on a baking tray, aiming for a thickness of between .5 and 1cm.
-Bake between 150°C and 180°C - be careful not to burn it.
+* Roughly chop the nuts and finely chop the chocolate. Mix all together, making sure the coconut oil melts in the process of doing so. Please make sure to taste and adjust your mixture. It's hard to truly go wrong unless you add a ridiculous amount of salt or honey.
+* Tightly pack the mixture on a baking tray, aiming for a thickness of roughly .5cm.
+* Bake between 150°C and 180°C - be careful not to burn it. Make sure to bake it long enough as to get it crunchy.
 
 # Closing remarks
 
-- I think this granola by itself would become better by adding some dried fruit, such as figs, bananas or dates. Yet, I would rather eat this granola with fresh fruit anyway. When having it with fresh fruit, I prefer no dried fruit in the granola.
-- I'd be intrigued to play around with heat: a pinch of chili powder?
+* I think this granola by itself would become better by adding some dried fruit, such as figs, bananas or dates. Yet, I would rather eat this granola with fresh fruit anyway. When having it with fresh fruit, I prefer no dried fruit in the granola.
+* I'd be intrigued to play around with heat: a pinch of chili powder?
 
 ![granola](/imgs/granola.jpg)
