@@ -51,7 +51,7 @@ If a condition is met, it is translated into a text message and sent to me by me
 ![message org log](/imgs/life-monitor/msg-org.png)
 ![message streak](/imgs/life-monitor/streak.png)
 ![message cycling](/imgs/life-monitor/cycling.png)
-![50% message threshold](/imgs/life-monitor/threshold.png)
+![message threshold](/imgs/life-monitor/threshold.png)
 
 In addition to creating specific text messages based on these conditions, I opted to also proactively send some recapitulative plots on a weekly basis.
 
@@ -82,6 +82,9 @@ Depending on the message received from the scheduled cron job, the Function emba
 
 Once the data is retrieved, the Function analyzes it and assesses whether conditions for creating notifications are met. If not, nothing happens. If some notifications, either text or images, ought to be sent, the Function forwards this information to a Telegram bot. The bot then sends this notification as a regular text message to the end user, on any device running a Telegram app. This can be seen as step 4 in the diagram. I used [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot) - which I quite enjoyed using so far - for all things Telegram.
 
+As of now, GCP forecasts a monthly cost of 0.01 CHF for running this project.
+
+I found the [How to schedule a recurring Python script on Google Cloud](https://cloud.google.com/blog/products/application-development/how-to-schedule-a-recurring-python-script-on-gcp) article by google to be a super useful starting point.
 
 # Future work
 
