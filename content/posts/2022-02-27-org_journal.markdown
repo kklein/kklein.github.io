@@ -127,7 +127,7 @@ Importance over urgency
 
 In order to access - mostly reads, occasional writes - these org files in a convenient way via my mobile phone, I synchronize them via Dropbox. I would much rather push to a version-controlled repository but haven't come across an app which can push/pull from github. I currently use [orgzly](http://www.orgzly.com/) and it looks as follows:
 
-![app](/imgs/org-log/app.jpeg) 
+![app](/imgs/org-log/app.jpeg)
 
 So much about the data entry/collection. I think I will think more about what to actually do with that data once I have more of it. So far, I've only parsed it [orgparse](https://github.com/karlicoss/orgparse) and plotted histograms and trends. With noise as data this looks as follows:
 
@@ -138,4 +138,4 @@ So much about the data entry/collection. I think I will think more about what to
 In the future it might be cool to automate a report generation/monitoring system.
 
 Code [here](https://github.com/kklein/org-journal).
-
+Hacker News discussion [here](https://news.ycombinator.com/item?id=30492373).
