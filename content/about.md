@@ -4,7 +4,7 @@ description:
 draft: false
 ---
 
-I'm Kevin. I'm a Computer Scientist.
+I'm Kevin. I'm a Computer Scientist. You can find me on [Twitter](https://twitter.com/kevkle).
 
 I enjoy attempting to derive from first principles -- in math, programming or in real life's decision making. Professionally, I do work in Data Engineering, Data Science, Machine Learning Engineering, Software Engineering and Quantitative Analysis.
 
@@ -21,7 +21,7 @@ In the past I have found great pleasure in or appreciated:
 - experimental Hip Hop
 - fasting
 - Functional Programming
-- journaling
+- journalling
 - Marc Aurel's Meditations
 - [meetup.com](https://www.meetup.com/)
 - Nassim Nicholas Taleb's Incerto
