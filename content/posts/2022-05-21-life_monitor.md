@@ -93,4 +93,5 @@ I found the [How to schedule a recurring Python script on Google Cloud](https://
 * Implement more and better conditions.
 
 Code [here](https://github.com/kklein/life-monitor).
+Discussion on hacker news [here](https://news.ycombinator.com/item?id=31477851).
 
