@@ -4,7 +4,7 @@ description:
 draft: false
 ---
 
-I'm Kevin. I'm a Computer Scientist. You can find me on [Twitter](https://twitter.com/kevkle).
+I'm Kevin. I'm a Computer Scientist. You can find me on [Twitter](https://twitter.com/kevkle) and [GitHub](https://github.com/kklein).
 
 I enjoy attempting to derive from first principles -- in math, programming or in real life's decision making. Professionally, I do work in Data Engineering, Data Science, Machine Learning Engineering, Software Engineering and Quantitative Analysis.
 
@@ -21,15 +21,18 @@ In the past I have found great pleasure in or appreciated:
 - experimental Hip Hop
 - fasting
 - Functional Programming
-- journalling
-- Marc Aurel's Meditations
+- journalling - especially on [this notebook](https://amzn.to/3x0w7VK)
+- Marcus Aurelius' [Meditations](https://amzn.to/3PSM7BI)
 - [meetup.com](https://www.meetup.com/)
-- Nassim Nicholas Taleb's Incerto
+- Nassim Nicholas Taleb's [Incerto](https://amzn.to/3z914tE)
 - nutmeg
 - [Paul Graham's essays](http://paulgraham.com/articles.html)
 - proofs in Discrete Mathematics
-- tiling window managers
+- tiling window managers, e.g. [i3](https://i3wm.org/)
 - transparency
 - vermouth
 - violent yet vulnerable guitar music
 - watching animals
+- Zinédine Zidane
+
+As an Amazon Associate I earn from qualifying purchases.
