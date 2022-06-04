@@ -18,7 +18,7 @@ It might seem very natural that whether something is effortlessly 'visible' is h
 
 For instance, I notice easily when a run of a given day extended to a very long distance. Yet, I notice much less easily when I ran a lot of distance summing up the past 9 days. I do notice easily when I've had a very bad day. All the while I notice less easily when 4 out of the past 5 days have been sort of disappointing.
 
-Yet, this tendency for myopia and prioritization of spectacle seems not align with many interests of mine. I find that a lot of the most significant levers on my life, both good and bad, seem to rely on compounding, on consistency and longer time periods.
+Yet, this tendency for myopia and prioritization of spectacle seems misaligned with many interests of mine. I find that a lot of the most significant levers on my life, both good and bad, seem to rely on compounding, on consistency and longer time periods.
 
 As a consequence, I have been longing for a system, which reduces friction in spotting developments of interest, both good and bad, which might otherwise go unnoticed by accident.
 
@@ -37,7 +37,7 @@ As an avid Telegram user, I thought of the option of sending myself emails or us
 
 While many behaviors might be desirable to point out and adjust, for this exercise I had to do with the data available to me now. I ended up using two different sources of data. Firstly, I relied on google calendar data since [I log all of my physical exercise as calendar events](https://kevinkle.in/posts/2018-10-21-running-log/). Secondly, I pulled all of my daily [org log data](https://kevinkle.in/posts/2022-02-27-org_journal/), quantifying markers such as sleep, eating, stress, happiness and more. The latter data sits in plain text files on Dropbox servers.
 
-In light of the motivation described above, I tried to define relevant behaviors and conditions serving as identifiers thereof. On an operational level, some of these conditions are tested on a daily basis while others are on a weekly basis. A sample of esome notification constellations can be seen here:
+In light of the motivation described above, I tried to define relevant behaviors and conditions serving as identifiers thereof. On an operational level, some of these conditions are tested on a daily basis while others are on a weekly basis. A sample of some notification constellations can be seen here:
 
 | Signal   | Type of data | Periodicity | Condition                                                                              |
 |----------|--------------|-------------|----------------------------------------------------------------------------------------|
