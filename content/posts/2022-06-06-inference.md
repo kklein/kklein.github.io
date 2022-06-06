@@ -18,11 +18,11 @@ Inference being a common term in statistics[^0], I looked for definitions of the
 In 'All of Statistics', Larry Wassermann writes the following:
 
 > Statistical inference, or "learning" as it is called in computer science, is the process of using data to infer the distribution that generated the data. The basic statistical inference problem is this:
-> We observe \\(X_1, \dots, X_n \sim  F\\) . We want to infer (or estimate or learn) \\(F\\) or some feature of \\(F\\) such as its mean.
+> We observe \\(X_1, \dots, X_n \sim  F\\). We want to infer (or estimate or learn) \\(F\\) or some feature of \\(F\\) such as its mean.
 
 In a similar vein, the authors of 'Introduction to Statistical Learning with R' elaborate further:
 
-> [...] we wish to estimate f, but our goal is not necessarily to make predictions for \\(Y\\) . We instead want to understand the relationship between \\(X\\) and \\(Y\\) , or more specifically, to understand how \\(Y\\) changes as a function of \\(X_1, \dots, X_n\\).
+> [...] we wish to estimate f, but our goal is not necessarily to make predictions for \\(Y\\). We instead want to understand the relationship between \\(X\\) and \\(Y\\), or more specifically, to understand how \\(Y\\) changes as a function of \\(X_1, \dots, X_n\\).
 
 In a more applied setting, the [statsmodels documentation](https://www.statsmodels.org/stable/emplike.html?highlight=inference) also uses the term inference in relation to estimating the parameters of a distribution.
 
@@ -52,7 +52,7 @@ Taking a step back we might look for a more general definition of the term infer
 
 This general definition aligns with both kinds of meanings encountered in the excerpts before. What differs is what one finds outs - new data points or functions/parameters - and what one already knows - observed data or functions/parameters.
 
-The references above paint a more general and all-encompassing picture. Yet, in an attempt to clearly contrast the terminologies, one might assume a supervised learning setup. In this setup, there is observed input data \\(X_{train}\\) with labels \\(y_{train}\\). This data is used to fit parameters \\(\theta\\) or more generally a function \\(f\\). The latter can then be used to predict labels of other data, \\(X_test\\). Given the interpretations above, the following is _a_ possible landscape of terminologies:
+The references above paint a more general and all-encompassing picture. Yet, in an attempt to clearly contrast the terminologies, one might assume a supervised learning setup. In this setup, there is observed input data \\(X_{train}\\) with labels \\(y_{train}\\). This data is used to fit parameters \\(\hat{\theta}\\) or more generally a function \\(\hat{f}\\). The latter can then be used to predict labels of other data, \\(X_test\\). Given the interpretations above, the following is _a_ possible landscape of terminologies:
 
 |                       | \\((X_{train}, y_{train})\\) | \\(\rightarrow\\)       | \\(\hat{\theta}\\) or \\(\\hat{f}\\) | \\(\rightarrow\\)       | \\((X_{test},\hat{y}_{test})\\) |
 |-----------------------|---------|-------------------------|--------------------------------------|-------------------------|---------------|
