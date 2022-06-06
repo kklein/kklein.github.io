@@ -28,7 +28,7 @@ In a more applied setting, the [statsmodels documentation](https://www.statsmode
 
 # Inference in machine/deep learning
 
-In the at least adjacent, possibly overlapping field of machine learning, there seems to exist a different interpretations of the word.x
+In the at least adjacent, possibly overlapping field of machine learning, there seems to exist a different interpretation of the word.
 
 Kevin Murphy writes in his recent "Probabilistic Machine Learning: An Introduction":
 
