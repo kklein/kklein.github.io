@@ -1,4 +1,4 @@
----
+ ---
 title: Projects
 description:
 draft: false
@@ -7,9 +7,9 @@ draft: false
 
 # Work
 I am fortunate enough that some of the work done at [QuantCo](https://quantco.com/) is open source.
-* [Datajudge](https://github.com/quantco/datajudge)
+* [Datajudge](https://github.com/quantco/datajudge) ([blog post](https://tech.quantco.com/2022/06/20/datajudge.html))
 
-Datajudge is a Python data testing library. Datajudge allows for the convenient expression and testing of expectations between different data source in database. It integrates nicely with pytest.
+Datajudge is a Python data testing library. Datajudge allows for the convenient expression and testing of expectations between different data source in database. It integrates nicely with pytest. [Here](https://datajudge.readthedocs.io/en/latest/examples/example.html) is an example.
 
 * [pytsql](https://github.com/Quantco/pytsql) 
 
