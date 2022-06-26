@@ -21,7 +21,7 @@ In the past I have found great pleasure in or appreciated:
 - experimental Hip Hop
 - fasting
 - Functional Programming
-- journalling - especially on [this notebook](https://amzn.to/3x0w7VK)
+- journalling - especially on [this notebook](https://amzn.to/3x0w7VK) and [this pen](https://amzn.to/3nkRIno)
 - Marcus Aurelius' [Meditations](https://amzn.to/3PSM7BI)
 - [meetup.com](https://www.meetup.com/)
 - Nassim Nicholas Taleb's [Incerto](https://amzn.to/3z914tE)
