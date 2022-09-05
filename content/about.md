@@ -21,10 +21,10 @@ In the past I have found great pleasure in or appreciated:
 - experimental Hip Hop
 - fasting
 - Functional Programming
-- journalling - especially on [this notebook](https://amzn.to/3x0w7VK) and [this pen](https://amzn.to/3nkRIno)
-- Marcus Aurelius' [Meditations](https://amzn.to/3PSM7BI)
+- journalling - especially on a blank A5 soft-cover Leuchtturm
+- Marcus Aurelius' Meditations
 - [meetup.com](https://www.meetup.com/)
-- Nassim Nicholas Taleb's [Incerto](https://amzn.to/3z914tE)
+- Nassim Nicholas Taleb's Incerto
 - nutmeg
 - [Paul Graham's essays](http://paulgraham.com/articles.html)
 - proofs in Discrete Mathematics
@@ -34,5 +34,3 @@ In the past I have found great pleasure in or appreciated:
 - violent yet vulnerable guitar music
 - watching animals
 - Zinédine Zidane
-
-As an Amazon Associate I earn from qualifying purchases.
