@@ -1,5 +1,5 @@
 ---
-title: "Celeriac strawberry salad"
+title: "Celeriac Strawberry Salad"
 date: 2022-09-24 7:38:07 +0200
 comments: false
 published: true
