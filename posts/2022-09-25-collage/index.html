@@ -17,9 +17,9 @@ the reference collection (e.g. which puppy) works best as a substitute?</p></blo
 distance least?</p></blockquote><p>This, in turn, bares the question of how one might define a notion of distance. My impression
 is that both the human eye as well as human perception more generally are serious business. I
 have no clue whether</p><ul><li>within a channel, average values capture the essence</li><li>in how far channels interact with each other</li><li>the euclidean distance between pixel/patches captures the notion of similitude</li></ul><p>when it comes to visual human perception.</p><p>Nevertheless, I tried this and it seems to work okay. Slightly more formally, the distance
-between a reference image \(I^{ref}\) and a target image pixel \(I_{ij}^{target}\) looks as follows:</p><p>$$ d(I^{ref}, I_{ij}^{target}) = (\sum_{c \in \{r, g, b\}} (I_{ijc}^{target} - avg(I_c^{ref}))^2)^{1/2} $$</p><p>Given this notion of a distance, an index on the reference images can be built.</p><p>Given that our queries and image representations only rely one three dimensions,
-an exact nearest neighbor method, such as <a href=https://en.wikipedia.org/wiki/K-d_tree>k-d trees</a>
-certainly work just fine. I opted to use <a href=https://github.com/spotify/annoy>annoy</a>, a library
+between a reference image \(I^{ref}\) and a target image pixel \(I_{ij}^{target}\) looks as follows:</p><p>$$ d(I^{ref}, I_{ij}^{target}) = (\sum_{c \in \{r, g, b\}} (I_{ijc}^{target} - avg(I_c^{ref}))^2)^{1/2} $$</p><p>Given this notion of a distance, an index on the reference images can be built.</p><p>Given that our queries and image representations only rely on three dimensions,
+an exact nearest neighbor method, such as <a href=https://en.wikipedia.org/wiki/K-d_tree>k-d trees</a>,
+certainly works just fine. I opted to use <a href=https://github.com/spotify/annoy>annoy</a>, a library
 for approximate nearest neighbor retrieval.
 Just like k-d trees, annoy relies on building a forest of trees splitting the input
 space by hyperplanes.</p><p>Once the reference images can be efficiently queried, one must only define a way to use
@@ -36,7 +36,7 @@ the most suitable reference image.</p><p>Putting it all together, the process lo
     substitute pixel by retrieved reference image
 </code></pre><p>One might want to extend the approach in many ways. For instance, one might want to impose a
 reference image specific budget. In other words, one might want that a specific reference is
-used at most used \(k\) times in the collage.</p><h1 id=usage>Usage</h1><p>I condensed this into a small python package and CLI utility called <code>pycollage</code>. Its code
+used at most \(k\) times in the collage.</p><h1 id=usage>Usage</h1><p>I condensed this into a small python package and CLI utility called <code>pycollage</code>. Its code
 is public on GitHub, see <a href=https://github.com/kklein/pycollage>here</a>.</p><p>One can install it via PyPI</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-console data-lang=console><span style=display:flex><span>$ pip install pycollage
 </span></span></code></pre></div><p>or via conda-forge</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-console data-lang=console><span style=display:flex><span>$ conda install pycollage -c conda-forge
 </span></span></code></pre></div><p>It comes with a fairly simple interface:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-console data-lang=console><span style=display:flex><span>$ pycollage process-collection /users/Anne/image_collection
