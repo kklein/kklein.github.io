@@ -1,9 +1,9 @@
 ---
-title: "Status Symbols
+title: "Status Symbols"
 date: 2022-12-21 7:38:07 +0200
 comments: false
 published: true
-description:  ... that I can think of
+description:  "... that I can think of"
 tags: [thoughts]
 katex: False
 ---
