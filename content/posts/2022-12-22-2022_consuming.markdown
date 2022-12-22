@@ -1,11 +1,13 @@
 ---
-layout: post
 title:  "2022 in Consuming"
 date:   2022-12-22 12:38:07 +0200
-categories: jekyll update
+description:  "Books and music"
 comments: false
 published: true
+tags: [thoughts]
+katex: False
 ---
+
 Just rambling about some books and music I've been exposed to in 2022. I did a similar thing in
 [2021](https://kevinkle.in/jekyll/update/2021/12/28/2021_consuming.html) and [2020](http://kevinkle.in/jekyll/update/2021/01/01/2020_consuming.html).
 
