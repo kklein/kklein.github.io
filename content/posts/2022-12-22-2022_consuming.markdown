@@ -9,66 +9,66 @@ katex: False
 ---
 
 Just rambling about some books and music I've been exposed to in 2022. I did a similar thing in
-[2021](https://kevinkle.in/jekyll/update/2021/12/28/2021_consuming.html) and [2020](http://kevinkle.in/jekyll/update/2021/01/01/2020_consuming.html).
+[2021](https://kevinkle.in/posts/2021-12-28-2021_consuming/) and [2020](https://kevinkle.in/posts/2021-01-02-2020_consuming/).
 
-## Books
+# Books
 
-# What I Talk About When I Talk About Running - Haruki Murakami
+## What I Talk About When I Talk About Running - Haruki Murakami
 I'm reading this constantly wondering why I'm reading it but never contemplating stopping.
 
-# Faserland - Christian Kracht
+## Faserland - Christian Kracht
 The nonchalant absurdity sometimes reminded me of Jack Kerouac. So many things I couldn't relate to and so many questions I'd need to ask about. Christian Kracht's precision in descriptions and childish behaviors made me empathize a lot with a character who's certainly not a posterboy for likeableness.
 
-# You Get So Alone at Times That it Just Makes Sense - Charles Bukowski
+## You Get So Alone at Times That it Just Makes Sense - Charles Bukowski
 Should I be worried by how much this made me chuckle and empathize?
 
-# Early Retirement Extreme - Jacob Lund Fisker
+## Early Retirement Extreme - Jacob Lund Fisker
 I think some people's praise for Jacob Lund Fisker's application system's thinking might be a little over the top. I liked that part but also thought it was little in quantity and fairly
 basic in quality. Clearly, this is more a critique of secondary literature than Fisker's work. I thought that he portrayed some interesting ideas and laud his courage.
 
-# Every Love Story is a Ghost Story: A Life of David Foster Wallace - D.T. Max
+## Every Love Story is a Ghost Story: A Life of David Foster Wallace - D.T. Max
 For most of the book I figured the many literary details and descriptions went over my head - that I was simply not part of the target audience. The stunningly short end, where suddenly life turns immesurably somber made me rethink and make it seem as if this judgement was premature: the literary details might best explain what DFW was going through. His constant strive to be better, most importantly in walking the talk and escaping hypocrisy, are maybe best illustrated with literary jargon and details. While D.T. Max quotes stunning writing and speech from DFW, the sentence that struck me most was of his own: "I was amazed to see a stocky man [...] and that expression of a deer who wishes it was anywhere but on this road."
 
-# On Connection - Kae Tempest
+## On Connection - Kae Tempest
 I mean this in the least offensive way: I have a feeling I would have felt more connected if the author had talked a little less about themselves and a little more about the topic. I think there are some great ideas and beautiful thoughts. I also think they could be polished further, distilled to a purer form.
 
-# Debt - David Graeaber
+## Debt - David Graeaber
 I started off badly by being caught off guard that this was a book from an anthropoligcal/historical rather than an economical/historical point of view. Independently of that
 I think I'm just not made for this kind of book - to my taste it lacked structure. The book doesn't say too much on a general, distilled level but rather illustrates
 countless examples. I'm sure one could can find the red thread between them. I just didn't and that felt frustrating.
 
-## Records
+# Records
 
-# Skating in Central Park - Bill Evans
+## Skating in Central Park - Bill Evans
 I don't think this record will make anyone move mountains but it doesn't need to. Just beautiful, simple and easy.
 
-# By the Time I Get to Phoenix - Injury Reserve
+## By the Time I Get to Phoenix - Injury Reserve
 This record overwhelmed me. I also love the music video for 'Outside'. I was really surprised to hear that they've been doing music for a while - this really felt like a 'first album' to me. While I admire many of the songs for their artistic appeal, I can't help but stress that 'Outside', 'SS San Francisco' and 'Knee' connect to something inside of me in a very direct way.
 
-# Melt My Eyez See Your Future - Denzel Curry
+## Melt My Eyez See Your Future - Denzel Curry
 Talk about style pluralism! The first tracks and 'The Ills' ironically felt like a breath of fresh air for them reminding be of 90s rap with their straightforward flow and clear and simple enunciation. Some tracks feel outlandish, tropical. Others make me wonder whether 'Lounge Rap' is a common term. Others remind me of what I don't like about most Hip Hop of the past ten years - sirenes, corny violin beats, out of place cellos, ingenuine use of autotune and 'party music'. In general, Denzel Curry's energy seemed tamed, the tracks less visceral than some of his prior work.
 
-# Skinty Fia - Fontaines DC
+## Skinty Fia - Fontaines DC
 I'm in love (a strange kind of love, that is) with the throbbing energy of many songs of this record. They feel more serious and dark than songs from 'A Hero's Death' or 'Dogre', in a subtle way.
 Sadly, I haven't been able to truly enjoy the album as a hole. Maybe it's just 'Bloomsday' sitting in the middle of it? Maybe it's a bit too much of the same? In any case, I look up to a couple
 of songs from this record in awe.
 
-# Ants From Up There - Black Country, New Road
+## Ants From Up There - Black Country, New Road
 Musically stimulating, emotionally stirring, lyrically daring - it's got everything.
 
-# Stevie Wonder - Songs In The Key Of Life
+## Stevie Wonder - Songs In The Key Of Life
 After hearing members of German rap collective K.I.Z. praise this classic highly during an interview, I felt inspired to discover it. Quite different from music I'm used to. Paradoxically
 it feels simultaneously simple/poppy and complex.
 
-# Slothrust - Of Course You Do
+## Slothrust - Of Course You Do
 Not exactly music I'd play for a dinner party but music I've been listening to quite a bit by myself. A little rough around the edges but nothing to be ashamed of.
 
-# James Blake - James Blake
+## James Blake - James Blake
 I've been trying to like this for quite a while. James Blake is a favorite of both friends of mine as well as musicians I like. Reading his [essay on privilege and sadness](https://www.penguin.co.uk/articles/2019/10/james-blake-on-mental-health) further sparked my interest. I still don't 'like' it in a typical sense but now I
 feel very drawn to it and keep coming back.
 
-## Blog posts
+# Blog posts
 
-# [The Price of Discipline](https://perell.com/essay/the-price-of-discipline/)
+## [The Price of Discipline](https://perell.com/essay/the-price-of-discipline/)
 
-# [103 Bits of Advice](https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/)
+## [103 Bits of Advice](https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/)
