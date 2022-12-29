@@ -1,0 +1,64 @@
+---
+title:  "2022 in Exercise"
+date:   2022-12-29 2:38:07 +0200
+comments: false
+published: true
+description: I'm no longer a runner; athletic identity crisis
+tags: [thoughts, tech]
+katex: False
+---
+
+As another year is coming to an end I'm curious: What does the exercise data have to tell me? I did something similar in [2021](https://kevinkle.in/posts/2021-12-27-2021_running/), [2020](https://kevinkle.in/posts/2020-12-27-2020_running/)
+as well as in [2019](https://kevinkle.in/posts/2019-12-26-2019_running/).
+
+|                                            |   2019 |   2020 |   2021 |   2022 |
+|--------------------------------------------|-------:|-------:|-------:|-------:|
+| running distance [km]                      |    962 |   1295 |   1403 |   1150 |
+| #runs                                      |    107 |    123 |    127 |    127 |
+| share of running among exercise activities | 79.26% | 58.57% | 54.27% | 38.89% |
+| cycling distance [km]                      |        |   1044 |    660 |   1340 |
+| #bike rides                                |        |     20 |     18 |     36 |
+| #gym activities                            |      6 |     63 |     82 |    110 |
+| #exercise activities                       |    135 |    210 |    234 |    324 |
+| #different kinds of exercise activities    |        |      6 |     11 |     17 |
+
+I figure I have completed my metamorphosis from a hobby runner to an aspirational jack
+of all traits, master of none. Partially, this diversifying transformation
+was by design, acknowledging my dependence on running. Partially it has been fostered
+by a running injury in 2022.
+
+New sports I have tried in 2022 include inline skating, rope climbing, snowshoe hiking
+and most importantly riding(?) the elliptical machine. I have also started(!) to learn(!) how
+to crawl in the pool. Much work remains to be done.
+
+In terms of sports, aforementioned injury has had an immense impact on my year 2022. This can be easily
+seen by this plot of my cumulative running distance - compared to the previous to years:
+
+![](/imgs/2022_running/cumulative_running.png)
+
+Since many tweaks and pulls come and go, it hadn't been so clear to me what triggered
+the injury - the boundaries seemed blurry. Yet, thanks to the running data I was able
+to narrow down the trigger: a group interval run on asphalt.
+
+I ran 10 times 1km between 4:30' and 5:00' per km - which I felt like I totally had the legs for,
+warmly recalling past times of running much more, much faster, like I imagine the elderly recall their
+youthful strengths with a tad of sadness and a tad of pride. In a way I did have the legs,
+in a way I didn't. No cramps, no stomach problem. Yet, an aching tendon. Most notably,
+this kind of run wasn't something I had been doing recently. To the contrary, I had become a disciple
+of the zone 2 school of thought, usually averaging way over a 6'/km.
+
+I would really like this injury not be in vain and to learn something from it. It's not clear
+to me that this is a realistic ambition, it's not clear to me to what extent the injury
+(and the prior absence of other injuries) is signal and to what extent it is noise, randomness
+, bad luck. Yet, some contenders for lessons I have come up with are the following:
+
+* When asking yourself whether you can take on an effort, think of the weakest link. Heart
+  and lungs being happy to go harder does not guarantee anything for other components. This
+  might be especially relevant when switching around between sports.
+* When asking yourself whether you can take on an effort, disregard what happened >2 months ago
+  and instead consider what took place in recent weeks.
+* Do unusual things first by yourself, making it easier to be conscious of bumps and bruises
+  and allowing for a lower threshold of bailing out.
+
+Sadly, all of these - as so often with health advice - sound like killjoys. Let's hope my
+injury was noise, then!
