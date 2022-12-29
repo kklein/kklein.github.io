@@ -18,7 +18,7 @@ as well as in [2019](https://kevinkle.in/posts/2019-12-26-2019_running/).
 | share of running among exercise activities | 79.26% | 58.57% | 54.27% | 38.89% |
 | cycling distance [km]                      |        |   1044 |    660 |   1340 |
 | #bike rides                                |        |     20 |     18 |     36 |
-| #gym activities                            |      6 |     63 |     82 |    110 |
+| #strength trainings                        |      6 |     63 |     82 |    110 |
 | #exercise activities                       |    135 |    210 |    234 |    324 |
 | #different kinds of exercise activities    |        |      6 |     11 |     17 |
 
@@ -44,8 +44,7 @@ I ran 10 times 1km between 4:30' and 5:00' per km - which I felt like I totally 
 warmly recalling past times of running much more, much faster, like I imagine the elderly recall their
 youthful strengths with a tad of sadness and a tad of pride. In a way I did have the legs,
 in a way I didn't. No cramps, no stomach problem. Yet, an aching tendon. Most notably,
-this kind of run wasn't something I had been doing recently. To the contrary, I had become a disciple
-of the zone 2 school of thought, usually averaging way over a 6'/km.
+this kind of run wasn't something I had been doing recently. To the contrary, I had become a disciple of the [zone 2](https://marathonhandbook.com/zone-2-training-the-science-benefits/) school of thought, usually averaging way over 6'/km.
 
 I would really like this injury not be in vain and to learn something from it. It's not clear
 to me that this is a realistic ambition, it's not clear to me to what extent the injury
