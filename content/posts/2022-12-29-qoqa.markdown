@@ -1,0 +1,159 @@
+---
+title: "QoQa Looks Mostly Legit"
+date: 2022-12-29 7:38:07 +0200
+comments: false
+published: true
+description: Scraping indications of remaining stock
+tags: [tech]
+katex: True
+---
+
+# What
+
+[QoQa](https://www.qoqa.ch/) - I'm still very unsure about its pronunciation -
+is a Swiss e-commerce business. Per product category - of which there are ten -
+they usually offer a single product at a time. A given product is offered at a supposedly
+low price point during a fairly short time window, usually hours
+or days. Importantly, it is advertised as though QoQa had access to a fixed
+amount of stock per product. Once this stock is exhausted, users can no longer
+purchase or order any more of it.
+
+My understanding is that this type of business model can bring home advantages for
+both seller and buyer simultaneously. At the same time, it certainly also allows
+for the manipulation of potential buyer's behavior: If a user is under the impression
+that the herd one runs one way, they are biased towards running the same way. This bears the
+question of how QoQa could evoke the impression of the herd running one way.
+
+Two manipulative ideas came to mind: Generally inflating sales volumes as well as indicating low
+remaining stock percentages. As a consequence, I was curious to look for indications of such
+practices. Hence, I thought it could be interesting to scrape the
+information that QoQa displays regarding the remaining amount of stock of a given product.
+
+This is an example of the information QoQa provides on a given product; taken from its wine
+product category 'Qwine':
+
+![](/imgs/qoqa/qoqa.png)
+
+# How
+
+Since the remaining stock percentage is hidden behind the execution JavaScript, I couldn't simply
+talk to a HTTP end point to obtain a ready-to-go HTML file with all of the necessary
+content. Instead, I used [selenium](https://www.selenium.dev/) to, bluntly put, mock the
+execution of an actual browser to obtain the corresponding content of the website.
+
+```python
+from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
+
+options = Options()
+options.headless = True
+driver = webdriver.Firefox(options=options)
+
+driver.get("https://www.qoqa.ch/fr")
+```
+
+Now, the goal was to retrieve the remaining stock indication of every product
+displayed on the front page. A brief look into my browser's inspector was sufficient
+to identify the pattern followed by the `div` containers with product information. Here,
+the respective `div` containers always carried the id `qoqa-gauge-for-offer-123456`.
+
+![](/imgs/qoqa/inspector.png)
+
+This allowed for the extraction of the offer id, uniquely identifying a given product, as
+well as the indication of the currently remaining stock.
+
+```python
+from selenium.webdriver.common.by import By
+
+offer_elements = driver.find_elements(
+    By.XPATH, "//*[starts-with(@id, 'qoqa-gauge-for-offer')]"
+)
+data = [(_offer_id(element), _remainder(element)) for element in offer_elements]
+```
+
+Being able to scrape the relevant data once is all and well. Yet, for this to make any sense,
+two components for this were missing: storage of information and orchestration, i.e. scheduled,
+repeated execution of the scraping. I opted for the low-key approach of doing both storage as well as scraping on my local machine.
+
+My storage consisted of a sqlite database. It was written to every time the scraping took place.
+
+```python
+import sqlite3
+
+con = sqlite3.connect("/Users/kevin/Code/qoqa/qoqa.db")
+cur = con.cursor()
+cur.execute(
+    "CREATE TABLE IF NOT EXISTS stock (offer_id TEXT, timestamp TEXT, stock REAL)"
+)
+con.commit()
+
+values = ", ".join(f"('{datum[0]}', DATETIME('now'), {datum[1]})" for datum in data)
+if len(data) > 0:
+    cur.execute(f"INSERT INTO stock (offer_id, timestamp, stock) VALUES {values} ;")
+con.commit()
+con.close()
+```
+
+I used `crontab` for orchestration on my local machine - executing a simple script every 5 minutes. To do so I ran `crontab -e` and inserted:
+
+```shell
+SHELL=/usr/local/bin/fish
+*/5 * * * * source /Users/kevin/Code/qoqa/script.sh >> /users/kevin/Code/qoqa/logs.txt
+```
+
+In case you are curious about shifting the scraping to the cloud: it seems as though a headless browser via
+selenium can [currently not be run via Python](https://stackoverflow.com/questions/70661914/can-i-use-selenium-webdriver-with-google-cloud-functions)
+on Google Cloud Functions while
+[it should be feasible](https://dev.to/googlecloud/using-headless-chrome-with-cloud-run-3fdp)
+via Google Cloud Run.
+
+Thankfully my IP has never been blocked by QoQa. :)
+
+# Results
+
+Shown below is the evolution of remaining stock percentages per product according the QoQa's
+website, sampled every 5 minutes. Importantly, if a product is sold out, it is no
+longer displayed, i.e. it doesn't show up at 0% stock. I scraped all of the products between
+the 25th and the 29th of December 2022.
+
+![](/imgs/qoqa/stock.png)
+
+A first reassuring observation is that indeed every product seems to start at 100%.
+More specifically, one can see that:
+
+## 1
+Some products stay at exactly 1% for a bizarrely long time before being properly sold out.
+Assuming that purchases made will not be revoked, this could potentially indicate that
+QoQa deceivingly deflates the displayed amount of remaining stock to evoke the feeling
+of being under pressure among users.
+
+## 2
+The stock of one product is not monotonically decreasing.
+While the concept of restocking is certainly not an impossibility, it seems not too likely
+given QoQa's mode of operation. Maybe just a bug, after all? Maybe a massive order got canceled?
+
+## 3
+Some stock is decreasing around the clock and _fairly_ evenly distributed across times of the day.
+This looks a little fishy to my layman eyes. I would expect a distinct period of radio
+silence between 2am and 6am.
+
+## 4
+The update resolution seems to vary over time, creating large steps. Technical problems?
+
+## 5
+The displayed stock of every(!) product falls extremely fast immediately after its publication. This even
+applies to products finishing at over 50% of remaining stock. It seems that QoQa [app users can pre-purchase 15' early](https://www.qoqa.ch/fr/concept).
+Maybe these purchases are batched to very briefly after the start of a new deal. Yet, is this massive
+trend really just people's excitement to jump at a new deal? Or is this QoQa's involvement
+to make sure hardly any products ever sit around at a very unsexy 82%?
+
+An alternative hypothesis could be that core users might have developed a habit to check the website at the same hour every day. Therefore
+it could be imaginable that almost all purchases over a >24h cycle do happen in the first few minutes.
+
+
+# Conclusion
+
+Some details do look a little strange. Yet, overall I would've imagined the numbers to look more suspicious.
+It doesn't seem outrageous to believe that the displayed stock does indeed represent the best knowledge
+of QoQa's IT systems.
+
