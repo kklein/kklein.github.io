@@ -3,7 +3,7 @@ title: "A Cheat Sheet for Information Theory Fundamentals in ML"
 date: 2022-12-31 7:38:07 +0200
 comments: false
 published: true
-description: This is a really cool post, please read it.
+description: 
 tags: [math]
 katex: True
 ---
