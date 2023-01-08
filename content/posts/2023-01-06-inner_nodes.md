@@ -24,10 +24,16 @@ Yet, if certain leaves become irrelevant, it might also be that certain inner no
 irrelevant. It could be that entire paths in the tree - conjunctions of logical predicates -
 become unnecessary to represent in our production application.
 
-TODO: Insert illustration with colored inner nodes and leaves
+Let us illustrate this based on the example from above. 
+
+![](/imgs/leaves/tree.png)
+
+Since all patients with age > 42 have a success probability of below 80%, we don't need the
+inner node splitting on hypertension. Yet, the node splitting on weight is necessary even
+though one of its direct descendant leaves is not necessary.
 
 This bears the question: If some leaves are not necessary, how many of all available inner
-nodes will we still need?
+nodes will are necessary?
 
 # Problem formulation
 
