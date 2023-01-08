@@ -14,8 +14,10 @@ the applicant might define a threshold, e.g. 80%, and not carry out a surgery be
 that probability. In this case, the applicant doesn&rsquo;t care whether the prediction was
 50% or 30% - just below 80%.</p><p>Yet, if certain leaves become irrelevant, it might also be that certain inner nodes become
 irrelevant. It could be that entire paths in the tree - conjunctions of logical predicates -
-become unnecessary to represent in our production application.</p><p>TODO: Insert illustration with colored inner nodes and leaves</p><p>This bears the question: If some leaves are not necessary, how many of all available inner
-nodes will we still need?</p><h1 id=problem-formulation>Problem formulation</h1><p>Let&rsquo;s first assume that we are dealing with complete binary trees where the root has depth 0.
+become unnecessary to represent in our production application.</p><p>Let us illustrate this based on the example from above.</p><p><img src=/imgs/leaves/tree.png alt></p><p>Since all patients with age > 42 have a success probability of below 80%, we don&rsquo;t need the
+inner node splitting on hypertension. Yet, the node splitting on weight is necessary even
+though one of its direct descendant leaves is not necessary.</p><p>This bears the question: If some leaves are not necessary, how many of all available inner
+nodes will are necessary?</p><h1 id=problem-formulation>Problem formulation</h1><p>Let&rsquo;s first assume that we are dealing with complete binary trees where the root has depth 0.
 Moreover, we will assume that every leaf is relevant with a probability of $q$, i.i.d.</p><p>Formally speaking, we would like to ask two questions:</p><ol><li>In expectation, what is the fraction of inner nodes that need to be kept?</li><li>How does this fraction behave as a function of $q$ and the depth $d$?</li></ol><h1 id=how-many-of-the-inner-nodes-need-to-be-kept>How many of the inner nodes need to be kept?</h1><p>Let us first recall that $\Pr[\text{leaf is kept}] = q$.</p><p>Then, we can ask the question of how likely it is that an arbitrary inner node
 of depth $i$ will be kept. We observe that it will be kept if at least one
 if its descendant leaves will be kept. Conversely, it will not be kept if
