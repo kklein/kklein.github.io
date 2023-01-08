@@ -1,0 +1,72 @@
+<!doctype html><html><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><title>How Many Inner Nodes - Blog</title><link rel=icon type=image/png href=img/favicon.ico><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Probabilistic statements on decision tree structures"><meta property="og:image" content><meta property="og:title" content="How Many Inner Nodes"><meta property="og:description" content="Probabilistic statements on decision tree structures"><meta property="og:type" content="article"><meta property="og:url" content="https://kevinkle.in/posts/2023-01-06-inner_nodes/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2023-01-08T07:38:07+02:00"><meta property="article:modified_time" content="2023-01-08T07:38:07+02:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="How Many Inner Nodes"><meta name=twitter:description content="Probabilistic statements on decision tree structures"><script src=https://kevinkle.in/js/feather.min.js></script>
+<link href=https://kevinkle.in/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css rel=stylesheet><link rel=stylesheet type=text/css media=screen href=https://kevinkle.in/css/main.d444e443bc249bae3ac5015ff4d1a36840bb33e18c03983805f61fd4ad5e17f0.css></head><body><div class=content><header><div class=main><a href=https://kevinkle.in/>Blog</a></div><nav><a href=/about>Hello</a>
+<a href=/tags>Tags</a>
+<a href=/projects>Projects</a>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css integrity=sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js integrity=sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4 crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js integrity=sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa crossorigin=anonymous onload=renderMathInElement(document.body)></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})})</script></nav></header><main><article><div class=title><h1 class=title>How Many Inner Nodes</h1><div class=meta>Posted on Jan 8, 2023</div></div><section class=body><h1 id=motivation>Motivation</h1><p>Assume you are working with a decision tree which as been constructed by a learning
+algorithm. Further assume that some of the leaves are relevant while others aren&rsquo;t.
+For example, it could be that the outcome modeled in leaves corresponds to the probability
+of a successful surgery. In order to use this model for prediction/inference in production,
+one might imagine stripping all of its unnecessary parts. To be concrete, all
+of the leaves with a success probability which is no sufficiently high become irrelevant:
+the applicant might define a threshold, e.g. 80%, and not carry out a surgery below
+that probability. In this case, the applicant doesn&rsquo;t care whether the prediction was
+50% or 30% - just below 80%.</p><p>Yet, if certain leaves become irrelevant, it might also be that certain inner nodes become
+irrelevant. It could be that entire paths in the tree - conjunctions of logical predicates -
+become unnecessary to represent in our production application.</p><p>TODO: Insert illustration with colored inner nodes and leaves</p><p>This bears the question: If some leaves are not necessary, how many of all available inner
+nodes will we still need?</p><h1 id=problem-formulation>Problem formulation</h1><p>Let&rsquo;s first assume that we are dealing with complete binary trees where the root has depth 0.
+Moreover, we will assume that every leaf is relevant with a probability of $q$, i.i.d.</p><p>Formally speaking, we would like to ask two questions:</p><ol><li>In expectation, what is the fraction of inner nodes that need to be kept?</li><li>How does this fraction behave as a function of $q$ and the depth $d$?</li></ol><h1 id=how-many-of-the-inner-nodes-need-to-be-kept>How many of the inner nodes need to be kept?</h1><p>Let us first recall that $\Pr[\text{leaf is kept}] = q$.</p><p>Then, we can ask the question of how likely it is that an arbitrary inner node
+of depth $i$ will be kept. We observe that it will be kept if at least one
+if its descendant leaves will be kept. Conversely, it will not be kept if
+all of its descendant leaves will not be kept.</p><p>$$\begin{aligned} \Pr[\text{given inner node necessary}]
+&= 1 - \Pr[\text{all leaf descendants are not kept}] \\
+&= 1 - \prod \Pr [\text{given leaf is not kept}] \\
+&= 1 - \prod (1 - q) \\
+&= 1 - (1 - q)^{2^{d-i}}
+\end{aligned}$$</p><p>where we have used the independence of the leaves and the fact that the subtree
+of an inner node at depth $i$ of a tree of depth $d$ comprises $2^{d-i}$
+leaves.</p><p>Now, we might want to come back to our first question: how many inner nodes
+are kept in expectation?</p><p>$$\begin{aligned} \mathbb{E}[\text{\# inner nodes necessary}]
+&= \mathbb{E}[\sum \mathbb{I}[\text{given inner node necessary}]] \\
+&= \sum \mathbb{E}[\mathbb{I}[\text{given inner node necessary}]] \\
+&= \sum \Pr[\text{given inner node necessary}] \\
+&= \sum_{i=0}^{d-1} \sum_{\eta = 1}^{2^i} \Pr[\text{given inner node } \eta \text{ of depth } i \text{ necessary}] \\
+&= \sum_{i=0}^{d-1} 2^i (1 - (1 - q)^{2^{d-i}})
+\end{aligned}$$</p><p>where we used the linearity of expectation.</p><p>As a consequence, since a complete tree of depth $d$ has $\sum_{i=0}^{d-1} 2^i = 2^d -1$
+many inner nodes, the ratio of inner nodes necessary corresponds to</p><p>$$ \frac{\sum_{i=0}^{d-1} 2^i (1 - (1 - q)^{2^{d-i}})}{2^d -1} = \frac{2^d -1 - \sum_{i=0}^{d-1} 2^i(1 - q)^{2^{d-i}}}{2^d -1} = 1 - \frac{\sum_{i=0}^{d-1} 2^i(1 - q)^{2^{d-i}}}{2^d -1}$$</p><p>With that, we have in principle - albeit without a neat, closed form - answered our first question.
+If we plot this fraction for increasing $d$ and a number of different $q$, we observe the following:</p><p><img src=/imgs/leaves/fractions.png alt></p><p>These plots make it seem as though for a given $q$, the fraction of kept inner nodes
+was converging to an asymptote with growing depth. This brings us to our second question:
+How does the fraction behave for varying $q$ and depth $d$?</p><p>The plot from above gives hope that the fraction converges to a constant for any $q$, with growing
+$d$. Let&rsquo;s now try to back this up formally. In light of this, let&rsquo;s recall the
+<a href=https://en.wikipedia.org/wiki/Ratio_test>Cauchy ratio test</a>. In short, it can tell us that a series
+$a_n$ converges if $\lim_{n \rightarrow \infty} |a_{n+1} / a_n| &lt; 1$. Recalling our fraction
+from before we therefore pose that</p><p>$$a_d := \frac{\sum_{i=0}^{d-1} 2^i(1 - q)^{2^{d-i}}}{2^d -1}$$</p><p>If we instantiate this series for a couple of indices, we might be able guess a
+recursive form:</p><p>$$\begin{aligned}
+a_1 &= (1-q)^2 \\
+a_2 &= \frac{1}{3} ((1-q)^4 + 2 (1-q)^2) \\
+a_3 &= \frac{1}{7} ((1-q)^8 + 2 (1-q)^4 + 4(1-q)^2)
+\end{aligned}$$</p><p>We can see (or prove by induction) that</p><p>$$a_d = \frac{1}{2^d - 1} (2 (2^{d-1} - 1) a_{d-1} + (1-q)^{2^d})$$</p><p>We shall now use this recursive definition for the Cauchy ratio test:</p><p>$$\begin{aligned}
+\lim_{d \rightarrow \infty} |\frac{a_{d+1}}{a_d}|
+&= \lim_{d \rightarrow \infty} \frac{a_{d+1}}{a_d} \\
+&= \lim_{d \rightarrow \infty} \frac{2 (2^{d} - 1) a_{d} + (1-q)^{2^{d+1}}}{(2^{d+1} - 1)a_d}\\
+&= \lim_{d \rightarrow \infty} \frac{2^{d+1} - 2}{2^{d+1} - 1} + \frac{(1-q)^{2^d}}{(2^{d+1} - 1)a_d} \\
+&= 1 + \lim_{d \rightarrow \infty} \frac{(1-q)^{2^d}}{(2^{d+1} - 1) \frac{\sum_{i=1}^{d-1} 2^i (1-q)^{2^{d-i}}}{2^d - 1}} \\
+&= 1 + \lim_{d \rightarrow \infty} \frac{(1-q)^{2^d}}{\frac{2^{d+1} - 1}{2^d - 1} \sum_{i=1}^{d-1} 2^i (1-q)^{2^{d-i}}} \\
+\lim_{d \rightarrow \infty} \frac{(1-q)^{2^d}}{\frac{2^{d+1} - 1}{2^d - 1} \sum_{i=1}^{d-1} 2^i (1-q)^{2^{d-i}}}
+&\leq \lim_{d \rightarrow \infty} \frac{(1-q)^{2^d}}{\frac{2^{d+1} - 1}{2^d - 1} 2^{d-1} (1-q)^2} \rightarrow 0
+\end{aligned}$$</p><p>Where we have used that a sum of positive elements is greater or equal any element for the inequality
+and the fact that the last numerator goes to 0 with $d \rightarrow \infty$ while both factors
+of the numerator got to $\infty$ as $d \rightarrow \infty$.</p><p>Sadly, this tells us that the limit of the ratio is 1 and therefore we cannot conclude just yet that the series converges.</p><p>Yet, we can argue differently that $a_d$ converges, and thereby $1 - a_d$, too. Since every
+term of the series is a product of positive sub-terms, every term of the series is positive.
+Moreover, we observe that the series is upper-bounded:</p><p>$$\begin{aligned}
+a_d
+&= \frac{\sum_{i=0}^{d-1} 2^i(1 - q)^{2^{d-i}}}{2^d -1} \\
+&\leq \frac{\sum_{i=0}^{d-1} 2^i}{2^d -1} \\
+&=\frac{2^d - 1 }{2^d -1} = 1
+\end{aligned}$$</p><p>As a consequence, we know that $a_d$ converges to a constant below 1. Yet, we don&rsquo;t know what this
+value is.</p><p>Conversely, we can attempt to obtain a feeling for how $1 - a_d$ - i.e. the fraction of necessary
+inner nodes - behaves for different $q$, with constant, &rsquo;large&rsquo; depth $d$:</p><p><img src=/imgs/leaves/polynomials.png alt></p><p>Furthermore, we can fit a polynomial up to degree 4 with least squares:</p><p><img src=/imgs/leaves/fit.png alt></p><p>It seems fair to say that above fit can serve as a rough approximation. Hence:</p><p>$$\lim_{d \rightarrow \infty} 1 - a_d \approx 1 - 2.3 (1-q)^4 + 3.2 (1-q)^3 - 2.1 (1-q)^2 + 0.3(1-q)$$</p><p>What we can say for sure is that the fraction of necessary inner nodes
+grows faster than $q$. Put differently, for every leaf we&rsquo;d like to keep,
+we need overproportionally many inner nodes.</p></section><div class=post-tags><nav class="nav tags"><ul class=tags><li><a href=/tags/math>math</a></li></ul></nav></div></article></main><footer><div style=display:flex><a class=soc href=https://github.com/kklein title=GitHub><i data-feather=github></i></a><a class=soc href=https://twitter.com/kevkle title=Twitter><i data-feather=twitter></i></a></div><div class=footer-info>2023 © Kevin Klein |</div></footer><script type=application/javascript>var doNotTrack=!1;doNotTrack||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-122721044-1","auto"),ga("send","pageview"))</script><script async src=https://www.google-analytics.com/analytics.js></script>
+<script>feather.replace()</script></div></body></html>
