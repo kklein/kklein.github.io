@@ -1,5 +1,5 @@
 ---
-title:  "Workflow on Leonhard Compute Cluster"
+title:  "Workflow on Leonhard/Euler Compute Cluster"
 date:   2019-02-28 18:00:00 +0200
 description: I compiled some improvements to my workflow.
 comments: false
@@ -7,69 +7,89 @@ tags: [tech]
 ---
 
 # Abstract
-Fortunately, ETH provides many of its students with access to Leonhard, a computer cluster with GPUs. Note that only students with certain coursework or projects are granted access. I have spent and lost a fair amount of time due to poor Google results and will describe a setup for a simple workflow.
+Fortunately, ETH provides many of its students with access to Leonhard and Euler, computer clusters with CPUs and GPUs. Note that not every student is granted access to both - only some coursework or projects might qualify. I have spent and lost a fair amount of time due to poor Google results and will describe a setup for a simple workflow.
 
 # Connection
 In order to ssh to the server, you first need to connect to ETH's VPN.
 
-`ssh your_nethz@login.leonhard.ethz.ch`
+```shell
+ssh your_nethz@login.leonhard.ethz.ch
+```
 
 You will find yourself in your personal home directory right away.
 
 # Conda
-You can install python packages to your personal environment [via pip](https://scicomp.ethz.ch/wiki/Python#Installing_a_Python_package.2C_using_PIP). Quite naturally, you will want to use python virtual environments, though! Conda is not installed by the default. You can download an installer, e.g. minicanoda and run it.
+You can install python packages to your personal environment [via pip](https://scicomp.ethz.ch/wiki/Python#Installing_a_Python_package.2C_using_PIP). In many cases, you might favor working with conda for managing virtual environments, resolving dependencies and installing packages. Conda is not installed by the default. You can download an installer, e.g. minicanoda and run it.
 
-```
+```shell
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 ```
 
-Once installed, in order to be able to call invoke conda from the command like, you want to add it to your bashrc file. Given that you installed conda in `$HOME`, add the following line to `~/.bashrc`:
+Once installed, in order to be able to invoke conda from the command like, you want to add it to your bashrc file. Given that you installed conda in `$HOME`, add the following line to `~/.bashrc`:
 
-`source $HOME/miniconda3/bin/activate`
+```shell
+source $HOME/miniconda3/bin/activate
+```
 
 Followingly, clone the git repository of your preference, including a `environment.yml` file.
 
-`conda env create -f myenvironment.yml`
+```shell
+conda env create -f myenvironment.yml
+```
 
 All the steps so far only have to be executed once. You will need to activate the conda environment every time you instantiate a fresh connection to the cluster and intend to run code in this environment.
 
-`conda activate myenvironment`
+```shell
+conda activate myenvironment
+```
 
 # Submission system
 An activated enviroment will automatically be picked up by the submission system. In other words, you activate the environment in you own bash terminal, and can then run your python scripts by submitting `python script.py`.
 
 For cpu usage run:
 
-`bsub "python script.py --batch_size 2 --n_epochs 50000"`
+```shell
+bsub "python script.py --batch_size 2 --n_epochs 50000"
+```
 
 For gpu usage run:
 
-`bsub -R "rusage[ngpus_excl_p=1]" "python script.py --batch_size 2 --n_epochs 50000"`
+```shell
+bsub -R "rusage[ngpus_excl_p=1]" "python script.py --batch_size 2 --n_epochs 50000"
+```
 
 In case you have access to more GPUs, you can adapt the parameter. Students will usually only have access to one.
 
 Always make sure to request a conservative amount of time, as your job might be killed when surpassing its threshold. The default duration is 2h. The argument can be either in minutes or hours:minutes format.
 
-`bsub -W 8:30 -R "rusage[ngpus_excl_p=1]" "python script.py --batch_size 2 --n_epochs 50000"`
+```shell
+bsub -W 8:30 -R "rusage[ngpus_excl_p=1]" "python script.py --batch_size 2 --n_epochs 50000"
+```
 
 In order to retroactively inspect parameters of a given, completed job, the following will do:
 
-`bhist -l 192240`
+```shell
+bhist -l 192240
+```
 
-There are interesting features such as notifying yourself via email upon completion of a job. See more [ETH wiki](https://scicomp.ethz.ch/wiki/Using_the_batch_system), [IBM reference](https://www.ibm.com/support/knowledgecenter/en/SSETD4_9.1.2/lsf_command_ref/bsub.1.html).
+There are interesting features such as notifying yourself via email upon completion of a job. See more [ETH wiki](https://scicomp.ethz.ch/wiki/Using_the_batch_system), [IBM reference](https://www.ibm.com/docs/en/spectrum-lsf/10.1.0?topic=reference-bsub)
 
 By default, standard output will be gathered in a file that is delivered to your home directory once the job is no longer running.
 A simple way to track progress is to write to standard output and look into this file on the go. `bjobs` will tell you the job id of your job, say `192240`.
 In order to investigate the standard output so far, run:
 
-`bpeek 192240`
+```shell
+bpeek 192240
+```
 
 
 # File transfer
 In order to transfer files, e.g. log files or loss function evaluations, use scp. Note that wildcards have to be escaped when using scp. E.g. to transfer files from Leonhard to your machine, run the following on your machine
 
-`scp your_nethz@login.leonhard.ethz.ch:~/repo/logs/\*.csv .`
+```shell
+scp your_nethz@login.leonhard.ethz.ch:~/repo/logs/\*.csv .
+```
 
 # Further reading
 [https://scicomp.ethz.ch/wiki/](https://scicomp.ethz.ch/wiki/)
