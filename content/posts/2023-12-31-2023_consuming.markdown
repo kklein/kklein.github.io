@@ -1,0 +1,31 @@
+---
+title:  "2023 in Consuming"
+date:   2023-12-22 12:38:07 +0200
+description:  "Books and music"
+comments: false
+published: false
+tags: [thoughts]
+katex: False
+---
+
+Just rambling about some books and music I've been exposed to in 2023. I did a similar thing in
+[2022](https://kevinkle.in/posts/2022-12-22-2022_consuming/),
+[2021](https://kevinkle.in/posts/2021-12-28-2021_consuming/) and [2020](https://kevinkle.in/posts/2021-01-02-2020_consuming/).
+
+# Books
+
+## Le mage du Kremlin - Giuliano da Empoli
+
+# Records
+
+## The Murder Capital - When I Have Fears
+
+## Hania Rani - On Giacometti
+
+## Slowthai - UGLY
+
+## Selected Ambient Works 85-92 - Aphex Twin
+
+## Bright Green Field - Squid
+
+## Horizon Problems - Geju
