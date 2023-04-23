@@ -1,12 +1,12 @@
 ---
-title: "How much is a hundred bucks?"
+title: "[DRAFT] How much is a hundred bucks?"
 date: 2023-04-23 7:38:07 +0200
 comments: false
 published: true
 description: This is a really cool post, please read it.
 tags: [math, thoughts]
 katex: True
-draft: True
+draft: False
 ---
 
 Formal setup:
