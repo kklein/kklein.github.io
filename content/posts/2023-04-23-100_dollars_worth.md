@@ -1,6 +1,6 @@
 ---
 title: "[DRAFT] How much is a hundred bucks?"
-date: 2023-04-23 7:38:07 +0200
+date: 2000-04-23 7:38:07 +0200
 comments: false
 published: true
 description: This is a really cool post, please read it.
@@ -67,3 +67,6 @@ $Q=\frac{\text{annual expenses}}{2 \rho_i}, \epsilon=100: .22$ days
 
 $Q=\frac{\text{annual expenses}}{\rho_i}, \epsilon=100: .16$ days
 
+In other words, not spending 100 dollars now would save me 2/5 of a day now.
+Not spending 100 dollars halfway to my savings goal would save me 1/5 of a day then.
+Not spending 100 dollars at the end of my savings goal would save me 1/7 of a day then.
