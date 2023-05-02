@@ -71,6 +71,6 @@ function calculateYears() {
     );
   const resultEpsilon = newtonRaphson(fEpsilon, fDer, result, 100);
   const resultDays = ((resultEpsilon - result) * 365).toFixed(2);
-  const resultTextMoney = `Spending 100 USD right now will cost you approximately ${resultDays} days.`;
+  const resultTextMoney = `Spending 100 of your monetary currency right now will cost you approximately ${resultDays} days.`;
   document.getElementById("result-money").textContent = resultTextMoney;
 }
