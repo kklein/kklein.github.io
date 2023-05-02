@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Savings Calculator</title>
+    <style>
+      .outer {
+        padding: 50px;
+        margin: 20px;
+        border: 10px solid green;
+      }
+      .inner {
+        padding: 10px;
+        margin: 0px;
+      }
+      .explanation {
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <h1>Savings: Time & Money</h1>
+      <div class="inner">
+        <label for="savings_goal">Savings goal:</label>
+        <input type="number" id="savings-goal" value="1000000" /><br />
+        <label class="explanation">
+          Representing remaining savings to be made, i.e. savings up to now are
+          disregarded
+        </label>
+      </div>
+      <div class="inner">
+        <label for="annual_savings">Annual savings:</label>
+        <input type="number" id="annual-savings" value="60000" /><br />
+        <label class="explanation">In the next year</label>
+      </div>
+      <div class="inner">
+        <label for="savings_increase">Annual savings increase:</label>
+        <input type="number" id="savings-increase" value=".08" /><br />
+        <label class="explanation">
+	  Relative to previous year, assumed to be constant for all coming
+          years
+	</label>
+      </div>
+      <div class="inner">
+        <label for="roi">Annual return on investment:</label>
+        <input type="number" id="roi" value=".05" /> <br />
+        <label class="explanation">
+          Under the assumption that all savings are invested and that this roi
+          is identical across years
+        </label>
+      </div>
+      <div class="inner">
+        <button onclick="calculateYears()">Calculate</button><br /><br />
+      </div>
+      <div class="inner">
+        <p id="result-duration"></p>
+        <p id="result-money"></p>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
