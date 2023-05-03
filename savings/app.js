@@ -6,12 +6,40 @@ function savings(nYears, roi, savingsIncrease, annualSavings, savingsGoal) {
   );
 }
 
-function savingsRoot(nYears, roi, savingsIncrease, annualSavings, savingsGoal) {
-  return savings(nYears, roi, savingsIncrease, annualSavings) - savingsGoal;
-}
-
 function savingsDerivative(nYears, roi, savingsIncrease, annualSavings) {
   return savings(nYears, roi, savingsIncrease, annualSavings);
+}
+
+function cumulativeSpending(nYears, roi, extraSpending) {
+  return extraSpending * (1 + Math.pow(1 - roi, nYears + 1) / (1 - roi));
+}
+
+function totalRoot(
+  nYears,
+  roi,
+  savingsIncrease,
+  annualSavings,
+  savingsGoal,
+  extraSpending
+) {
+  return (
+    savings(nYears, roi, savingsIncrease, annualSavings, savingsGoal) -
+    cumulativeSpending(nYears, roi, extraSpending) -
+    savingsGoal
+  );
+}
+
+function totalDerivative(
+  nYears,
+  roi,
+  savingsIncrease,
+  annualSavings,
+  extraSpending
+) {
+  return (
+    savingsDerivative(nYears, roi, savingsIncrease, annualSavings) -
+    cumulativeSpending(nYears, roi, extraSpending)
+  );
 }
 
 function newtonRaphson(f, fDer, x0, nIter) {
@@ -19,6 +47,8 @@ function newtonRaphson(f, fDer, x0, nIter) {
   for (let i = 0; i < nIter; i++) {
     const y = f(x);
     const dy = fDer(x);
+    console.log(y);
+    console.log(dy);
     x = x - y / dy;
   }
   return x;
@@ -38,14 +68,16 @@ function readFields() {
 }
 
 function calculateYears() {
+  const nIter = 100;
   fields = readFields();
   const f = (x) =>
-    savingsRoot(
+    totalRoot(
       x,
       fields.roi,
       fields.savingsIncrease,
       fields.annualSavings,
-      fields.savingsGoal
+      fields.savingsGoal,
+      0
     );
   const fDer = (x) =>
     savingsDerivative(
@@ -55,22 +87,34 @@ function calculateYears() {
       fields.annualSavings
     );
   const x0 = fields.savingsGoal / fields.annualSavings;
-  const result = newtonRaphson(f, fDer, x0, 100);
+  const result = newtonRaphson(f, fDer, x0, nIter);
   const resultTextDuration = `It would take approximately ${result.toFixed(
     2
   )} years to hit your savings goal.`;
   document.getElementById("result-duration").textContent = resultTextDuration;
 
-  const fEpsilon = (x) =>
-    savingsRoot(
+  const fTotal = (x) =>
+    totalRoot(
       x,
       fields.roi,
       fields.savingsIncrease,
       fields.annualSavings,
-      fields.savingsGoal + 100
+      fields.savingsGoal,
+      100
     );
-  const resultEpsilon = newtonRaphson(fEpsilon, fDer, result, 100);
+  const fTotalDer = (x) =>
+    totalDerivative(
+      x,
+      fields.roi,
+      fields.savingsIncrease,
+      fields.annualSavings,
+      100
+    );
+
+  const resultEpsilon = newtonRaphson(fTotal, fTotalDer, result, nIter);
   const resultDays = ((resultEpsilon - result) * 365).toFixed(2);
   const resultTextMoney = `Spending 100 of your monetary currency right now will cost you approximately ${resultDays} days.`;
+  console.log(resultEpsilon);
+  console.log(fTotal(8));
   document.getElementById("result-money").textContent = resultTextMoney;
 }
