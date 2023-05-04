@@ -78,13 +78,12 @@ Let's say that
 
 Under these assumptions, the cumulative savings after $H$ years equal:
 
-After 0 years: 0
-
-After 1 year: $s$
-
-After 2 years: $s(1+\rho_s) + s(1 + \rho_i) = s[(1+\rho_s) + (1+\rho_i)]$
-
-After 3 years: $s(1+\rho_s)^2 + s(1+\rho_s)(1+\rho_i) + s(1+\rho_i)^2 = s[(1 + \rho_s)]$
+| $H$             | Savings after $H$ years                                    |
+|-----------------:|------------------------------------------------------------:|
+| 0               | 0                                                          |
+| 1               | $s$                                                        |
+| 2               | $s(1+\rho_s) + s(1 + \rho_i) \\\ = s[(1+\rho_s) + (1+\rho_i)]$ |
+| 3               |     $s(1+\rho_s)^2 + s(1+\rho_s)(1+\rho_i) + s(1+\rho_i)^2 \\\ =s[(1 + \rho_s)^2 + (1 +\rho_s)(1 + \rho_i) + (1 + \rho_i)^2]$                                                       |
 
 It can easily be shown by induction that this series equals the following expression, which can be further simplified:
 
@@ -98,7 +97,7 @@ f(H) &= \sum_{y=0}^{H-1} s (1 + \rho_s)^y (1 + \rho_i)^{H-1-y} \\\
 \end{aligned}
 $$
 
-Here we used the [formula of the geometric series](https://en.wikipedia.org/wiki/Geometric_series#Sum).
+Here we used the [sum formula of the geometric series](https://en.wikipedia.org/wiki/Geometric_series#Sum).
 In other words, we assumed that $|\frac{1 + \rho_s}{1 + \rho_i}| \neq 1$. Hence,
 we assume that $\rho_s \neq \rho_i$. If they were equal, we could apply the formula for the geometric series,
 too, simply to a different, more simple summation term.
