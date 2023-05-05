@@ -8,28 +8,25 @@
         font-size: 100%;
         font-family: Arial;
       }
-      .outer {
-        padding: 50px;
-        margin: 20px;
-        border: 7px solid green;
-      }
       .inner {
-        padding: 10px;
-        margin: 0px;
+        padding: 5px 0px 5px 0px;
+        margin: 5px;
       }
       .explanation {
         color: grey;
       }
-      .result {
+      .box {
         padding: 10px;
-        margin: 10px 0 10px 0;
+        margin: 20px;
         border: 7px solid green;
       }
     </style>
   </head>
   <body>
-    <div class="outer">
+    <div class="box">
       <h1>Savings: Time or Money?</h1>
+    </div>
+    <div class="box">
       <div class="inner">
         <label for="savings_goal">Savings goal:</label>
         <input
@@ -90,29 +87,27 @@
         </p>
       </div>
     </div>
-    <div id="results" class="inner" hidden>
-      <div class="inner">
-        <div class="result">
-          <p id="result-duration"></p>
+    <div id="results" hidden>
+      <div class="box">
+        <p id="result-duration"></p>
+      </div>
+      <div class="box">
+        <p id="result-money"></p>
+      </div>
+      <div class="box">
+        Let's assume you find 100 of your currency on the street right now. For
+        how long can you take a break from earning money?
+        <div class="slidecontainer">
+          <input
+            id="time-slider"
+            type="range"
+            min="1"
+            max="100"
+            value="50"
+            class="slider"
+          />
         </div>
-        <div class="result">
-          <p id="result-money"></p>
-        </div>
-        <div class="result">
-          Let's assume you find 100 of your currency on the street right now.
-          For how long can you take a break from earning money?
-          <div class="slidecontainer">
-            <input
-              id="time-slider"
-              type="range"
-              min="1"
-              max="100"
-              value="50"
-              class="slider"
-            />
-          </div>
-          <p id="result-break"></p>
-        </div>
+        <p id="result-break"></p>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js"></script>
