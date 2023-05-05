@@ -14,6 +14,7 @@
       }
       .explanation {
         color: grey;
+        margin: 0px;
       }
       .box {
         padding: 10px;
@@ -35,11 +36,11 @@
           value="1000000"
           step="10000"
         /><br />
-        <label class="explanation">
+        <p class="explanation">
           Representing remaining savings to be made, i.e. savings up to now are
           disregarded. A typical value could be annual spending divided by
           annual return on investment (roi) minus current savings.
-        </label>
+        </p>
       </div>
       <div class="inner">
         <label for="annual-savings">Annual savings:</label>
@@ -49,38 +50,32 @@
           value="60000"
           step="1000"
         /><br />
-        <label class="explanation">In the next year</label>
+        <p class="explanation">In the next year</p>
       </div>
       <div class="inner">
         <label for="savings-increase">Annual savings increase:</label>
-        <input
-          type="number"
-          id="savings-increase"
-          value=".08"
-          step="0.01"
-        /><br />
-        <label class="explanation">
+        <input type="number" id="savings-increase" value=".08" step="0.01" />
+        <p class="explanation">
           Relative to previous year, assumed to be constant for all coming years
-        </label>
+        </p>
       </div>
       <div class="inner">
         <label for="roi">Annual return on investment:</label>
-        <input type="number" id="roi" value=".05" step="0.01" /> <br />
-        <label class="explanation">
+        <input type="number" id="roi" value=".05" step="0.01" />
+        <p class="explanation">
           Under the assumption that all savings are invested and that this roi
           is identical across years
-        </label>
+        </p>
       </div>
       <div class="inner">
         <label for="annual-spending">Annual spending:</label>
         <input type="number" id="annual-spending" value="50000" step="1000" />
-        <br />
-        <label class="explanation">
+        <p class="explanation">
           Under the assumption that this doesn't change over the years.
-        </label>
+        </p>
       </div>
       <div class="inner">
-        <button onclick="calculate()">Calculate</button><br /><br />
+        <button onclick="calculate()">Calculate</button>
         <p id="calculate-hint" hidden>
           Please choose distinct values for annual savings increase and return
           on investment.
