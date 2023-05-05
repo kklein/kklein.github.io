@@ -177,7 +177,7 @@ as an additional expenditure moving our savings goal further away. Flipped the o
 we might ask the question of the value of a 100 USD bill we find on the street with respect to time.
 
 The monetary return on investment will be the same - assuming parameters as in the example above, this will yield
-160 USD down the line. 
+160 USD down the line.
 
 Yet, If we now ask the question of how much time we 'gain' the answer might vary. If we seek to simply seek
 shorten the duration of saving - i.e. removing the time 'from the end' - the answer will more or less remain
@@ -186,7 +186,7 @@ between now and the reaching of financial freedom? Is 100 USD worth the same amo
 than at $(q + \epsilon) H$?
 
 No. But let's approach this one step at a time. Let's first ask the question of how much we save when taking
-a break from earning money of duration $\epsilon_t$ at an arbitrary point in time $H_{break}$ between the start and end of saving $H$. In order to answer this question, we can reuse $f$ from before and split time up in three phases:
+a break from earning money of duration $\epsilon_t$ at an arbitrary point in time $H_b$ between the start and end of saving $H$. In order to answer this question, we can reuse $f$ from before and split time up in three phases:
 
 | Phase      | time index                    | Savings produces in this phase                                                                       |
 |------------|-------------------------------|------------------------------------------------------------------------|
@@ -222,15 +222,15 @@ Now that we know how much we save even when taking a specific break, we work in 
 long a break can be given all other information. Formally, we already found the horizon $H$ leading us to our
 savings goal $g$. We now ask the question
 
-> For a given 'break moment' $H_{break}$, for how long can we take time off to still meet our savings goal given
-that we've just found 100 USD?
+> For a given 'break moment' $H_b$, for how long can we take time off to still meet our savings goal given
+that just found 100 USD?
 
 This can be answered - who would've guessed it - by framing it as an equation that we'll solve with Newton Raphson.
 
 > Find $\epsilon_t$ such that $f(H) - f_b(H, H_b, \epsilon_t) = c(H, \rho_i, 100)$.
 
 Note that since we found the 100 USD now, they will - since we will of course invest them - compound over the
-entire time horizon.
+entire time horizon. Therefore we reuse the compounding function $c$ from before.
 
 The following graph show solutions $\epsilon_t$ on the y-axis for varying $H_b$ on the x-axis. The $H$ was
 chosen as ... in order to produce savings $g=...$.
