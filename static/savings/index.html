@@ -17,9 +17,9 @@
         color: grey;
       }
       .result {
-	  padding: 10px;
-	  margin: 10px 0 10px 0;
-	  border: 7px solid green;
+        padding: 10px;
+        margin: 10px 0 10px 0;
+        border: 7px solid green;
       }
     </style>
   </head>
@@ -28,29 +28,43 @@
       <h1>Savings: Time or Money?</h1>
       <div class="inner">
         <label for="savings_goal">Savings goal:</label>
-        <input type="number" id="savings-goal" value="1000000"/><br/>
+        <input
+          type="number"
+          id="savings-goal"
+          value="1000000"
+          step="10000"
+        /><br />
         <label class="explanation">
           Representing remaining savings to be made, i.e. savings up to now are
           disregarded. A typical value could be annual spending divided by
-	  annual return on investment (roi) minus current savings.
+          annual return on investment (roi) minus current savings.
         </label>
       </div>
       <div class="inner">
         <label for="annual-savings">Annual savings:</label>
-        <input type="number" id="annual-savings" value="60000" /><br />
+        <input
+          type="number"
+          id="annual-savings"
+          value="60000"
+          step="1000"
+        /><br />
         <label class="explanation">In the next year</label>
       </div>
       <div class="inner">
         <label for="savings-increase">Annual savings increase:</label>
-        <input type="number" id="savings-increase" value=".08" /><br />
+        <input
+          type="number"
+          id="savings-increase"
+          value=".08"
+          step="0.01"
+        /><br />
         <label class="explanation">
-	  Relative to previous year, assumed to be constant for all coming
-          years
-	</label>
+          Relative to previous year, assumed to be constant for all coming years
+        </label>
       </div>
       <div class="inner">
         <label for="roi">Annual return on investment:</label>
-        <input type="number" id="roi" value=".05" /> <br />
+        <input type="number" id="roi" value=".05" step="0.01" /> <br />
         <label class="explanation">
           Under the assumption that all savings are invested and that this roi
           is identical across years
@@ -58,34 +72,45 @@
       </div>
       <div class="inner">
         <label for="annual-spending">Annual spending:</label>
-        <input type="number" id="annual-spending" value="50000" /> <br />
+        <input type="number" id="annual-spending" value="50000" step="1000" />
+        <br />
         <label class="explanation">
           Under the assumption that this doesn't change over the years.
         </label>
       </div>
       <div class="inner">
         <button onclick="calculate()">Calculate</button><br /><br />
+        <p id="calculate-hint" hidden>
+          Please choose distinct values for annual savings increase and return
+          on investment.
+        </p>
       </div>
     </div>
     <div id="results" class="inner" hidden>
       <div class="inner">
-	<div class="result">
+        <div class="result">
           <p id="result-duration"></p>
-	</div>
-	<div class="result">
-          <p id="result-money"></p>
-	</div>
-	<div class="result">
-	Let's assume you find 100 of your currency on the street right now. For how long
-	can you take a break from earning money?
-        <div class="slidecontainer">
-	  <input id="time-slider" type="range" min="1" max="100" value="50" class="slider">
         </div>
-        <p id="result-break"></p>
-	</div>
+        <div class="result">
+          <p id="result-money"></p>
+        </div>
+        <div class="result">
+          Let's assume you find 100 of your currency on the street right now.
+          For how long can you take a break from earning money?
+          <div class="slidecontainer">
+            <input
+              id="time-slider"
+              type="range"
+              min="1"
+              max="100"
+              value="50"
+              class="slider"
+            />
+          </div>
+          <p id="result-break"></p>
+        </div>
       </div>
     </div>
-          </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js"></script>
     <script src="app.js"></script>
   </body>
