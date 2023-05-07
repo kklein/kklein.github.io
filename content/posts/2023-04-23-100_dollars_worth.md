@@ -271,9 +271,25 @@ an artifact of our specific constants, $\rho_i$, $\rho_s$, $s$ and so forth. Yet
 
 TODO: Actually argue.
 
-## A tl;dr for those who did r, a.k.a the summary
+## A tl;dr for those who did r, a.k.a 'the summary'
 
+First, we learned how much we many savings we generate after a given amount of years. In order to do so,
+we relied on a couple of assumptions:
+* We currently save a certain amount of money, of which we invest all.
+* These investments compound with a fixed annual net return on investment ratio.
+* Moreover, the annual savings amount increases with a fixed ratio.
 
+Using this knowledge, we figured out the inverse: for how long we need to save given that we want to reach
+a certain savings goal. This goal could, for instance represent enough money such that one no longer relies
+on income from employment to sustain one's life.
+
+With that knowledge we tackled several questions:
+* For how much longer will we need to save if we spend 100 unaccounted for USD right now? (e.g. .35 days)
+* By how much do we need to increase our savings goal if we spend 100 unaccounted for USD right now? (e.g. 160 USD)
+* How much time could we 'take off from saving' (e.g. not work in employment) an at an arbitrary moment in time if we found 100
+  unaccounted for USD on the street right now? (e.g. .24 days right now, 0.28 days in 5 years and .35 days in 10 years, just before reaching our savings goal).
+
+Lastly, one could of course ask the question of how much time is worth in some other moment's time. Maybe some other time.
 
 [^0]:
     I suppose that 'doing work' here means anything that takes time and is not substantially intrisically rewarding. Flipped around, this might mean that an employment activity might not
