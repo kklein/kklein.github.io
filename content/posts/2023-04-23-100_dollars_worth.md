@@ -14,8 +14,8 @@ The calculator accompanying this post can be found [here](https://kevinkle.in/sa
 ## The value of time, the value of money
 
 There are various ways of trying to assess the value of something. For instance, one might
-define the value of a resource by how much someone else is willing to pay. In the domain of
-time we could ask the question of the hourly rate someone is willing to pay for our time/labor
+define the value of a resource by how much someone else is willing to pay for it. In the domain of
+time, we could ask the question of the hourly rate someone is willing to pay for our time/labor
 and consider that the value of our time.
 
 A contractor or employee might be able to gauge how much other people are
@@ -36,12 +36,13 @@ to capture.
 
 On the one hand, it doesn't explicitly[^1] account for temporal developments, such
 as returns on investment over the years. For example, a dollar saved now might be 'more valuable'
-in terms of time gains than a dollar saved in ten years, depending on my (compounding) returns on
+in terms of time gains than a dollar saved in ten years, depending on (compounding) returns on
 investment and depending on one's capability to increase hourly pay over the years.
 
 On the other hand, the previous view relies on the assumption that we
-can and would trade time for money, potentially forever. What seems more natural for me to do
-is to emphasize that, in a very simplified model of employment, one is renting out one's time
+can and would trade time for money until the end of one's days.
+
+What seems more natural for me to do is to emphasize that, in a very simplified model of employment, one is renting out one's time
 until ones doesn't 'need' to anymore - ideally hoping that this is strictly before the moment
 a respective national pension fund kicks in. After that point in time, one might still go
 after the very same activity but with a very different motivation - no longer trading time for
@@ -55,15 +56,20 @@ delay the point in time of reaching the bliss of financial freedom?
 
 Note that the answer to this question doesn't change whether one continues to receive income
 from employment or contracting after this point in time. This is a relevant since we are
-talking about financial freedom, in a somewhat stark contrast to retirement.
+talking about financial freedom, in a somewhat stark contrast to retirement. Also note that
+this approach assigns value to one's time in a way that immediately factors in cost of living.
+In contrast, the former model didn't. For example, deciding that to not trade one hour of one's
+time for money leaves it open as to how the bills are paid.
 
-Clearly, the more we spend before reaching our savings goal, the longer it'll take us to reach
-it. Put differently, the less we spend, the more time in a state of choice, freedom of sorts,
-we buy ourselves. But how much time? We'll get to that in the
+In this alternative cost model it is clear that the more we spend before reaching our savings goal,
+the longer it'll take us to reach it. Put differently, the less we spend, the more time in a state
+of choice, freedom of sorts, we earned ourselves. But how much time? We'll get to that in the
 next paragraph.
 
-Moreover, we will realize that the value of money is likely to change over time.
-TODO: Insert illustration with time axis
+Moreover, we will realize that the respective values of time and money are likely to change over time.
+
+TODO: Illustration
+Matrix: Spent vs gained, money, time
 
 ## How much is 100 USD, formally?
 
@@ -72,9 +78,9 @@ TODO: Insert illustration with time axis
 Let's say that
 
 - The annual savings as of now are $s$, e.g. 50,000 USD.
-- The annual savings increase every year by $\rho_s$, e.g. by 0.07.
-- There is a fixed annual return on savings investments of $\rho_i$, e.g. of 0.04.
-- There is a savings goal $g$, e.g. 1,000,000 USD. One might define this as the yearly spending divided by $\rho_i$.
+- The annual savings increase every year by $\rho_s$, e.g. 0.07.
+- There is a fixed annual return on savings investments of $\rho_i$, e.g. 0.04.
+- There is a savings goal $g$, e.g. 1,000,000 USD. One might define this as the yearly spending divided by $\rho_i$ minus current savings.
 
 Under these assumptions, the cumulative savings after $H$ years equal:
 
@@ -107,9 +113,9 @@ parameters $s$, $\rho_i$ and $\rho_s$:
 
 ![image](/imgs/savings/savings.png)
 
-We could now subtract the savings goal from this function and look for the try to find
+We could now subtract the savings goal from this function and try to find
 the root of that expression, with respect to $H$. This is an expression of the form
-$a^H + b^H - c = 0$. As far as I can tell[^3] there are, in the general case, no analytical
+$a^H + b^H - c = 0$. As far as I can tell[^3] there are, in the general as well as this very case, no analytical
 solutions for such expressions. As a consequence we can't easily invert the function from
 above and can't have a mapping from cumulative savings to duration of saving.
 
@@ -123,7 +129,9 @@ This can be achieved by looking for the root of $f(H) - g$ with the
 
 In summary, we have a way of determining the duration of saving $H$, given a savings goal $g$.
 
-Let us now bridge continue this exercise, taking additional expenditures into account.
+Having figured out how much we save in a given duration and how long we need to save for a given
+savings goal if all goes according to plan, let us now continue this exercise, taking additional
+expenditures into account.
 
 ### How much is 100 USD in USD?
 
@@ -132,7 +140,7 @@ a sum of money now, will - in a sense - also compound, since we are missing out
 on the return on investment had we not spent but invested this money.
 
 Gladly, this compounding is of a simpler nature than that of the savings. The savings
-came with the interdependent compounding aspects: the return on investment as well as
+came with two interdependent compounding aspects: the return on investment as well as
 the increase in annual savings. For an expense $e$ made right now, there is only the
 return on investment that is compounding:
 
@@ -143,96 +151,117 @@ c(H, \rho_i, e) &= e (1 + \rho_i)^{H}
 $$
 
 For example, if we expect to hit our savings goal in $H=10$ years, and we assume an annual
-return on invest $\rho_i$ to be .05, spending $e=100$ USD now will 'cost us' approximately 163 USD.
+return on invest $\rho_i=.05$, spending $e=100$ USD now will 'cost us' approximately 163 USD.
 Put differently, we need to increase our savings goal by 163 USD if we want to spend 100 USD
 right now.
 
 Importantly, we see that the missed savings potential due to
-additional expenditures is a monotonically increasing function of the horizon $H$. As
-a consequence, spending 100 USD now is more expensive than spending 100 USD halfway down the
-road.
+additional expenditures is a monotonically increasing function of the horizon $H$. Put differently,
+spending 100 USD at time step $t$ is more expensive than spending 100 USD at time step $t + \epsilon$.
 
 ### How much is 100 USD in time?
 
-We can now tie both previous pieces together. We now know how much we save not considering
-additional expenditures and how an expenditure impacts our savings. We observe that, simply
-put, our savings $f(...)$ minus the missed savings potential $c(...)$ should be equal the savings goal $g$.
+We can now tie both previous pieces together. We know how much we save not considering
+additional expenditures and how an expenditure impacts our savings. In order to figure out
+for how long we need to save given additional expenditures, we can postulate that
+our achieved savings disregarding additional expenditures $f(...)$ minus the missed savings
+potential $c(...)$ should be equal the savings goal $g$.
 
-We can then again use Newton Raphson to solve this equation to figure out for which $H$
+$$ f(H) - c(H, e) = g$$
+
+As before, we can use Newton Raphson to solve this equation, figuring out for which $H$
 this equation holds true. Put differently, we can figure out for how long we need to save
 taking this expenditure into account.
 
 Comparing this duration with the duration without the additional expenditure then yields
 the extra time of saving we need to put in.
 
+$$ \begin{aligned}
+g &= f(H) - c(H, e) \\\
+g &= f(H') \\\
+\Delta &= H' - H
+\end{aligned}$$
+
 For example, if our savings goal from now on is $g = 1,000,000$ USD, our annual savings in the next
 12 months equal to $s = 60,000$, the annual savings increase $\rho_s = .07$ and the annual
 return on investment $\rho_i = .05$, spending an extra $e = 100$ USD right now will delay the point
 by when we reach financial freedom - i.e. 'it'll cost us' - .35 days.
 
-## Going further: How much is 100USD of a time other than at the end?
+Okay, so we learned that
+1. Money now will be worth more money later.
+2. How much time money right now will save us at the end of our time in serfdom.
+
+This bares the question:
+
+## How much is 100 USD in time, other than at 'the end' of our saving period?
 
 In the previous thought experiments we determined the value or cost of 100 USD by framing it
-as an additional expenditure moving our savings goal further away. Flipped the other way around,
+as an additional expenditure, moving our savings goal further away. Flipped the other way around,
 we might ask the question of the value of a 100 USD bill we find on the street with respect to time.
 
 The monetary return on investment will be the same - assuming parameters as in the example above, this will yield
-160 USD down the line.
+163 USD down the line.
 
 Yet, If we now ask the question of how much time we 'gain' the answer might vary. If we seek to simply seek
-shorten the duration of saving - i.e. removing the time 'from the end' - the answer will more or less remain
+shorten the duration of saving - i.e. removing the time 'from the end' - the answer will remain more or less
 the same - modulo some slight asymmetry. But what if we are now considering to 'take off' some time somewhen
-between now and the reaching of financial freedom? Is 100 USD worth the same amount of time at $q \cdot H$
-than at $(q + \epsilon) H$?
+between now and the reaching of financial freedom? Is 100 USD worth the same amount of time at time step $t$
+than at $t + \epsilon?
 
 No. But let's approach this one step at a time. Let's first ask the question of how much we save when taking
-a break from earning money of duration $\epsilon_t$ at an arbitrary point in time $H_b$ between the start and end of saving $H$. In order to answer this question, we can reuse $f$ from before and split time up in three phases:
+a break from earning money of duration $\epsilon_t$ at an arbitrary point in time $t$ between the start
+and end of saving $H$. In order to answer this question, we can reuse $f$ from before and our savings period into in three sub-phases:
 
-| Phase      | time index                    | Savings produces in this phase                                                                       |
-|------------|-------------------------------|------------------------------------------------------------------------|
-| Pre-break  | $0$ to $H_b$                  | $f(H_b)$                                                               |
-| Break      | $H_{b}$ to $H_b + \epsilon_t$ | $b=f(H_b)(-1 + (1 + \rho_i)^{\epsilon_t}) - \epsilon_t z$  |
-| Post-break | $H_b + \epsilon_t$ to $H$     | $f(H-H_b, s=s') + (f(H_b) + b)(-1 + (1 + \rho_i)^{H-H_b-\epsilon_t}) $ |
+| Phase      | time index                  |                                   Savings produces in this phase |
+|------------|-----------------------------|-----------------------------------------------------------------:|
+| Pre-break  | $0$ to $t$                  |                                                           $f(t)$ |
+| Break      | $H_{b}$ to $t + \epsilon_t$ |          $b=f(t)(-1 + (1 + \rho_i)^{\epsilon_t}) - \epsilon_t z$ |
+| Post-break | $t + \epsilon_t$ to $H$     | $f(H-t, s=s') + (f(t) + b)(-1 + (1 + \rho_i)^{H-t-\epsilon_t}) $ |
 
-where $s'= s (1 + \rho_s)^{H_b}$ and $z$ is the annual cost of living.
+where $s'= s (1 + \rho_s)^{t}$ is the annual saving at time $t$ or $t + \epsilon$[^4] and $z$ is the annual cost of living in USD.
 
-Let's now add up step by step and simplify:
+Let's now add up the savings from each of these phases and simplify:
 
 $$
 \begin{aligned}
-f(H_b) + b &= f(H_b)(1 + \rho_i)^{\epsilon_t}) -\epsilon_t z \\\
-(f(H_b) + b) (1 + \rho_i)^{H - H_b - \epsilon_t} &= f(H_b)(1+\rho_i)^{H - H_b} - \epsilon_t z (1 + \rho_i)^{H - H_b - \epsilon_t}\\\
-f_b(H, H_b, \epsilon_t) &= f(H-H_b, s=s') + f(H_b)(1+\rho_i)^{H - H_b} - \epsilon_t z (1 + \rho_i)^{H - H_b - \epsilon_t}
+f(t) + b &= f(t)(1 + \rho_i)^{\epsilon_t}) -\epsilon_t z \\\
+(f(t) + b) (1 + \rho_i)^{H - t - \epsilon_t} &= f(t)(1+\rho_i)^{H - t} - \epsilon_t z (1 + \rho_i)^{H - t - \epsilon_t}\\\
+f_b(H, t, \epsilon_t) &= f(H-t, s=s') + f(t)(1+\rho_i)^{H - t} - \epsilon_t z (1 + \rho_i)^{H - t - \epsilon_t} \\\
+ &= f(H-t, s=s') + f(t)(1+\rho_i)^{H - t} - c(H-t-\epsilon, \rho_i, \epsilon_t z)
 \end{aligned}
 $$
 
 Let's dissect this expression intuitively. The first term basically boils down to our usual savings computation
-for the duration that is left after the break. What's special is that we use an updated annual savings number - since we have already made a career during time $H_b$, our salary and therefore our annual saving has increased.
+for the duration that is left after the break. What's special is that we use an updated annual savings number
+- since we have already made a career up until our beak at time $t$. Our salary and therefore our annual saving
+have increased.
 
-The second term expresses that we have made our usual savings $f(H_b)$ in the pre-break phase - yet, these
-savings further compound thanks to investing. The remaining duration during which they compound is naturally
-$H - H_b$.
+The second term expresses that we have made our usual savings $f(t)$ in the pre-break phase - yet, these
+savings further compounded thanks to investing. The remaining duration of compounding covers the break as well
+as the post-break phase, hence it amounts to $H - t$ in total.
 
 The third term corresponds to the life costs we had to pay during our break. These had to be paid somehow.
 We simply frame this as though they had been paid from the then-existing savings. Diminishing the savings
-at time $H_b$ means that we lose out on some compounding of these savings. We capture this by directly
-compounding the life costs, a negative number.
+at time $t$ means that we lose out on some compounding of these savings. We capture this by directly
+compounding the life costs, a negative number. We observe that this is the same paradigm as when we wondered
+about the compounding cost of a 100 USD spending. Therefore we can reuse the function $c$, just with an
+adapted duration $H - t - \epsilon$ - assuming that the life costs of the break are paid at the end of the break.
 
-Now that we know how much we save even when taking a specific break, we work in reverse and figure out how
-long a break can be given all other information. Formally, we already found the horizon $H$ leading us to our
-savings goal $g$. We now ask the question
+Now that we know how much we save even when taking a break at a specific point in time and of a specific duration,
+we work in reverse and figure out how long a break can be given all other information. Formally, we already found
+the horizon $H$ leading us to our savings goal $g$. We now ask the question
 
-> For a given 'break moment' $H_b$, for how long can we take time off to still meet our savings goal given
+> For a given 'break moment' $t$, for how long can we take time off to still meet our savings goal given
 that just found 100 USD?
 
 This can be answered - who would've guessed it - by framing it as an equation that we'll solve with Newton Raphson.
 
-> Find $\epsilon_t$ such that $f(H) - f_b(H, H_b, \epsilon_t) = c(H, \rho_i, 100)$.
+> Find $\epsilon_t$ such that $f(H) - f_b(H, t, \epsilon_t) = c(H, \rho_i, 100)$.
 
 Note that since we found the 100 USD now, they will - since we will of course invest them - compound over the
 entire time horizon. Therefore we reuse the compounding function $c$ from before.
 
-The following graph show solutions $\epsilon_t$ on the y-axis for varying $H_b$ on the x-axis. The $H$ was
+The following graph show solutions $\epsilon_t$ on the y-axis for varying $t$ on the x-axis. The $H$ was
 chosen as ... in order to produce savings $g=...$.
 
 ![image](/imgs/savings/break.png)
@@ -241,6 +270,9 @@ We notice that the duration of time we can take off increases with the point in 
 an artifact of our specific constants, $\rho_i$, $\rho_s$, $s$ and so forth. Yet, this isn't the case.
 
 TODO: Actually argue.
+
+## A tl;dr for those who did r, a.k.a the summary
+
 
 
 [^0]:
@@ -253,3 +285,4 @@ TODO: Actually argue.
     something absence of evidence isn't evidence of absence) and ChatGPT claiming that this cannot
     be solved analytically. Sadly I didn't find a proof for why this can't be solved. So, I don't
     really know.
+[^4] We assume that we don't move forward to a raise while taking a break.
