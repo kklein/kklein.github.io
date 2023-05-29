@@ -1,6 +1,6 @@
 ---
 title: "How Much Is a Hundred Bucks?"
-date: 2023-05-03 7:38:07 +0200
+date: 2023-05-29 7:38:07 +0200
 comments: false
 published: true
 description: In a world where we rent out our time
@@ -9,7 +9,7 @@ katex: True
 draft: False
 ---
 
-The calculator accompanying this post can be found [here](https://kevinkle.in/savings/index.html).
+The not so mobile-friendly calculator accompanying this post can be found [here](https://kevinkle.in/savings/index.html).
 
 ## The value of time, the value of money
 
@@ -19,15 +19,15 @@ time, we could ask the question of the hourly rate someone is willing to pay for
 and consider that the value of our time.
 
 A contractor or employee might be able to gauge how much other people are
-willing to pay for one hour of one's time and derive from that an
+willing to pay for an hour of their time and derive from that an
 [aspirational hourly rate, as suggested by Naval](https://nav.al/hourly-rate).
-In this mindset, one might take on the stance of never 'doing work'[^0], e.g. filing taxes,
-doing laundry, which costs, i.e. or framed differently, 'pays', less than said aspirational
-hourly rate. The implicit assumption here is that our time is a fairly liquid resource -
-instead of cooking a meal for an hour we could do an additional hour of the work that pays
-best and keep the difference.
+In this mindset, one might take on the stance of never 'doing work'[^0], e.g. filing taxes or
+doing laundry, which costs (framed differently, 'pays') less than said aspirational
+hourly rate. The implicit assumption here is that work and time are fairly liquid resources -
+instead of cooking a meal for an hour we could decide to do an additional hour of some work which
+pays best and keep the difference.
 
-Since this is a trade, we assume it was fair/efficient and think of both resources having
+Since this is a voluntary trade, we assume it was fair/efficient and think of both resources having
 equivalent value. Hence, the hourly rate, defining the value of time in terms of money, would
 also imply a valuation of money in terms of time.
 
@@ -45,31 +45,28 @@ can and would trade time for money until the end of one's days.
 What seems more natural for me to do is to emphasize that, in a very simplified model of employment, one is renting out one's time
 until ones doesn't 'need' to anymore - ideally hoping that this is strictly before the moment
 a respective national pension fund kicks in. After that point in time, one might still go
-after the very same activity but with a very different motivation - no longer trading time for
+after the very same activity but with a very different motivation: no longer trading time for
 money but rather just allocating time on what's best fun, most exciting, most rewarding. In
 this model, the monetary unit remains the same as before: the typical currency, say USD. Yet,
 the temporal unit changes: it is no longer an hour of one's time 'right now' but rather the
 delay from achieving financial independence that a monetary unit causes.
 
 Bluntly put, the cost model for money becomes: By how much does spending a given amount
-delay the point in time of reaching the bliss of financial freedom?
+delay the point in time of reaching the bliss of financial independence?
 
 Note that the answer to this question doesn't change whether one continues to receive income
 from employment or contracting after this point in time. This is a relevant since we are
 talking about financial freedom, in a somewhat stark contrast to retirement. Also note that
 this approach assigns value to one's time in a way that immediately factors in cost of living.
-In contrast, the former model didn't. For example, deciding that to not trade one hour of one's
-time for money leaves it open as to how the bills are paid.
+In contrast, the former, aspirational hourly wage model didn't. For example, deciding not to trade
+one hour of one's time for money leaves it open as to how the bills are paid.
 
 In this alternative cost model it is clear that the more we spend before reaching our savings goal,
 the longer it'll take us to reach it. Put differently, the less we spend, the more time in a state
-of choice, freedom of sorts, we earned ourselves. But how much time? We'll get to that in the
+of choice, of freedom, we earned ourselves. But how much time? We'll get to that in the
 next paragraph.
 
 Moreover, we will realize that the respective values of time and money are likely to change over time.
-
-TODO: Illustration
-Matrix: Spent vs gained, money, time
 
 ## How much is 100 USD, formally?
 
@@ -84,12 +81,12 @@ Let's say that
 
 Under these assumptions, the cumulative savings after $H$ years equal:
 
-| $H$             | Savings after $H$ years                                    |
-|-----------------:|------------------------------------------------------------:|
-| 0               | 0                                                          |
-| 1               | $s$                                                        |
-| 2               | $s(1+\rho_s) + s(1 + \rho_i) \\\ = s[(1+\rho_s) + (1+\rho_i)]$ |
-| 3               |     $s(1+\rho_s)^2 + s(1+\rho_s)(1+\rho_i) + s(1+\rho_i)^2 \\\ =s[(1 + \rho_s)^2 + (1 +\rho_s)(1 + \rho_i) + (1 + \rho_i)^2]$                                                       |
+| $H$ |                                                                                                   Savings after $H$ years |
+|----:|--------------------------------------------------------------------------------------------------------------------------:|
+|   0 |                                                                                                                         0 |
+|   1 |                                                                                                                       $s$ |
+|   2 |                                                            $s(1+\rho_s) + s(1 + \rho_i) \\\ = s[(1+\rho_s) + (1+\rho_i)]$ |
+|   3 | $s(1+\rho_s)^2 + s(1+\rho_s)(1+\rho_i) + s(1+\rho_i)^2 \\\ =s[(1 + \rho_s)^2 + (1 +\rho_s)(1 + \rho_i) + (1 + \rho_i)^2]$ |
 
 It can easily be shown by induction that this series equals the following expression, which can be further simplified:
 
@@ -266,14 +263,11 @@ chosen as ... in order to produce savings $g=...$.
 
 ![image](/imgs/savings/break.png)
 
-We notice that the duration of time we can take off increases with the point in time. This could of course be
-an artifact of our specific constants, $\rho_i$, $\rho_s$, $s$ and so forth. Yet, this isn't the case.
-
-TODO: Actually argue.
+We notice that the duration of time we can take off increases with the delay with which the time off is taken.
 
 ## A tl;dr for those who did r, a.k.a 'the summary'
 
-First, we learned how much we many savings we generate after a given amount of years. In order to do so,
+First, we learned how much savings we generate after a given amount of years. In order to do so,
 we relied on a couple of assumptions:
 * We currently save a certain amount of money, of which we invest all.
 * These investments compound with a fixed annual net return on investment ratio.
