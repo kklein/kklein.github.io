@@ -5,7 +5,7 @@ theme = "archie"
 paginate = 50
 copyright = "© Kevin Klein"
 staticDir = "static"
-googleAnalytics = "UA-122721044-1"
+googleAnalytics = "G-SGRSG6Y0WX"
 
 [params]
 favicon = "img/favicon.ico"
