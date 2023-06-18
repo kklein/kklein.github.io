@@ -8,42 +8,87 @@ tags: [tech, thoughts]
 katex: True
 ---
 
-## Technical prerequisites:
-* Figure out importing problems:
-  * Sometimes escapes are not read as escapes.
-  * Sometimes commas aren't escaped.
-  * Make sure card type and deck name are specified in file!
-* Set up pre-commit hook with spell checking
-* Set up (potentially implement) pre-commit hook verifying csv format
-* Look into automated importing
+I long held the belief that knowing things (by heart) was both overrated and not too important.
+Rather, I thought that being able to quickly access and digest information was the only thing that mattered.
+I still think that the latter is incredibly important, but I changed my mind on the former.
 
-# Agenda
+TODO: Define knowledge, expertise, remembering, knowing, memorizing in footnotes
 
-* Talk about why remembering matters: Circle of influence, reducing the barrier of participation
-* Talk a bit about the mathematics/technicalities of Anki's spaced repitition
-* Teaser some of Anki's pros: Open Source, free hosting, high degree of customization, laTeX, Audio files, image files, Lückentexte
+# Why remember?
+
+Tl;dr: I now think that knowing things matters to some extent and would like to memorize.
+
+If I ask myself the question of what could be between my current situation and a situation I'd desire to be
+in, a partitioning presents itself naturally to me: inability, internal gatekeepers and external gatekeepers.
+
+Inability would mean that I indeed try to do something with a reasonable amount of dedication, believe in myself,
+am not obviously held back by others and still don't reach that situation. An example of that could be developing
+asthma in the midst of a marathon preparation.
+
+An internal gatekeeper would mean that something inside of be sabotages the attempt to reach said situation, either
+by preventing me from trying at all or by maintaining a certain reservation, suffocating true belief. An example
+of that could be wanting to work with a topic, say Reinforcement Learning, thinking about a way to get there,
+e.g. by working through a course on Reinforcement Learning, but then telling myself that this doesn't make any
+sense anyway since I haven't perfected my multivariate calculus skills - which Reinforcement Learning approaches
+might draw from.
+
+An external gatekeeper would mean that a person wields some kind of power to influence the path between me and my
+desired situation and uses that power to burn any bridges. An example of that could be an employer who doesn't hire
+me for he lacks the trust in my abilities.
+
+Note that all of these prevention mechanisms might be well-justified and have a net positive effect on me. Yet, at
+times they might be unjustified and have a net negative effect. In the latter case, it'd be great to get rid of them.
+
+Missing out on some of this potential is a very general problem. My change of mind with respect to the importance of
+knowing things has to do with a particular instance of this. I now believe that not knowing things can unjustly
+inflate the gatekeeping effects, both internal and external.
+
+Concretely, I've found that at times, my enthusiasm about a topic is suddenly dampened by realizing that there are
+a couple of things I once knew, that are relevant and that I no longer know - a case of internal gatekeeping.
+
+Moreover, I've found that other people regularly rely on the assessment of knowledge of a person when deciding
+whether they would like to offer or obstruct an opportunity. The extent of this has been a surprise to me since
+my mental model had always been that if someone had done something 'hard' - e.g. have a track record of doing pure math -
+it didn't matter whether they knew about something 'less hard' - e.g. the interpretation of the
+[Kullback-Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence) - they could surely pick
+it up in no time.
+
+TODO: Make sure to not confound just doing hard things (including experience) and knowledge
+
+Q: What is 'expertise'?
+
+I do still think that they could pick it up in no time but there are at least two catches with this mental model:
+* Sometimes a lot of value is created by being able to react quickly, to bounce ideas between people, to have short
+  feedback loops, to reinforce and filter quickly, without having to read up on things.
+* Other people might have a different (or no) partial ordering of hardness of somewhat comparable topics. Not everybody
+  might agree that you can surely understand fast how a boosted decision tree works if one tends to work with topology.
+
+TODO: Better example
+
+Therefore I came to the conclusion that I should start remembering, memorizing and knowing things.
+
+# What's the state of the art of remembering?
+
+TODO: Explain anki system/algo (spaced repetition) and ankiweb
+Teaser some of Anki's pros: Open Source, free hosting, high degree of customization, laTeX, Audio files, image files, Lückentexte
+
+
+# Remembering, in practice
+
+## Creation of flashcards
 * Talk about my technical setup: gh repo, csv files, phone app, laptop program
 * Talk about my use case: Vocabulary I bump into (both directions) and domain knowledge I bump into (one direction, usually)
   * Open a bracket: In languages, being able to define is a different skill that knowing a meaning; exercise in articulation
 
+## Usage of flashcards
 
-[url](https://google.com)
+# Agenda
+
+* Talk about why remembering matters: Circle of influence, reducing the barrier of participation (wrt external and internal gatekeepers)
+* Talk a bit about the mathematics/technicalities of Anki's spaced repetition
 
 
 Cool sentence with footnote[^0].
-
-![image](/imgs/Hn.png)
-
-Inline formula \\(\lambda = \omega\\)
-
-Equation $$\lambda = \omega$$
-
-Aligned equation
-$$\begin{aligned}
-\Pr[x=1] &= 1 - \Pr[x=0]\\\
-&= 1 - \frac{1}{2} \\\
-&= \frac{1}{2}
-\end{aligned}$$
 
 
 [^0]: Cool footnote.
