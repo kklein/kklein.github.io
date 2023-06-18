@@ -75,10 +75,54 @@ Teaser some of Anki's pros: Open Source, free hosting, high degree of customizat
 
 # Remembering, in practice
 
+While there are plenty of ready-to-use Anki flashcard decks available online, I decided to create my own decks. I care about
+high precision and low recall.
+
 ## Creation of flashcards
-* Talk about my technical setup: gh repo, csv files, phone app, laptop program
-* Talk about my use case: Vocabulary I bump into (both directions) and domain knowledge I bump into (one direction, usually)
-  * Open a bracket: In languages, being able to define is a different skill that knowing a meaning; exercise in articulation
+I store all of my flashcards in fairly straight-forward csv files. This is an excerpt from my
+[flashcards for French](https://github.com/kklein/flashcards/blob/main/french.csv).
+
+```csv
+L'embarras,"1. Incertitude, perplexité de quelqu'un qui ne sait quelle voie choisir.
+2. Gêne, malaise en présence d'une situation délicate
+3. Difficulté, problème (surtout pluriel)"
+
+Échappatoire (f.),"Moyen adroit et détourné de se tirer d'embarras.
+Exemple: Trouver une échappatoire pour ne pas aller à une soirée."
+
+Agencer,"Disposer en combinant (des éléments), organiser (un ensemble)
+par une combinaison d'éléments."
+
+Habile,"Qui exécute avec adresse et compétence quelque chose de ses mains."
+```
+
+As of now I have decks for the following topics:
+* French vocabulary[^0]
+* English vocabulary
+* Probability & Statistics
+* Machine Learning
+* Causal Inference
+* Deep Learning
+
+The former two decks are imported as to create cards for the reverse as well. For example, the last row of the excerpt above will create two flashcards:
+
+| Question                                                           | Answer                                                             |
+|:-------------------------------------------------------------------|:-------------------------------------------------------------------|
+| Habile                                                             | Qui exécute avec adresse et compétence quelque chose de ses mains. |
+| Qui exécute avec adresse et compétence quelque chose de ses mains. | Habile                                                             |
+
+All other decks are unidirectional.
+
+I version-control these csv files with `git` and host them in [this GitHub repository](https://github.com/kklein/flashcards). 
+
+Naturally, anki expects these csv files to have a certain format. In order to automate
+the validation of this format, I build a pre-commit hook, such that whenever I seek
+to commit an update to my flashcards, the csv files are validated for spelling errors
+and format violations. You can find this validation mechanisms in [this repository](https://github.com/kklein/anki-csv).
+
+Once the csv files are created/updated and version controlled, I import them with Anki's MacOs client. This client than allows me to synchronize
+them with AnkiWeb - making them available on all of my devices. [The last time I checked](https://forums.ankiweb.net/t/anki-public-api/22741)
+there was no public API to circumvent having to use Anki's desktop client and directly updating the decks via a programming language or cli.
 
 ## Usage of flashcards
 
@@ -91,4 +135,4 @@ Teaser some of Anki's pros: Open Source, free hosting, high degree of customizat
 Cool sentence with footnote[^0].
 
 
-[^0]: Cool footnote.
+[^0]: I realized that in languages, being able to define a word is a different skill from knowing its meaning; it's an exercise in articulation.
