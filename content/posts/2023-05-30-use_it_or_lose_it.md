@@ -8,11 +8,9 @@ tags: [tech, thoughts]
 katex: True
 ---
 
-I long held the belief that knowing things (by heart) was both overrated and not too important.
+I long held the belief that knowing things (by heart)[^0] was both overrated and not too important.
 Rather, I thought that being able to quickly access and digest information was the only thing that mattered.
 I still think that the latter is incredibly important, but I changed my mind on the former.
-
-TODO: Define knowledge, expertise, remembering, knowing, memorizing in footnotes
 
 # Why remember?
 
@@ -72,7 +70,6 @@ Therefore I came to the conclusion that I should start remembering, memorizing a
 TODO: Explain anki system/algo (spaced repetition) and ankiweb
 Teaser some of Anki's pros: Open Source, free hosting, high degree of customization, laTeX, Audio files, image files, Lückentexte
 
-
 # Remembering, in practice
 
 While there are plenty of ready-to-use Anki flashcard decks available online, I decided to create my own decks. I care about
@@ -97,7 +94,7 @@ Habile,"Qui exécute avec adresse et compétence quelque chose de ses mains."
 ```
 
 As of now I have decks for the following topics:
-* French vocabulary[^0]
+* French vocabulary[^1]
 * English vocabulary
 * Probability & Statistics
 * Machine Learning
@@ -126,13 +123,16 @@ there was no public API to circumvent having to use Anki's desktop client and di
 
 ## Usage of flashcards
 
+In order to study/practice the flashcards, I use both Anki's MacOs Desktop client as well as their Android app. 
+The former comes with a deck explorer. Here one can investigate, whether all cards will be rendered as expected:
+
+![image](/imgs/anki.png)
+
 # Agenda
 
 * Talk about why remembering matters: Circle of influence, reducing the barrier of participation (wrt external and internal gatekeepers)
 * Talk a bit about the mathematics/technicalities of Anki's spaced repetition
 
 
-Cool sentence with footnote[^0].
-
-
-[^0]: I realized that in languages, being able to define a word is a different skill from knowing its meaning; it's an exercise in articulation.
+[^0]: In the sense of remembering and memorizing, i.e. storing and retrieving information without further aid; in stark contrast to wielding a skill or understanding.
+[^1]: I realized that in languages, being able to define a word is a different skill from knowing its meaning; it's an exercise in articulation.
