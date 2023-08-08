@@ -67,8 +67,29 @@ Therefore I came to the conclusion that I should start remembering, memorizing a
 
 # What's the state of the art of remembering?
 
-TODO: Explain anki system/algo (spaced repetition) and ankiweb
-Teaser some of Anki's pros: Open Source, free hosting, high degree of customization, laTeX, Audio files, image files, Lückentexte
+Conceptually, Anki relies on [spaced
+repetition](https://en.wikipedia.org/wiki/Spaced_repetition)
+in order to remember as much as possible with as little effort as
+possible. Moreover, it drew inspiration from SuperMemo - a flashcard
+system which combined spaced repetition with feedback on how easy or
+hard it was to remember something. In particular, it relies
+on the SM2 algorithm, vaguely described
+[here](https://www.supermemo.com/en/blog/application-of-a-computer-to-improve-the-results-obtained-in-working-with-the-supermemo-method).
+Visudal explanations with code of various spaced repetition algorithms
+can be found on [Julien Sobczak's
+blog](https://www.juliensobczak.com/inspect/2022/05/30/anki-srs.html)
+
+There are of course many other flashcard systems, yet Anki is one of
+the few open-source projects in this space. Moreoever, it has lots
+of amazing features:
+* It supports LaTeX.
+* It supports audio and image files.
+* It supports fill-in-the blank exercises.
+* Its clients have lots of really interesting statistics on user
+  behaviour.
+* It has a high degree of customization when it comes to spaced
+  repetition algorithm parameters.
+* It comes with free (yet, closed-source) hosting.
 
 # Remembering, in practice
 
