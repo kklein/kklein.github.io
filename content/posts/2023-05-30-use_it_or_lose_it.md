@@ -150,11 +150,6 @@ The former comes with a deck explorer. Here one can investigate, whether all car
 
 ![image](/imgs/anki.png)
 
-# Agenda
-
-* Talk about why remembering matters: Circle of influence, reducing the barrier of participation (wrt external and internal gatekeepers)
-* Talk a bit about the mathematics/technicalities of Anki's spaced repetition
-
 
 [^0]: In the sense of remembering and memorizing, i.e. storing and retrieving information without further aid; in stark contrast to wielding a skill or understanding.
 [^1]: I realized that in languages, being able to define a word is a different skill from knowing its meaning; it's an exercise in articulation.
