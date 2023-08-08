@@ -23,16 +23,16 @@ Inability would mean that I indeed try to do something with a reasonable amount 
 am not obviously held back by others and still don't reach that situation. An example of that could be developing
 asthma in the midst of a marathon preparation.
 
-An internal gatekeeper would mean that something inside of be sabotages the attempt to reach said situation, either
+An internal gatekeeper would mean that something inside of me sabotages the attempt of reaching said situation, either
 by preventing me from trying at all or by maintaining a certain reservation, suffocating true belief. An example
-of that could be wanting to work with a topic, say Reinforcement Learning, thinking about a way to get there,
+of that could be wanting to work with on a topic, say Reinforcement Learning, thinking about a way to get there,
 e.g. by working through a course on Reinforcement Learning, but then telling myself that this doesn't make any
 sense anyway since I haven't perfected my multivariate calculus skills - which Reinforcement Learning approaches
 might draw from.
 
 An external gatekeeper would mean that a person wields some kind of power to influence the path between me and my
 desired situation and uses that power to burn any bridges. An example of that could be an employer who doesn't hire
-me for he lacks the trust in my abilities.
+me for he lacks the conviction in my abilities.
 
 Note that all of these prevention mechanisms might be well-justified and have a net positive effect on me. Yet, at
 times they might be unjustified and have a net negative effect. In the latter case, it'd be great to get rid of them.
@@ -72,8 +72,8 @@ Teaser some of Anki's pros: Open Source, free hosting, high degree of customizat
 
 # Remembering, in practice
 
-While there are plenty of ready-to-use Anki flashcard decks available online, I decided to create my own decks. I care about
-high precision and low recall.
+While there are plenty of ready-to-use Anki flashcard decks available
+online, I decided to create my own decks. I both care about high precision and low recall.
 
 ## Creation of flashcards
 I store all of my flashcards in fairly straight-forward csv files. This is an excerpt from my
@@ -110,20 +110,25 @@ The former two decks are imported as to create cards for the reverse as well. Fo
 
 All other decks are unidirectional.
 
-I version-control these csv files with `git` and host them in [this GitHub repository](https://github.com/kklein/flashcards). 
+I version-control these csv files with `git` and host them in [this GitHub repository](https://github.com/kklein/flashcards).
 
 Naturally, anki expects these csv files to have a certain format. In order to automate
-the validation of this format, I build a pre-commit hook, such that whenever I seek
+the validation of this format, I build a [pre-commit](https://pre-commit.com/) hook, such that whenever I seek
 to commit an update to my flashcards, the csv files are validated for spelling errors
 and format violations. You can find this validation mechanisms in [this repository](https://github.com/kklein/anki-csv).
 
-Once the csv files are created/updated and version controlled, I import them with Anki's MacOs client. This client than allows me to synchronize
-them with AnkiWeb - making them available on all of my devices. [The last time I checked](https://forums.ankiweb.net/t/anki-public-api/22741)
-there was no public API to circumvent having to use Anki's desktop client and directly updating the decks via a programming language or cli.
+Once the csv files are created/updated and version controlled, I
+import them with Anki's macOS client. This client allows
+for the synchronization with AnkiWeb - making them available on all of
+my devices.
+[The last time I checked](https://forums.ankiweb.net/t/anki-public-api/22741)
+there was no public API to circumvent having to use Anki's desktop
+client and directly updating
+the decks via a programming language or cli.
 
 ## Usage of flashcards
 
-In order to study/practice the flashcards, I use both Anki's MacOs Desktop client as well as their Android app. 
+In order to study/practice the flashcards, I use both Anki's macOS desktop client as well as their Android app.
 The former comes with a deck explorer. Here one can investigate, whether all cards will be rendered as expected:
 
 ![image](/imgs/anki.png)
