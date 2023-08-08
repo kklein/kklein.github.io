@@ -6,7 +6,6 @@ published: true
 description: In a world where we rent out our time
 tags: [math, thoughts]
 katex: True
-draft: False
 ---
 
 The not so mobile-friendly calculator accompanying this post can be found [here](https://kevinkle.in/savings/index.html).
