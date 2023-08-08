@@ -1,6 +1,6 @@
 ---
 title: "Use It Or Lose It"
-date: 2000-01-01 7:38:07 +0200
+date: 2023-08-08 7:38:07 +0200
 comments: false
 published: false
 description: I sometimes learn about things; I want to remember them, too
@@ -47,21 +47,17 @@ a couple of things I once knew, that are relevant and that I no longer know - a 
 Moreover, I've found that other people regularly rely on the assessment of knowledge of a person when deciding
 whether they would like to offer or obstruct an opportunity. The extent of this has been a surprise to me since
 my mental model had always been that if someone had done something 'hard' - e.g. have a track record of doing pure math -
-it didn't matter whether they knew about something 'less hard' - e.g. the interpretation of the
+it didn't matter whether they knew about something - e.g. the interpretation of the
 [Kullback-Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence) - they could surely pick
 it up in no time.
 
-TODO: Make sure to not confound just doing hard things (including experience) and knowledge
-
-Q: What is 'expertise'?
-
 I do still think that they could pick it up in no time but there are at least two catches with this mental model:
-* Sometimes a lot of value is created by being able to react quickly, to bounce ideas between people, to have short
+* Sometimes a lot of value is created by being able to react quickly,
+  to bounce off ideas , to have short
   feedback loops, to reinforce and filter quickly, without having to read up on things.
 * Other people might have a different (or no) partial ordering of hardness of somewhat comparable topics. Not everybody
-  might agree that you can surely understand fast how a boosted decision tree works if one tends to work with topology.
-
-TODO: Better example
+  might agree that you can surely acquire knowledge on how a boosted
+  decision tree works in no time if one tends to work with topology.
 
 Therefore I came to the conclusion that I should start remembering, memorizing and knowing things.
 
