@@ -42,7 +42,9 @@ knowing things has to do with a particular instance of this. I now believe that 
 inflate the gatekeeping effects, both internal and external.
 
 Concretely, I've found that at times, my enthusiasm about a topic is suddenly dampened by realizing that there are
-a couple of things I once knew, that are relevant and that I no longer know - a case of internal gatekeeping.
+a couple of things I once knew, that are relevant and that I no longer
+know - a case of internal gatekeeping. In a way, I'm - in Stephen
+Covey's terminology - unncessarily shrinking my circle of influence.
 
 Moreover, I've found that other people regularly rely on the assessment of knowledge of a person when deciding
 whether they would like to offer or obstruct an opportunity. The extent of this has been a surprise to me since
