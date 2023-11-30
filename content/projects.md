@@ -4,7 +4,7 @@ type: page
 draft: False
 ---
 
-# Work
+# QuantCo
 I am fortunate enough that some of the work done at [QuantCo](https://quantco.com/) is open source.
 
 ## Datajudge
@@ -15,6 +15,16 @@ I am fortunate enough that some of the work done at [QuantCo](https://quantco.co
 ## Pytsql
 
 [pytsql](https://github.com/Quantco/pytsql) is a Python library enabling the execution and parametrization of raw mssql scripts. Under the hood it parses a script with an [antlr](https://www.antlr.org/) grammar.
+
+
+# PyData
+
+I try to be active in and foster the [PyData](https://pydata.org/) community.
+
+I gave a talk about [Datajudge](https://github.com/quantco/datajudge) at the PyData Berlin meetup ([slides](https://github.com/kklein/datajudge-presentation/blob/main/slides.pdf)) and a talk about Causal Inference libraries at the PyData Amsterdam conference ([recoding](https://youtu.be/cRS4yZt6OU4?si=YP-ETWSfReUcS9rV), [slides](https://github.com/kklein/pydata_ams/blob/main/slides/slides.pdf)).
+
+I am one of the organizers of the [PyData Zurich meetup](https://www.meetup.com/pydata-zurich/). [This](https://youtu.be/1qeMyC1V94A?si=5k0wTdopT801tySa) is a reconding of one of our recent events at Google.
+
 
 # Personal
 
