@@ -1,53 +1,86 @@
 ---
-title:  "2023 in Consuming"
+title:  "2023 in Music"
 date:   2023-12-22 12:38:07 +0200
-description:  "Books and music"
+description:  "Records I listened to this year"
 comments: false
 published: false
 tags: [thoughts]
 katex: False
 ---
 
-Just rambling about some books and music I've been exposed to in 2023. I did a similar thing in
+Just rambling about some music I've been exposed to in 2023. I did a similar thing in
 [2022](https://kevinkle.in/posts/2022-12-22-2022_consuming/),
-[2021](https://kevinkle.in/posts/2021-12-28-2021_consuming/) and [2020](https://kevinkle.in/posts/2021-01-02-2020_consuming/).
+[2021](https://kevinkle.in/posts/2021-12-28-2021_consuming/) and
+[2020](https://kevinkle.in/posts/2021-01-02-2020_consuming/).
 
-# Books
+# Live recording
 
-## Le mage du Kremlin - Giuliano da Empoli
+King Krule covered Connan Mockasin's 'Forever Dolphin Love' on Annie
+Mac's Radio 1 show. I don't know whether there has been as single day
+of the second half of 2023 on which I haven't listened to this
+recording.
+
+[Treat yourself](https://www.youtube.com/watch?v=zPGYiC1P1LA)
 
 # Records
 
 ## When I Have Fears - The Murder Capital
 Wow - this hit me like a train. The album I had long been waiting for without knowing about it. I don't perceive this album as
 a truly 'great' album. Rather, parts of it just scratch that itch that nothing else seems to reach. 'Green and Blue' is visceral,
-direct and yet not harsh or blunt. I like [this live recording](https://youtu.be/jQtbKWmIUxs) quite a bit.
+direct and yet avoids being harsh or blunt. I like [this live recording](https://youtu.be/jQtbKWmIUxs) quite a bit.
 [This article](https://www.irishtimes.com/culture/music/2023/01/07/the-murder-capital-we-just-couldnt-talk-to-each-other-trust-was-a-huge-issue/)
-from the Irish Times taught be the word 'suave' - meaning elegant, charming, confident - through a description of lead vocalist
+from the Irish Times taught me the word 'suave' - meaning elegant, charming, confident - through a description of lead vocalist
 James McGovern. I agree.
 
 ## On Giacometti - Hania Rani
-It took me a moment to warm up to this. I think my problem is that I've been too spoiled by the sweet sweet nectar of 'Esja' - 
-big footsteps to fill. I learned to put 'On Giacometti' in a different category, of a rather atmospheric and less stage-filling
-nature. I'm excited for future works of hers.
+It took me a moment to warm up to this. I think my main problem was that I'd been too spoiled by the sweet sweet nectar of 'Esja' - 
+big footsteps to fill. I learned to put 'On Giacometti' in a different
+category; it seems to be of a rather atmospheric and less stage-filling nature. I'm excited for future works of hers.
 
 ## UGLY - Slowthai
 I've repeatedly caught myself thinking that I find this really original. I think Slowthai does great in channeling
 energy on tracks like 'Selfish', 'Fuck it Puppet', 'Tourniquet' and 'Happy'. I'm still surprised by 'Sooner' and 'UGLY' - they kind
-of feels like a Babyshambles song to me, in a good way. While I didn't love the echoing chorus, I thought the verses
+of feel like Babyshambles songs to me, in a good way. While I didn't love the echoing chorus, I thought the verses
 of 'Never Again' were solid ballad material.
-Overall I admire the creative effort and most songs in isolation - the album as a whole doesn't necessarily feel super coherent.
+Overall I admire the creative effort and most songs in isolation - the
+album as a whole doesn't necessarily feel super coherent to me.
 
 ## Selected Ambient Works 85-92 - Aphex Twin
-I play this when I feel like electronic music but am in presence of people who aren't into electronic music. It's crazy to think
-that feels quite modern - or maybe actually modern retro - to me. I'm not sure what this says about what.
+I play this when I feel like electronic music but am in presence of
+people who aren't into electronic music. I can't wrap my head around
+the fact that this is music from the 80s.
 
 ## Bright Green Field - Squid
-This cannot be described. I'm glad this kind of music exists.
+I'm glad this kind of music exists.
 
 ## Horizon Problems - Geju
-
+I don't feel strongly about it but listened to it quite a bit while programming. I really like the
+voice and pronounciation of the guy who ended up being sampled on 'Heinz'.
 
 ## Scaring the Hoes - JPEGMafia and Danny Brown
+At first, Danny Brown's repetitive, nasal rapping and the 80s
+influence in the beats was a bit too much for me. Anthony Fantano's
+super high opinion of this made me dig though it a bit more. I
+definitely learned to like it.
 
 ## v2.0 - GoGo Penguin
+Fairly soothing, yet stimulating.
+
+## James Blake - James Blake
+We've grown close.
+
+##  Love What Survives - Mount Kimbie
+I almost find it a pity that the King Krule feature 'Blue Lines' is on
+this album since it feels like a majestic and beautiful light tower
+that unfortunately also happens to steal the show from an otherwise
+very picturesque yet more dimly lit scenery. I really like this.
+
+## LOUIE - Kenny Beats
+Inoffensive; gentle and a bit bland.
+
+## Flimsier - King Krule
+My thoughts and feelings on this record are still developing a lot. I can already tell that I admire it, in some way. It does require some effort to listen to and can be a bit abrasive at times - 
+I guess by design.
+
+## Shades Of Blue: Madlib Invades Blue Note - Madlib
+It came to me out of nowhere and is no doubt meant to stay.
