@@ -1,5 +1,5 @@
 ---
-title: "Use It Or Lose It"
+title: "Use It or Lose It"
 date: 2023-08-08 7:38:07 +0200
 comments: false
 published: true
