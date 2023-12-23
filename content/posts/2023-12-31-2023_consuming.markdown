@@ -3,7 +3,7 @@ title:  "2023 in Music"
 date:   2023-12-22 12:38:07 +0200
 description:  "Records I listened to this year"
 comments: false
-published: false
+published: true
 tags: [thoughts]
 katex: False
 ---
