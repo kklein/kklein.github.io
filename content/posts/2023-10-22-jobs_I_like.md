@@ -15,14 +15,14 @@ In no particular order; probably not mutually exclusive; certaintly not collecti
 * I don't look for confirmation.
 * I don't need technical private projects.
 * I have colleagues who
-  * put ideas over people
-  * don't have a strong ego
-  * are very driven but not totally obsessed
-  * thirst for knowledge
-  * take satisfaction in sharing knowledge, teaching
-  * don't forget or (involuntarily) bend much of what has been discussed between people
-  * think long term
-  * don't die by 'done is better than perfect'
-  * never hide their uncertainty
-  * are aware of their weaknesses
+  * put ideas over people.
+  * don't have a strong ego.
+  * are very driven but not totally obsessed.
+  * thirst for knowledge.
+  * take satisfaction in sharing knowledge, teaching.
+  * don't forget or (involuntarily) bend much of what has been discussed between people.
+  * think long term.
+  * don't die by 'done is better than perfect'.
+  * never hide their uncertainty.
+  * are aware of their weaknesses.
 
