@@ -23,7 +23,7 @@ I try to be active in and foster the [PyData](https://pydata.org/) community.
 
 I gave a talk about [Datajudge](https://github.com/quantco/datajudge) at the PyData Berlin meetup ([slides](https://github.com/kklein/datajudge-presentation/blob/main/slides.pdf)) and a talk about Causal Inference libraries at the PyData Amsterdam conference ([recoding](https://youtu.be/cRS4yZt6OU4?si=YP-ETWSfReUcS9rV), [slides](https://github.com/kklein/pydata_ams/blob/main/slides/slides.pdf)).
 
-I am one of the organizers of the [PyData Zurich meetup](https://www.meetup.com/pydata-zurich/). [This](https://youtu.be/1qeMyC1V94A?si=5k0wTdopT801tySa) is a reconding of one of our recent events at Google.
+I am one of the organizers of the [PyData Zurich meetup](https://www.meetup.com/pydata-zurich/). [This](https://youtu.be/1qeMyC1V94A?si=5k0wTdopT801tySa) is a recording of one of our recent events at Google.
 
 
 # Personal
