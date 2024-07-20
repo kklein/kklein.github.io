@@ -13,7 +13,7 @@ I am way past a stage of a crush or merely being in love when it comes to [`pdb`
 Miracurously I have perceived it to be both very flexible and powerful for advanced users as well as very simple and thereby beginner-friendly when catering to rather simple use cases.
 What adds to my appreciation for `pdb` is that - unlike, afaict, most debuggers - it sits rather with the code than the IDE. This agnosticity to IDEs or systems makes it very portable and convenient to use in many different environments, e.g. whenever you only have a terminal access to a machine.
 
-In case you haven't had the pleasure yet: `pdb` is a Python debugger. What's somewhat unusual about it when comparing it to e.g. the PyCharm debugger, the [VSCode debugger](https://code.visualstudio.com/docs/editor/debugging) but also [gdb](https://sourceware.org/gdb/), is that the debugging metadata becomes part of the code. Hence, instead of defining the debug behaviour via funny dots in an IDE or separate references in a debugging tool, we simply modify our code:
+In case you haven't had the pleasure yet: `pdb` is a Python debugger. What's somewhat unusual about it when comparing it to e.g. the PyCharm debugger, the [VSCode debugger](https://code.visualstudio.com/docs/editor/debugging) but also [gdb](https://sourceware.org/gdb/), is that the debugging metadata becomes part of the code. Hence, instead of defining the debug behaviour via funny dots [^0] in an IDE or separate references in a debugging tool, we simply modify our code:
 
 ```python
 
@@ -123,3 +123,5 @@ ValueError: Found at least one breakpoint in monitoring/cal.py.
 ```
 
 You can find information on how to install and use this pre-commit hook [here](https://github.com/kklein/no-more-breakpoints).
+
+[^0]: Exhibit A: ![image](/imgs/debugger.png) taken from the [PyCharm tutorial](https://www.jetbrains.com/help/pycharm/using-breakpoints.html#set-breakpoints)
