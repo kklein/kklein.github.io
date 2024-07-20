@@ -7,12 +7,16 @@ draft: False
 # QuantCo
 I am fortunate enough that some of the work done at [QuantCo](https://quantco.com/) is open source.
 
-## Datajudge
+## metalearners
 
-[Datajudge](https://github.com/quantco/datajudge) is a Python data testing library. Datajudge allows for the convenient expression and testing of expectations between different data source in database. It integrates nicely with pytest. For more, read our [blog post](https://tech.quantco.com/2022/06/20/datajudge.html) or have a look at an [example](https://datajudge.readthedocs.io/en/latest/examples/example.html) in the documentation.
+[metalearners](https://github.com/Quantco/metalearners) is a Causal Inference Python library for estimating Conditional Average Treatment Effects with MetaLearners.
+For more information, have a look at our [blog post](https://tech.quantco.com/blog/metalearners) or the [documentation](https://metalearners.readthedocs.io/en/latest/).
 
+## datajudge
 
-## Pytsql
+[datajudge](https://github.com/quantco/datajudge) is a Python data testing library. Datajudge allows for the convenient expression and testing of expectations between different data source in database. It integrates nicely with pytest. For more, read our [blog post](https://tech.quantco.com/2022/06/20/datajudge.html) or have a look at an [example](https://datajudge.readthedocs.io/en/latest/examples/example.html) in the documentation.
+
+## pytsql
 
 [pytsql](https://github.com/Quantco/pytsql) is a Python library enabling the execution and parametrization of raw mssql scripts. Under the hood it parses a script with an [antlr](https://www.antlr.org/) grammar.
 
