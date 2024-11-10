@@ -76,3 +76,7 @@ David Bayles & Ted Orland - Art & Fear
 This NYT article claims that Leonard Cohen has written up to 180
 verses for his masterpiece 'Hallelujah'.
 https://www.nytimes.com/2022/06/30/movies/hallelujah-leonard-cohen-a-journey-a-song-review.html
+
+
+Relevant blog post:
+https://swapnilchauhan.com/blog/procrastination-and-the-fear-of-not-being-good-enough
