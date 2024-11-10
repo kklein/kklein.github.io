@@ -2,7 +2,8 @@
 title: "Status Symbols"
 date: 2022-12-21 7:38:07 +0200
 comments: false
-published: true
+params:
+  published: true
 description:  "... that I can think of"
 tags: [thoughts]
 katex: False

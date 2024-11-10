@@ -2,7 +2,8 @@
 title: "Eggplant Parmigiana"
 date: 2023-04-08 7:38:07 +0200
 comments: false
-published: true
+params:
+  published: true
 description: I like the fennel seeds
 tags: [recipe]
 katex: False

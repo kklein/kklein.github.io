@@ -2,7 +2,8 @@
 title: "No More Breakpoints?"
 date: 2024-07-20 7:38:07 +0200
 comments: false
-published: true
+params:
+  published: true
 description: A pre-commit hook ensuring the absence of pdb breakpoints in code
 tags: [tech]
 katex: False

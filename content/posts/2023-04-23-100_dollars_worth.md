@@ -2,7 +2,8 @@
 title: "How Much Is a Hundred Bucks?"
 date: 2023-05-29 7:38:07 +0200
 comments: false
-published: true
+params:
+  published: true
 description: In a world where we rent out our time
 tags: [math, thoughts]
 katex: True

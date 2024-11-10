@@ -2,7 +2,8 @@
 title: "How Many Inner Nodes"
 date: 2023-01-08 7:38:07 +0200
 comments: false
-published: true
+params:
+  published: true
 description: Probabilistic statements on decision tree structures
 tags: [math]
 katex: True

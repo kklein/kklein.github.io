@@ -2,7 +2,8 @@
 title: "Org Log"
 date: 2022-02-27 9:38:07 +0200
 comments: false
-published: true
+params:
+  published: true
 description: I started using Emacs' OrgMode to log my days.
 tags: [tech]
 ---

@@ -3,7 +3,8 @@ title:  "Caramelized Onion and Artichoke Ravioli"
 date:   2020-05-25 15:38:07 +0200
 description: ""
 comments: false
-published: true
+params:
+  published: true
 ---
 ## Ingredients
 Dough

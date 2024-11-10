@@ -2,7 +2,8 @@
 title:  "Markov Random Field Image Denoising"
 date:   2020-04-26 9:38:07 +0200
 comments: false
-published: true
+params:
+  published: true
 katex: true
 description: I tried to model image denoising as a graph problem and implemented a naive optimization for it.
 tags: [tech, math]

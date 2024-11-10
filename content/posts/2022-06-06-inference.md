@@ -2,7 +2,8 @@
 title: "Inference"
 date: 2022-06-05 7:38:07 +0200
 comments: false
-published: true
+params:
+  published: true
 description: No, the other inference!
 tags: [math, tech]
 katex: True

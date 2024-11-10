@@ -2,7 +2,8 @@
 title: "Celeriac Strawberry Salad"
 date: 2022-09-24 7:38:07 +0200
 comments: false
-published: true
+params:
+  published: true
 description: Surprisingly satisfying
 tags: [recipe]
 katex: False

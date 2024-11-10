@@ -2,10 +2,11 @@
 title: "Chicory Tarte Tatin"
 date: 2022-10-09 7:38:07 +0200
 comments: false
-published: True
 description:
 tags: [recipe]
 katex: False
+params:
+  published: True
 ---
 
 # Ingredients

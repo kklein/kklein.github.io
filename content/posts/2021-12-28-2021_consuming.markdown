@@ -2,7 +2,8 @@
 title:  "2021 in Consuming"
 date:   2021-12-28 12:38:07 +0200
 comments: false
-published: true
+params:
+  published: true
 description: I compiled lists of media I have consumed in 2021.
 tags: [thoughts]
 ---

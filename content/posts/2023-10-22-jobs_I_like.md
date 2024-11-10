@@ -2,7 +2,8 @@
 title: "Indicators for a Great Job"
 date: 2023-10-22 7:38:07 +0200
 comments: false
-published: true
+params:
+  published: true
 description:
 tags: [thoughts]
 katex: False

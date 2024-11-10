@@ -2,7 +2,8 @@
 title:  "Sudoku #3: Poor Man's RL"
 date:   2022-02-13 8:00:07 +0200
 comments: false
-published: true
+params:
+  published: true
 description: I explored OpenAI's gym library to model Sudoku as a Reinforcement Learning problem.
 tags: [math, tech]
 ---

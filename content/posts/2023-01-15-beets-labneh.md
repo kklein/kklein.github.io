@@ -2,7 +2,8 @@
 title: "I See Red"
 date: 2023-01-15 7:38:07 +0200
 comments: false
-published: true
+params:
+  published: true
 description: Beets, labneh, sour cherries
 tags: [recipe]
 katex: False

@@ -2,7 +2,8 @@
 title: "QoQa Looks Mostly Legit"
 date: 2022-12-29 7:38:07 +0200
 comments: false
-published: true
+params:
+  published: true
 description: Scraping indications of remaining stock
 tags: [tech]
 katex: True

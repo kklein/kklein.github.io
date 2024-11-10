@@ -2,7 +2,8 @@
 title:  "PB Granola"
 date:   2022-05-20 8:00:00 +0200
 comments: false
-published: true
+params:
+  published: true
 description: "If there's something we can learn from Snickers, it's that peanuts and chocolate work."
 tags: [recipe]
 ---

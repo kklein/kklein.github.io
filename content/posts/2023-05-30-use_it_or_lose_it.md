@@ -2,7 +2,8 @@
 title: "Use It or Lose It"
 date: 2023-08-08 7:38:07 +0200
 comments: false
-published: true
+params:
+  published: true
 description: I sometimes learn about things; I want to remember them, too
 tags: [tech, thoughts]
 katex: True

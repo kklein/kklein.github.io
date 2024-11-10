@@ -3,7 +3,8 @@ title:  "2022 in Consuming"
 date:   2022-12-22 12:38:07 +0200
 description:  "Books and music"
 comments: false
-published: true
+params:
+  published: true
 tags: [thoughts]
 katex: False
 ---

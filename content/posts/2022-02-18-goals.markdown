@@ -3,7 +3,8 @@ title: "Goals Are Arbitrary"
 description: After witnessing conventionally spectacular achievements, I embraced the arbitrariness of goals.
 date: 2022-02-26 9:38:07 +0200
 comments: false
-published: true
+params:
+  published: true
 tags: [thoughts]
 ---
 

@@ -2,7 +2,8 @@
 title: "Life Monitor"
 date: 2022-05-22 7:38:07 +0200
 comments: false
-published: true
+params:
+  published: true
 description: Notifying me about relevant blind spots of my life.
 tags: [tech]
 ---
