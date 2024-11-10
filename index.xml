@@ -889,7 +889,33 @@ validation split.&lt;/p></description></item><item><title>Running Log</title><li
 &lt;!-- raw HTML omitted -->
 &lt;p>We are given a set of tuples representing user-movie ratings, \(\mathcal{R} = \{(i,j,r)\}\), where \(i\) is the user index, \(j\) is the movie index and \(r \in [0, \dots, 5]\) the rating.
 In the most common scenarios, only a fraction of all user-movie pairs are rated, hence we can talk about &lt;em>sparse&lt;/em> data.
-In other words, most users have only rated a few movies. Now we want to obtain sensible predictions for movies a user has not rated. I leave drawing to picture as to why this is super relevant in many use cases to your imagination. Note that we only have this explicit feedback from users and don&amp;rsquo;t have any context knowledge about the users or movies. We can only leverage ratings from other users to build predictions. This is called collaborative filtering.&lt;/p></description></item><item><title>Post Title</title><link>https://kevinkle.in/posts/9999-01-01-template/</link><pubDate>Sat, 01 Jan 2000 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/9999-01-01-template/</guid><description>&lt;h1 id="motivation">Motivation&lt;/h1>
+In other words, most users have only rated a few movies. Now we want to obtain sensible predictions for movies a user has not rated. I leave drawing to picture as to why this is super relevant in many use cases to your imagination. Note that we only have this explicit feedback from users and don&amp;rsquo;t have any context knowledge about the users or movies. We can only leverage ratings from other users to build predictions. This is called collaborative filtering.&lt;/p></description></item><item><title>It depends</title><link>https://kevinkle.in/posts/9999-01-01-micro-macro/</link><pubDate>Sat, 01 Jan 2000 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/9999-01-01-micro-macro/</guid><description>&lt;p>TODO: Define what this really means.&lt;/p>
+&lt;p>Me in interaction with the micro or macro?
+The micro/macro in interaction with micro/macro?&lt;/p>
+&lt;p>Q: Is there really such a thing as &amp;lsquo;me and macro&amp;rsquo; or is this more
+about us/them within/outside of social circle?&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>Micro&lt;/th>
+ &lt;th>Macro&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Principles&lt;/td>
+ &lt;td>Opportunism&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Offering&lt;/td>
+ &lt;td>Asking&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Trust&lt;/td>
+ &lt;td>Control&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item><item><title>Post Title</title><link>https://kevinkle.in/posts/9999-01-01-template/</link><pubDate>Sat, 01 Jan 2000 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/9999-01-01-template/</guid><description>&lt;h1 id="motivation">Motivation&lt;/h1>
 &lt;p>&lt;a href="https://google.com">url&lt;/a>&lt;/p>
 &lt;p>Cool sentence with footnote&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>.&lt;/p>
 &lt;p>&lt;img src="https://kevinkle.in/imgs/Hn.png" alt="image">&lt;/p>
