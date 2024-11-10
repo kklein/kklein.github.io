@@ -1,93 +1,919 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog</title><link>https://kevinkle.in/</link><description>Recent content on Blog</description><generator>Hugo</generator><language>en-us</language><copyright>© Kevin Klein</copyright><lastBuildDate>Sat, 20 Jul 2024 07:38:07 +0200</lastBuildDate><atom:link href="https://kevinkle.in/index.xml" rel="self" type="application/rss+xml"/><item><title>No More Breakpoints?</title><link>https://kevinkle.in/posts/2024-07-20-breakpoints/</link><pubDate>Sat, 20 Jul 2024 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2024-07-20-breakpoints/</guid><description>I am way past a stage of a crush or merely being in love when it comes to pdb; I&amp;rsquo;d rather call it a deep love.
-Miracurously I have perceived it to be both very flexible and powerful for advanced users as well as very simple and thereby beginner-friendly when catering to rather simple use cases. What adds to my appreciation for pdb is that - unlike, afaict, most debuggers - it sits rather with the code than the IDE.</description></item><item><title>Analyzing Advent of Code</title><link>https://kevinkle.in/posts/2024-01-05-aoc/</link><pubDate>Fri, 05 Jan 2024 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2024-01-05-aoc/</guid><description>2023 came with another edition of Advent of Code, an advent calendar with programming challenges.
-In many ways - e.g. the assessment of both performance of and correctness on official leaderboards - the programming challenges are similar to regular programming competitions. Yet, there is also a large part of the community approaching Advent of Code more casually: people playing around with funky programming languages (e.g. Nix or Nim) or people streaming their daily programming sessions.</description></item><item><title>2023 in Exercise</title><link>https://kevinkle.in/posts/2023-12-28-2023_running/</link><pubDate>Sun, 31 Dec 2023 02:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2023-12-28-2023_running/</guid><description>Since another year has come to an end, I can&amp;rsquo;t help but be curious: What does the exercise data have to tell me? I did very similar things in 2022, 2021, 2020 and 2019.
-Executive summary The following radar-plot compares the past three years in terms of endurance, variety, strength and consistency:
-To my surprise, the plot indicates that the polygons were almost subsets of each other. I was rather suspecting a bunch of trade-offs to appear.</description></item><item><title>2023 in Music</title><link>https://kevinkle.in/posts/2023-12-31-2023_consuming/</link><pubDate>Fri, 22 Dec 2023 12:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2023-12-31-2023_consuming/</guid><description>Just rambling about some music I&amp;rsquo;ve been exposed to in 2023. I did a similar thing in 2022, 2021 and 2020.
-Live recording King Krule covered Connan Mockasin&amp;rsquo;s &amp;lsquo;Forever Dolphin Love&amp;rsquo; on Annie Mac&amp;rsquo;s Radio 1 show. I don&amp;rsquo;t know whether there has been a single day of the second half of 2023 on which I haven&amp;rsquo;t listened to this recording.
-Treat yourself
-Records When I Have Fears - The Murder Capital Wow - this hit me like a train.</description></item><item><title>Indicators for a Great Job</title><link>https://kevinkle.in/posts/2023-10-22-jobs_i_like/</link><pubDate>Sun, 22 Oct 2023 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2023-10-22-jobs_i_like/</guid><description>In no particular order; probably not mutually exclusive; certaintly not collectively exhaustive
-I seldomly ask for permission. I don&amp;rsquo;t care much for what time it is. I don&amp;rsquo;t look for confirmation. I don&amp;rsquo;t need technical private projects. I have colleagues who put ideas over people. don&amp;rsquo;t have a strong ego. are very driven but not totally obsessed. thirst for knowledge. take satisfaction in sharing knowledge, teaching. don&amp;rsquo;t forget or (involuntarily) bend much of what has been discussed between people.</description></item><item><title>Use It or Lose It</title><link>https://kevinkle.in/posts/2023-05-30-use_it_or_lose_it/</link><pubDate>Tue, 08 Aug 2023 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2023-05-30-use_it_or_lose_it/</guid><description>I long held the belief that knowing things (by heart)1 was both overrated and not too important. Rather, I thought that being able to quickly access and digest information was the only thing that mattered. I still think that the latter is incredibly important, but I changed my mind on the former.
-Why remember? Tl;dr: I now think that knowing things matters to some extent and would like to memorize.</description></item><item><title>How Much Is a Hundred Bucks?</title><link>https://kevinkle.in/posts/2023-04-23-100_dollars_worth/</link><pubDate>Mon, 29 May 2023 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2023-04-23-100_dollars_worth/</guid><description>The not so mobile-friendly calculator accompanying this post can be found here.
-The value of time, the value of money There are various ways of trying to assess the value of something. For instance, one might define the value of a resource by how much someone else is willing to pay for it. In the domain of time, we could ask the question of the hourly rate someone is willing to pay for our time/labor and consider that the value of our time.</description></item><item><title>Eggplant Parmigiana</title><link>https://kevinkle.in/posts/2023-04-08-parmigiana/</link><pubDate>Sat, 08 Apr 2023 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2023-04-08-parmigiana/</guid><description>Ingredients Serves four people.
-For the sauce:
-1.5 kg of tinned, diced tomatoes 5 onions 100g of sundried tomatoes 100g of dried artichokes 6 cloves of garlic 1 tsp of fennel seeds some capers some red wine Not for the sauce:
-5 eggplants 450 g of mozzarella 150g of Parmesan cheese 2 large bunches of basil For the side salad:
-500g of baby leaf spinach 100g of fairly soft sheep&amp;rsquo;s cheese 1 grapefruit 1 tbsp of honey 1 tsp of coarse mustard Method Cut the eggplants in slices of roughly half a centimeter.</description></item><item><title>I See Red</title><link>https://kevinkle.in/posts/2023-01-15-beets-labneh/</link><pubDate>Sun, 15 Jan 2023 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2023-01-15-beets-labneh/</guid><description>Ingredients 1 large beet 50-100g of labneh 70g of hazelnuts 3-5 branches of mint 1 tsp of sumac 4 sour cherries some lemon juice 1 tbsp of tahini Should serve 2 people as a starter.
-Method Peel and thinly slice the beet and arrange it on your plate. Place a large dollop of labneh on it.
-Chop the hazelnuts in half and toast them in a dry pan until fragrant.</description></item><item><title>How Many Inner Nodes</title><link>https://kevinkle.in/posts/2023-01-06-inner_nodes/</link><pubDate>Sun, 08 Jan 2023 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2023-01-06-inner_nodes/</guid><description>Motivation Assume you are working with a decision tree which as been constructed by a learning algorithm. Further assume that some of the leaves are relevant while others aren&amp;rsquo;t. For example, it could be that the outcome modeled in leaves corresponds to the probability of a successful surgery. In order to use this model for prediction/inference in production, one might imagine stripping all of its unnecessary parts. To be concrete, all of the leaves with a success probability which is no sufficiently high become irrelevant: the applicant might define a threshold, e.</description></item><item><title>A Cheat Sheet for Information Theory Fundamentals in ML</title><link>https://kevinkle.in/posts/2022-12-31-information_theory/</link><pubDate>Sat, 31 Dec 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-12-31-information_theory/</guid><description>All of the definitions stem from Kevin Murphy&amp;rsquo;s Probabilistic Machine Learning: An Introduction.
-Many of the following primitives are defined for discrete as well as continuous random variables and distributions. Since they are analogous, I chose to only represent discrete versions for the sake of simplicity.
-Entropy $$\mathbb{H}(X) = \mathbb{H}(p) := -\sum_\mathcal{X} p(X=x)\log_2 p(X=x)$$ Cross-entropy $$\mathbb{H}(p, q) := -\sum_\mathcal{X} p(X=x) \log_2 q(X=x)$$ Joint entropy $$\mathbb{H}(X, Y) := -\sum_{\mathcal{X}, \mathcal{Y}} p(X=x, Y=y)\log_2 p(X=x, Y=y)$$ Conditional entropy $$\begin{aligned} \mathbb{H}(X|Y) &amp;amp;:= \mathbb{E}_{p(X)}[\mathbb{H}(p(Y|X))] \\ &amp;amp;= \mathbb{H}(X, Y) - \mathbb{H}(X) \end{aligned}$$ Chain rule for entropy $$\mathbb{H}(X_1, X_2, \dots, X_n) = \sum_{i=1}^n \mathbb{H}(X_i|X_1, \dots X_{i-1}) $$ KL-divergence (a.</description></item><item><title>QoQa Looks Mostly Legit</title><link>https://kevinkle.in/posts/2022-12-29-qoqa/</link><pubDate>Thu, 29 Dec 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-12-29-qoqa/</guid><description>What QoQa - I&amp;rsquo;m still very unsure about its pronunciation - is a Swiss e-commerce business. Per product category - of which there are ten - they usually offer a single product at a time. A given product is offered at a supposedly low price point during a fairly short time window, usually hours or days. Importantly, it is advertised as though QoQa had access to a fixed amount of stock per product.</description></item><item><title>2022 in Exercise</title><link>https://kevinkle.in/posts/2022-12-27-2022_running/</link><pubDate>Thu, 29 Dec 2022 02:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-12-27-2022_running/</guid><description>As another year is coming to an end I&amp;rsquo;m curious: What does the exercise data have to tell me? I did something similar in 2021, 2020 as well as in 2019.
-2019 2020 2021 2022 running distance [km] 962 1295 1403 1150 #runs 107 123 127 127 share of running among exercise activities 79.26% 58.57% 54.27% 38.89% cycling distance [km] 1044 660 1340 #bike rides 20 18 36 #strength trainings 6 63 82 110 #exercise activities 135 210 234 324 #different kinds of exercise activities 6 11 17 I figure I have completed my metamorphosis from a hobby runner to an aspirational jack of all traits, master of none.</description></item><item><title>2022 in Consuming</title><link>https://kevinkle.in/posts/2022-12-22-2022_consuming/</link><pubDate>Thu, 22 Dec 2022 12:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-12-22-2022_consuming/</guid><description>Just rambling about some books and music I&amp;rsquo;ve been exposed to in 2022. I did a similar thing in 2021 and 2020.
-Books What I Talk About When I Talk About Running - Haruki Murakami I&amp;rsquo;m reading this constantly wondering why I&amp;rsquo;m reading it but never contemplating stopping.
-Faserland - Christian Kracht The nonchalant absurdity sometimes reminded me of Jack Kerouac. So many things I couldn&amp;rsquo;t relate to and so many questions I&amp;rsquo;d need to ask about.</description></item><item><title>Status Symbols</title><link>https://kevinkle.in/posts/2022-12-21-status_symbols/</link><pubDate>Wed, 21 Dec 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-12-21-status_symbols/</guid><description>What is a status symbol?
-While the Cambridge dictionary restricts status symbols to possessions, wikipedia takes a more permissive stance and defines them as
-a visible, external symbol of one&amp;rsquo;s social position, an indicator of economic or social status
-I&amp;rsquo;ll side with the latter. This, of course, bears the questions of what social status actually is, which I will, of course, eschew.
-Rather, a list of indicators I believe to have perceived with regards to social status:</description></item><item><title>Chicory Tarte Tatin</title><link>https://kevinkle.in/posts/2022-10-03-chicory_tarte_tatin/</link><pubDate>Sun, 09 Oct 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-10-03-chicory_tarte_tatin/</guid><description>Ingredients 300g of puff pastry 4-6 chicory heads 4 onions 200g of gorgonzola 200g of mascarpone 3 cloves of garlic 1 peach some honey some dry white wine 10 branches of fresh thyme 1 tbsp of fennel seeds 1 tbsp of mustard seeds 1/4 nutmeg Method Slice the onions and fry them in butter until golden brown, occasionally deglazing with a dash of white wine. Set aside.
-Halve the chicory heads and cut out the toughest part of the stem, like so:</description></item><item><title>Of Seals, Dogs and Dolphins with Python</title><link>https://kevinkle.in/posts/2022-09-25-collage/</link><pubDate>Sun, 02 Oct 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-09-25-collage/</guid><description>Every now and then I have come across prints of image collages or &amp;lsquo;mosaics&amp;rsquo;. Often it&amp;rsquo;s been ads, say a Greenpeace collage of small images portraying poorly treated puppies - that is, if you&amp;rsquo;re able to squint your eyes real hard - making up for the overall image of a happy dolphin, or so.
-Anyhow! - I&amp;rsquo;ve almost always found these collages to be aesthetically displeasing. At the same time they somehow caught and kept my attention.</description></item><item><title>'Someone's Sick' Soup</title><link>https://kevinkle.in/posts/2022-09-25-soup/</link><pubDate>Sun, 25 Sep 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-09-25-soup/</guid><description>Ingredients 6 stalks of celery 8 carrots 2 onions 1 leek 3 large cloves of garlic 1 tin of chopped tomatoes 1 tin of coconut milk 1 tin of borlotti beans 1 stock cube roughly 50g of dried shiitake 4 bay leaves 1 tablespoon of curry powder 1 tablespoon of sweet paprika powder 1 tablespoon of ground turmeric 1 large bunch of flat-leaved parsley Method Roughly chop all of the vegetables.</description></item><item><title>Celeriac Strawberry Salad</title><link>https://kevinkle.in/posts/2022-09-24-celeriac_strawberry/</link><pubDate>Sat, 24 Sep 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-09-24-celeriac_strawberry/</guid><description>Ingredients 1 large celeriac 250g of strawberries 100g hazelnuts 1 handful of radishes 1 large bunch of basil 3 tablespoons of tahini 3 large tablespoons of greek yoghurt 1 tablespoon of sweet paprika powder Method After trimming off the skin of the celeriac, grate thin strips of it. Sauté these in some olive oil, occasionally deglazing them with balsamic vinegar.
-Cut the hazelnuts in half and toast them in a dry pan until fragrant.</description></item><item><title>Mantras</title><link>https://kevinkle.in/posts/2022-09-05-mantras/</link><pubDate>Sun, 04 Sep 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-09-05-mantras/</guid><description>A system just can&amp;rsquo;t respond to short-term changes when it has long-term delays. Donella H. Meadows, Thinking in Systems Always be closing. Am meisten erreicht man, wann man den Lustgewinn aus den Quellen psyschicher und intellektueller Arbeit genügend zu erhöhen versteht. Sigmund Freud, Das Unbehagen in der Kultur Be a parent to yourself. A wise Hacker News user Defend those who are absent. Steven Covey, 7 Habbits of Highly Effective People Don&amp;rsquo;t confuse effort with result.</description></item><item><title>Tahini Smoothie</title><link>https://kevinkle.in/posts/2022-07-08-smoothie/</link><pubDate>Fri, 08 Jul 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-07-08-smoothie/</guid><description>Ingredients 1 banana 1 apple (Braeburn) 1 orange 12 fresh dates 12 tablespoons of tahini 200g of greek yoghurt dash of milk juice of half a lemon 200g frozen blueberries a pinch of salt</description></item><item><title>Conspicuous Kohlrabi</title><link>https://kevinkle.in/posts/2022-07-04-kolhrabi/</link><pubDate>Mon, 04 Jul 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-07-04-kolhrabi/</guid><description>Ingredients Serves two for a rather light or one for a truly lavish lunch.
-1 large kohlrabi 100g baby spinach 8 radishes 200g greek yoghurt 100g blueberries 100g hazelnuts 4 tablespoons tahini half a bunch of parsley half a bunch of mint 1 heaped teaspoon of cumin 1 heaped teaspoon of smoked sweet paprika 1 teaspoon of sumac 1 teaspoon of coarse mustard black sesame seeds juice of 1 lemon Method Trim off the kohlrabi&amp;rsquo;s peel and grate it to thin strips/slices with some kind of a grater.</description></item><item><title>Observations About My Gym</title><link>https://kevinkle.in/posts/2022-06-25-gym/</link><pubDate>Sun, 26 Jun 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-06-25-gym/</guid><description>The gym operators have three folders in their open office, one of which is titled &amp;lsquo;problems&amp;rsquo;.
-I&amp;rsquo;m gently reminded that I haven&amp;rsquo;t leetcoded in a long while and that the days taking classes on algorithms and data structures have long been gone while trying to find a pair of matching dumbbells of a specific weight.
-A guy once seriously protested that he cannot possibly not be topless while training.
-You have to pay extra to take a shower.</description></item><item><title>Who With Whom, What With What</title><link>https://kevinkle.in/posts/2022-06-21-friends/</link><pubDate>Wed, 22 Jun 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-06-21-friends/</guid><description>The following is an illustration of a graph optimization problem. I chose to instantiate it with a decision making process revolving around a social setting. Yet I hope its general applicability comes across.
-Setup Let&amp;rsquo;s say we have the opportunity to invite people to an event. The pool of candidates is comprised of five people: Tony, Paulie, Silvio, Furio and Vito. What we care about is for the attendants to have a good time - which we assume to be purely determined by who else is attending.</description></item><item><title>Inference</title><link>https://kevinkle.in/posts/2022-06-06-inference/</link><pubDate>Sun, 05 Jun 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-06-06-inference/</guid><description>I had long felt a slight discomfort with the word &amp;lsquo;inference&amp;rsquo;. Many people seemed to use it with confidence and the expectation that it would refer to a precise notion. And while it is not uncommon for a word to have different meaning in different contexts, it took me a while to figure out what the different meaning and what the different contexts are in the example of &amp;lsquo;inference&amp;rsquo;. Some other people seem to be a little confused as well.</description></item><item><title>Life Monitor</title><link>https://kevinkle.in/posts/2022-05-21-life_monitor/</link><pubDate>Sun, 22 May 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-05-21-life_monitor/</guid><description>Motivation On the one hand, there are things we notice &amp;lsquo;automatically&amp;rsquo;, easily, without consciously paying attention to them. On the other hand, there are things that slip through the cracks unless we make a point out of monitoring them.
-It might seem very natural that whether something is effortlessly &amp;lsquo;visible&amp;rsquo; is highly dependent on other properties of that very same something. It occurred to me that I have a tendency to be less receptive for observations that</description></item><item><title>PB Granola</title><link>https://kevinkle.in/posts/2022-05-20-pb_granola/</link><pubDate>Fri, 20 May 2022 08:00:00 +0200</pubDate><guid>https://kevinkle.in/posts/2022-05-20-pb_granola/</guid><description>Ingredients 300g of rolled oats 100g of dark chocolate 100g of pecan nuts 50g of Brazil nuts 3 massively heaped tablespoons of crunchy peanut butter 2 massively heaped tablespoons of coconut oil 3 tablespoons of honey (preferably runny) 2 tablespoons of cocoa powder 1 tablespoon of vanilla sugar 1 tablespoon of cinnamon a dash of salt Method Roughly chop the nuts and finely chop the chocolate. Mix all together, making sure the coconut oil melts in the process of doing so.</description></item><item><title>Org Log</title><link>https://kevinkle.in/posts/2022-02-27-org_journal/</link><pubDate>Sun, 27 Feb 2022 09:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-02-27-org_journal/</guid><description>I have long been an avid enthusiast of journaling. This has mostly been for the sheer sake of journaling. In other words: once written, never to be read.
-At the same time I would like to use information about my past when making decisions for the future. When simply winging this inference on empirical data, I&amp;rsquo;m always worried that some warping could have altered my recollection of these experiences (in other words: a noisy communication channel) and thereby bias my inference mechanism unjustly.</description></item><item><title>Goals Are Arbitrary</title><link>https://kevinkle.in/posts/2022-02-18-goals/</link><pubDate>Sat, 26 Feb 2022 09:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-02-18-goals/</guid><description>I have the pleasure of having impressive friends who have completed and continue to complete spectacular athletic feats. Some crossed the alps with a single speed steel tandem bike. Some run 10k in 35&amp;rsquo;. Some run half-marathons with more than 2000m of elevation literally called inferno. And then, of course, there is the camp of people who go about this whole ironman business.
-Personally, I&amp;rsquo;ve always had a difficult relation to &amp;lsquo;goals&amp;rsquo;.</description></item><item><title>Sudoku #3: Poor Man's RL</title><link>https://kevinkle.in/posts/2022-01-09-sudoku_rl/</link><pubDate>Sun, 13 Feb 2022 08:00:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-01-09-sudoku_rl/</guid><description>Previously, I&amp;rsquo;ve outlined some ideas on how to solve Suduko puzzles. One revolved around depth-first search in trees, one around linear programming. This time I tried my luck with a more adventurous, data-driven approach: Reinforcement Learning. First things first: the approach only works well for 4x4 grids - not for the typical 9x9. Please note that the approached subsequently outlined couldn&amp;rsquo;t be further from a recommendable approach to solving Sudoku puzzles.</description></item><item><title>Fig Appetizers</title><link>https://kevinkle.in/posts/2022-01-01-fig_appetizers/</link><pubDate>Sat, 01 Jan 2022 07:00:00 +0200</pubDate><guid>https://kevinkle.in/posts/2022-01-01-fig_appetizers/</guid><description>Quick to make, satisfying to eat.
-Ingredients Puff pastry Figs (preferably fresh ones; if not, dried ones are ok, too) Ricotta Rocket Method Cut some parts of the puff pastry. I figure both rectangles and squares should work. While all sizes &amp;lsquo;go&amp;rsquo;, I think that in principle one wants to use as little dough per fixed filling size as possible. In the same vein, I would try to make the pastry as thin as possible.</description></item><item><title>2021 in Consuming</title><link>https://kevinkle.in/posts/2021-12-28-2021_consuming/</link><pubDate>Tue, 28 Dec 2021 12:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2021-12-28-2021_consuming/</guid><description>Just rambling about some books, music and podcasts I&amp;rsquo;ve been exposed to in 2021. I did a similar thing in 2020.
-Books A Supposedly Fun Thing I&amp;rsquo;ll Never Do Again: Essays and Arguments - David Foster Wallace I much preferred the short story about the dynamics of professional tennis over DFW&amp;rsquo;s hesitant adventures on the high seas after which the book is titled. The distinguishing quality might have been positivity. While tries to convey a lot of criticism and scepticism towards tennis, yet can&amp;rsquo;t help but let raw rays of juvenile sunshine through his cover of rationality.</description></item><item><title>2021 in Running</title><link>https://kevinkle.in/posts/2021-12-27-2021_running/</link><pubDate>Mon, 27 Dec 2021 02:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2021-12-27-2021_running/</guid><description>As another year is coming to an end I&amp;rsquo;m curious: What has my running looked like this year? I did something similar in 2020 as well as in 2019.
-The gist of it 2018 2019 2020 2021 distance [km] 430 962 1295 1381 avg distance [km] 6.61 9.08 10.53 11.05 #runs 65 107 123 124 #sports activities 81 135 210 231 share of running among sports activities 80.25% 79.26% 58.57% 53.</description></item><item><title>Automn Pie</title><link>https://kevinkle.in/posts/2021-10-17-pie/</link><pubDate>Sun, 17 Oct 2021 10:00:07 +0200</pubDate><guid>https://kevinkle.in/posts/2021-10-17-pie/</guid><description>This is a really hearty dish. I&amp;rsquo;d claim that the filling of the pie can easily be prepared in advance.
-Core ingredients Serves 4 okay-ish hungry people.
-1kg smoked tofu 1kg green beans 500 ml coconut milk ~500g shortcrust dough 2 cans of chickpeas 3 carrots 3 large yellow onions 3 gloves of garlic half a thumb of ginger small chili soy sauce black bean sauce tomato purée soy sauce red wine 1 egg Method Strain your chickpeas and separate them out on a baking tray.</description></item><item><title>Flaky Tofu</title><link>https://kevinkle.in/posts/2021-09-25-flaky-tofu/</link><pubDate>Sat, 25 Sep 2021 10:00:07 +0200</pubDate><guid>https://kevinkle.in/posts/2021-09-25-flaky-tofu/</guid><description>Ingredients Serves 3 hungry fellows.
-Tofu 1kg firm tofu 200 mL unsweeetened soy milk 100 g flour 3 tablespoons[0] corn starch 200g unsweetened corn flakes Dipping sauce 4 tablespoons peanut paste 4 tablespoons black bean sauce (see below for an image) 4 tablespoons tomato purée 2 tablespoons of rice wine vinegar dash of soy sauce soymilk corn starch Salad ~500g carrots 2 large cucumbers sesame oil soy sauce rice wine vinegar Method Get ahold of two shallow dishes for the batter.</description></item><item><title>Sudoku #2: Linear Programming</title><link>https://kevinkle.in/posts/2021-03-14-sudoku_lp/</link><pubDate>Sun, 14 Mar 2021 11:00:07 +0200</pubDate><guid>https://kevinkle.in/posts/2021-03-14-sudoku_lp/</guid><description>Abstract As discussed in this previous post, a given Sudoku puzzle can be modeled in a multitude of ways. Different algorithms ought to still lead to the same solution, since a correct Sudoku puzzle comes with a unique solution. In this post we&amp;rsquo;ll rely on optimization&amp;rsquo;s poster child: Linear programming.
-Idea A linear program, subsequently referred to as LP, comes with three central building blocks:
-An objective function Typically many variables, each, a priori, non-integer numbers Linear constraints on the variables Since, thanks to our assumption of a well-posed puzzle we know that:</description></item><item><title>Sudoku #1: Depth-First Search</title><link>https://kevinkle.in/posts/2021-02-28-sudoku_dfs/</link><pubDate>Sun, 28 Feb 2021 19:00:07 +0200</pubDate><guid>https://kevinkle.in/posts/2021-02-28-sudoku_dfs/</guid><description>Abstract Solving a Sudoku board can be done in many ways. Let&amp;rsquo;s explore a depth-first search approach in this post.
-Idea Depth-first search or DFS implies (at least) two things:
-a graph, or rather, a tree a search This bares the question: What&amp;rsquo;s the tree and what are we searching for?
-The tree A tree must consist of nodes and edges. We define the nodes to represent a &amp;lsquo;state&amp;rsquo; of the game.</description></item><item><title>Expectations are Twofold</title><link>https://kevinkle.in/posts/2021-01-17-expecations/</link><pubDate>Sun, 17 Jan 2021 16:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2021-01-17-expecations/</guid><description>I caught myself making the mistake of thinking I wasn&amp;rsquo;t holding expectations when in fact, I was.
-When telling myself to not have a certain expectation against someone, I did usually make sure to control my behaviour towards them. If I anticipated that I shouldn&amp;rsquo;t have the expectation of an event taking place, I made sure not to make the responsible person feel negatively about the non-event. I figured that not holding the expectation would mean that I may not act upset or angry towards them.</description></item><item><title>I Could Care Less</title><link>https://kevinkle.in/posts/2021-01-13-caring/</link><pubDate>Wed, 13 Jan 2021 18:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2021-01-13-caring/</guid><description>While I think that I&amp;rsquo;ve been doing okay when it comes to not caring too much about other people&amp;rsquo;s perception of me, I believe to have spotted some weak spots recently.
-I think there is still a distinction to be made when it comes to &amp;lsquo;caring&amp;rsquo;. I feel like there is a qualitative difference between caring about what exactly others think of me when in their presence and caring about an imagine I have of myself - hypothetically representing me towards others - but practically never witnessed by anyone.</description></item><item><title>2020 in Consuming</title><link>https://kevinkle.in/posts/2021-01-02-2020_consuming/</link><pubDate>Sat, 02 Jan 2021 00:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2021-01-02-2020_consuming/</guid><description>Just rambling about some books, podcasts and records I&amp;rsquo;ve been exposed to a bunch over 2020.
-Books How to Solve It - George Pólya Classical asymmetry: obvious once you see it.
-Slaughterhouse Five - Kurt Vonnegut I think I&amp;rsquo;ll remember the poor soul claiming to have lived through much worse until he didn&amp;rsquo;t.
-Consider the Lobster - David Foster Wallace This was when I realized how bad at languages I am.</description></item><item><title>2020 in Running</title><link>https://kevinkle.in/posts/2020-12-27-2020_running/</link><pubDate>Sun, 27 Dec 2020 00:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-12-27-2020_running/</guid><description>Yet another year&amp;rsquo;s almost over. Let&amp;rsquo;s have a look at my year 2020 in running, just as I did in 2019.
-Yearly comparison 2018 2019 2020 distance [km] 430 962 1295 avg distance [km] 6.61 9.08 10.53 number of runs 65 107 123 share of running among sport activities 80.25% 79.26% 58.57% I picked up going to the gym in late 2019 and started cycling every now and then in 2020, hence the lower share of running.</description></item><item><title>The Value of the Past</title><link>https://kevinkle.in/posts/2020-10-25-value-of-past/</link><pubDate>Sun, 25 Oct 2020 15:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-10-25-value-of-past/</guid><description>When looking into the future, the definition of ambitions is often intertwined with an assessment of their feasibility. There are two, frequently opposing, guiding principles at work:
-Be who, how and what you want to be. The past tells you what works for you and what doesn&amp;rsquo;t. The former being a fairly idealistic and empowering maxim, possibly reminiscent of rationalism, I like to think of the latter as Realpolitik on a personal level with a scent of empiricism.</description></item><item><title>On Working Fast</title><link>https://kevinkle.in/posts/2020-10-24-working-fast/</link><pubDate>Sat, 24 Oct 2020 15:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-10-24-working-fast/</guid><description>Many discussions regarding software tooling had me facing the argument that while my suggestions might decrease the duration required for the task at hand to some degree, the magnitude or quantity of the savings were not sufficiently significant, that they would not amortize. Despite acknowledging a taste of truth to that, I typically felt that there was an aspect to the topic escaping the debate.
-The relevance of speed in workflows always carried conviction to me.</description></item><item><title>On Gifts</title><link>https://kevinkle.in/posts/2020-08-03-gifts/</link><pubDate>Mon, 03 Aug 2020 15:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-08-03-gifts/</guid><description>TL;DR: Spend thought not money. Think about your edge. Don&amp;rsquo;t buy beans for a hobby roaster.
-I&amp;rsquo;ve often felt strongly about gifts made and received and always had some vague intuitions floating around in my head concerning distinctive properties. Finally have I sought to distill them and make them more explicit.
-Reflecting on past gift-finding processes, I came to realize that I would often feel dissatisfied when most of the value of a gift would stem from money.</description></item><item><title>Fig Quiche</title><link>https://kevinkle.in/posts/2020-07-25-fig_quiche/</link><pubDate>Sat, 25 Jul 2020 12:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-07-25-fig_quiche/</guid><description>Ingredients 300g shortcrust dough large bunch of basil ~200g Soft, creamy goat cheese, e.g. Chavroux ~400g of figs (both fresh and dried are ok) 4-6 red onions 2 cloves of garlic zest of one lemon ~3 eggs ~80ml cream [0] some lemon juice some nutmeg some sweet paprika powder seasoning Method Slice the red onions in rings and fry them under medium-high heat with both olive oil and butter. Consider adding more oil to get to where you want to be.</description></item><item><title>Orange Pink Eggs</title><link>https://kevinkle.in/posts/2020-05-16-eggs/</link><pubDate>Sat, 06 Jun 2020 21:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-05-16-eggs/</guid><description>I have a feeling that hard-boiled eggs are conventially viewed as unsexy. In spite of that, I gave pickling them a shot.
-Ingredients 8 eggs 1 cup of white balsamic vinegar 1/2 cup of liquid from tinned beets 2 tbsp cardamon pods 2 tbsp cumin seeds 2 tbsp coriander seeds 2 tbsp pepper corns 1 tbsp fennel seeds 1 tbsp mustard seeds a few cloves a few bay leaves 2 cloves of garlic 2 tbsp curry powder 2 tbsp turmeric 2 tbsp sweet paprika powder 2 tbsp salt 3 tbsp sugar 1 tbsp garam masala Method Boil the eggs as little as possible while making sure they&amp;rsquo;re actually boiled.</description></item><item><title>Caramelized Onion and Artichoke Ravioli</title><link>https://kevinkle.in/posts/2020-05-25-ravioli/</link><pubDate>Mon, 25 May 2020 15:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-05-25-ravioli/</guid><description>Ingredients Dough
-300g of 00 flour 200g of &amp;lsquo;pasta flour&amp;rsquo; (don&amp;rsquo;t actually know what that is) 5 eggs some water Filling
-6 large onions 250g fresh ricotta (get the good, dry stuff) ~250g artichoke hearts 2 cloves of garlic a glug of red wine butter tbsp sugar (optional) thyme zest of one lemon some lemon juice some nutmeg some sweet paprika powder seasoning Method Use a standard approach to prepare the pasta dough, see for e.</description></item><item><title>Creamy, Bittersweet, Sharp Pasta</title><link>https://kevinkle.in/posts/2020-05-10-chicory_gorgonzola/</link><pubDate>Sun, 10 May 2020 09:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-05-10-chicory_gorgonzola/</guid><description>There&amp;rsquo;s just something great about caramelized chicory. While I&amp;rsquo;ve often got there by covering it in honey and balsamic vinegar, I was inclined to look for a similar effect with actual grapes. In additional to the lovely interplay of bitterness and sweetness, there is something light about the acidity of the grapes.
-I figured that caramelized onions would only enhance this interplay without distracting too much.
-Combining Gorgonzola with pasta water can easily lead to a very creamy cover for the pasta, as can be achieved with other types of cheeses.</description></item><item><title>Markov Random Field Image Denoising</title><link>https://kevinkle.in/posts/2020-03-27-mrf/</link><pubDate>Sun, 26 Apr 2020 09:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-03-27-mrf/</guid><description>This post describes the application of a Probabilistic Graphical Model for simple image denoising, as suggested in Bishop&amp;rsquo;s chapter 8.3.8. I will attempt to introduce some notions for general context without derivations. Googling will lead to plenty of useful resources. On an introductory level, I enjoyed Daphne Koller&amp;rsquo;s class.
-Context: Probabilistic Graphical Models Probabilistic Graphical Models are tools to model and express conditional independencies among a set of random variables.</description></item><item><title>Playlist Chatbot</title><link>https://kevinkle.in/posts/2020-03-27-playlist-chat-bot/</link><pubDate>Fri, 27 Mar 2020 16:00:00 +0200</pubDate><guid>https://kevinkle.in/posts/2020-03-27-playlist-chat-bot/</guid><description>Countless times have I found myself in the situation of receiving a telegram message of following kind:
-On the one hand I find this immensely exciting:
-A friend takes time to share something with me. I take pleasure in exploring music per se. Both conjuncted, there is a possibility to bond over music. Hence there is a great amount of potential!
-Yet, on the other hand, it&amp;rsquo;s a bit of a mess.</description></item><item><title>Update: Time Is Money</title><link>https://kevinkle.in/posts/2020-03-26-tim_update/</link><pubDate>Thu, 26 Mar 2020 16:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-03-26-tim_update/</guid><description>A while back, I wrote about Time Is Money.
-Back then I ran into several technical problems with modern browsers&amp;rsquo; idle api.
-Circumventing these with a somewhat brute approach made it possible to get the extension to run more smoothly. Besides still being able to build it from source, it is now available in the chrome extension store.
-Current behaviour In the extension options, a user can specify an hourly wage as well as a set of undesirable websites.</description></item><item><title>Invitations</title><link>https://kevinkle.in/posts/2020-03-02-invitations/</link><pubDate>Mon, 02 Mar 2020 09:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-03-02-invitations/</guid><description>Scenario and goal You are the host of an event for which there are \(n\) candidates to be invited and you possess sufficient resources to host all candidates. Let the nature of the event be such that it seems personally attached to you, yet also fairly polarizing in its experience. In other words:
-some invitees will have a desire to decline invitees with a desire to decline will feel bad about declining some non-invitees will have a desire to attend non-invitees with a desire to attend will feel bad about not being able to attend Moreover, one might weigh the ambitions wrt non-desiring invitees and desiring non-invitees differently.</description></item><item><title>Not Buying Tableware</title><link>https://kevinkle.in/posts/2020-01-23-tableware/</link><pubDate>Thu, 23 Jan 2020 19:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-01-23-tableware/</guid><description>While mindlessly strolling around the leftover 18th century fortifications of a coastal Moroccan town I came across some streets with vendors of apparently local tableware. I found said tableware to be really beautiful. Sadly, the pure state of admiration only lasted briefly. The latter was soon accompanied and then progressively consumed by the concern of what to buy for whom. It got me quite excited (in a twisted way) and thinking hard about how my own tableware could be complemented, how others could use any tableware.</description></item><item><title>Log, Right?</title><link>https://kevinkle.in/posts/2020-01-16-log/</link><pubDate>Thu, 16 Jan 2020 19:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-01-16-log/</guid><description>Most Machine Learning projects have seen me write a function to log data to a log-file as well as apply a logarithm to a vector. As I&amp;rsquo;m not aware of a conventionally used synonym for the former use of &amp;rsquo;log&amp;rsquo; and the latter is usually referred to as &amp;rsquo;log&amp;rsquo; in mathematics (thereby rejecting the argument I would usually bring up in naming issues: avoid abbreviations and acronyms) a naming problem naturally arises.</description></item><item><title>Capuns</title><link>https://kevinkle.in/posts/2019-12-25-capuns/</link><pubDate>Sat, 28 Dec 2019 08:00:00 +0200</pubDate><guid>https://kevinkle.in/posts/2019-12-25-capuns/</guid><description>Capuns are dumplings wrapped in chard leaves stemming from the Swiss canton of Graubünden. While they traditionally rely on bacon, I gave sundried tomatoes and mushrooms a shot in the leading role. Umami has to come from somewhere. Moreover I added cheese to the filling and browned with cheese and cream in the oven. I believe both do not necessarily correspond to the default approach.
-Ingredients Serves 4 hungry people.</description></item><item><title>2019 in Running</title><link>https://kevinkle.in/posts/2019-12-26-2019_running/</link><pubDate>Fri, 27 Dec 2019 16:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2019-12-26-2019_running/</guid><description>As explained in a previous post, I log the distances of my runs. In the following I will make some simple observations based on this data. The data goes back to 2016 and comprises timestamps and running distances in km.
-In bad storytelling manner let&amp;rsquo;s start with the most graspable and interesting statistic first: average and overall distance across years. I had never computed those before and had basically no intuition on it at all.</description></item><item><title>Kimchi Pancakes</title><link>https://kevinkle.in/posts/2019-10-03-kimchi-pancakes/</link><pubDate>Thu, 03 Oct 2019 08:00:00 +0200</pubDate><guid>https://kevinkle.in/posts/2019-10-03-kimchi-pancakes/</guid><description>I&amp;rsquo;d argue that those beautifully colored kimchi pancakes are rather on the subtle side when it comes to taste intensity. The kimchi flavor certainly isn&amp;rsquo;t overwhelming. At the same time, leaving it out makes you wish for something.
-Ingredients Serves 4 hungry ppl.
-Pancake batter 2 eggs 1.5 cups of chopped Kimchi (most likely around 400g) 2 cups of flower 2 cups of corn or potato starch 1.5 cups of kimchi liquid 12 tablespoons of water 1 teaspoon of salt 3 spring onions Dipping sauce some chili flakes a bit of sugar (adjust to taste) Equal parts of:</description></item><item><title>Sort-of-art?</title><link>https://kevinkle.in/posts/2019-09-27-lena/</link><pubDate>Fri, 27 Sep 2019 08:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2019-09-27-lena/</guid><description>Recently, my friend Theo pointed me towards his amazing idea and execution of programming &amp;lsquo;paintings&amp;rsquo; with the help of randomization.
-I was fairly taken by the idea of programming with randomization to create sort-of-art. I kept thinking about cellular automata but reckoned that they often created outcomes that looked:
-overly structured in general busy, hard and cold in detail. I figured that the latter could maybe be tackled by applying lots of smoothing, both on input and output image.</description></item><item><title>Breaking Pills: An Intuition</title><link>https://kevinkle.in/posts/2019-09-23-breaking_pills/</link><pubDate>Mon, 23 Sep 2019 09:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2019-09-23-breaking_pills/</guid><description>Motivation Recently, Mark Dominus&amp;rsquo; post on breaking pills appeared on Hacker News. I was surprised to see the author not provide a closed-form and wanted to extend on some of the comments indicating a relation to the harmonic numbers.
-Problem Formulation Starting off with a bowl of \(n\) whole pills, you draw from the bowl uniformly at random according to the following mechanism: if the drawn pill is whole, you put back one half of it; if the drawn pill is half, you don&amp;rsquo;t put back anything.</description></item><item><title>Challenge People</title><link>https://kevinkle.in/posts/2019-08-10-challenge/</link><pubDate>Wed, 14 Aug 2019 08:00:00 +0200</pubDate><guid>https://kevinkle.in/posts/2019-08-10-challenge/</guid><description>Abstract This post introduces an arbitrary topic on which I changed my mind, mostly through own reflection. I intend to exemplify my pet theory: I could have changed opinion and landed in a more desirable situation much faster if my original position had been challenged more by my social environment.
-An exemplary change of opinion: Messaging Previous position I vividly remember claiming that messaging people one doesn&amp;rsquo;t talk to on a regular basis was pointless, as long as there wasn&amp;rsquo;t a very specific topic to discuss, which required a lot of groundwork to be laid out already.</description></item><item><title>Korean Noodle Salad</title><link>https://kevinkle.in/posts/2019-08-10-noodles/</link><pubDate>Sat, 10 Aug 2019 08:00:00 +0200</pubDate><guid>https://kevinkle.in/posts/2019-08-10-noodles/</guid><description>This is a recipe for a Korean noodle salad. Its raw and at most lukewarm ingredients as well as the the coriander-acidity pairing make it feel light and fresh despite the rich nature of the peanut butter and sesame oil. I can recommend it as a main course on summer evenings.
-Preliminaries Bell peppers, carrots and cucumber are meant to be cut in juliennes. The following aspects flow into that decision:</description></item><item><title>Workflow on Leonhard/Euler Compute Cluster</title><link>https://kevinkle.in/posts/2019-02-28-leonhard/</link><pubDate>Thu, 28 Feb 2019 18:00:00 +0200</pubDate><guid>https://kevinkle.in/posts/2019-02-28-leonhard/</guid><description>Abstract Fortunately, ETH provides many of its students with access to Leonhard and Euler, computer clusters with CPUs and GPUs. Note that not every student is granted access to both - only some coursework or projects might qualify. I have spent and lost a fair amount of time due to poor Google results and will describe a setup for a simple workflow.
-Connection In order to ssh to the server, you first need to connect to ETH&amp;rsquo;s VPN.</description></item><item><title>A Beautiful, Derandomized Algorithm</title><link>https://kevinkle.in/posts/2019-01-22-favourite-algorithm/</link><pubDate>Mon, 21 Jan 2019 16:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2019-01-22-favourite-algorithm/</guid><description>Abstract Appreciating the simplicity of powerful randomized algorithms comes easy to me. In the following I will try to describe a naive algorithm relying on a randomized argument. What I find particularly remarkable is that it can easily parry the critique I am so often encountered with when cherishing randomized algorithms: it can trivially be turned deterministic.
-MAX-3SAT Is a boolean satisfiability problem. Given a formula in 3-CNF, the goal to satisfy as many clauses as possible.</description></item><item><title>Sklearn Pipelines</title><link>https://kevinkle.in/posts/2019-01-10-sklearn-pipelines/</link><pubDate>Tue, 08 Jan 2019 13:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2019-01-10-sklearn-pipelines/</guid><description>Pipeline of transforms with a final estimator.
-Why Whether you&amp;rsquo;re using sklearn transformations already or implementing data wrangling from scratch, there are interesting aspects to squeezing those into an sklearn pipeline. Most notably, this will:
-Allow for the usage of sklearn&amp;rsquo;s cross validation. Allow for the usage of sklearn&amp;rsquo;s grid search. Lower the barrier to include sklearn transformations, such as TfidfVectorizer, in the future. It would be possible to do all such processing without a pipeline object: once on the whole dataset.</description></item><item><title>Running Log</title><link>https://kevinkle.in/posts/2018-10-21-running-log/</link><pubDate>Sun, 28 Oct 2018 16:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2018-10-21-running-log/</guid><description>Problem Sports tracking apps offer lots of interesting functionalities regarding the logging of activities. I figured most of what they provided was only interesting in short-term for two reasons.
-On the one hand, I changed phones and tracking apps from time to time, which would sometimes lead to a reset of information. Also, some tracking apps were discontinued. You could say they introduced technical debt that I often was not willing or able to carry on.</description></item><item><title>On Advice</title><link>https://kevinkle.in/posts/2018-10-05-advice/</link><pubDate>Fri, 05 Oct 2018 18:00:00 +0200</pubDate><guid>https://kevinkle.in/posts/2018-10-05-advice/</guid><description>Sometimes concrete advice is fairly context-insensitive: Dale Carnegie suggests to always greet people in the fashion of a dog. Such advice might be useful at times, yet I believe that the upper bound of created value by such concrete yet context-insensitive advice is low.
-My impression is that most valuable decisions are context-sensitive by nature, i.e. relying on a lot of individual, complex information. The overwhelming complexity and volume of context can be mistakenly overlooked when formulating advice.</description></item><item><title>On Apologies: A Poor Man's Taxonomy</title><link>https://kevinkle.in/posts/2018-09-09-apologies/</link><pubDate>Sun, 09 Sep 2018 16:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2018-09-09-apologies/</guid><description>I have gotten confused and frustrated over apologies from time to time. They have been a consistent source of miscommunication. I figured that it isn&amp;rsquo;t clear to me what an apology means in the general case. Hence I tried to distinguish possible meanings in more concrete cases.
-I &amp;lsquo;regret&amp;rsquo; my action and given the hypothetical chance to undo it, I would. I preferred you not having to bear the negative consequences of my action.</description></item><item><title>Time Is Money</title><link>https://kevinkle.in/posts/2018-07-29-tim/</link><pubDate>Fri, 03 Aug 2018 16:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2018-07-29-tim/</guid><description>This post is about a browser add-on that is hopefully a drop in the ocean towards a rather ambitious goal. It&amp;rsquo;s called TimeIsMoney.
-Motivation A while back I listened to Sam Harris&amp;rsquo; podcast with Tristan Harris. What remained was following:
-I agreed that most technology is agnostic. At the same time, a lot of technology stemming from or being a byproduct of the attention economy is rather geared towards a usage that is a net disadvantage for the user.</description></item><item><title>Matrix Factorization in Collaborative Filtering</title><link>https://kevinkle.in/posts/2018-07-10-cf-mf/</link><pubDate>Tue, 10 Jul 2018 16:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2018-07-10-cf-mf/</guid><description>The Task We are given a set of tuples representing user-movie ratings, \(\mathcal{R} = \{(i,j,r)\}\), where \(i\) is the user index, \(j\) is the movie index and \(r \in [0, \dots, 5]\) the rating. In the most common scenarios, only a fraction of all user-movie pairs are rated, hence we can talk about sparse data. In other words, most users have only rated a few movies. Now we want to obtain sensible predictions for movies a user has not rated.</description></item><item><title>About</title><link>https://kevinkle.in/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kevinkle.in/about/</guid><description>I&amp;rsquo;m Kevin. I&amp;rsquo;m a Computer Scientist. You can find me on Twitter and GitHub.
-I enjoy attempting to derive from first principles &amp;ndash; in math, programming or in real life&amp;rsquo;s decision making. Professionally, I do work in Data Engineering, Data Science, Machine Learning Engineering, Software Engineering and Quantitative Analysis.
-On this website I try to share my views in order to force myself to condense and distill thoughts and ideas freely floating around in my mind.</description></item><item><title>Projects</title><link>https://kevinkle.in/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kevinkle.in/projects/</guid><description>QuantCo I am fortunate enough that some of the work done at QuantCo is open source.
-metalearners metalearners is a Causal Inference Python library for estimating Conditional Average Treatment Effects with MetaLearners. For more information, have a look at our blog post or the documentation.
-datajudge datajudge is a Python data testing library. Datajudge allows for the convenient expression and testing of expectations between different data source in database. It integrates nicely with pytest.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog</title><link>https://kevinkle.in/</link><description>Recent content on Blog</description><generator>Hugo</generator><language>en-us</language><copyright>© Kevin Klein</copyright><lastBuildDate>Sat, 20 Jul 2024 07:38:07 +0200</lastBuildDate><atom:link href="https://kevinkle.in/index.xml" rel="self" type="application/rss+xml"/><item><title>No More Breakpoints?</title><link>https://kevinkle.in/posts/2024-07-20-breakpoints/</link><pubDate>Sat, 20 Jul 2024 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2024-07-20-breakpoints/</guid><description>&lt;p>I am way past a stage of a crush or merely being in love when it comes to &lt;a href="https://docs.python.org/3/library/pdb.html">&lt;code>pdb&lt;/code>&lt;/a>; I&amp;rsquo;d rather call it a deep love.&lt;/p>
+&lt;p>Miracurously I have perceived it to be both very flexible and powerful for advanced users as well as very simple and thereby beginner-friendly when catering to rather simple use cases.
+What adds to my appreciation for &lt;code>pdb&lt;/code> is that - unlike, afaict, most debuggers - it sits rather with the code than the IDE. This agnosticity to IDEs or systems makes it very portable and convenient to use in many different environments, e.g. whenever you only have a terminal access to a machine.&lt;/p></description></item><item><title>Analyzing Advent of Code</title><link>https://kevinkle.in/posts/2024-01-05-aoc/</link><pubDate>Fri, 05 Jan 2024 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2024-01-05-aoc/</guid><description>&lt;p>2023 came with another edition of &lt;a href="https://adventofcode.com/">Advent of Code&lt;/a>, an
+&lt;a href="https://en.wikipedia.org/wiki/Advent_calendar">advent calendar&lt;/a> with programming challenges.&lt;/p>
+&lt;p>In many ways - e.g. the assessment of both performance of and correctness on official leaderboards - the programming
+challenges are similar to regular programming competitions. Yet, there is also a large part of the community
+approaching Advent of Code more casually: people playing around with funky programming languages (e.g. &lt;a href="https://github.com/crazazy/aoc2020">Nix&lt;/a> or &lt;a href="https://github.com/eversinc33/Red-Team-Advent-of-Code">Nim&lt;/a>) or people &lt;a href="https://www.youtube.com/watch?v=VmIcX2SHojI">streaming their daily programming sessions&lt;/a>.&lt;/p></description></item><item><title>2023 in Exercise</title><link>https://kevinkle.in/posts/2023-12-28-2023_running/</link><pubDate>Sun, 31 Dec 2023 02:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2023-12-28-2023_running/</guid><description>&lt;p>Since another year has come to an end, I can&amp;rsquo;t help but be curious: What does the exercise data have to tell me? I did very similar things in
+&lt;a href="https://kevinkle.in/posts/2022-12-27-2022_running/">2022&lt;/a>,
+&lt;a href="https://kevinkle.in/posts/2021-12-27-2021_running/">2021&lt;/a>,
+&lt;a href="https://kevinkle.in/posts/2020-12-27-2020_running/">2020&lt;/a> and
+&lt;a href="https://kevinkle.in/posts/2019-12-26-2019_running/">2019&lt;/a>.&lt;/p>
+&lt;h2 id="executive-summary">Executive summary&lt;/h2>
+&lt;p>The following radar-plot compares the past three years in terms of endurance, variety, strength and consistency:&lt;/p>
+&lt;p>&lt;img src="https://kevinkle.in/imgs/2023_running/radar.svg" alt="">&lt;/p>
+&lt;p>To my surprise, the plot indicates that the polygons were almost subsets of each other. I was rather suspecting a bunch of
+trade-offs to appear. In other words: the years have mostly improved in these four metrics. :)&lt;/p></description></item><item><title>2023 in Music</title><link>https://kevinkle.in/posts/2023-12-31-2023_consuming/</link><pubDate>Fri, 22 Dec 2023 12:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2023-12-31-2023_consuming/</guid><description>&lt;p>Just rambling about some music I&amp;rsquo;ve been exposed to in 2023. I did a similar thing in
+&lt;a href="https://kevinkle.in/posts/2022-12-22-2022_consuming/">2022&lt;/a>,
+&lt;a href="https://kevinkle.in/posts/2021-12-28-2021_consuming/">2021&lt;/a> and
+&lt;a href="https://kevinkle.in/posts/2021-01-02-2020_consuming/">2020&lt;/a>.&lt;/p>
+&lt;h1 id="live-recording">Live recording&lt;/h1>
+&lt;p>King Krule covered Connan Mockasin&amp;rsquo;s &amp;lsquo;Forever Dolphin Love&amp;rsquo; on Annie
+Mac&amp;rsquo;s Radio 1 show. I don&amp;rsquo;t know whether there has been a single day
+of the second half of 2023 on which I haven&amp;rsquo;t listened to this
+recording.&lt;/p>
+&lt;p>&lt;a href="https://www.youtube.com/watch?v=zPGYiC1P1LA">Treat yourself&lt;/a>&lt;/p>
+&lt;h1 id="records">Records&lt;/h1>
+&lt;h2 id="when-i-have-fears---the-murder-capital">When I Have Fears - The Murder Capital&lt;/h2>
+&lt;p>Wow - this hit me like a train. The album I had long been waiting for without knowing about it. I don&amp;rsquo;t perceive this album as
+a truly &amp;lsquo;great&amp;rsquo; album. Rather, parts of it just scratch that itch that nothing else seems to reach. &amp;lsquo;Green and Blue&amp;rsquo; is visceral,
+direct and yet avoids being harsh or blunt. I like &lt;a href="https://youtu.be/jQtbKWmIUxs">this live recording&lt;/a> quite a bit.
+&lt;a href="https://www.irishtimes.com/culture/music/2023/01/07/the-murder-capital-we-just-couldnt-talk-to-each-other-trust-was-a-huge-issue/">This article&lt;/a>
+from the Irish Times taught me the word &amp;lsquo;suave&amp;rsquo; - meaning elegant, charming, confident - through a description of lead vocalist
+James McGovern. I agree.&lt;/p></description></item><item><title>Indicators for a Great Job</title><link>https://kevinkle.in/posts/2023-10-22-jobs_i_like/</link><pubDate>Sun, 22 Oct 2023 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2023-10-22-jobs_i_like/</guid><description>&lt;p>In no particular order; probably not mutually exclusive; certaintly not collectively exhaustive&lt;/p>
+&lt;ul>
+&lt;li>I seldomly ask for permission.&lt;/li>
+&lt;li>I don&amp;rsquo;t care much for what time it is.&lt;/li>
+&lt;li>I don&amp;rsquo;t look for confirmation.&lt;/li>
+&lt;li>I don&amp;rsquo;t need technical private projects.&lt;/li>
+&lt;li>I have colleagues who
+&lt;ul>
+&lt;li>put ideas over people.&lt;/li>
+&lt;li>don&amp;rsquo;t have a strong ego.&lt;/li>
+&lt;li>are very driven but not totally obsessed.&lt;/li>
+&lt;li>thirst for knowledge.&lt;/li>
+&lt;li>take satisfaction in sharing knowledge, teaching.&lt;/li>
+&lt;li>don&amp;rsquo;t forget or (involuntarily) bend much of what has been discussed between people.&lt;/li>
+&lt;li>think long term.&lt;/li>
+&lt;li>don&amp;rsquo;t die by &amp;lsquo;done is better than perfect&amp;rsquo;.&lt;/li>
+&lt;li>never hide their uncertainty.&lt;/li>
+&lt;li>are aware of their weaknesses.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Use It or Lose It</title><link>https://kevinkle.in/posts/2023-05-30-use_it_or_lose_it/</link><pubDate>Tue, 08 Aug 2023 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2023-05-30-use_it_or_lose_it/</guid><description>&lt;p>I long held the belief that knowing things (by heart)&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> was both overrated and not too important.
+Rather, I thought that being able to quickly access and digest information was the only thing that mattered.
+I still think that the latter is incredibly important, but I changed my mind on the former.&lt;/p>
+&lt;h1 id="why-remember">Why remember?&lt;/h1>
+&lt;p>Tl;dr: I now think that knowing things matters to some extent and would like to memorize.&lt;/p></description></item><item><title>How Much Is a Hundred Bucks?</title><link>https://kevinkle.in/posts/2023-04-23-100_dollars_worth/</link><pubDate>Mon, 29 May 2023 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2023-04-23-100_dollars_worth/</guid><description>&lt;p>The not so mobile-friendly calculator accompanying this post can be found &lt;a href="https://kevinkle.in/savings/index.html">here&lt;/a>.&lt;/p>
+&lt;h2 id="the-value-of-time-the-value-of-money">The value of time, the value of money&lt;/h2>
+&lt;p>There are various ways of trying to assess the value of something. For instance, one might
+define the value of a resource by how much someone else is willing to pay for it. In the domain of
+time, we could ask the question of the hourly rate someone is willing to pay for our time/labor
+and consider that the value of our time.&lt;/p></description></item><item><title>Eggplant Parmigiana</title><link>https://kevinkle.in/posts/2023-04-08-parmigiana/</link><pubDate>Sat, 08 Apr 2023 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2023-04-08-parmigiana/</guid><description>&lt;h1 id="ingredients">Ingredients&lt;/h1>
+&lt;p>Serves four people.&lt;/p>
+&lt;p>For the sauce:&lt;/p>
+&lt;ul>
+&lt;li>1.5 kg of tinned, diced tomatoes&lt;/li>
+&lt;li>5 onions&lt;/li>
+&lt;li>100g of sundried tomatoes&lt;/li>
+&lt;li>100g of dried artichokes&lt;/li>
+&lt;li>6 cloves of garlic&lt;/li>
+&lt;li>1 tsp of fennel seeds&lt;/li>
+&lt;li>some capers&lt;/li>
+&lt;li>some red wine&lt;/li>
+&lt;/ul>
+&lt;p>Not for the sauce:&lt;/p>
+&lt;ul>
+&lt;li>5 eggplants&lt;/li>
+&lt;li>450 g of mozzarella&lt;/li>
+&lt;li>150g of Parmesan cheese&lt;/li>
+&lt;li>2 large bunches of basil&lt;/li>
+&lt;/ul>
+&lt;p>For the side salad:&lt;/p>
+&lt;ul>
+&lt;li>500g of baby leaf spinach&lt;/li>
+&lt;li>100g of fairly soft sheep&amp;rsquo;s cheese&lt;/li>
+&lt;li>1 grapefruit&lt;/li>
+&lt;li>1 tbsp of honey&lt;/li>
+&lt;li>1 tsp of coarse mustard&lt;/li>
+&lt;/ul>
+&lt;h1 id="method">Method&lt;/h1>
+&lt;p>Cut the eggplants in slices of roughly half a centimeter. Put them in a bowl and lavishly salt them - the idea being
+water being drained from them. I would recommend letting them drain for at least half an hour. If you want to go the extra
+mile, you can pat them dry every now and then.&lt;/p></description></item><item><title>I See Red</title><link>https://kevinkle.in/posts/2023-01-15-beets-labneh/</link><pubDate>Sun, 15 Jan 2023 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2023-01-15-beets-labneh/</guid><description>&lt;h1 id="ingredients">Ingredients&lt;/h1>
+&lt;ul>
+&lt;li>1 large beet&lt;/li>
+&lt;li>50-100g of labneh&lt;/li>
+&lt;li>70g of hazelnuts&lt;/li>
+&lt;li>3-5 branches of mint&lt;/li>
+&lt;li>1 tsp of sumac&lt;/li>
+&lt;li>4 sour cherries&lt;/li>
+&lt;li>some lemon juice&lt;/li>
+&lt;li>1 tbsp of tahini&lt;/li>
+&lt;/ul>
+&lt;p>Should serve 2 people as a starter.&lt;/p>
+&lt;h1 id="method">Method&lt;/h1>
+&lt;p>Peel and thinly slice the beet and arrange it on your plate. Place a large dollop of labneh on it.&lt;/p>
+&lt;p>Chop the hazelnuts in half and toast them in a dry pan until fragrant.&lt;/p></description></item><item><title>How Many Inner Nodes</title><link>https://kevinkle.in/posts/2023-01-06-inner_nodes/</link><pubDate>Sun, 08 Jan 2023 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2023-01-06-inner_nodes/</guid><description>&lt;h1 id="motivation">Motivation&lt;/h1>
+&lt;p>Assume you are working with a decision tree which as been constructed by a learning
+algorithm. Further assume that some of the leaves are relevant while others aren&amp;rsquo;t.
+For example, it could be that the outcome modeled in leaves corresponds to the probability
+of a successful surgery. In order to use this model for prediction/inference in production,
+one might imagine stripping all of its unnecessary parts. To be concrete, all
+of the leaves with a success probability which is no sufficiently high become irrelevant:
+the applicant might define a threshold, e.g. 80%, and not carry out a surgery below
+that probability. In this case, the applicant doesn&amp;rsquo;t care whether the prediction was
+50% or 30% - just below 80%.&lt;/p></description></item><item><title>A Cheat Sheet for Information Theory Fundamentals in ML</title><link>https://kevinkle.in/posts/2022-12-31-information_theory/</link><pubDate>Sat, 31 Dec 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-12-31-information_theory/</guid><description>&lt;p>All of the definitions stem from Kevin Murphy&amp;rsquo;s &lt;a href="https://probml.github.io/pml-book/book1.html">Probabilistic Machine Learning: An Introduction&lt;/a>.&lt;/p>
+&lt;p>Many of the following primitives are defined for discrete as well as continuous random variables and distributions. Since they are analogous,
+I chose to only represent discrete versions for the sake of simplicity.&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;/th>
+ &lt;th>&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Entropy&lt;/td>
+ &lt;td>$$\mathbb{H}(X) = \mathbb{H}(p) := -\sum_\mathcal{X} p(X=x)\log_2 p(X=x)$$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Cross-entropy&lt;/td>
+ &lt;td>$$\mathbb{H}(p, q) := -\sum_\mathcal{X} p(X=x) \log_2 q(X=x)$$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Joint entropy&lt;/td>
+ &lt;td>$$\mathbb{H}(X, Y) := -\sum_{\mathcal{X}, \mathcal{Y}} p(X=x, Y=y)\log_2 p(X=x, Y=y)$$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Conditional entropy&lt;/td>
+ &lt;td>$$\begin{aligned} \mathbb{H}(X|Y) &amp;amp;:= \mathbb{E}_{p(X)}[\mathbb{H}(p(Y|X))] \\ &amp;amp;= \mathbb{H}(X, Y) - \mathbb{H}(X) \end{aligned}$$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Chain rule for entropy&lt;/td>
+ &lt;td>$$\mathbb{H}(X_1, X_2, \dots, X_n) = \sum_{i=1}^n \mathbb{H}(X_i|X_1, \dots X_{i-1}) $$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>KL-divergence (a.k.a relative entropy)&lt;/td>
+ &lt;td>$$\begin{aligned} D_{KL}(p||q) &amp;amp;:= \sum_{\mathcal{X}} p(X=x) \log_2 \frac{p(X=x)}{q(X=X)} \\ &amp;amp;= \mathbb{H}(p, q) - \mathbb{H}(p) \end{aligned}$$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Forwards KL-divergence&lt;/td>
+ &lt;td>Approximating $p$ with $q$ by minimizing $D_{KL}(p||q)$ w.r.t. $q$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Reverse KL-divergence&lt;/td>
+ &lt;td>Approximating $p$ with $q$ by minimizing $D_{KL}(q||p)$ w.r.t. $q$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>(Expected) Mutual Information (a.k.a. Information Gain)&lt;/td>
+ &lt;td>$$\begin{aligned} \mathbb{I}(X;Y) &amp;amp;:= D_{KL}(p(X, Y) || p(X)p(Y)) \\ &amp;amp;= \mathbb{H}(X) - \mathbb{H}(X|Y) \\ &amp;amp;= \mathbb{H}(X) + \mathbb{H}(Y) - \mathbb{H}(X, Y) \end{aligned}$$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Conditional Mutual Information&lt;/td>
+ &lt;td>$$\begin{aligned} \mathbb{I}(X;Y|Z) &amp;amp;:= \mathbb{E}_{p(Z)} [ \mathbb{I}(X;Y) | Z] \\ &amp;amp;= \mathbb{I}(Y; X, Z) - \mathbb{I}(Y;Z) \end{aligned}$$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Chain rule for MI&lt;/td>
+ &lt;td>$$\mathbb{I}(Z_1, \dots, Z_n; X) = \sum_{i=1}^n \mathbb{I}(Z_i; X | Z_1, \dots, Z_{i-1})$$&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item><item><title>QoQa Looks Mostly Legit</title><link>https://kevinkle.in/posts/2022-12-29-qoqa/</link><pubDate>Thu, 29 Dec 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-12-29-qoqa/</guid><description>&lt;h1 id="what">What&lt;/h1>
+&lt;p>&lt;a href="https://www.qoqa.ch/">QoQa&lt;/a> - I&amp;rsquo;m still very unsure about its pronunciation -
+is a Swiss e-commerce business. Per product category - of which there are ten -
+they usually offer a single product at a time. A given product is offered at a supposedly
+low price point during a fairly short time window, usually hours
+or days. Importantly, it is advertised as though QoQa had access to a fixed
+amount of stock per product. Once this stock is exhausted, users can no longer
+purchase or order any more of it.&lt;/p></description></item><item><title>2022 in Exercise</title><link>https://kevinkle.in/posts/2022-12-27-2022_running/</link><pubDate>Thu, 29 Dec 2022 02:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-12-27-2022_running/</guid><description>&lt;p>As another year is coming to an end I&amp;rsquo;m curious: What does the exercise data have to tell me? I did something similar in &lt;a href="https://kevinkle.in/posts/2021-12-27-2021_running/">2021&lt;/a>, &lt;a href="https://kevinkle.in/posts/2020-12-27-2020_running/">2020&lt;/a>
+as well as in &lt;a href="https://kevinkle.in/posts/2019-12-26-2019_running/">2019&lt;/a>.&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;/th>
+ &lt;th style="text-align: right">2019&lt;/th>
+ &lt;th style="text-align: right">2020&lt;/th>
+ &lt;th style="text-align: right">2021&lt;/th>
+ &lt;th style="text-align: right">2022&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>running distance [km]&lt;/td>
+ &lt;td style="text-align: right">962&lt;/td>
+ &lt;td style="text-align: right">1295&lt;/td>
+ &lt;td style="text-align: right">1403&lt;/td>
+ &lt;td style="text-align: right">1150&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>#runs&lt;/td>
+ &lt;td style="text-align: right">107&lt;/td>
+ &lt;td style="text-align: right">123&lt;/td>
+ &lt;td style="text-align: right">127&lt;/td>
+ &lt;td style="text-align: right">127&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>share of running among exercise activities&lt;/td>
+ &lt;td style="text-align: right">79.26%&lt;/td>
+ &lt;td style="text-align: right">58.57%&lt;/td>
+ &lt;td style="text-align: right">54.27%&lt;/td>
+ &lt;td style="text-align: right">38.89%&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>cycling distance [km]&lt;/td>
+ &lt;td style="text-align: right">&lt;/td>
+ &lt;td style="text-align: right">1044&lt;/td>
+ &lt;td style="text-align: right">660&lt;/td>
+ &lt;td style="text-align: right">1340&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>#bike rides&lt;/td>
+ &lt;td style="text-align: right">&lt;/td>
+ &lt;td style="text-align: right">20&lt;/td>
+ &lt;td style="text-align: right">18&lt;/td>
+ &lt;td style="text-align: right">36&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>#strength trainings&lt;/td>
+ &lt;td style="text-align: right">6&lt;/td>
+ &lt;td style="text-align: right">63&lt;/td>
+ &lt;td style="text-align: right">82&lt;/td>
+ &lt;td style="text-align: right">110&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>#exercise activities&lt;/td>
+ &lt;td style="text-align: right">135&lt;/td>
+ &lt;td style="text-align: right">210&lt;/td>
+ &lt;td style="text-align: right">234&lt;/td>
+ &lt;td style="text-align: right">324&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>#different kinds of exercise activities&lt;/td>
+ &lt;td style="text-align: right">&lt;/td>
+ &lt;td style="text-align: right">6&lt;/td>
+ &lt;td style="text-align: right">11&lt;/td>
+ &lt;td style="text-align: right">17&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>I figure I have completed my metamorphosis from a hobby runner to an aspirational jack
+of all traits, master of none. Partially, this diversifying transformation
+was by design, acknowledging my dependence on running. Partially it has been fostered
+by a running injury in 2022.&lt;/p></description></item><item><title>2022 in Consuming</title><link>https://kevinkle.in/posts/2022-12-22-2022_consuming/</link><pubDate>Thu, 22 Dec 2022 12:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-12-22-2022_consuming/</guid><description>&lt;p>Just rambling about some books and music I&amp;rsquo;ve been exposed to in 2022. I did a similar thing in
+&lt;a href="https://kevinkle.in/posts/2021-12-28-2021_consuming/">2021&lt;/a> and &lt;a href="https://kevinkle.in/posts/2021-01-02-2020_consuming/">2020&lt;/a>.&lt;/p>
+&lt;h1 id="books">Books&lt;/h1>
+&lt;h2 id="what-i-talk-about-when-i-talk-about-running---haruki-murakami">What I Talk About When I Talk About Running - Haruki Murakami&lt;/h2>
+&lt;p>I&amp;rsquo;m reading this constantly wondering why I&amp;rsquo;m reading it but never contemplating stopping.&lt;/p>
+&lt;h2 id="faserland---christian-kracht">Faserland - Christian Kracht&lt;/h2>
+&lt;p>The nonchalant absurdity sometimes reminded me of Jack Kerouac. So many things I couldn&amp;rsquo;t relate to and so many questions I&amp;rsquo;d need to ask about. Christian Kracht&amp;rsquo;s precision in descriptions and childish behaviors made me empathize a lot with a character who&amp;rsquo;s certainly not a posterboy for likeableness.&lt;/p></description></item><item><title>Status Symbols</title><link>https://kevinkle.in/posts/2022-12-21-status_symbols/</link><pubDate>Wed, 21 Dec 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-12-21-status_symbols/</guid><description>&lt;p>What is a status symbol?&lt;/p>
+&lt;p>While the Cambridge dictionary restricts status symbols to possessions, wikipedia takes a more permissive stance and defines them as&lt;/p>
+&lt;blockquote>
+&lt;p>a visible, external symbol of one&amp;rsquo;s social position, an indicator of economic or social status&lt;/p>
+&lt;/blockquote>
+&lt;p>I&amp;rsquo;ll side with the latter. This, of course, bears the questions of what social status actually is, which I will, of course, eschew.&lt;/p>
+&lt;p>Rather, a list of indicators I believe to have perceived with regards to social status:&lt;/p></description></item><item><title>Chicory Tarte Tatin</title><link>https://kevinkle.in/posts/2022-10-03-chicory_tarte_tatin/</link><pubDate>Sun, 09 Oct 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-10-03-chicory_tarte_tatin/</guid><description>&lt;h1 id="ingredients">Ingredients&lt;/h1>
+&lt;ul>
+&lt;li>300g of puff pastry&lt;/li>
+&lt;li>4-6 chicory heads&lt;/li>
+&lt;li>4 onions&lt;/li>
+&lt;li>200g of gorgonzola&lt;/li>
+&lt;li>200g of mascarpone&lt;/li>
+&lt;li>3 cloves of garlic&lt;/li>
+&lt;li>1 peach&lt;/li>
+&lt;li>some honey&lt;/li>
+&lt;li>some dry white wine&lt;/li>
+&lt;li>10 branches of fresh thyme&lt;/li>
+&lt;li>1 tbsp of fennel seeds&lt;/li>
+&lt;li>1 tbsp of mustard seeds&lt;/li>
+&lt;li>1/4 nutmeg&lt;/li>
+&lt;/ul>
+&lt;h1 id="method">Method&lt;/h1>
+&lt;p>Slice the onions and fry them in butter until golden brown, occasionally deglazing with a dash of white wine. Set aside.&lt;/p>
+&lt;p>Halve the chicory heads and cut out the toughest part of the stem, like so:&lt;/p></description></item><item><title>Of Seals, Dogs and Dolphins with Python</title><link>https://kevinkle.in/posts/2022-09-25-collage/</link><pubDate>Sun, 02 Oct 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-09-25-collage/</guid><description>&lt;p>Every now and then I have come across prints of image collages or &amp;lsquo;mosaics&amp;rsquo;. Often it&amp;rsquo;s
+been ads, say a Greenpeace collage of small images portraying poorly treated puppies -
+that is, if you&amp;rsquo;re able to squint your eyes real hard - making up for the overall image
+of a happy dolphin, or so.&lt;/p>
+&lt;p>Anyhow! - I&amp;rsquo;ve almost always found these collages to be aesthetically displeasing. At the
+same time they somehow caught and kept my attention. The last time I saw one of them
+I wondered how one would go about creating one of these. I figured some kind of a &lt;a href="https://en.wikipedia.org/wiki/Nearest_neighbor_search">nearest
+neighbor search&lt;/a> would come in handy.&lt;/p></description></item><item><title>'Someone's Sick' Soup</title><link>https://kevinkle.in/posts/2022-09-25-soup/</link><pubDate>Sun, 25 Sep 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-09-25-soup/</guid><description>&lt;h1 id="ingredients">Ingredients&lt;/h1>
+&lt;ul>
+&lt;li>6 stalks of celery&lt;/li>
+&lt;li>8 carrots&lt;/li>
+&lt;li>2 onions&lt;/li>
+&lt;li>1 leek&lt;/li>
+&lt;li>3 large cloves of garlic&lt;/li>
+&lt;li>1 tin of chopped tomatoes&lt;/li>
+&lt;li>1 tin of coconut milk&lt;/li>
+&lt;li>1 tin of borlotti beans&lt;/li>
+&lt;li>1 stock cube&lt;/li>
+&lt;li>roughly 50g of dried shiitake&lt;/li>
+&lt;li>4 bay leaves&lt;/li>
+&lt;li>1 tablespoon of curry powder&lt;/li>
+&lt;li>1 tablespoon of sweet paprika powder&lt;/li>
+&lt;li>1 tablespoon of ground turmeric&lt;/li>
+&lt;li>1 large bunch of flat-leaved parsley&lt;/li>
+&lt;/ul>
+&lt;h1 id="method">Method&lt;/h1>
+&lt;p>Roughly chop all of the vegetables.&lt;/p></description></item><item><title>Celeriac Strawberry Salad</title><link>https://kevinkle.in/posts/2022-09-24-celeriac_strawberry/</link><pubDate>Sat, 24 Sep 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-09-24-celeriac_strawberry/</guid><description>&lt;h1 id="ingredients">Ingredients&lt;/h1>
+&lt;ul>
+&lt;li>1 large celeriac&lt;/li>
+&lt;li>250g of strawberries&lt;/li>
+&lt;li>100g hazelnuts&lt;/li>
+&lt;li>1 handful of radishes&lt;/li>
+&lt;li>1 large bunch of basil&lt;/li>
+&lt;li>3 tablespoons of tahini&lt;/li>
+&lt;li>3 large tablespoons of greek yoghurt&lt;/li>
+&lt;li>1 tablespoon of sweet paprika powder&lt;/li>
+&lt;/ul>
+&lt;h1 id="method">Method&lt;/h1>
+&lt;p>After trimming off the skin of the celeriac, grate thin strips of it. Sauté these in some olive oil, occasionally deglazing them with balsamic vinegar.&lt;/p>
+&lt;p>Cut the hazelnuts in half and toast them in a dry pan until fragrant.&lt;/p></description></item><item><title>Mantras</title><link>https://kevinkle.in/posts/2022-09-05-mantras/</link><pubDate>Sun, 04 Sep 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-09-05-mantras/</guid><description>&lt;h1 id="a-system-just-cant-respond-to-short-term-changes-when-it-has-long-term-delays">A system just can&amp;rsquo;t respond to short-term changes when it has long-term delays.&lt;/h1>
+&lt;ul>
+&lt;li>Donella H. Meadows, Thinking in Systems&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="always-be-closing">Always be closing.&lt;/h1>
+&lt;hr>
+&lt;h1 id="am-meisten-erreicht-man-wann-man-den-lustgewinn-aus-den-quellen-psyschicher-und-intellektueller-arbeit-genügend-zu-erhöhen-versteht">Am meisten erreicht man, wann man den Lustgewinn aus den Quellen psyschicher und intellektueller Arbeit genügend zu erhöhen versteht.&lt;/h1>
+&lt;ul>
+&lt;li>Sigmund Freud, Das Unbehagen in der Kultur&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="be-a-parent-to-yourself">Be a parent to yourself.&lt;/h1>
+&lt;ul>
+&lt;li>A wise Hacker News user&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="defend-those-who-are-absent">Defend those who are absent.&lt;/h1>
+&lt;ul>
+&lt;li>Steven Covey, 7 Habbits of Highly Effective People&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="dont-confuse-effort-with-result">Don&amp;rsquo;t confuse effort with result.&lt;/h1>
+&lt;ul>
+&lt;li>Donella H. Meadows, Thinking in Systems&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="dont-judge-decisions-by-their-outcome">Don&amp;rsquo;t judge decisions by their outcome.&lt;/h1>
+&lt;ul>
+&lt;li>Distillation of ideas in Nassim Taleb&amp;rsquo;s Fooled by Randomness&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="dont-use-parantheses-either-give-the-subject-its-rightful-stage-or-remove-it-for-it-lacks-importance">Don&amp;rsquo;t use parantheses. Either give the subject its rightful stage or remove it for it lacks importance.&lt;/h1>
+&lt;hr>
+&lt;h1 id="euphemisms-are-the-mother-tongue-of-manipulation---if-someone-doesnt-use-straight-language-dont-act-straight-away">Euphemisms are the mother tongue of manipulation. [&amp;hellip;] if someone doesn&amp;rsquo;t use straight language, don&amp;rsquo;t act straight away&lt;/h1>
+&lt;ul>
+&lt;li>Mikael Krogerugs &amp;amp; Roman Tschäppeler, The Communication Book&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="explicit-is-better-than-implicit">Explicit is better than implicit.&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="https://peps.python.org/pep-0020/">The Zen of Python&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="greet-people-like-a-labrador">Greet people like a labrador.&lt;/h1>
+&lt;ul>
+&lt;li>Heavily inspired by analogies used in Dale Carnegie&amp;rsquo;s How to Win Friends &amp;amp; Influence People&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="hustle-while-you-wait">Hustle while you wait&lt;/h1>
+&lt;ul>
+&lt;li>Inspired by description of Malcolm X in Alex Haley&amp;rsquo;s Malcom X&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="i-stop-writing-every-day-at-the-point-where-i-feel-i-can-write-more-do-that-and-the-next-days-work-goes-surprisingly-smoothly">I stop writing every day at the point where I feel I can write more. Do that and the next day&amp;rsquo;s work goes surprisingly smoothly.&lt;/h1>
+&lt;ul>
+&lt;li>Haruki Murakami&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="if-communication-does-not-work-you-should-ask-yourself-what-state-am-i-in-at-the-moment">If communication does not work, you should ask yourself: what state am I in at the moment&lt;/h1>
+&lt;ul>
+&lt;li>Mikael Krogerugs &amp;amp; Roman Tschäppeler, The Communication Book&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="if-you-want-to-be-a-good-intuitive-bayesian--you-need-to-protect-your-priors--that-might-mean-turning-off-the-news">If you want to be a good intuitive Bayesian [&amp;hellip;] you need to protect your priors. [&amp;hellip;] that might mean turning off the news.&lt;/h1>
+&lt;ul>
+&lt;li>Brian Christian &amp;amp; Tom Griffiths, Algorithms to Live By&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="if-youre-evenly-split-on-a-difficult-decision-take-the-path-that-is-more-difficult-in-the-short-term">If you&amp;rsquo;re evenly split on a difficult decision, take the path that is more difficult in the short term.&lt;/h1>
+&lt;ul>
+&lt;li>Naval Ravikant as quoted in Eric Jorgenson&amp;rsquo;s The Almanack of Naval&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h1 id="if-youre-thinking-without-writing-you-only-think-youre-thinking">If you’re thinking without writing, you only think you’re thinking.&lt;/h1>
+&lt;p>— Leslie Lamport&lt;/p></description></item><item><title>Tahini Smoothie</title><link>https://kevinkle.in/posts/2022-07-08-smoothie/</link><pubDate>Fri, 08 Jul 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-07-08-smoothie/</guid><description>&lt;h1 id="ingredients">Ingredients&lt;/h1>
+&lt;ul>
+&lt;li>1 banana&lt;/li>
+&lt;li>1 apple (Braeburn)&lt;/li>
+&lt;li>1 orange&lt;/li>
+&lt;li>12 fresh dates&lt;/li>
+&lt;li>12 tablespoons of tahini&lt;/li>
+&lt;li>200g of greek yoghurt&lt;/li>
+&lt;li>dash of milk&lt;/li>
+&lt;li>juice of half a lemon&lt;/li>
+&lt;li>200g frozen blueberries&lt;/li>
+&lt;li>a pinch of salt&lt;/li>
+&lt;/ul></description></item><item><title>Conspicuous Kohlrabi</title><link>https://kevinkle.in/posts/2022-07-04-kolhrabi/</link><pubDate>Mon, 04 Jul 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-07-04-kolhrabi/</guid><description>&lt;h1 id="ingredients">Ingredients&lt;/h1>
+&lt;p>Serves two for a rather light or one for a truly lavish lunch.&lt;/p>
+&lt;ul>
+&lt;li>1 large kohlrabi&lt;/li>
+&lt;li>100g baby spinach&lt;/li>
+&lt;li>8 radishes&lt;/li>
+&lt;li>200g greek yoghurt&lt;/li>
+&lt;li>100g blueberries&lt;/li>
+&lt;li>100g hazelnuts&lt;/li>
+&lt;li>4 tablespoons tahini&lt;/li>
+&lt;li>half a bunch of parsley&lt;/li>
+&lt;li>half a bunch of mint&lt;/li>
+&lt;li>1 heaped teaspoon of cumin&lt;/li>
+&lt;li>1 heaped teaspoon of smoked sweet paprika&lt;/li>
+&lt;li>1 teaspoon of sumac&lt;/li>
+&lt;li>1 teaspoon of coarse mustard&lt;/li>
+&lt;li>black sesame seeds&lt;/li>
+&lt;li>juice of 1 lemon&lt;/li>
+&lt;/ul>
+&lt;h1 id="method">Method&lt;/h1>
+&lt;p>Trim off the kohlrabi&amp;rsquo;s peel and grate it to thin strips/slices with some kind of a grater. While I generally despise underutilized specialized tools - especially in the kitchen - this tool &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> did indeed do me a great service.&lt;/p></description></item><item><title>Observations About My Gym</title><link>https://kevinkle.in/posts/2022-06-25-gym/</link><pubDate>Sun, 26 Jun 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-06-25-gym/</guid><description>&lt;p>The gym operators have three folders in their open office, one of which is titled &amp;lsquo;problems&amp;rsquo;.&lt;/p>
+&lt;p>I&amp;rsquo;m gently reminded that I haven&amp;rsquo;t leetcoded in a long while and that the days taking classes on algorithms and data structures have long been gone while trying to find a pair of &lt;em>matching&lt;/em> dumbbells of a &lt;em>specific weight&lt;/em>.&lt;/p>
+&lt;p>A guy once seriously protested that he cannot possibly not be topless while training.&lt;/p>
+&lt;p>You have to pay extra to take a shower. Sunbeds and sauna are free.&lt;/p></description></item><item><title>Who With Whom, What With What</title><link>https://kevinkle.in/posts/2022-06-21-friends/</link><pubDate>Wed, 22 Jun 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-06-21-friends/</guid><description>&lt;p>The following is an illustration of a graph optimization problem. I chose to instantiate it with a decision making process
+revolving around a social setting. Yet I hope its general applicability comes across.&lt;/p>
+&lt;h1 id="setup">Setup&lt;/h1>
+&lt;p>Let&amp;rsquo;s say we have the opportunity to invite people to an event. The pool of candidates is comprised of five people: Tony, Paulie, Silvio, Furio and Vito. What we care about is for the attendants to have a good time - which we assume to be purely determined by who else is attending. If two people like each other and are both present, their experience improves. Put differently, we can think of &amp;lsquo;value&amp;rsquo; that the presence of a pair of people has&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>. Moreover, we assume that this pairwise value is independent of who else is there. For example, the presence of Tony is as valuable for Paulie when Silvio is presents as when Silvio is absent.&lt;/p></description></item><item><title>Inference</title><link>https://kevinkle.in/posts/2022-06-06-inference/</link><pubDate>Sun, 05 Jun 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-06-06-inference/</guid><description>&lt;p>I had long felt a slight discomfort with the word &amp;lsquo;inference&amp;rsquo;. Many people seemed to use it with confidence and the expectation that it would refer to a precise notion. And while it is not uncommon for a word to have different meaning in different contexts, it took me a while to figure out what the different meaning and what the different contexts are in the example of &amp;lsquo;inference&amp;rsquo;. &lt;a href="https://stackoverflow.com/questions/55852777/is-training-inference-terminology-in-deep-learning-any-different-than-train-te">Some other people seem to be a little confused as well&lt;/a>.&lt;/p></description></item><item><title>Life Monitor</title><link>https://kevinkle.in/posts/2022-05-21-life_monitor/</link><pubDate>Sun, 22 May 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-05-21-life_monitor/</guid><description>&lt;h1 id="motivation">Motivation&lt;/h1>
+&lt;p>On the one hand, there are things we notice &amp;lsquo;automatically&amp;rsquo;, easily, without consciously paying attention to them. On the other hand, there are things that slip through the cracks unless we make a point out of monitoring them.&lt;/p>
+&lt;p>It might seem very natural that whether something is effortlessly &amp;lsquo;visible&amp;rsquo; is highly dependent on other properties of that very same something. It occurred to me that I have a tendency to be less receptive for observations that&lt;/p></description></item><item><title>PB Granola</title><link>https://kevinkle.in/posts/2022-05-20-pb_granola/</link><pubDate>Fri, 20 May 2022 08:00:00 +0200</pubDate><guid>https://kevinkle.in/posts/2022-05-20-pb_granola/</guid><description>&lt;h1 id="ingredients">Ingredients&lt;/h1>
+&lt;ul>
+&lt;li>300g of rolled oats&lt;/li>
+&lt;li>100g of dark chocolate&lt;/li>
+&lt;li>100g of pecan nuts&lt;/li>
+&lt;li>50g of Brazil nuts&lt;/li>
+&lt;li>3 massively heaped tablespoons of crunchy peanut butter&lt;/li>
+&lt;li>2 massively heaped tablespoons of coconut oil&lt;/li>
+&lt;li>3 tablespoons of honey (preferably runny)&lt;/li>
+&lt;li>2 tablespoons of cocoa powder&lt;/li>
+&lt;li>1 tablespoon of vanilla sugar&lt;/li>
+&lt;li>1 tablespoon of cinnamon&lt;/li>
+&lt;li>a dash of salt&lt;/li>
+&lt;/ul>
+&lt;h1 id="method">Method&lt;/h1>
+&lt;ul>
+&lt;li>Roughly chop the nuts and finely chop the chocolate. Mix all together, making sure the coconut oil melts in the process of doing so. Please make sure to taste and adjust your mixture. It&amp;rsquo;s hard to truly go wrong unless you add a ridiculous amount of salt or honey.&lt;/li>
+&lt;li>Tightly pack the mixture on a baking tray, aiming for a thickness of roughly .5cm.&lt;/li>
+&lt;li>Bake between 150°C and 180°C - be careful not to burn it. Make sure to bake it long enough as to get it crunchy.&lt;/li>
+&lt;/ul>
+&lt;h1 id="closing-remarks">Closing remarks&lt;/h1>
+&lt;ul>
+&lt;li>I think this granola by itself would become better by adding some dried fruit, such as figs, bananas or dates. Yet, I would rather eat this granola with fresh fruit anyway. When having it with fresh fruit, I prefer no dried fruit in the granola.&lt;/li>
+&lt;li>I&amp;rsquo;d be intrigued to play around with heat: a pinch of chili powder?&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://kevinkle.in/imgs/granola.jpg" alt="granola">&lt;/p></description></item><item><title>Org Log</title><link>https://kevinkle.in/posts/2022-02-27-org_journal/</link><pubDate>Sun, 27 Feb 2022 09:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-02-27-org_journal/</guid><description>&lt;p>I have long been an avid enthusiast of journaling. This has mostly been for the sheer sake of journaling. In other words: once written, never to be read.&lt;/p>
+&lt;p>At the same time I would like to use information about my past when making decisions for the future. When simply winging this inference on empirical data, I&amp;rsquo;m always worried that some warping &lt;em>could&lt;/em> have altered my recollection of these experiences (in other words: a noisy communication channel) and thereby bias my inference mechanism unjustly. Think of &lt;a href="https://en.wikipedia.org/wiki/Recency_bias">recency bias&lt;/a>, the &lt;a href="https://en.wikipedia.org/wiki/Peak%E2%80%93end_rule">peak-end&lt;/a> rule or just plain &lt;a href="https://music.youtube.com/playlist?list=OLAK5uy_k-5GOx1dFi1kfnB2LMuCk_7a_r5Ow5us8">nostalgia&lt;/a>.&lt;/p></description></item><item><title>Goals Are Arbitrary</title><link>https://kevinkle.in/posts/2022-02-18-goals/</link><pubDate>Sat, 26 Feb 2022 09:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-02-18-goals/</guid><description>&lt;p>I have the pleasure of having impressive friends who have completed and continue to complete spectacular athletic feats. Some crossed the alps with a single speed steel tandem bike. Some run 10k in 35&amp;rsquo;. Some run half-marathons with more than 2000m of elevation literally called &lt;a href="https://www.inferno.ch/en-GB/Competition/half-marathon-relay-race">inferno&lt;/a>. And then, of course, there is the camp of people who go about this whole ironman business.&lt;/p>
+&lt;p>Personally, I&amp;rsquo;ve always had a difficult relation to &amp;lsquo;goals&amp;rsquo;. I&amp;rsquo;ve tended to cling onto them a lot - more often than not only to be disappointed at the moment of completion. I&amp;rsquo;ve found it hard to detach myself from my goals, leading to a willingness to bear large costs. This willingness, has been, I think, irrational in expectation.&lt;/p></description></item><item><title>Sudoku #3: Poor Man's RL</title><link>https://kevinkle.in/posts/2022-01-09-sudoku_rl/</link><pubDate>Sun, 13 Feb 2022 08:00:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-01-09-sudoku_rl/</guid><description>&lt;p>Previously, I&amp;rsquo;ve outlined some ideas on how to solve Suduko puzzles. One revolved around &lt;a href="http://kevinkle.in/jekyll/update/2021/02/28/Sudoku_dfs.html">depth-first search in trees&lt;/a>, one around &lt;a href="http://kevinkle.in/jekyll/update/2021/03/14/Sudoku_lp.html">linear programming&lt;/a>. This time I tried my luck with a more adventurous, data-driven approach: Reinforcement Learning. First things first: the approach only works well for 4x4 grids - not for the typical 9x9. Please note that the approached subsequently outlined couldn&amp;rsquo;t be further from a recommendable approach to solving Sudoku puzzles. Rather, it is a curious exercise concerned with using the tool of Reinforcement Learning, arguable somewhat artificially, for solving particularly easy Sudoku puzzles.&lt;/p></description></item><item><title>Fig Appetizers</title><link>https://kevinkle.in/posts/2022-01-01-fig_appetizers/</link><pubDate>Sat, 01 Jan 2022 07:00:00 +0200</pubDate><guid>https://kevinkle.in/posts/2022-01-01-fig_appetizers/</guid><description>&lt;p>Quick to make, satisfying to eat.&lt;/p>
+&lt;h2 id="ingredients">Ingredients&lt;/h2>
+&lt;ul>
+&lt;li>Puff pastry&lt;/li>
+&lt;li>Figs (preferably fresh ones; if not, dried ones are ok, too)&lt;/li>
+&lt;li>Ricotta&lt;/li>
+&lt;li>Rocket&lt;/li>
+&lt;/ul>
+&lt;h2 id="method">Method&lt;/h2>
+&lt;p>Cut some parts of the puff pastry. I figure both rectangles and squares should work. While all sizes &amp;lsquo;go&amp;rsquo;, I think that in principle one wants to use as little dough per fixed filling size as possible. In the same vein, I would try to make the pastry as thin as possible.&lt;/p></description></item><item><title>2021 in Consuming</title><link>https://kevinkle.in/posts/2021-12-28-2021_consuming/</link><pubDate>Tue, 28 Dec 2021 12:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2021-12-28-2021_consuming/</guid><description>&lt;p>Just rambling about some books, music and podcasts I&amp;rsquo;ve been exposed to in 2021. I did a similar thing in &lt;a href="http://kevinkle.in/jekyll/update/2021/01/01/2020_consuming.html">2020&lt;/a>.&lt;/p>
+&lt;h1 id="books">Books&lt;/h1>
+&lt;h2 id="a-supposedly-fun-thing-ill-never-do-again-essays-and-arguments---david-foster-wallace">A Supposedly Fun Thing I&amp;rsquo;ll Never Do Again: Essays and Arguments - David Foster Wallace&lt;/h2>
+&lt;p>I much preferred the short story about the dynamics of professional tennis over DFW&amp;rsquo;s hesitant adventures on the high seas after which the book is titled. The distinguishing quality might have been positivity. While tries to convey a lot of criticism and scepticism towards tennis, yet can&amp;rsquo;t help but let raw rays of juvenile sunshine through his cover of rationality. This makes the short story about tennis feel like a net positive description to me. This was unexpected and heartwarming - given the somber nature of DFW&amp;rsquo;s personality. His short story about the his time on a cruise ship seemed purely cynical and negative. Maybe the classic &amp;lsquo;you dislike others for what you dislike with yourself&amp;rsquo; hits here: he might have reminded me of my occasional doom and gloom a tad too much. :)&lt;/p></description></item><item><title>2021 in Running</title><link>https://kevinkle.in/posts/2021-12-27-2021_running/</link><pubDate>Mon, 27 Dec 2021 02:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2021-12-27-2021_running/</guid><description>&lt;p>As another year is coming to an end I&amp;rsquo;m curious: What has my running looked like this year? I did something similar in &lt;a href="http://kevinkle.in/jekyll/update/2020/12/26/2020_running.html">2020&lt;/a> as well as in &lt;a href="http://kevinkle.in/jekyll/update/2019/12/27/2019_running.html">2019&lt;/a>.&lt;/p>
+&lt;h1 id="the-gist-of-it">The gist of it&lt;/h1>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;/th>
+ &lt;th style="text-align: right">2018&lt;/th>
+ &lt;th style="text-align: right">2019&lt;/th>
+ &lt;th style="text-align: right">2020&lt;/th>
+ &lt;th style="text-align: right">2021&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>distance [km]&lt;/td>
+ &lt;td style="text-align: right">430&lt;/td>
+ &lt;td style="text-align: right">962&lt;/td>
+ &lt;td style="text-align: right">1295&lt;/td>
+ &lt;td style="text-align: right">1381&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>avg distance [km]&lt;/td>
+ &lt;td style="text-align: right">6.61&lt;/td>
+ &lt;td style="text-align: right">9.08&lt;/td>
+ &lt;td style="text-align: right">10.53&lt;/td>
+ &lt;td style="text-align: right">11.05&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>#runs&lt;/td>
+ &lt;td style="text-align: right">65&lt;/td>
+ &lt;td style="text-align: right">107&lt;/td>
+ &lt;td style="text-align: right">123&lt;/td>
+ &lt;td style="text-align: right">124&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>#sports activities&lt;/td>
+ &lt;td style="text-align: right">81&lt;/td>
+ &lt;td style="text-align: right">135&lt;/td>
+ &lt;td style="text-align: right">210&lt;/td>
+ &lt;td style="text-align: right">231&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>share of running among sports activities&lt;/td>
+ &lt;td style="text-align: right">80.25%&lt;/td>
+ &lt;td style="text-align: right">79.26%&lt;/td>
+ &lt;td style="text-align: right">58.57%&lt;/td>
+ &lt;td style="text-align: right">53.68%&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>max duration between 2 runs [days]&lt;/td>
+ &lt;td style="text-align: right">36&lt;/td>
+ &lt;td style="text-align: right">26&lt;/td>
+ &lt;td style="text-align: right">18&lt;/td>
+ &lt;td style="text-align: right">38&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>#weeks without running&lt;/td>
+ &lt;td style="text-align: right">16&lt;/td>
+ &lt;td style="text-align: right">5&lt;/td>
+ &lt;td style="text-align: right">4&lt;/td>
+ &lt;td style="text-align: right">7&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>After picking up going to the gym in late 2019 and starting to cycle every now and then in 2020, I made
+the tail end of activities a little longer by hiking, playing tennis, bouldering and swimming just a couple of times -
+hence the lower share of running.&lt;/p></description></item><item><title>Automn Pie</title><link>https://kevinkle.in/posts/2021-10-17-pie/</link><pubDate>Sun, 17 Oct 2021 10:00:07 +0200</pubDate><guid>https://kevinkle.in/posts/2021-10-17-pie/</guid><description>&lt;p>This is a really hearty dish. I&amp;rsquo;d claim that the filling of the pie can easily be prepared in advance.&lt;/p>
+&lt;h2 id="core-ingredients">Core ingredients&lt;/h2>
+&lt;p>Serves 4 okay-ish hungry people.&lt;/p>
+&lt;ul>
+&lt;li>1kg smoked tofu&lt;/li>
+&lt;li>1kg green beans&lt;/li>
+&lt;li>500 ml coconut milk&lt;/li>
+&lt;li>~500g shortcrust dough&lt;/li>
+&lt;li>2 cans of chickpeas&lt;/li>
+&lt;li>3 carrots&lt;/li>
+&lt;li>3 large yellow onions&lt;/li>
+&lt;li>3 gloves of garlic&lt;/li>
+&lt;li>half a thumb of ginger&lt;/li>
+&lt;li>small chili&lt;/li>
+&lt;li>soy sauce&lt;/li>
+&lt;li>black bean sauce&lt;/li>
+&lt;li>tomato purée&lt;/li>
+&lt;li>soy sauce&lt;/li>
+&lt;li>red wine&lt;/li>
+&lt;li>1 egg&lt;/li>
+&lt;/ul>
+&lt;h2 id="method">Method&lt;/h2>
+&lt;p>Strain your chickpeas and separate them out on a baking tray. Bake them in the oven at around 200 degrees Celsius until they are nice and crispy. You might add any or all of these: curcuma, ground cumin, ground coriander, sweet paprika.&lt;/p></description></item><item><title>Flaky Tofu</title><link>https://kevinkle.in/posts/2021-09-25-flaky-tofu/</link><pubDate>Sat, 25 Sep 2021 10:00:07 +0200</pubDate><guid>https://kevinkle.in/posts/2021-09-25-flaky-tofu/</guid><description>&lt;h2 id="ingredients">Ingredients&lt;/h2>
+&lt;p>Serves 3 hungry fellows.&lt;/p>
+&lt;h3 id="tofu">Tofu&lt;/h3>
+&lt;ul>
+&lt;li>1kg firm tofu&lt;/li>
+&lt;li>200 mL unsweeetened soy milk&lt;/li>
+&lt;li>100 g flour&lt;/li>
+&lt;li>3 tablespoons&lt;!-- raw HTML omitted -->&lt;a href="#f0">[0]&lt;/a>&lt;!-- raw HTML omitted --> corn starch&lt;/li>
+&lt;li>200g unsweetened corn flakes&lt;/li>
+&lt;/ul>
+&lt;h3 id="dipping-sauce">Dipping sauce&lt;/h3>
+&lt;ul>
+&lt;li>4 tablespoons peanut paste&lt;/li>
+&lt;li>4 tablespoons black bean sauce (see below for an image)&lt;/li>
+&lt;li>4 tablespoons tomato purée&lt;/li>
+&lt;li>2 tablespoons of rice wine vinegar&lt;/li>
+&lt;li>dash of soy sauce&lt;/li>
+&lt;li>soymilk&lt;/li>
+&lt;li>corn starch&lt;/li>
+&lt;/ul>
+&lt;h3 id="salad">Salad&lt;/h3>
+&lt;ul>
+&lt;li>~500g carrots&lt;/li>
+&lt;li>2 large cucumbers&lt;/li>
+&lt;li>sesame oil&lt;/li>
+&lt;li>soy sauce&lt;/li>
+&lt;li>rice wine vinegar&lt;/li>
+&lt;/ul>
+&lt;h2 id="method">Method&lt;/h2>
+&lt;p>Get ahold of two shallow dishes for the batter. In one of the dishes, mix and stir soy milk, flour and corn starch. In the other dish, add your corn flakes. I did crush few of them a &lt;em>bit&lt;/em> but made sure to have loads of unharmed ones remaining.&lt;/p></description></item><item><title>Sudoku #2: Linear Programming</title><link>https://kevinkle.in/posts/2021-03-14-sudoku_lp/</link><pubDate>Sun, 14 Mar 2021 11:00:07 +0200</pubDate><guid>https://kevinkle.in/posts/2021-03-14-sudoku_lp/</guid><description>&lt;h1 id="abstract">Abstract&lt;/h1>
+&lt;p>As discussed in &lt;a href="http://kevinkle.in/jekyll/update/2021/02/28/sudoku_dfs.html">this previous post&lt;/a>,
+a given Sudoku puzzle can be modeled in a multitude of ways. Different algorithms ought to still
+lead to the same solution, since a correct Sudoku puzzle comes with a unique solution. In this
+post we&amp;rsquo;ll rely on optimization&amp;rsquo;s poster child: &lt;a href="https://en.wikipedia.org/wiki/Linear_programming">Linear programming&lt;/a>.&lt;/p>
+&lt;h1 id="idea">Idea&lt;/h1>
+&lt;p>A linear program, subsequently referred to as LP, comes with three central building blocks:&lt;/p>
+&lt;ul>
+&lt;li>An objective function&lt;/li>
+&lt;li>Typically many variables, each, a priori, non-integer numbers&lt;/li>
+&lt;li>Linear constraints on the variables&lt;/li>
+&lt;/ul>
+&lt;p>Since, thanks to our assumption of a well-posed puzzle we know that:&lt;/p></description></item><item><title>Sudoku #1: Depth-First Search</title><link>https://kevinkle.in/posts/2021-02-28-sudoku_dfs/</link><pubDate>Sun, 28 Feb 2021 19:00:07 +0200</pubDate><guid>https://kevinkle.in/posts/2021-02-28-sudoku_dfs/</guid><description>&lt;h2 id="abstract">Abstract&lt;/h2>
+&lt;p>Solving a Sudoku board can be done in many ways. Let&amp;rsquo;s explore a depth-first search approach in this post.&lt;/p>
+&lt;h2 id="idea">Idea&lt;/h2>
+&lt;p>Depth-first search or DFS implies (at least) two things:&lt;/p>
+&lt;ul>
+&lt;li>a graph, or rather, a tree&lt;/li>
+&lt;li>a search&lt;/li>
+&lt;/ul>
+&lt;p>This bares the question: What&amp;rsquo;s the tree and what are we searching for?&lt;/p>
+&lt;h1 id="the-tree">The tree&lt;/h1>
+&lt;p>A tree must consist of nodes and edges. We define the nodes to represent a &amp;lsquo;state&amp;rsquo; of the game. A state of the game is meant to be a snapshot of the Sudoku board, i.e. a mapping from cells, e.g. 2nd row, 6th column, to values, e.g. 7 or &amp;rsquo;empty&amp;rsquo;. Every edge in the tree represents an &amp;lsquo;action&amp;rsquo;, i.e. the addition or removal of a cell value.&lt;/p></description></item><item><title>Expectations are Twofold</title><link>https://kevinkle.in/posts/2021-01-17-expecations/</link><pubDate>Sun, 17 Jan 2021 16:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2021-01-17-expecations/</guid><description>&lt;p>I caught myself making the mistake of thinking I wasn&amp;rsquo;t holding
+expectations when in fact, I was.&lt;/p>
+&lt;p>When telling myself to not have a certain expectation against someone,
+I did usually make sure to control my behaviour towards them. If I
+anticipated that I shouldn&amp;rsquo;t have the expectation of an event taking
+place, I made sure not to make the responsible person feel
+negatively about the non-event. I figured that not holding the
+expectation would mean that I may not act upset or angry towards them.&lt;/p></description></item><item><title>I Could Care Less</title><link>https://kevinkle.in/posts/2021-01-13-caring/</link><pubDate>Wed, 13 Jan 2021 18:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2021-01-13-caring/</guid><description>&lt;p>While I think that I&amp;rsquo;ve been doing okay when it comes to not caring
+too much about other people&amp;rsquo;s perception of me, I believe to have
+spotted some weak spots recently.&lt;/p>
+&lt;p>I think there is still a distinction to be made when it comes to
+&amp;lsquo;caring&amp;rsquo;. I feel like there is a qualitative difference between caring
+about what exactly others think of me when in their presence and
+caring about an imagine I have of myself - hypothetically representing
+me towards others - but practically never witnessed by anyone.&lt;/p></description></item><item><title>2020 in Consuming</title><link>https://kevinkle.in/posts/2021-01-02-2020_consuming/</link><pubDate>Sat, 02 Jan 2021 00:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2021-01-02-2020_consuming/</guid><description>&lt;p>Just rambling about some books, podcasts and records I&amp;rsquo;ve been exposed to a bunch over 2020.&lt;/p>
+&lt;h1 id="books">Books&lt;/h1>
+&lt;ul>
+&lt;li>How to Solve It - George Pólya&lt;/li>
+&lt;/ul>
+&lt;p>Classical asymmetry: obvious once you see it.&lt;/p>
+&lt;ul>
+&lt;li>Slaughterhouse Five - Kurt Vonnegut&lt;/li>
+&lt;/ul>
+&lt;p>I think I&amp;rsquo;ll remember the poor soul claiming to have lived through much
+worse until he didn&amp;rsquo;t.&lt;/p>
+&lt;ul>
+&lt;li>Consider the Lobster - David Foster Wallace&lt;/li>
+&lt;/ul>
+&lt;p>This was when I realized how bad at languages I am.&lt;/p></description></item><item><title>2020 in Running</title><link>https://kevinkle.in/posts/2020-12-27-2020_running/</link><pubDate>Sun, 27 Dec 2020 00:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-12-27-2020_running/</guid><description>&lt;p>Yet another year&amp;rsquo;s almost over. Let&amp;rsquo;s have a look at my year 2020 in running, just as I did &lt;a href="http://kevinkle.in/jekyll/update/2019/12/27/2019_running.html">in 2019&lt;/a>.&lt;/p>
+&lt;h1 id="yearly-comparison">Yearly comparison&lt;/h1>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;/th>
+ &lt;th style="text-align: right">2018&lt;/th>
+ &lt;th style="text-align: right">2019&lt;/th>
+ &lt;th style="text-align: right">2020&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>distance [km]&lt;/td>
+ &lt;td style="text-align: right">430&lt;/td>
+ &lt;td style="text-align: right">962&lt;/td>
+ &lt;td style="text-align: right">1295&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>avg distance [km]&lt;/td>
+ &lt;td style="text-align: right">6.61&lt;/td>
+ &lt;td style="text-align: right">9.08&lt;/td>
+ &lt;td style="text-align: right">10.53&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>number of runs&lt;/td>
+ &lt;td style="text-align: right">65&lt;/td>
+ &lt;td style="text-align: right">107&lt;/td>
+ &lt;td style="text-align: right">123&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>share of running among sport activities&lt;/td>
+ &lt;td style="text-align: right">80.25%&lt;/td>
+ &lt;td style="text-align: right">79.26%&lt;/td>
+ &lt;td style="text-align: right">58.57%&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>I picked up going to the gym in late 2019 and started cycling every now and then in 2020, hence
+the lower share of running. I&amp;rsquo;m desperately curious about the counterfactual of how my running
+would have turned out if not for the other activities.&lt;/p></description></item><item><title>The Value of the Past</title><link>https://kevinkle.in/posts/2020-10-25-value-of-past/</link><pubDate>Sun, 25 Oct 2020 15:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-10-25-value-of-past/</guid><description>&lt;p>When looking into the future, the definition of ambitions is often intertwined with an assessment of their feasibility. There are two, frequently opposing, guiding principles at work:&lt;/p>
+&lt;ol>
+&lt;li>Be who, how and what you want to be.&lt;/li>
+&lt;li>The past tells you what works for you and what doesn&amp;rsquo;t.&lt;/li>
+&lt;/ol>
+&lt;p>The former being a fairly idealistic and empowering maxim, possibly reminiscent of rationalism, I like to think of the latter as Realpolitik on a personal level with a scent of empiricism.&lt;/p></description></item><item><title>On Working Fast</title><link>https://kevinkle.in/posts/2020-10-24-working-fast/</link><pubDate>Sat, 24 Oct 2020 15:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-10-24-working-fast/</guid><description>&lt;p>Many discussions regarding software tooling had me facing the argument that while my suggestions might decrease the duration required for the task at hand to some degree, the magnitude or quantity of the savings were not sufficiently significant, that they would not amortize. Despite acknowledging a &lt;em>taste&lt;/em> of truth to that, I typically felt that there was an aspect to the topic escaping the debate.&lt;/p>
+&lt;p>The relevance of speed in workflows always carried conviction to me. After some reflection I believe my intuition’s root cause is twofold. On the one hand I believe that the former argument is built on a flawed assumption. On the other hand it’s just great fun to feel fast.&lt;/p></description></item><item><title>On Gifts</title><link>https://kevinkle.in/posts/2020-08-03-gifts/</link><pubDate>Mon, 03 Aug 2020 15:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-08-03-gifts/</guid><description>&lt;p>TL;DR: Spend thought not money. Think about your edge. Don&amp;rsquo;t buy beans for a hobby roaster.&lt;/p>
+&lt;p>I&amp;rsquo;ve often felt strongly about gifts made and received and always had some vague intuitions floating around in my head concerning distinctive properties.
+Finally have I sought to distill them and make them more explicit.&lt;/p>
+&lt;p>Reflecting on past gift-finding processes, I came to realize that I would often feel dissatisfied when most of the value of
+a gift would stem from money. I&amp;rsquo;d much rather have the value be derived from thought, concern and genuine interest about someone.
+This topic concerns itself with the &lt;em>kind of effort&lt;/em>. Within this kind of currency, efforts can still be misdirected. Pondering without
+getting anywhere is likely a common phenomenon. What&amp;rsquo;s the purpose of spending the &amp;lsquo;right&amp;rsquo; kind of effort
+without ensuing reward? Hence, within the realm of spending thought on someone, I would attempt to direct them towards my own edge. In the
+context of gifts my own edge seems to be:&lt;/p></description></item><item><title>Fig Quiche</title><link>https://kevinkle.in/posts/2020-07-25-fig_quiche/</link><pubDate>Sat, 25 Jul 2020 12:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-07-25-fig_quiche/</guid><description>&lt;h2 id="ingredients">Ingredients&lt;/h2>
+&lt;ul>
+&lt;li>300g shortcrust dough&lt;/li>
+&lt;li>large bunch of basil&lt;/li>
+&lt;li>~200g Soft, creamy goat cheese, e.g. Chavroux&lt;/li>
+&lt;li>~400g of figs (both fresh and dried are ok)&lt;/li>
+&lt;li>4-6 red onions&lt;/li>
+&lt;li>2 cloves of garlic&lt;/li>
+&lt;li>zest of one lemon&lt;/li>
+&lt;li>~3 eggs&lt;/li>
+&lt;li>~80ml cream &lt;!-- raw HTML omitted -->&lt;a href="#f0">[0]&lt;/a>&lt;!-- raw HTML omitted -->&lt;/li>
+&lt;li>some lemon juice&lt;/li>
+&lt;li>some nutmeg&lt;/li>
+&lt;li>some sweet paprika powder&lt;/li>
+&lt;li>seasoning&lt;/li>
+&lt;/ul>
+&lt;h2 id="method">Method&lt;/h2>
+&lt;p>Slice the red onions in rings and fry them under medium-high heat with both olive oil and
+butter. Consider adding more oil to get to where you want to be. The onions having taken on
+some color, add finely chopped garlic and maybe a bit of finely chopped seedless chili.
+Once things are starting to dry up again, add a glug of red wine. Consider repeating
+this step with some honey.&lt;/p></description></item><item><title>Orange Pink Eggs</title><link>https://kevinkle.in/posts/2020-05-16-eggs/</link><pubDate>Sat, 06 Jun 2020 21:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-05-16-eggs/</guid><description>&lt;p>I have a feeling that hard-boiled eggs are conventially viewed as unsexy. In spite of that, I gave pickling them a shot.&lt;/p>
+&lt;h2 id="ingredients">Ingredients&lt;/h2>
+&lt;ul>
+&lt;li>8 eggs&lt;/li>
+&lt;li>1 cup of white balsamic vinegar&lt;/li>
+&lt;li>1/2 cup of liquid from tinned beets&lt;/li>
+&lt;li>2 tbsp cardamon pods&lt;/li>
+&lt;li>2 tbsp cumin seeds&lt;/li>
+&lt;li>2 tbsp coriander seeds&lt;/li>
+&lt;li>2 tbsp pepper corns&lt;/li>
+&lt;li>1 tbsp fennel seeds&lt;/li>
+&lt;li>1 tbsp mustard seeds&lt;/li>
+&lt;li>a few cloves&lt;/li>
+&lt;li>a few bay leaves&lt;/li>
+&lt;li>2 cloves of garlic&lt;/li>
+&lt;li>2 tbsp curry powder&lt;/li>
+&lt;li>2 tbsp turmeric&lt;/li>
+&lt;li>2 tbsp sweet paprika powder&lt;/li>
+&lt;li>2 tbsp salt&lt;/li>
+&lt;li>3 tbsp sugar&lt;/li>
+&lt;li>1 tbsp garam masala&lt;/li>
+&lt;/ul>
+&lt;h2 id="method">Method&lt;/h2>
+&lt;p>Boil the eggs as little as possible while making sure they&amp;rsquo;re actually boiled. If you found just the right spot, make
+sure to put them into ice water as to prevent them continuing to cook themselves.&lt;/p></description></item><item><title>Caramelized Onion and Artichoke Ravioli</title><link>https://kevinkle.in/posts/2020-05-25-ravioli/</link><pubDate>Mon, 25 May 2020 15:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-05-25-ravioli/</guid><description>&lt;h2 id="ingredients">Ingredients&lt;/h2>
+&lt;p>Dough&lt;/p>
+&lt;ul>
+&lt;li>300g of 00 flour&lt;/li>
+&lt;li>200g of &amp;lsquo;pasta flour&amp;rsquo; (don&amp;rsquo;t actually know what that is)&lt;/li>
+&lt;li>5 eggs&lt;/li>
+&lt;li>some water&lt;/li>
+&lt;/ul>
+&lt;p>Filling&lt;/p>
+&lt;ul>
+&lt;li>6 large onions&lt;/li>
+&lt;li>250g fresh ricotta (get the good, dry stuff)&lt;/li>
+&lt;li>~250g artichoke hearts&lt;/li>
+&lt;li>2 cloves of garlic&lt;/li>
+&lt;li>a glug of red wine&lt;/li>
+&lt;li>butter&lt;/li>
+&lt;li>tbsp sugar (optional)&lt;/li>
+&lt;li>thyme&lt;/li>
+&lt;li>zest of one lemon&lt;/li>
+&lt;li>some lemon juice&lt;/li>
+&lt;li>some nutmeg&lt;/li>
+&lt;li>some sweet paprika powder&lt;/li>
+&lt;li>seasoning&lt;/li>
+&lt;/ul>
+&lt;h2 id="method">Method&lt;/h2>
+&lt;p>Use a standard approach to prepare the pasta dough, see for e.g.
+&lt;a href="https://leitesculinaria.com/40229/recipes-homemade-pasta-dough.html">this recipe&lt;/a>.&lt;/p></description></item><item><title>Creamy, Bittersweet, Sharp Pasta</title><link>https://kevinkle.in/posts/2020-05-10-chicory_gorgonzola/</link><pubDate>Sun, 10 May 2020 09:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-05-10-chicory_gorgonzola/</guid><description>&lt;p>There&amp;rsquo;s just something great about caramelized chicory. While
+I&amp;rsquo;ve often got there by covering it in honey and balsamic vinegar, I
+was inclined to look for a similar effect with actual grapes. In
+additional to the lovely interplay of bitterness and sweetness, there
+is something light about the acidity of the grapes.&lt;/p>
+&lt;p>I figured that caramelized onions would only enhance this interplay
+without distracting too much.&lt;/p>
+&lt;p>Combining Gorgonzola with pasta water can easily lead to a very creamy
+cover for the pasta, as can be achieved with other types of
+cheeses. Yet, the blue cheese combines the silky, creamy texture with
+a sharpness in taste that pleasantly surprises.&lt;/p></description></item><item><title>Markov Random Field Image Denoising</title><link>https://kevinkle.in/posts/2020-03-27-mrf/</link><pubDate>Sun, 26 Apr 2020 09:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-03-27-mrf/</guid><description>&lt;p>This post describes the application of a Probabilistic Graphical Model for simple image denoising,
+as suggested in &lt;a href="https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/">Bishop&lt;/a>&amp;rsquo;s
+chapter 8.3.8. I will attempt to introduce some notions for general context without derivations.
+Googling will lead to plenty of useful resources. On an introductory level, I enjoyed
+&lt;a href="https://cs.stanford.edu/~ermon/cs228/index.html">Daphne Koller&amp;rsquo;s class&lt;/a>.&lt;/p>
+&lt;h2 id="context-probabilistic-graphical-models">Context: Probabilistic Graphical Models&lt;/h2>
+&lt;p>Probabilistic Graphical Models are tools to model and express conditional
+independencies among a set of random variables.&lt;/p>
+&lt;p>Why care about conditional independencies? Joint distributions can always be expressed without
+conditional independencies. Yet, the latter allow for an expression of the joint distribution
+requiring fewer parameters.&lt;/p></description></item><item><title>Playlist Chatbot</title><link>https://kevinkle.in/posts/2020-03-27-playlist-chat-bot/</link><pubDate>Fri, 27 Mar 2020 16:00:00 +0200</pubDate><guid>https://kevinkle.in/posts/2020-03-27-playlist-chat-bot/</guid><description>&lt;p>Countless times have I found myself in the situation of receiving a telegram message of following
+kind:&lt;/p>
+&lt;p>&lt;img src="https://kevinkle.in/imgs/playlist-chat-bot/telegram-message.png" alt="telegram message">&lt;/p>
+&lt;p>On the one hand I find this immensely exciting:&lt;/p>
+&lt;ul>
+&lt;li>A friend takes time to share something with me.&lt;/li>
+&lt;li>I take pleasure in exploring music per se.&lt;/li>
+&lt;li>Both conjuncted, there is a possibility to bond over music.&lt;/li>
+&lt;/ul>
+&lt;p>Hence there is a great amount of potential!&lt;/p>
+&lt;p>Yet, on the other hand, it&amp;rsquo;s a bit of a mess. As seemingly few people do, I use Google Play
+Music/Youtube Music over spotify (it&amp;rsquo;s a long story). Spotify links are sometimes rendered
+nicely by Telegram as to indicate artist/song/album information. Sometimes not. Depending on that,
+the process of adding a friend&amp;rsquo;s suggestion to a playlist of mine looks as follows:&lt;/p></description></item><item><title>Update: Time Is Money</title><link>https://kevinkle.in/posts/2020-03-26-tim_update/</link><pubDate>Thu, 26 Mar 2020 16:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-03-26-tim_update/</guid><description>&lt;p>A while back, I wrote about &lt;a href="http://kevinkle.in/jekyll/update/2018/08/03/tim.html">Time Is Money&lt;/a>.&lt;/p>
+&lt;p>Back then I ran into several technical problems with modern browsers&amp;rsquo; &lt;a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/idle">idle api&lt;/a>.&lt;/p>
+&lt;p>Circumventing these with a somewhat brute approach made it possible to get the extension to run more smoothly. Besides still being able to build it from source, it is now available in the &lt;a href="https://chrome.google.com/webstore/detail/timeismoney/pdhagfofcpkciigdpbmjniblellpbjjk">chrome extension store&lt;/a>.&lt;/p>
+&lt;h2 id="current-behaviour">Current behaviour&lt;/h2>
+&lt;p>In the extension options, a user can specify an &lt;em>hourly&lt;/em> wage as well as a set of &lt;em>undesirable websites&lt;/em>.&lt;/p></description></item><item><title>Invitations</title><link>https://kevinkle.in/posts/2020-03-02-invitations/</link><pubDate>Mon, 02 Mar 2020 09:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-03-02-invitations/</guid><description>&lt;h2 id="scenario-and-goal">Scenario and goal&lt;/h2>
+&lt;p>You are the host of an event for which there are \(n\) candidates to be invited and you possess sufficient resources to host all candidates. Let the nature of the event be such that it seems personally attached to you, yet also fairly polarizing in its experience. In other words:&lt;/p>
+&lt;ul>
+&lt;li>some invitees will have a desire to decline&lt;/li>
+&lt;li>invitees with a desire to decline will feel bad about declining&lt;/li>
+&lt;li>some non-invitees will have a desire to attend&lt;/li>
+&lt;li>non-invitees with a desire to attend will feel bad about not being able to attend&lt;/li>
+&lt;/ul>
+&lt;p>Moreover, one might weigh the ambitions wrt non-desiring invitees and desiring non-invitees differently. For instance, one might consider the discomfort of someone having
+to decline, and thereby expressing his/her lack of appreciation, worse than the missed opportunity of someone not attending who would&amp;rsquo;ve desired to.&lt;/p></description></item><item><title>Not Buying Tableware</title><link>https://kevinkle.in/posts/2020-01-23-tableware/</link><pubDate>Thu, 23 Jan 2020 19:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-01-23-tableware/</guid><description>&lt;p>While mindlessly strolling around the leftover 18th century fortifications of a coastal Moroccan town I came across some streets with vendors of apparently local tableware. I found said tableware to be really beautiful. Sadly, the pure state of admiration only lasted briefly. The latter was soon accompanied and then progressively consumed by the concern of what to buy for whom. It got me quite excited (in a twisted way) and thinking hard about how my own tableware could be complemented, how others &lt;em>could&lt;/em> use &lt;em>any&lt;/em> tableware. Suddenly I wondered: Why am I thinking of buying things?&lt;/p></description></item><item><title>Log, Right?</title><link>https://kevinkle.in/posts/2020-01-16-log/</link><pubDate>Thu, 16 Jan 2020 19:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-01-16-log/</guid><description>&lt;p>Most Machine Learning projects have seen me write a function to log data to a log-file as well as apply a logarithm to a vector. As I&amp;rsquo;m not aware of a conventionally used synonym for the former use of &amp;rsquo;log&amp;rsquo; and the latter is usually referred to as &amp;rsquo;log&amp;rsquo; in mathematics (thereby rejecting the argument I would usually bring up in naming issues: avoid abbreviations and acronyms) a naming problem naturally arises. What&amp;rsquo;s &lt;code>log&lt;/code>?&lt;/p></description></item><item><title>Capuns</title><link>https://kevinkle.in/posts/2019-12-25-capuns/</link><pubDate>Sat, 28 Dec 2019 08:00:00 +0200</pubDate><guid>https://kevinkle.in/posts/2019-12-25-capuns/</guid><description>&lt;p>&lt;a href="https://en.wikipedia.org/wiki/Capuns">Capuns&lt;/a> are dumplings wrapped in chard leaves stemming from the Swiss canton of Graubünden. While they traditionally rely on bacon, I gave sundried tomatoes and mushrooms a shot in the leading role. Umami has to come from somewhere. Moreover I added cheese to the filling and browned with cheese and cream in the oven. I believe both do not necessarily correspond to the default approach.&lt;/p>
+&lt;h2 id="ingredients">Ingredients&lt;/h2>
+&lt;p>Serves 4 hungry people.&lt;/p></description></item><item><title>2019 in Running</title><link>https://kevinkle.in/posts/2019-12-26-2019_running/</link><pubDate>Fri, 27 Dec 2019 16:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2019-12-26-2019_running/</guid><description>&lt;p>As explained in &lt;a href="http://kevinkle.in/jekyll/update/2018/10/28/running-log.html">a previous post&lt;/a>, I log the distances of my runs. In the following I will make some simple observations based on this data. The data goes back to 2016 and comprises timestamps and running distances in km.&lt;/p>
+&lt;p>In bad storytelling manner let&amp;rsquo;s start with the most graspable and interesting statistic first: average and overall distance across years. I had never computed those before and had basically no intuition on it at all. I couldn&amp;rsquo;t have said whether I had been running more or less than last year. Turns out there was a substantial difference.&lt;/p></description></item><item><title>Kimchi Pancakes</title><link>https://kevinkle.in/posts/2019-10-03-kimchi-pancakes/</link><pubDate>Thu, 03 Oct 2019 08:00:00 +0200</pubDate><guid>https://kevinkle.in/posts/2019-10-03-kimchi-pancakes/</guid><description>&lt;p>I&amp;rsquo;d argue that those beautifully colored kimchi pancakes are rather on the subtle side when it comes to taste intensity. The kimchi flavor certainly isn&amp;rsquo;t overwhelming. At the same time, leaving it out makes you wish for something.&lt;/p>
+&lt;p>&lt;img src="https://kevinkle.in/imgs/pancake.jpg" alt="Stacked pancakes">&lt;/p>
+&lt;h2 id="ingredients">Ingredients&lt;/h2>
+&lt;p>Serves 4 hungry ppl.&lt;/p>
+&lt;h1 id="pancake-batter">Pancake batter&lt;/h1>
+&lt;ul>
+&lt;li>2 eggs&lt;/li>
+&lt;li>1.5 cups of chopped Kimchi (most likely around 400g)&lt;/li>
+&lt;li>2 cups of flower&lt;/li>
+&lt;li>2 cups of corn or potato starch&lt;/li>
+&lt;li>1.5 cups of kimchi liquid&lt;/li>
+&lt;li>12 tablespoons of water&lt;/li>
+&lt;li>1 teaspoon of salt&lt;/li>
+&lt;li>3 spring onions&lt;/li>
+&lt;/ul>
+&lt;h1 id="dipping-sauce">Dipping sauce&lt;/h1>
+&lt;ul>
+&lt;li>some chili flakes&lt;/li>
+&lt;li>a bit of sugar (adjust to taste)&lt;/li>
+&lt;/ul>
+&lt;p>Equal parts of:&lt;/p></description></item><item><title>Sort-of-art?</title><link>https://kevinkle.in/posts/2019-09-27-lena/</link><pubDate>Fri, 27 Sep 2019 08:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2019-09-27-lena/</guid><description>&lt;p>Recently, my friend Theo pointed me towards his amazing idea and execution of programming &amp;lsquo;paintings&amp;rsquo; with the help of randomization.&lt;/p>
+&lt;p>I was fairly taken by the idea of programming with randomization to create sort-of-art. I kept thinking about cellular automata but reckoned that they often created outcomes that looked:&lt;/p>
+&lt;ul>
+&lt;li>overly structured in general&lt;/li>
+&lt;li>busy, hard and cold in detail.&lt;/li>
+&lt;/ul>
+&lt;p>I figured that the latter could maybe be tackled by applying lots of smoothing, both on input and output image. The former seemed a bit harder to tackle as I&amp;rsquo;d need explicit rules/probabilities for something that would&lt;/p></description></item><item><title>Breaking Pills: An Intuition</title><link>https://kevinkle.in/posts/2019-09-23-breaking_pills/</link><pubDate>Mon, 23 Sep 2019 09:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2019-09-23-breaking_pills/</guid><description>&lt;h3 id="motivation">Motivation&lt;/h3>
+&lt;p>Recently, Mark Dominus&amp;rsquo; &lt;a href="https://blog.plover.com/math/breaking-pills.html">post on breaking pills&lt;/a> appeared on &lt;a href="https://news.ycombinator.com/item?id=21024224">Hacker News&lt;/a>. I was surprised to see the author not provide a closed-form and wanted to extend on some of the comments indicating a relation to the &lt;a href="https://en.wikipedia.org/wiki/Harmonic_number">harmonic numbers&lt;/a>.&lt;/p>
+&lt;h3 id="problem-formulation">Problem Formulation&lt;/h3>
+&lt;p>Starting off with a bowl of \(n\) whole pills, you draw from the bowl uniformly at random according to the following mechanism: if the drawn pill is whole, you put back one half of it; if the drawn pill is half, you don&amp;rsquo;t put back anything.&lt;/p></description></item><item><title>Challenge People</title><link>https://kevinkle.in/posts/2019-08-10-challenge/</link><pubDate>Wed, 14 Aug 2019 08:00:00 +0200</pubDate><guid>https://kevinkle.in/posts/2019-08-10-challenge/</guid><description>&lt;h2 id="abstract">Abstract&lt;/h2>
+&lt;p>This post introduces an arbitrary topic on which I changed my mind, mostly through own reflection. I intend to exemplify my pet theory: I could have changed opinion and landed in a more desirable situation much faster if my original position had been challenged more by my social environment.&lt;/p>
+&lt;h2 id="an-exemplary-change-of-opinion-messaging">An exemplary change of opinion: Messaging&lt;/h2>
+&lt;h1 id="previous-position">Previous position&lt;/h1>
+&lt;p>I vividly remember claiming that messaging people one doesn&amp;rsquo;t talk to on a regular basis was pointless, as long as there wasn&amp;rsquo;t a very specific topic to discuss, which required a lot of groundwork to be laid out already. The generally low priority that messaging is suffering from as well as the hindering nature of typing seemed like valid culprits of low bandwidth. Said bandwidth was reason enough for me to believe that nothing &lt;em>meaningful&lt;/em> would come out of it.
+In other words, my perspective was that such messaging often started off great but had inevitably been followed by neglect, typically bilaterally, causing a net negative due to unmet expectations.&lt;/p></description></item><item><title>Korean Noodle Salad</title><link>https://kevinkle.in/posts/2019-08-10-noodles/</link><pubDate>Sat, 10 Aug 2019 08:00:00 +0200</pubDate><guid>https://kevinkle.in/posts/2019-08-10-noodles/</guid><description>&lt;p>This is a recipe for a Korean noodle salad. Its raw and at most lukewarm ingredients as well as the the coriander-acidity pairing make it feel light and fresh despite the rich nature of the peanut butter and sesame oil. I can recommend it as a main course on summer evenings.&lt;/p>
+&lt;h2 id="preliminaries">Preliminaries&lt;/h2>
+&lt;p>Bell peppers, carrots and cucumber are meant to be cut in juliennes. The following aspects flow into that decision:&lt;/p></description></item><item><title>Workflow on Leonhard/Euler Compute Cluster</title><link>https://kevinkle.in/posts/2019-02-28-leonhard/</link><pubDate>Thu, 28 Feb 2019 18:00:00 +0200</pubDate><guid>https://kevinkle.in/posts/2019-02-28-leonhard/</guid><description>&lt;h1 id="abstract">Abstract&lt;/h1>
+&lt;p>Fortunately, ETH provides many of its students with access to Leonhard and Euler, computer clusters with CPUs and GPUs. Note that not every student is granted access to both - only some coursework or projects might qualify. I have spent and lost a fair amount of time due to poor Google results and will describe a setup for a simple workflow.&lt;/p>
+&lt;h1 id="connection">Connection&lt;/h1>
+&lt;p>In order to ssh to the server, you first need to connect to ETH&amp;rsquo;s VPN.&lt;/p></description></item><item><title>A Beautiful, Derandomized Algorithm</title><link>https://kevinkle.in/posts/2019-01-22-favourite-algorithm/</link><pubDate>Mon, 21 Jan 2019 16:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2019-01-22-favourite-algorithm/</guid><description>&lt;h3 id="abstract">Abstract&lt;/h3>
+&lt;p>Appreciating the simplicity of powerful randomized algorithms comes easy to me. In the following I will try to describe a naive algorithm relying on a randomized argument. What I find particularly remarkable is that it can easily parry the critique I am so often encountered with when cherishing randomized algorithms: it can trivially be turned deterministic.&lt;/p>
+&lt;h3 id="max-3sat">MAX-3SAT&lt;/h3>
+&lt;p>Is a boolean satisfiability problem. Given a formula in 3-CNF, the goal to satisfy as many clauses as possible.&lt;/p></description></item><item><title>Sklearn Pipelines</title><link>https://kevinkle.in/posts/2019-01-10-sklearn-pipelines/</link><pubDate>Tue, 08 Jan 2019 13:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2019-01-10-sklearn-pipelines/</guid><description>&lt;blockquote>
+&lt;p>Pipeline of transforms with a final estimator.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="why">Why&lt;/h2>
+&lt;p>Whether you&amp;rsquo;re using sklearn transformations already or implementing data wrangling from scratch, there are interesting aspects to squeezing those into an sklearn
+&lt;a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html">pipeline&lt;/a>.
+Most notably, this will:&lt;/p>
+&lt;ul>
+&lt;li>Allow for the usage of sklearn&amp;rsquo;s &lt;a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_score.html">cross validation&lt;/a>.&lt;/li>
+&lt;li>Allow for the usage of sklearn&amp;rsquo;s &lt;a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html">grid search&lt;/a>.&lt;/li>
+&lt;li>Lower the barrier to include sklearn transformations, such as &lt;a href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html">TfidfVectorizer&lt;/a>, in the future.&lt;/li>
+&lt;/ul>
+&lt;p>It would be possible to do all such processing without a pipeline object: once
+on the whole dataset. Yet, this is only legitimate for data-independent [0]
+transformations. For data-dependent transformations, such as imputation by mean,
+you would cause data leakage [1]. In order to avoid that, we can express how
+training and validation set should be processed individually, per cross
+validation split.&lt;/p></description></item><item><title>Running Log</title><link>https://kevinkle.in/posts/2018-10-21-running-log/</link><pubDate>Sun, 28 Oct 2018 16:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2018-10-21-running-log/</guid><description>&lt;h2 id="problem">Problem&lt;/h2>
+&lt;p>Sports tracking apps offer lots of interesting functionalities regarding the logging of activities. I figured most of what they provided was only interesting in short-term for two reasons.&lt;/p>
+&lt;p>On the one hand, I changed phones and tracking apps from time to time, which would sometimes lead to a reset of information. Also, some tracking apps were discontinued. You could say they introduced technical debt that I often was not willing or able to carry on.&lt;/p></description></item><item><title>On Advice</title><link>https://kevinkle.in/posts/2018-10-05-advice/</link><pubDate>Fri, 05 Oct 2018 18:00:00 +0200</pubDate><guid>https://kevinkle.in/posts/2018-10-05-advice/</guid><description>&lt;p>Sometimes concrete advice is fairly context-insensitive: &lt;a href="https://en.wikipedia.org/wiki/How_to_Win_Friends_and_Influence_People">Dale Carnegie&lt;/a> suggests to always greet people in the fashion of a dog. Such advice might be useful at times, yet I believe that the upper bound of created value by such concrete yet context-insensitive advice is low.&lt;/p>
+&lt;p>My impression is that most valuable decisions are context-sensitive by nature, i.e. relying on a lot of individual, complex information. The overwhelming complexity and volume of context can be mistakenly overlooked when formulating advice. A person&amp;rsquo;s full context, i.e. the state of the world, usually can&amp;rsquo;t easily be folded into a simple, exchangeable description. Therefore external advisers use a poor approximation of the context and miss out on crafting fitting, useful, context-sensitive suggestions.&lt;/p></description></item><item><title>On Apologies: A Poor Man's Taxonomy</title><link>https://kevinkle.in/posts/2018-09-09-apologies/</link><pubDate>Sun, 09 Sep 2018 16:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2018-09-09-apologies/</guid><description>&lt;p>I have gotten confused and frustrated over apologies from time to time. They have been a consistent source of miscommunication. I figured that it isn&amp;rsquo;t clear to me what an apology means in the general case. Hence I tried to distinguish possible meanings in more concrete cases.&lt;/p>
+&lt;ol>
+&lt;li>I &amp;lsquo;regret&amp;rsquo; my action and given the hypothetical chance to undo it, I would.&lt;/li>
+&lt;li>I preferred you not having to bear the negative consequences of my action. Yet, given the the hypothetical chance to undo it, I wouldn&amp;rsquo;t.&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=YvgxfyVheNQ&amp;amp;feature=youtu.be&amp;amp;t=13m57s">I will tell you anything to temporarily satisfy you without caring or investing any real effort.&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;p>I think the source of my confusion and frustration was assuming something rather close to (1) by default, without reason to do so. I guess a classic expectation management issue!&lt;/p></description></item><item><title>Time Is Money</title><link>https://kevinkle.in/posts/2018-07-29-tim/</link><pubDate>Fri, 03 Aug 2018 16:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2018-07-29-tim/</guid><description>&lt;p>This post is about a browser add-on that is hopefully a drop in the ocean towards a rather ambitious goal. It&amp;rsquo;s called &lt;a href="https://github.com/kklein/timeismoney">TimeIsMoney&lt;/a>.&lt;/p>
+&lt;h2 id="motivation">Motivation&lt;/h2>
+&lt;p>A while back I listened to &lt;a href="https://samharris.org/podcasts/what-is-technology-doing-to-us/">Sam Harris&amp;rsquo; podcast with Tristan Harris&lt;/a>. What remained was following:&lt;/p>
+&lt;p>I agreed that most technology is agnostic. At the same time, a lot of technology stemming from or being a byproduct of the attention economy is rather geared towards a usage that is a net disadvantage for the user. What I mean by that is that such technology has both advantages and disadvantages that can at least partly be isolated. Yet a somewhat unconscious usage, think: path of least resistance, will often weigh the disadvantages more heavily. I don&amp;rsquo;t see why this would be an intrinsic property of such products and services, it just happens to be the case for most examples I could think of.&lt;/p></description></item><item><title>Matrix Factorization in Collaborative Filtering</title><link>https://kevinkle.in/posts/2018-07-10-cf-mf/</link><pubDate>Tue, 10 Jul 2018 16:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2018-07-10-cf-mf/</guid><description>&lt;h2 id="the-task">The Task&lt;/h2>
+&lt;!-- raw HTML omitted -->
+&lt;p>We are given a set of tuples representing user-movie ratings, \(\mathcal{R} = \{(i,j,r)\}\), where \(i\) is the user index, \(j\) is the movie index and \(r \in [0, \dots, 5]\) the rating.
+In the most common scenarios, only a fraction of all user-movie pairs are rated, hence we can talk about &lt;em>sparse&lt;/em> data.
+In other words, most users have only rated a few movies. Now we want to obtain sensible predictions for movies a user has not rated. I leave drawing to picture as to why this is super relevant in many use cases to your imagination. Note that we only have this explicit feedback from users and don&amp;rsquo;t have any context knowledge about the users or movies. We can only leverage ratings from other users to build predictions. This is called collaborative filtering.&lt;/p></description></item><item><title>Post Title</title><link>https://kevinkle.in/posts/9999-01-01-template/</link><pubDate>Sat, 01 Jan 2000 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/9999-01-01-template/</guid><description>&lt;h1 id="motivation">Motivation&lt;/h1>
+&lt;p>&lt;a href="https://google.com">url&lt;/a>&lt;/p>
+&lt;p>Cool sentence with footnote&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>.&lt;/p>
+&lt;p>&lt;img src="https://kevinkle.in/imgs/Hn.png" alt="image">&lt;/p>
+&lt;p>Inline formula \(\lambda = \omega\)&lt;/p>
+&lt;p>Equation $$\lambda = \omega$$&lt;/p>
+&lt;p>Aligned equation
+$$\begin{aligned}
+\Pr[x=1] &amp;amp;= 1 - \Pr[x=0]\\
+&amp;amp;= 1 - \frac{1}{2} \\
+&amp;amp;= \frac{1}{2}
+\end{aligned}$$&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>Cool footnote.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>About</title><link>https://kevinkle.in/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kevinkle.in/about/</guid><description>&lt;p>I&amp;rsquo;m Kevin. I&amp;rsquo;m a Computer Scientist. You can find me on &lt;a href="https://twitter.com/kevkle">Twitter&lt;/a> and &lt;a href="https://github.com/kklein">GitHub&lt;/a>.&lt;/p>
+&lt;p>I enjoy attempting to derive from first principles &amp;ndash; in math, programming or in real life&amp;rsquo;s decision making. Professionally, I do work in Data Engineering, Data Science, Machine Learning Engineering, Software Engineering and Quantitative Analysis.&lt;/p>
+&lt;p>On this website I try to share my views in order to force myself to condense and distill thoughts and ideas freely floating around in my mind. Moreover, I don&amp;rsquo;t write with the primary intention to let others know. Rather, I have the intention to be transparent and increase my attack surface - making it easier for people to let me know what and how I can do better. If nevertheless someone happens to take something away from my writing, all the better!&lt;/p></description></item><item><title>Projects</title><link>https://kevinkle.in/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kevinkle.in/projects/</guid><description>&lt;h1 id="quantco">QuantCo&lt;/h1>
+&lt;p>I am fortunate enough that some of the work done at &lt;a href="https://quantco.com/">QuantCo&lt;/a> is open source.&lt;/p>
+&lt;h2 id="metalearners">metalearners&lt;/h2>
+&lt;p>&lt;a href="https://github.com/Quantco/metalearners">metalearners&lt;/a> is a Causal Inference Python library for estimating Conditional Average Treatment Effects with MetaLearners.
+For more information, have a look at our &lt;a href="https://tech.quantco.com/blog/metalearners">blog post&lt;/a> or the &lt;a href="https://metalearners.readthedocs.io/en/latest/">documentation&lt;/a>.&lt;/p>
+&lt;h2 id="datajudge">datajudge&lt;/h2>
+&lt;p>&lt;a href="https://github.com/quantco/datajudge">datajudge&lt;/a> is a Python data testing library. Datajudge allows for the convenient expression and testing of expectations between different data source in database. It integrates nicely with pytest. For more, read our &lt;a href="https://tech.quantco.com/2022/06/20/datajudge.html">blog post&lt;/a> or have a look at an &lt;a href="https://datajudge.readthedocs.io/en/latest/examples/example.html">example&lt;/a> in the documentation.&lt;/p></description></item></channel></rss>

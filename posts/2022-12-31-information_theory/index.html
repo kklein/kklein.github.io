@@ -1,11 +1,65 @@
 <!doctype html><html><head lang=en><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><title>A Cheat Sheet for Information Theory Fundamentals in ML - Blog</title><link rel=icon type=image/png href=img/favicon.ico><meta name=viewport content="width=device-width,initial-scale=1">
 <meta name=description content="All of the definitions stem from Kevin Murphy&rsquo;s Probabilistic Machine Learning: An Introduction.
+Many of the following primitives are defined for discrete  as well as continuous random variables and distributions. Since they are analogous,
+I chose to only represent discrete versions for the sake of simplicity.
+
+  
+      
+          
+          
+      
+  
+  
+      
+          Entropy
+          $$\mathbb{H}(X) = \mathbb{H}(p) := -\sum_\mathcal{X} p(X=x)\log_2 p(X=x)$$
+      
+      
+          Cross-entropy
+          $$\mathbb{H}(p, q) := -\sum_\mathcal{X} p(X=x) \log_2 q(X=x)$$
+      
+      
+          Joint entropy
+          $$\mathbb{H}(X, Y) := -\sum_{\mathcal{X}, \mathcal{Y}} p(X=x, Y=y)\log_2 p(X=x, Y=y)$$
+      
+      
+          Conditional entropy
+          $$\begin{aligned} \mathbb{H}(X|Y) &:= \mathbb{E}_{p(X)}[\mathbb{H}(p(Y|X))] \\ &= \mathbb{H}(X, Y) - \mathbb{H}(X) \end{aligned}$$
+      
+      
+          Chain rule for entropy
+          $$\mathbb{H}(X_1, X_2, \dots, X_n) = \sum_{i=1}^n \mathbb{H}(X_i|X_1, \dots X_{i-1}) $$
+      
+      
+          KL-divergence (a.k.a relative entropy)
+          $$\begin{aligned} D_{KL}(p||q) &:= \sum_{\mathcal{X}} p(X=x) \log_2 \frac{p(X=x)}{q(X=X)} \\ &= \mathbb{H}(p, q) - \mathbb{H}(p) \end{aligned}$$
+      
+      
+          Forwards KL-divergence
+          Approximating $p$ with $q$ by minimizing $D_{KL}(p||q)$ w.r.t. $q$
+      
+      
+          Reverse KL-divergence
+          Approximating $p$ with $q$ by minimizing $D_{KL}(q||p)$ w.r.t. $q$
+      
+      
+          (Expected) Mutual Information (a.k.a. Information Gain)
+          $$\begin{aligned} \mathbb{I}(X;Y) &:= D_{KL}(p(X, Y) || p(X)p(Y)) \\ &= \mathbb{H}(X) - \mathbb{H}(X|Y) \\ &= \mathbb{H}(X) + \mathbb{H}(Y) - \mathbb{H}(X, Y) \end{aligned}$$
+      
+      
+          Conditional Mutual Information
+          $$\begin{aligned} \mathbb{I}(X;Y|Z) &:= \mathbb{E}_{p(Z)} [ \mathbb{I}(X;Y) | Z] \\ &= \mathbb{I}(Y; X, Z) - \mathbb{I}(Y;Z) \end{aligned}$$
+      
+      
+          Chain rule for MI
+          $$\mathbb{I}(Z_1, \dots, Z_n; X) = \sum_{i=1}^n \mathbb{I}(Z_i; X | Z_1, \dots, Z_{i-1})$$
+      
+  
+"><meta property="og:image" content><meta property="og:url" content="https://kevinkle.in/posts/2022-12-31-information_theory/"><meta property="og:site_name" content="Blog"><meta property="og:title" content="A Cheat Sheet for Information Theory Fundamentals in ML"><meta property="og:description" content="All of the definitions stem from Kevin Murphy’s Probabilistic Machine Learning: An Introduction.
 Many of the following primitives are defined for discrete as well as continuous random variables and distributions. Since they are analogous, I chose to only represent discrete versions for the sake of simplicity.
-Entropy $$\mathbb{H}(X) = \mathbb{H}(p) := -\sum_\mathcal{X} p(X=x)\log_2 p(X=x)$$ Cross-entropy $$\mathbb{H}(p, q) := -\sum_\mathcal{X} p(X=x) \log_2 q(X=x)$$ Joint entropy $$\mathbb{H}(X, Y) := -\sum_{\mathcal{X}, \mathcal{Y}} p(X=x, Y=y)\log_2 p(X=x, Y=y)$$ Conditional entropy $$\begin{aligned} \mathbb{H}(X|Y) &:= \mathbb{E}_{p(X)}[\mathbb{H}(p(Y|X))] \\ &= \mathbb{H}(X, Y) - \mathbb{H}(X) \end{aligned}$$ Chain rule for entropy $$\mathbb{H}(X_1, X_2, \dots, X_n) = \sum_{i=1}^n \mathbb{H}(X_i|X_1, \dots X_{i-1}) $$ KL-divergence (a."><meta property="og:image" content><meta property="og:url" content="https://kevinkle.in/posts/2022-12-31-information_theory/"><meta property="og:site_name" content="Blog"><meta property="og:title" content="A Cheat Sheet for Information Theory Fundamentals in ML"><meta property="og:description" content="All of the definitions stem from Kevin Murphy’s Probabilistic Machine Learning: An Introduction.
+Entropy $$\mathbb{H}(X) = \mathbb{H}(p) := -\sum_\mathcal{X} p(X=x)\log_2 p(X=x)$$ Cross-entropy $$\mathbb{H}(p, q) := -\sum_\mathcal{X} p(X=x) \log_2 q(X=x)$$ Joint entropy $$\mathbb{H}(X, Y) := -\sum_{\mathcal{X}, \mathcal{Y}} p(X=x, Y=y)\log_2 p(X=x, Y=y)$$ Conditional entropy $$\begin{aligned} \mathbb{H}(X|Y) &:= \mathbb{E}_{p(X)}[\mathbb{H}(p(Y|X))] \\ &= \mathbb{H}(X, Y) - \mathbb{H}(X) \end{aligned}$$ Chain rule for entropy $$\mathbb{H}(X_1, X_2, \dots, X_n) = \sum_{i=1}^n \mathbb{H}(X_i|X_1, \dots X_{i-1}) $$ KL-divergence (a.k.a relative entropy) $$\begin{aligned} D_{KL}(p||q) &:= \sum_{\mathcal{X}} p(X=x) \log_2 \frac{p(X=x)}{q(X=X)} \\ &= \mathbb{H}(p, q) - \mathbb{H}(p) \end{aligned}$$ Forwards KL-divergence Approximating $p$ with $q$ by minimizing $D_{KL}(p||q)$ w.r.t. $q$ Reverse KL-divergence Approximating $p$ with $q$ by minimizing $D_{KL}(q||p)$ w.r.t. $q$ (Expected) Mutual Information (a.k.a. Information Gain) $$\begin{aligned} \mathbb{I}(X;Y) &:= D_{KL}(p(X, Y) || p(X)p(Y)) \\ &= \mathbb{H}(X) - \mathbb{H}(X|Y) \\ &= \mathbb{H}(X) + \mathbb{H}(Y) - \mathbb{H}(X, Y) \end{aligned}$$ Conditional Mutual Information $$\begin{aligned} \mathbb{I}(X;Y|Z) &:= \mathbb{E}_{p(Z)} [ \mathbb{I}(X;Y) | Z] \\ &= \mathbb{I}(Y; X, Z) - \mathbb{I}(Y;Z) \end{aligned}$$ Chain rule for MI $$\mathbb{I}(Z_1, \dots, Z_n; X) = \sum_{i=1}^n \mathbb{I}(Z_i; X | Z_1, \dots, Z_{i-1})$$"><meta property="og:locale" content="en_us"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-12-31T07:38:07+02:00"><meta property="article:modified_time" content="2022-12-31T07:38:07+02:00"><meta property="article:tag" content="Math"><meta name=twitter:card content="summary"><meta name=twitter:title content="A Cheat Sheet for Information Theory Fundamentals in ML"><meta name=twitter:description content="All of the definitions stem from Kevin Murphy’s Probabilistic Machine Learning: An Introduction.
 Many of the following primitives are defined for discrete as well as continuous random variables and distributions. Since they are analogous, I chose to only represent discrete versions for the sake of simplicity.
-Entropy $$\mathbb{H}(X) = \mathbb{H}(p) := -\sum_\mathcal{X} p(X=x)\log_2 p(X=x)$$ Cross-entropy $$\mathbb{H}(p, q) := -\sum_\mathcal{X} p(X=x) \log_2 q(X=x)$$ Joint entropy $$\mathbb{H}(X, Y) := -\sum_{\mathcal{X}, \mathcal{Y}} p(X=x, Y=y)\log_2 p(X=x, Y=y)$$ Conditional entropy $$\begin{aligned} \mathbb{H}(X|Y) &:= \mathbb{E}_{p(X)}[\mathbb{H}(p(Y|X))] \\ &= \mathbb{H}(X, Y) - \mathbb{H}(X) \end{aligned}$$ Chain rule for entropy $$\mathbb{H}(X_1, X_2, \dots, X_n) = \sum_{i=1}^n \mathbb{H}(X_i|X_1, \dots X_{i-1}) $$ KL-divergence (a."><meta property="og:locale" content="en_us"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-12-31T07:38:07+02:00"><meta property="article:modified_time" content="2022-12-31T07:38:07+02:00"><meta property="article:tag" content="Math"><meta name=twitter:card content="summary"><meta name=twitter:title content="A Cheat Sheet for Information Theory Fundamentals in ML"><meta name=twitter:description content="All of the definitions stem from Kevin Murphy’s Probabilistic Machine Learning: An Introduction.
-Many of the following primitives are defined for discrete as well as continuous random variables and distributions. Since they are analogous, I chose to only represent discrete versions for the sake of simplicity.
-Entropy $$\mathbb{H}(X) = \mathbb{H}(p) := -\sum_\mathcal{X} p(X=x)\log_2 p(X=x)$$ Cross-entropy $$\mathbb{H}(p, q) := -\sum_\mathcal{X} p(X=x) \log_2 q(X=x)$$ Joint entropy $$\mathbb{H}(X, Y) := -\sum_{\mathcal{X}, \mathcal{Y}} p(X=x, Y=y)\log_2 p(X=x, Y=y)$$ Conditional entropy $$\begin{aligned} \mathbb{H}(X|Y) &:= \mathbb{E}_{p(X)}[\mathbb{H}(p(Y|X))] \\ &= \mathbb{H}(X, Y) - \mathbb{H}(X) \end{aligned}$$ Chain rule for entropy $$\mathbb{H}(X_1, X_2, \dots, X_n) = \sum_{i=1}^n \mathbb{H}(X_i|X_1, \dots X_{i-1}) $$ KL-divergence (a."><script src=https://kevinkle.in/js/feather.min.js></script><link href=https://kevinkle.in/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css rel=stylesheet><link rel=stylesheet type=text/css media=screen href=https://kevinkle.in/css/main.7e9862ef098ae7496a00463bc08c1d9da16bcd3eb748045c338f44a880303b29.css></head><body><div class=content><header><div class=main><a href=https://kevinkle.in/>Blog</a></div><nav><a href=/about>Hello</a>
+Entropy $$\mathbb{H}(X) = \mathbb{H}(p) := -\sum_\mathcal{X} p(X=x)\log_2 p(X=x)$$ Cross-entropy $$\mathbb{H}(p, q) := -\sum_\mathcal{X} p(X=x) \log_2 q(X=x)$$ Joint entropy $$\mathbb{H}(X, Y) := -\sum_{\mathcal{X}, \mathcal{Y}} p(X=x, Y=y)\log_2 p(X=x, Y=y)$$ Conditional entropy $$\begin{aligned} \mathbb{H}(X|Y) &:= \mathbb{E}_{p(X)}[\mathbb{H}(p(Y|X))] \\ &= \mathbb{H}(X, Y) - \mathbb{H}(X) \end{aligned}$$ Chain rule for entropy $$\mathbb{H}(X_1, X_2, \dots, X_n) = \sum_{i=1}^n \mathbb{H}(X_i|X_1, \dots X_{i-1}) $$ KL-divergence (a.k.a relative entropy) $$\begin{aligned} D_{KL}(p||q) &:= \sum_{\mathcal{X}} p(X=x) \log_2 \frac{p(X=x)}{q(X=X)} \\ &= \mathbb{H}(p, q) - \mathbb{H}(p) \end{aligned}$$ Forwards KL-divergence Approximating $p$ with $q$ by minimizing $D_{KL}(p||q)$ w.r.t. $q$ Reverse KL-divergence Approximating $p$ with $q$ by minimizing $D_{KL}(q||p)$ w.r.t. $q$ (Expected) Mutual Information (a.k.a. Information Gain) $$\begin{aligned} \mathbb{I}(X;Y) &:= D_{KL}(p(X, Y) || p(X)p(Y)) \\ &= \mathbb{H}(X) - \mathbb{H}(X|Y) \\ &= \mathbb{H}(X) + \mathbb{H}(Y) - \mathbb{H}(X, Y) \end{aligned}$$ Conditional Mutual Information $$\begin{aligned} \mathbb{I}(X;Y|Z) &:= \mathbb{E}_{p(Z)} [ \mathbb{I}(X;Y) | Z] \\ &= \mathbb{I}(Y; X, Z) - \mathbb{I}(Y;Z) \end{aligned}$$ Chain rule for MI $$\mathbb{I}(Z_1, \dots, Z_n; X) = \sum_{i=1}^n \mathbb{I}(Z_i; X | Z_1, \dots, Z_{i-1})$$"><script src=https://kevinkle.in/js/feather.min.js></script><link href=https://kevinkle.in/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css rel=stylesheet><link rel=stylesheet type=text/css media=screen href=https://kevinkle.in/css/main.cd139160ccd0ca6bf7d891fb9f590f6c1f70199ff96cd189099b67d9081114e9.css></head><body><div class=content><header><div class=main><a href=https://kevinkle.in/>Blog</a></div><nav><a href=/about>Hello</a>
 <a href=/tags>Tags</a>
 <a href=/projects>Projects</a>
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css integrity=sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js integrity=sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4 crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js integrity=sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa crossorigin=anonymous onload=renderMathInElement(document.body)></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})})</script></nav></header><main><article><div class=title><h1 class=title>A Cheat Sheet for Information Theory Fundamentals in ML</h1><div class=meta>Posted on Dec 31, 2022</div></div><section class=body><p>All of the definitions stem from Kevin Murphy&rsquo;s <a href=https://probml.github.io/pml-book/book1.html>Probabilistic Machine Learning: An Introduction</a>.</p><p>Many of the following primitives are defined for discrete as well as continuous random variables and distributions. Since they are analogous,

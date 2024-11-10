@@ -1,17 +1,157 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Math on Blog</title><link>https://kevinkle.in/tags/math/</link><description>Recent content in Math on Blog</description><generator>Hugo</generator><language>en-us</language><copyright>© Kevin Klein</copyright><lastBuildDate>Mon, 29 May 2023 07:38:07 +0200</lastBuildDate><atom:link href="https://kevinkle.in/tags/math/index.xml" rel="self" type="application/rss+xml"/><item><title>How Much Is a Hundred Bucks?</title><link>https://kevinkle.in/posts/2023-04-23-100_dollars_worth/</link><pubDate>Mon, 29 May 2023 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2023-04-23-100_dollars_worth/</guid><description>The not so mobile-friendly calculator accompanying this post can be found here.
-The value of time, the value of money There are various ways of trying to assess the value of something. For instance, one might define the value of a resource by how much someone else is willing to pay for it. In the domain of time, we could ask the question of the hourly rate someone is willing to pay for our time/labor and consider that the value of our time.</description></item><item><title>How Many Inner Nodes</title><link>https://kevinkle.in/posts/2023-01-06-inner_nodes/</link><pubDate>Sun, 08 Jan 2023 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2023-01-06-inner_nodes/</guid><description>Motivation Assume you are working with a decision tree which as been constructed by a learning algorithm. Further assume that some of the leaves are relevant while others aren&amp;rsquo;t. For example, it could be that the outcome modeled in leaves corresponds to the probability of a successful surgery. In order to use this model for prediction/inference in production, one might imagine stripping all of its unnecessary parts. To be concrete, all of the leaves with a success probability which is no sufficiently high become irrelevant: the applicant might define a threshold, e.</description></item><item><title>A Cheat Sheet for Information Theory Fundamentals in ML</title><link>https://kevinkle.in/posts/2022-12-31-information_theory/</link><pubDate>Sat, 31 Dec 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-12-31-information_theory/</guid><description>All of the definitions stem from Kevin Murphy&amp;rsquo;s Probabilistic Machine Learning: An Introduction.
-Many of the following primitives are defined for discrete as well as continuous random variables and distributions. Since they are analogous, I chose to only represent discrete versions for the sake of simplicity.
-Entropy $$\mathbb{H}(X) = \mathbb{H}(p) := -\sum_\mathcal{X} p(X=x)\log_2 p(X=x)$$ Cross-entropy $$\mathbb{H}(p, q) := -\sum_\mathcal{X} p(X=x) \log_2 q(X=x)$$ Joint entropy $$\mathbb{H}(X, Y) := -\sum_{\mathcal{X}, \mathcal{Y}} p(X=x, Y=y)\log_2 p(X=x, Y=y)$$ Conditional entropy $$\begin{aligned} \mathbb{H}(X|Y) &amp;amp;:= \mathbb{E}_{p(X)}[\mathbb{H}(p(Y|X))] \\ &amp;amp;= \mathbb{H}(X, Y) - \mathbb{H}(X) \end{aligned}$$ Chain rule for entropy $$\mathbb{H}(X_1, X_2, \dots, X_n) = \sum_{i=1}^n \mathbb{H}(X_i|X_1, \dots X_{i-1}) $$ KL-divergence (a.</description></item><item><title>Of Seals, Dogs and Dolphins with Python</title><link>https://kevinkle.in/posts/2022-09-25-collage/</link><pubDate>Sun, 02 Oct 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-09-25-collage/</guid><description>Every now and then I have come across prints of image collages or &amp;lsquo;mosaics&amp;rsquo;. Often it&amp;rsquo;s been ads, say a Greenpeace collage of small images portraying poorly treated puppies - that is, if you&amp;rsquo;re able to squint your eyes real hard - making up for the overall image of a happy dolphin, or so.
-Anyhow! - I&amp;rsquo;ve almost always found these collages to be aesthetically displeasing. At the same time they somehow caught and kept my attention.</description></item><item><title>Who With Whom, What With What</title><link>https://kevinkle.in/posts/2022-06-21-friends/</link><pubDate>Wed, 22 Jun 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-06-21-friends/</guid><description>The following is an illustration of a graph optimization problem. I chose to instantiate it with a decision making process revolving around a social setting. Yet I hope its general applicability comes across.
-Setup Let&amp;rsquo;s say we have the opportunity to invite people to an event. The pool of candidates is comprised of five people: Tony, Paulie, Silvio, Furio and Vito. What we care about is for the attendants to have a good time - which we assume to be purely determined by who else is attending.</description></item><item><title>Inference</title><link>https://kevinkle.in/posts/2022-06-06-inference/</link><pubDate>Sun, 05 Jun 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-06-06-inference/</guid><description>I had long felt a slight discomfort with the word &amp;lsquo;inference&amp;rsquo;. Many people seemed to use it with confidence and the expectation that it would refer to a precise notion. And while it is not uncommon for a word to have different meaning in different contexts, it took me a while to figure out what the different meaning and what the different contexts are in the example of &amp;lsquo;inference&amp;rsquo;. Some other people seem to be a little confused as well.</description></item><item><title>Sudoku #3: Poor Man's RL</title><link>https://kevinkle.in/posts/2022-01-09-sudoku_rl/</link><pubDate>Sun, 13 Feb 2022 08:00:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-01-09-sudoku_rl/</guid><description>Previously, I&amp;rsquo;ve outlined some ideas on how to solve Suduko puzzles. One revolved around depth-first search in trees, one around linear programming. This time I tried my luck with a more adventurous, data-driven approach: Reinforcement Learning. First things first: the approach only works well for 4x4 grids - not for the typical 9x9. Please note that the approached subsequently outlined couldn&amp;rsquo;t be further from a recommendable approach to solving Sudoku puzzles.</description></item><item><title>Sudoku #2: Linear Programming</title><link>https://kevinkle.in/posts/2021-03-14-sudoku_lp/</link><pubDate>Sun, 14 Mar 2021 11:00:07 +0200</pubDate><guid>https://kevinkle.in/posts/2021-03-14-sudoku_lp/</guid><description>Abstract As discussed in this previous post, a given Sudoku puzzle can be modeled in a multitude of ways. Different algorithms ought to still lead to the same solution, since a correct Sudoku puzzle comes with a unique solution. In this post we&amp;rsquo;ll rely on optimization&amp;rsquo;s poster child: Linear programming.
-Idea A linear program, subsequently referred to as LP, comes with three central building blocks:
-An objective function Typically many variables, each, a priori, non-integer numbers Linear constraints on the variables Since, thanks to our assumption of a well-posed puzzle we know that:</description></item><item><title>Sudoku #1: Depth-First Search</title><link>https://kevinkle.in/posts/2021-02-28-sudoku_dfs/</link><pubDate>Sun, 28 Feb 2021 19:00:07 +0200</pubDate><guid>https://kevinkle.in/posts/2021-02-28-sudoku_dfs/</guid><description>Abstract Solving a Sudoku board can be done in many ways. Let&amp;rsquo;s explore a depth-first search approach in this post.
-Idea Depth-first search or DFS implies (at least) two things:
-a graph, or rather, a tree a search This bares the question: What&amp;rsquo;s the tree and what are we searching for?
-The tree A tree must consist of nodes and edges. We define the nodes to represent a &amp;lsquo;state&amp;rsquo; of the game.</description></item><item><title>Markov Random Field Image Denoising</title><link>https://kevinkle.in/posts/2020-03-27-mrf/</link><pubDate>Sun, 26 Apr 2020 09:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-03-27-mrf/</guid><description>This post describes the application of a Probabilistic Graphical Model for simple image denoising, as suggested in Bishop&amp;rsquo;s chapter 8.3.8. I will attempt to introduce some notions for general context without derivations. Googling will lead to plenty of useful resources. On an introductory level, I enjoyed Daphne Koller&amp;rsquo;s class.
-Context: Probabilistic Graphical Models Probabilistic Graphical Models are tools to model and express conditional independencies among a set of random variables.</description></item><item><title>Invitations</title><link>https://kevinkle.in/posts/2020-03-02-invitations/</link><pubDate>Mon, 02 Mar 2020 09:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-03-02-invitations/</guid><description>Scenario and goal You are the host of an event for which there are \(n\) candidates to be invited and you possess sufficient resources to host all candidates. Let the nature of the event be such that it seems personally attached to you, yet also fairly polarizing in its experience. In other words:
-some invitees will have a desire to decline invitees with a desire to decline will feel bad about declining some non-invitees will have a desire to attend non-invitees with a desire to attend will feel bad about not being able to attend Moreover, one might weigh the ambitions wrt non-desiring invitees and desiring non-invitees differently.</description></item><item><title>Sort-of-art?</title><link>https://kevinkle.in/posts/2019-09-27-lena/</link><pubDate>Fri, 27 Sep 2019 08:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2019-09-27-lena/</guid><description>Recently, my friend Theo pointed me towards his amazing idea and execution of programming &amp;lsquo;paintings&amp;rsquo; with the help of randomization.
-I was fairly taken by the idea of programming with randomization to create sort-of-art. I kept thinking about cellular automata but reckoned that they often created outcomes that looked:
-overly structured in general busy, hard and cold in detail. I figured that the latter could maybe be tackled by applying lots of smoothing, both on input and output image.</description></item><item><title>Breaking Pills: An Intuition</title><link>https://kevinkle.in/posts/2019-09-23-breaking_pills/</link><pubDate>Mon, 23 Sep 2019 09:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2019-09-23-breaking_pills/</guid><description>Motivation Recently, Mark Dominus&amp;rsquo; post on breaking pills appeared on Hacker News. I was surprised to see the author not provide a closed-form and wanted to extend on some of the comments indicating a relation to the harmonic numbers.
-Problem Formulation Starting off with a bowl of \(n\) whole pills, you draw from the bowl uniformly at random according to the following mechanism: if the drawn pill is whole, you put back one half of it; if the drawn pill is half, you don&amp;rsquo;t put back anything.</description></item><item><title>A Beautiful, Derandomized Algorithm</title><link>https://kevinkle.in/posts/2019-01-22-favourite-algorithm/</link><pubDate>Mon, 21 Jan 2019 16:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2019-01-22-favourite-algorithm/</guid><description>Abstract Appreciating the simplicity of powerful randomized algorithms comes easy to me. In the following I will try to describe a naive algorithm relying on a randomized argument. What I find particularly remarkable is that it can easily parry the critique I am so often encountered with when cherishing randomized algorithms: it can trivially be turned deterministic.
-MAX-3SAT Is a boolean satisfiability problem. Given a formula in 3-CNF, the goal to satisfy as many clauses as possible.</description></item><item><title>Matrix Factorization in Collaborative Filtering</title><link>https://kevinkle.in/posts/2018-07-10-cf-mf/</link><pubDate>Tue, 10 Jul 2018 16:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2018-07-10-cf-mf/</guid><description>The Task We are given a set of tuples representing user-movie ratings, \(\mathcal{R} = \{(i,j,r)\}\), where \(i\) is the user index, \(j\) is the movie index and \(r \in [0, \dots, 5]\) the rating. In the most common scenarios, only a fraction of all user-movie pairs are rated, hence we can talk about sparse data. In other words, most users have only rated a few movies. Now we want to obtain sensible predictions for movies a user has not rated.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Math on Blog</title><link>https://kevinkle.in/tags/math/</link><description>Recent content in Math on Blog</description><generator>Hugo</generator><language>en-us</language><copyright>© Kevin Klein</copyright><lastBuildDate>Mon, 29 May 2023 07:38:07 +0200</lastBuildDate><atom:link href="https://kevinkle.in/tags/math/index.xml" rel="self" type="application/rss+xml"/><item><title>How Much Is a Hundred Bucks?</title><link>https://kevinkle.in/posts/2023-04-23-100_dollars_worth/</link><pubDate>Mon, 29 May 2023 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2023-04-23-100_dollars_worth/</guid><description>&lt;p>The not so mobile-friendly calculator accompanying this post can be found &lt;a href="https://kevinkle.in/savings/index.html">here&lt;/a>.&lt;/p>
+&lt;h2 id="the-value-of-time-the-value-of-money">The value of time, the value of money&lt;/h2>
+&lt;p>There are various ways of trying to assess the value of something. For instance, one might
+define the value of a resource by how much someone else is willing to pay for it. In the domain of
+time, we could ask the question of the hourly rate someone is willing to pay for our time/labor
+and consider that the value of our time.&lt;/p></description></item><item><title>How Many Inner Nodes</title><link>https://kevinkle.in/posts/2023-01-06-inner_nodes/</link><pubDate>Sun, 08 Jan 2023 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2023-01-06-inner_nodes/</guid><description>&lt;h1 id="motivation">Motivation&lt;/h1>
+&lt;p>Assume you are working with a decision tree which as been constructed by a learning
+algorithm. Further assume that some of the leaves are relevant while others aren&amp;rsquo;t.
+For example, it could be that the outcome modeled in leaves corresponds to the probability
+of a successful surgery. In order to use this model for prediction/inference in production,
+one might imagine stripping all of its unnecessary parts. To be concrete, all
+of the leaves with a success probability which is no sufficiently high become irrelevant:
+the applicant might define a threshold, e.g. 80%, and not carry out a surgery below
+that probability. In this case, the applicant doesn&amp;rsquo;t care whether the prediction was
+50% or 30% - just below 80%.&lt;/p></description></item><item><title>A Cheat Sheet for Information Theory Fundamentals in ML</title><link>https://kevinkle.in/posts/2022-12-31-information_theory/</link><pubDate>Sat, 31 Dec 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-12-31-information_theory/</guid><description>&lt;p>All of the definitions stem from Kevin Murphy&amp;rsquo;s &lt;a href="https://probml.github.io/pml-book/book1.html">Probabilistic Machine Learning: An Introduction&lt;/a>.&lt;/p>
+&lt;p>Many of the following primitives are defined for discrete as well as continuous random variables and distributions. Since they are analogous,
+I chose to only represent discrete versions for the sake of simplicity.&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;/th>
+ &lt;th>&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Entropy&lt;/td>
+ &lt;td>$$\mathbb{H}(X) = \mathbb{H}(p) := -\sum_\mathcal{X} p(X=x)\log_2 p(X=x)$$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Cross-entropy&lt;/td>
+ &lt;td>$$\mathbb{H}(p, q) := -\sum_\mathcal{X} p(X=x) \log_2 q(X=x)$$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Joint entropy&lt;/td>
+ &lt;td>$$\mathbb{H}(X, Y) := -\sum_{\mathcal{X}, \mathcal{Y}} p(X=x, Y=y)\log_2 p(X=x, Y=y)$$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Conditional entropy&lt;/td>
+ &lt;td>$$\begin{aligned} \mathbb{H}(X|Y) &amp;amp;:= \mathbb{E}_{p(X)}[\mathbb{H}(p(Y|X))] \\ &amp;amp;= \mathbb{H}(X, Y) - \mathbb{H}(X) \end{aligned}$$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Chain rule for entropy&lt;/td>
+ &lt;td>$$\mathbb{H}(X_1, X_2, \dots, X_n) = \sum_{i=1}^n \mathbb{H}(X_i|X_1, \dots X_{i-1}) $$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>KL-divergence (a.k.a relative entropy)&lt;/td>
+ &lt;td>$$\begin{aligned} D_{KL}(p||q) &amp;amp;:= \sum_{\mathcal{X}} p(X=x) \log_2 \frac{p(X=x)}{q(X=X)} \\ &amp;amp;= \mathbb{H}(p, q) - \mathbb{H}(p) \end{aligned}$$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Forwards KL-divergence&lt;/td>
+ &lt;td>Approximating $p$ with $q$ by minimizing $D_{KL}(p||q)$ w.r.t. $q$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Reverse KL-divergence&lt;/td>
+ &lt;td>Approximating $p$ with $q$ by minimizing $D_{KL}(q||p)$ w.r.t. $q$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>(Expected) Mutual Information (a.k.a. Information Gain)&lt;/td>
+ &lt;td>$$\begin{aligned} \mathbb{I}(X;Y) &amp;amp;:= D_{KL}(p(X, Y) || p(X)p(Y)) \\ &amp;amp;= \mathbb{H}(X) - \mathbb{H}(X|Y) \\ &amp;amp;= \mathbb{H}(X) + \mathbb{H}(Y) - \mathbb{H}(X, Y) \end{aligned}$$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Conditional Mutual Information&lt;/td>
+ &lt;td>$$\begin{aligned} \mathbb{I}(X;Y|Z) &amp;amp;:= \mathbb{E}_{p(Z)} [ \mathbb{I}(X;Y) | Z] \\ &amp;amp;= \mathbb{I}(Y; X, Z) - \mathbb{I}(Y;Z) \end{aligned}$$&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Chain rule for MI&lt;/td>
+ &lt;td>$$\mathbb{I}(Z_1, \dots, Z_n; X) = \sum_{i=1}^n \mathbb{I}(Z_i; X | Z_1, \dots, Z_{i-1})$$&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item><item><title>Of Seals, Dogs and Dolphins with Python</title><link>https://kevinkle.in/posts/2022-09-25-collage/</link><pubDate>Sun, 02 Oct 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-09-25-collage/</guid><description>&lt;p>Every now and then I have come across prints of image collages or &amp;lsquo;mosaics&amp;rsquo;. Often it&amp;rsquo;s
+been ads, say a Greenpeace collage of small images portraying poorly treated puppies -
+that is, if you&amp;rsquo;re able to squint your eyes real hard - making up for the overall image
+of a happy dolphin, or so.&lt;/p>
+&lt;p>Anyhow! - I&amp;rsquo;ve almost always found these collages to be aesthetically displeasing. At the
+same time they somehow caught and kept my attention. The last time I saw one of them
+I wondered how one would go about creating one of these. I figured some kind of a &lt;a href="https://en.wikipedia.org/wiki/Nearest_neighbor_search">nearest
+neighbor search&lt;/a> would come in handy.&lt;/p></description></item><item><title>Who With Whom, What With What</title><link>https://kevinkle.in/posts/2022-06-21-friends/</link><pubDate>Wed, 22 Jun 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-06-21-friends/</guid><description>&lt;p>The following is an illustration of a graph optimization problem. I chose to instantiate it with a decision making process
+revolving around a social setting. Yet I hope its general applicability comes across.&lt;/p>
+&lt;h1 id="setup">Setup&lt;/h1>
+&lt;p>Let&amp;rsquo;s say we have the opportunity to invite people to an event. The pool of candidates is comprised of five people: Tony, Paulie, Silvio, Furio and Vito. What we care about is for the attendants to have a good time - which we assume to be purely determined by who else is attending. If two people like each other and are both present, their experience improves. Put differently, we can think of &amp;lsquo;value&amp;rsquo; that the presence of a pair of people has&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>. Moreover, we assume that this pairwise value is independent of who else is there. For example, the presence of Tony is as valuable for Paulie when Silvio is presents as when Silvio is absent.&lt;/p></description></item><item><title>Inference</title><link>https://kevinkle.in/posts/2022-06-06-inference/</link><pubDate>Sun, 05 Jun 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-06-06-inference/</guid><description>&lt;p>I had long felt a slight discomfort with the word &amp;lsquo;inference&amp;rsquo;. Many people seemed to use it with confidence and the expectation that it would refer to a precise notion. And while it is not uncommon for a word to have different meaning in different contexts, it took me a while to figure out what the different meaning and what the different contexts are in the example of &amp;lsquo;inference&amp;rsquo;. &lt;a href="https://stackoverflow.com/questions/55852777/is-training-inference-terminology-in-deep-learning-any-different-than-train-te">Some other people seem to be a little confused as well&lt;/a>.&lt;/p></description></item><item><title>Sudoku #3: Poor Man's RL</title><link>https://kevinkle.in/posts/2022-01-09-sudoku_rl/</link><pubDate>Sun, 13 Feb 2022 08:00:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-01-09-sudoku_rl/</guid><description>&lt;p>Previously, I&amp;rsquo;ve outlined some ideas on how to solve Suduko puzzles. One revolved around &lt;a href="http://kevinkle.in/jekyll/update/2021/02/28/Sudoku_dfs.html">depth-first search in trees&lt;/a>, one around &lt;a href="http://kevinkle.in/jekyll/update/2021/03/14/Sudoku_lp.html">linear programming&lt;/a>. This time I tried my luck with a more adventurous, data-driven approach: Reinforcement Learning. First things first: the approach only works well for 4x4 grids - not for the typical 9x9. Please note that the approached subsequently outlined couldn&amp;rsquo;t be further from a recommendable approach to solving Sudoku puzzles. Rather, it is a curious exercise concerned with using the tool of Reinforcement Learning, arguable somewhat artificially, for solving particularly easy Sudoku puzzles.&lt;/p></description></item><item><title>Sudoku #2: Linear Programming</title><link>https://kevinkle.in/posts/2021-03-14-sudoku_lp/</link><pubDate>Sun, 14 Mar 2021 11:00:07 +0200</pubDate><guid>https://kevinkle.in/posts/2021-03-14-sudoku_lp/</guid><description>&lt;h1 id="abstract">Abstract&lt;/h1>
+&lt;p>As discussed in &lt;a href="http://kevinkle.in/jekyll/update/2021/02/28/sudoku_dfs.html">this previous post&lt;/a>,
+a given Sudoku puzzle can be modeled in a multitude of ways. Different algorithms ought to still
+lead to the same solution, since a correct Sudoku puzzle comes with a unique solution. In this
+post we&amp;rsquo;ll rely on optimization&amp;rsquo;s poster child: &lt;a href="https://en.wikipedia.org/wiki/Linear_programming">Linear programming&lt;/a>.&lt;/p>
+&lt;h1 id="idea">Idea&lt;/h1>
+&lt;p>A linear program, subsequently referred to as LP, comes with three central building blocks:&lt;/p>
+&lt;ul>
+&lt;li>An objective function&lt;/li>
+&lt;li>Typically many variables, each, a priori, non-integer numbers&lt;/li>
+&lt;li>Linear constraints on the variables&lt;/li>
+&lt;/ul>
+&lt;p>Since, thanks to our assumption of a well-posed puzzle we know that:&lt;/p></description></item><item><title>Sudoku #1: Depth-First Search</title><link>https://kevinkle.in/posts/2021-02-28-sudoku_dfs/</link><pubDate>Sun, 28 Feb 2021 19:00:07 +0200</pubDate><guid>https://kevinkle.in/posts/2021-02-28-sudoku_dfs/</guid><description>&lt;h2 id="abstract">Abstract&lt;/h2>
+&lt;p>Solving a Sudoku board can be done in many ways. Let&amp;rsquo;s explore a depth-first search approach in this post.&lt;/p>
+&lt;h2 id="idea">Idea&lt;/h2>
+&lt;p>Depth-first search or DFS implies (at least) two things:&lt;/p>
+&lt;ul>
+&lt;li>a graph, or rather, a tree&lt;/li>
+&lt;li>a search&lt;/li>
+&lt;/ul>
+&lt;p>This bares the question: What&amp;rsquo;s the tree and what are we searching for?&lt;/p>
+&lt;h1 id="the-tree">The tree&lt;/h1>
+&lt;p>A tree must consist of nodes and edges. We define the nodes to represent a &amp;lsquo;state&amp;rsquo; of the game. A state of the game is meant to be a snapshot of the Sudoku board, i.e. a mapping from cells, e.g. 2nd row, 6th column, to values, e.g. 7 or &amp;rsquo;empty&amp;rsquo;. Every edge in the tree represents an &amp;lsquo;action&amp;rsquo;, i.e. the addition or removal of a cell value.&lt;/p></description></item><item><title>Markov Random Field Image Denoising</title><link>https://kevinkle.in/posts/2020-03-27-mrf/</link><pubDate>Sun, 26 Apr 2020 09:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-03-27-mrf/</guid><description>&lt;p>This post describes the application of a Probabilistic Graphical Model for simple image denoising,
+as suggested in &lt;a href="https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/">Bishop&lt;/a>&amp;rsquo;s
+chapter 8.3.8. I will attempt to introduce some notions for general context without derivations.
+Googling will lead to plenty of useful resources. On an introductory level, I enjoyed
+&lt;a href="https://cs.stanford.edu/~ermon/cs228/index.html">Daphne Koller&amp;rsquo;s class&lt;/a>.&lt;/p>
+&lt;h2 id="context-probabilistic-graphical-models">Context: Probabilistic Graphical Models&lt;/h2>
+&lt;p>Probabilistic Graphical Models are tools to model and express conditional
+independencies among a set of random variables.&lt;/p>
+&lt;p>Why care about conditional independencies? Joint distributions can always be expressed without
+conditional independencies. Yet, the latter allow for an expression of the joint distribution
+requiring fewer parameters.&lt;/p></description></item><item><title>Invitations</title><link>https://kevinkle.in/posts/2020-03-02-invitations/</link><pubDate>Mon, 02 Mar 2020 09:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2020-03-02-invitations/</guid><description>&lt;h2 id="scenario-and-goal">Scenario and goal&lt;/h2>
+&lt;p>You are the host of an event for which there are \(n\) candidates to be invited and you possess sufficient resources to host all candidates. Let the nature of the event be such that it seems personally attached to you, yet also fairly polarizing in its experience. In other words:&lt;/p>
+&lt;ul>
+&lt;li>some invitees will have a desire to decline&lt;/li>
+&lt;li>invitees with a desire to decline will feel bad about declining&lt;/li>
+&lt;li>some non-invitees will have a desire to attend&lt;/li>
+&lt;li>non-invitees with a desire to attend will feel bad about not being able to attend&lt;/li>
+&lt;/ul>
+&lt;p>Moreover, one might weigh the ambitions wrt non-desiring invitees and desiring non-invitees differently. For instance, one might consider the discomfort of someone having
+to decline, and thereby expressing his/her lack of appreciation, worse than the missed opportunity of someone not attending who would&amp;rsquo;ve desired to.&lt;/p></description></item><item><title>Sort-of-art?</title><link>https://kevinkle.in/posts/2019-09-27-lena/</link><pubDate>Fri, 27 Sep 2019 08:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2019-09-27-lena/</guid><description>&lt;p>Recently, my friend Theo pointed me towards his amazing idea and execution of programming &amp;lsquo;paintings&amp;rsquo; with the help of randomization.&lt;/p>
+&lt;p>I was fairly taken by the idea of programming with randomization to create sort-of-art. I kept thinking about cellular automata but reckoned that they often created outcomes that looked:&lt;/p>
+&lt;ul>
+&lt;li>overly structured in general&lt;/li>
+&lt;li>busy, hard and cold in detail.&lt;/li>
+&lt;/ul>
+&lt;p>I figured that the latter could maybe be tackled by applying lots of smoothing, both on input and output image. The former seemed a bit harder to tackle as I&amp;rsquo;d need explicit rules/probabilities for something that would&lt;/p></description></item><item><title>Breaking Pills: An Intuition</title><link>https://kevinkle.in/posts/2019-09-23-breaking_pills/</link><pubDate>Mon, 23 Sep 2019 09:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2019-09-23-breaking_pills/</guid><description>&lt;h3 id="motivation">Motivation&lt;/h3>
+&lt;p>Recently, Mark Dominus&amp;rsquo; &lt;a href="https://blog.plover.com/math/breaking-pills.html">post on breaking pills&lt;/a> appeared on &lt;a href="https://news.ycombinator.com/item?id=21024224">Hacker News&lt;/a>. I was surprised to see the author not provide a closed-form and wanted to extend on some of the comments indicating a relation to the &lt;a href="https://en.wikipedia.org/wiki/Harmonic_number">harmonic numbers&lt;/a>.&lt;/p>
+&lt;h3 id="problem-formulation">Problem Formulation&lt;/h3>
+&lt;p>Starting off with a bowl of \(n\) whole pills, you draw from the bowl uniformly at random according to the following mechanism: if the drawn pill is whole, you put back one half of it; if the drawn pill is half, you don&amp;rsquo;t put back anything.&lt;/p></description></item><item><title>A Beautiful, Derandomized Algorithm</title><link>https://kevinkle.in/posts/2019-01-22-favourite-algorithm/</link><pubDate>Mon, 21 Jan 2019 16:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2019-01-22-favourite-algorithm/</guid><description>&lt;h3 id="abstract">Abstract&lt;/h3>
+&lt;p>Appreciating the simplicity of powerful randomized algorithms comes easy to me. In the following I will try to describe a naive algorithm relying on a randomized argument. What I find particularly remarkable is that it can easily parry the critique I am so often encountered with when cherishing randomized algorithms: it can trivially be turned deterministic.&lt;/p>
+&lt;h3 id="max-3sat">MAX-3SAT&lt;/h3>
+&lt;p>Is a boolean satisfiability problem. Given a formula in 3-CNF, the goal to satisfy as many clauses as possible.&lt;/p></description></item><item><title>Matrix Factorization in Collaborative Filtering</title><link>https://kevinkle.in/posts/2018-07-10-cf-mf/</link><pubDate>Tue, 10 Jul 2018 16:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2018-07-10-cf-mf/</guid><description>&lt;h2 id="the-task">The Task&lt;/h2>
+&lt;!-- raw HTML omitted -->
+&lt;p>We are given a set of tuples representing user-movie ratings, \(\mathcal{R} = \{(i,j,r)\}\), where \(i\) is the user index, \(j\) is the movie index and \(r \in [0, \dots, 5]\) the rating.
+In the most common scenarios, only a fraction of all user-movie pairs are rated, hence we can talk about &lt;em>sparse&lt;/em> data.
+In other words, most users have only rated a few movies. Now we want to obtain sensible predictions for movies a user has not rated. I leave drawing to picture as to why this is super relevant in many use cases to your imagination. Note that we only have this explicit feedback from users and don&amp;rsquo;t have any context knowledge about the users or movies. We can only leverage ratings from other users to build predictions. This is called collaborative filtering.&lt;/p></description></item><item><title>Post Title</title><link>https://kevinkle.in/posts/9999-01-01-template/</link><pubDate>Sat, 01 Jan 2000 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/9999-01-01-template/</guid><description>&lt;h1 id="motivation">Motivation&lt;/h1>
+&lt;p>&lt;a href="https://google.com">url&lt;/a>&lt;/p>
+&lt;p>Cool sentence with footnote&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>.&lt;/p>
+&lt;p>&lt;img src="https://kevinkle.in/imgs/Hn.png" alt="image">&lt;/p>
+&lt;p>Inline formula \(\lambda = \omega\)&lt;/p>
+&lt;p>Equation $$\lambda = \omega$$&lt;/p>
+&lt;p>Aligned equation
+$$\begin{aligned}
+\Pr[x=1] &amp;amp;= 1 - \Pr[x=0]\\
+&amp;amp;= 1 - \frac{1}{2} \\
+&amp;amp;= \frac{1}{2}
+\end{aligned}$$&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>Cool footnote.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item></channel></rss>
