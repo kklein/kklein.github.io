@@ -908,7 +908,19 @@ $$\begin{aligned}
 &lt;p>Cool footnote.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description></item><item><title>About</title><link>https://kevinkle.in/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kevinkle.in/about/</guid><description>&lt;p>I&amp;rsquo;m Kevin. I&amp;rsquo;m a Computer Scientist. You can find me on &lt;a href="https://twitter.com/kevkle">Twitter&lt;/a> and &lt;a href="https://github.com/kklein">GitHub&lt;/a>.&lt;/p>
+&lt;/div></description></item><item><title>Producing, Generating, Making</title><link>https://kevinkle.in/posts/9999-01-01-producing/</link><pubDate>Sat, 01 Jan 2000 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/9999-01-01-producing/</guid><description>&lt;p>I once added a P.S. to a post card with a poem of mine:&lt;/p>
+&lt;blockquote>
+&lt;p>An excerpt from a series of poems from the uncanny valley between
+obviously too bad to be meant seriously and just bad but
+respectable.&lt;/p>
+&lt;/blockquote>
+&lt;p>DFW, The Depressed person, BIwHM&lt;/p>
+&lt;blockquote>
+&lt;p>The word &amp;ldquo;pathetic&amp;rdquo;, the therapist candidly shared, often felt to
+her like a defense-mechanism the depressed person used to protect
+herself against a listener&amp;rsquo;s possible negative judgements by making
+it clear that the depressed person was already judging herself far
+more severely than any listener could possibly have the heart to.&lt;/p></description></item><item><title>About</title><link>https://kevinkle.in/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kevinkle.in/about/</guid><description>&lt;p>I&amp;rsquo;m Kevin. I&amp;rsquo;m a Computer Scientist. You can find me on &lt;a href="https://twitter.com/kevkle">Twitter&lt;/a> and &lt;a href="https://github.com/kklein">GitHub&lt;/a>.&lt;/p>
 &lt;p>I enjoy attempting to derive from first principles &amp;ndash; in math, programming or in real life&amp;rsquo;s decision making. Professionally, I do work in Data Engineering, Data Science, Machine Learning Engineering, Software Engineering and Quantitative Analysis.&lt;/p>
 &lt;p>On this website I try to share my views in order to force myself to condense and distill thoughts and ideas freely floating around in my mind. Moreover, I don&amp;rsquo;t write with the primary intention to let others know. Rather, I have the intention to be transparent and increase my attack surface - making it easier for people to let me know what and how I can do better. If nevertheless someone happens to take something away from my writing, all the better!&lt;/p></description></item><item><title>Projects</title><link>https://kevinkle.in/projects/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kevinkle.in/projects/</guid><description>&lt;h1 id="quantco">QuantCo&lt;/h1>
 &lt;p>I am fortunate enough that some of the work done at &lt;a href="https://quantco.com/">QuantCo&lt;/a> is open source.&lt;/p>
