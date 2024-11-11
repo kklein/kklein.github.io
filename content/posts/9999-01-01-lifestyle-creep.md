@@ -1,5 +1,5 @@
 ---
-title: "Lifestyle creep: How It Started, How It's Going"
+title: "Lifestyle Creep: How It Started, How It's Going"
 date: 2000-01-01 7:38:07 +0200
 comments: false
 description: This is a really cool post, please read it.
@@ -40,18 +40,38 @@ to the principle of lifestyle creep.
 
 Therefore, years ago, I set out to not fall victim to lifestyle creep.
 
-| Aspect                                                                                                              | Progress                                                                                 |
-|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| Gym membership                                                                                                      | {{< rawhtml >}}<progress id="file" max="100" value="100">100%</progress>{{< /rawhtml >}} |
-| Exclusively writing on Leuchtturm notebooks                                                                         | {{< rawhtml >}}<progress id="file" max="100" value="100">100%</progress>{{< /rawhtml >}} |
-| Pack of raspberries a day                                                                                           | {{< rawhtml >}}<progress id="file" max="100" value="90">90%</progress>{{< /rawhtml >}}   |
-| Ironing shirts                                                                                                      | 30%                                                                                      |
-| Ironing t-shirts                                                                                                    | 15%                                                                                      |
-| Avoiding flights departing before 7:30am                                                                            | 90%                                                                                      |
-| Avoiding flights arriving after 11:30pm                                                                             | 70%                                                                                      |
-| Opportunistically buying concert tickets for any show I might potentially go to in any of the major European cities | 70%                                                                                      |
-| Owning sunglasses                                                                                                   | 50%                                                                                      |
-| 1st class on trains                                                                                                 | 80%                                                                                      |
-| Taking part in equipment-heavy sports (skiing, climbing)                                                            | 70%                                                                                      |
+{{< rawhtml >}}<progress id="file" max="100" value="100">100%</progress>{{< /rawhtml >}}
+
+{{< rawhtml >}}<progress id="file" max="100" value="90">90%</progress>{{< /rawhtml >}}
+
+| Aspect                                                                                                              | Progress |
+|---------------------------------------------------------------------------------------------------------------------|----------|
+| Gym membership                                                                                                      | 100%     |
+| Lighting that I perceive as nice                                                                                    | 100%     |
+| Exclusively writing on Leuchtturm notebooks                                                                         | 90%      |
+| Avoiding flights departing before 7:30am                                                                            | 90%      |
+| 1st class on trains                                                                                                 | 80%      |
+| Burrata                                                                                                             | 80%      |
+| Pack of raspberries a day                                                                                           | 70%      |
+| Avoiding flights arriving after 11:30pm                                                                             | 70%      |
+| Opportunistically buying concert tickets for any show I might potentially go to in any of the major European cities | 70%      |
+| Taking part in equipment-heavy sports (skiing, climbing)                                                            | 70%      |
+| Owning sunglasses                                                                                                   | 50%      |
+| Ironing shirts                                                                                                      | 30%      |
+| Sumptuous hotels[^0]                                                                                                | 20%      |
+| Ironing t-shirts                                                                                                    | 15%      |
+|                                                                                                                     |          |
+
+No change:
+* ANC headphones
+
+Reversal (fewer resources spent on it; former necessities turn into luxuries)
+* Arch Linux (Resource: time and decision making capital)
+* Not having anything to do with Windows machines at work
+* A week of deliberate isolation/solitude per year (Resource: time)
+* Tiling window manager
 
 
+[^0]: In just did the math: in 2024 so far I've stayed in 5 hostels
+    and 10 4 or 5 star hotels. I want to stay a person who feels
+    at ease in both.
