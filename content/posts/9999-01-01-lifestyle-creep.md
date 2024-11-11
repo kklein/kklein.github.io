@@ -52,7 +52,7 @@ Therefore, years ago, I set out to not fall victim to lifestyle creep.
 | Avoiding flights departing before 7:30am                                                                            | 90%      |
 | 1st class on trains                                                                                                 | 80%      |
 | Burrata                                                                                                             | 80%      |
-| Pack of raspberries a day                                                                                           | 70%      |
+| Pack of raspberries a day [^1]                                                                                      | 70%      |
 | Avoiding flights arriving after 11:30pm                                                                             | 70%      |
 | Opportunistically buying concert tickets for any show I might potentially go to in any of the major European cities | 70%      |
 | Taking part in equipment-heavy sports (skiing, climbing)                                                            | 70%      |
@@ -75,3 +75,5 @@ Reversal (fewer resources spent on it; former necessities turn into luxuries)
 [^0]: In just did the math: in 2024 so far I've stayed in 5 hostels
     and 10 4 or 5 star hotels. I want to stay a person who feels
     at ease in both.
+
+[^1]: In spring in summer, that is.
