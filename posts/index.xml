@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Blog</title><link>https://kevinkle.in/posts/</link><description>Recent content in Posts on Blog</description><generator>Hugo</generator><language>en-us</language><copyright>© Kevin Klein</copyright><lastBuildDate>Sat, 20 Jul 2024 07:38:07 +0200</lastBuildDate><atom:link href="https://kevinkle.in/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>No More Breakpoints?</title><link>https://kevinkle.in/posts/2024-07-20-breakpoints/</link><pubDate>Sat, 20 Jul 2024 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2024-07-20-breakpoints/</guid><description>&lt;p>I am way past a stage of a crush or merely being in love when it comes to &lt;a href="https://docs.python.org/3/library/pdb.html">&lt;code>pdb&lt;/code>&lt;/a>; I&amp;rsquo;d rather call it a deep love.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Blog</title><link>https://kevinkle.in/posts/</link><description>Recent content in Posts on Blog</description><generator>Hugo</generator><language>en-us</language><copyright>© Kevin Klein</copyright><lastBuildDate>Fri, 15 Nov 2024 07:38:07 +0200</lastBuildDate><atom:link href="https://kevinkle.in/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Lifestyle Creep: How It Started, How It's Going</title><link>https://kevinkle.in/posts/9999-01-01-lifestyle-creep/</link><pubDate>Fri, 15 Nov 2024 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/9999-01-01-lifestyle-creep/</guid><description>&lt;p>&lt;a href="https://en.wikipedia.org/wiki/Lifestyle_creep">Wikipedia&lt;/a>&amp;rsquo;s
+definition of lifestyle creep looks as follows:&lt;/p>
+&lt;blockquote>
+&lt;p>Lifestyle creep, also known as lifestyle inflation, is a phenomenon
+that occurs when, as more resources are spent on standard of living,
+former luxuries become perceived necessities.&lt;/p>
+&lt;/blockquote>
+&lt;p>While a change of perception may have profound reasons
+(e.g. perceiving one&amp;rsquo;s time differently after a terminal diagnosis),
+the change of perception manifested in lifestyle creep strikes me as
+at least arbitrary, maybe unjustified. To me it seems as though it
+just meant &amp;lsquo;getting used&amp;rsquo; to things and taking them for granted.
+The newly gained perception of something being a necessity is not due to an
+inherent change of what is necessary &amp;ndash; e.g. one&amp;rsquo;s deteriorating back
+actually &amp;lsquo;requiring&amp;rsquo; an expensive mattress.&lt;/p></description></item><item><title>No More Breakpoints?</title><link>https://kevinkle.in/posts/2024-07-20-breakpoints/</link><pubDate>Sat, 20 Jul 2024 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2024-07-20-breakpoints/</guid><description>&lt;p>I am way past a stage of a crush or merely being in love when it comes to &lt;a href="https://docs.python.org/3/library/pdb.html">&lt;code>pdb&lt;/code>&lt;/a>; I&amp;rsquo;d rather call it a deep love.&lt;/p>
 &lt;p>Miracurously I have perceived it to be both very flexible and powerful for advanced users as well as very simple and thereby beginner-friendly when catering to rather simple use cases.
 What adds to my appreciation for &lt;code>pdb&lt;/code> is that - unlike, afaict, most debuggers - it sits rather with the code than the IDE. This agnosticity to IDEs or systems makes it very portable and convenient to use in many different environments, e.g. whenever you only have a terminal access to a machine.&lt;/p></description></item><item><title>Analyzing Advent of Code</title><link>https://kevinkle.in/posts/2024-01-05-aoc/</link><pubDate>Fri, 05 Jan 2024 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2024-01-05-aoc/</guid><description>&lt;p>2023 came with another edition of &lt;a href="https://adventofcode.com/">Advent of Code&lt;/a>, an
 &lt;a href="https://en.wikipedia.org/wiki/Advent_calendar">advent calendar&lt;/a> with programming challenges.&lt;/p>
@@ -915,18 +929,7 @@ about us/them within/outside of social circle?&lt;/p>
  &lt;td>Control&lt;/td>
  &lt;/tr>
  &lt;/tbody>
-&lt;/table></description></item><item><title>Lifestyle Creep: How It Started, How It's Going</title><link>https://kevinkle.in/posts/9999-01-01-lifestyle-creep/</link><pubDate>Sat, 01 Jan 2000 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/9999-01-01-lifestyle-creep/</guid><description>&lt;p>&lt;a href="https://en.wikipedia.org/wiki/Lifestyle_creep">Wikipedia&lt;/a>&amp;rsquo;s
-definition of lifestyle creep looks as follows:&lt;/p>
-&lt;blockquote>
-&lt;p>Lifestyle creep, also known as lifestyle inflation, is a phenomenon
-that occurs when, as more resources are spent on standard of living,
-former luxuries become perceived necessities.&lt;/p>
-&lt;/blockquote>
-&lt;p>To me the most important aspect of this change in perception is that
-it is arbitrary, not justified by hard facts. The newly gained
-perception of something being a necessity is not due to an
-inherent change of what is necessary &amp;ndash; e.g. one&amp;rsquo;s deteriorating back
-actually &amp;lsquo;requiring&amp;rsquo; an expensive mattress.&lt;/p></description></item><item><title>Post Title</title><link>https://kevinkle.in/posts/9999-01-01-template/</link><pubDate>Sat, 01 Jan 2000 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/9999-01-01-template/</guid><description>&lt;h1 id="motivation">Motivation&lt;/h1>
+&lt;/table></description></item><item><title>Post Title</title><link>https://kevinkle.in/posts/9999-01-01-template/</link><pubDate>Sat, 01 Jan 2000 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/9999-01-01-template/</guid><description>&lt;h1 id="motivation">Motivation&lt;/h1>
 &lt;p>&lt;a href="https://google.com">url&lt;/a>&lt;/p>
 &lt;p>Cool sentence with footnote&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>.&lt;/p>
 &lt;p>&lt;img src="https://kevinkle.in/imgs/Hn.png" alt="image">&lt;/p>
