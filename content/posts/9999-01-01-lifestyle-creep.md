@@ -1,6 +1,6 @@
 ---
 title: "Lifestyle Creep: How It Started, How It's Going"
-date: 2024-11-15 7:38:07 +0200
+date: 2024-12-15 7:38:07 +0200
 comments: false
 description: This is a really cool post, please read it.
 tags: [thoughts]
