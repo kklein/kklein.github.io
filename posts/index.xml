@@ -1,20 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Blog</title><link>https://kevinkle.in/posts/</link><description>Recent content in Posts on Blog</description><generator>Hugo</generator><language>en-us</language><copyright>© Kevin Klein</copyright><lastBuildDate>Fri, 15 Nov 2024 07:38:07 +0200</lastBuildDate><atom:link href="https://kevinkle.in/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Lifestyle Creep: How It Started, How It's Going</title><link>https://kevinkle.in/posts/9999-01-01-lifestyle-creep/</link><pubDate>Fri, 15 Nov 2024 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/9999-01-01-lifestyle-creep/</guid><description>&lt;p>&lt;a href="https://en.wikipedia.org/wiki/Lifestyle_creep">Wikipedia&lt;/a>&amp;rsquo;s
-definition of lifestyle creep looks as follows:&lt;/p>
-&lt;blockquote>
-&lt;p>Lifestyle creep, also known as lifestyle inflation, is a phenomenon
-that occurs when, as more resources are spent on standard of living,
-former luxuries become perceived necessities.&lt;/p>
-&lt;/blockquote>
-&lt;h1 id="me-rambling-about-this-definition">Me rambling about this definition&lt;/h1>
-&lt;p>To be perfectly honest, I don&amp;rsquo;t find said definition to be particularly
-useful.&lt;/p>
-&lt;p>Firstly,&lt;/p>
-&lt;blockquote>
-&lt;p>[&amp;hellip;] as more resources are spent [&amp;hellip;]&lt;/p>
-&lt;/blockquote>
-&lt;p>expresses a correlation. What I really care about is causation,
-though. Let&amp;rsquo;s look at these two examples to illustrate what I&amp;rsquo;m trying
-to get at:&lt;/p></description></item><item><title>No More Breakpoints?</title><link>https://kevinkle.in/posts/2024-07-20-breakpoints/</link><pubDate>Sat, 20 Jul 2024 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2024-07-20-breakpoints/</guid><description>&lt;p>I am way past a stage of a crush or merely being in love when it comes to &lt;a href="https://docs.python.org/3/library/pdb.html">&lt;code>pdb&lt;/code>&lt;/a>; I&amp;rsquo;d rather call it a deep love.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Blog</title><link>https://kevinkle.in/posts/</link><description>Recent content in Posts on Blog</description><generator>Hugo</generator><language>en-us</language><copyright>© Kevin Klein</copyright><lastBuildDate>Sat, 20 Jul 2024 07:38:07 +0200</lastBuildDate><atom:link href="https://kevinkle.in/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>No More Breakpoints?</title><link>https://kevinkle.in/posts/2024-07-20-breakpoints/</link><pubDate>Sat, 20 Jul 2024 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2024-07-20-breakpoints/</guid><description>&lt;p>I am way past a stage of a crush or merely being in love when it comes to &lt;a href="https://docs.python.org/3/library/pdb.html">&lt;code>pdb&lt;/code>&lt;/a>; I&amp;rsquo;d rather call it a deep love.&lt;/p>
 &lt;p>Miracurously I have perceived it to be both very flexible and powerful for advanced users as well as very simple and thereby beginner-friendly when catering to rather simple use cases.
 What adds to my appreciation for &lt;code>pdb&lt;/code> is that - unlike, afaict, most debuggers - it sits rather with the code than the IDE. This agnosticity to IDEs or systems makes it very portable and convenient to use in many different environments, e.g. whenever you only have a terminal access to a machine.&lt;/p></description></item><item><title>Analyzing Advent of Code</title><link>https://kevinkle.in/posts/2024-01-05-aoc/</link><pubDate>Fri, 05 Jan 2024 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2024-01-05-aoc/</guid><description>&lt;p>2023 came with another edition of &lt;a href="https://adventofcode.com/">Advent of Code&lt;/a>, an
 &lt;a href="https://en.wikipedia.org/wiki/Advent_calendar">advent calendar&lt;/a> with programming challenges.&lt;/p>
