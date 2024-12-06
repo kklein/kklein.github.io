@@ -12,6 +12,8 @@ I am fortunate enough that some of the work done at [QuantCo](https://quantco.co
 [metalearners](https://github.com/Quantco/metalearners) is a Causal Inference Python library for estimating Conditional Average Treatment Effects with MetaLearners.
 For more information, have a look at our [blog post](https://tech.quantco.com/blog/metalearners) or the [documentation](https://metalearners.readthedocs.io/en/latest/).
 
+Francesc and I also gave talks at [PyData Paris](https://www.youtube.com/watch?v=3EXCLYI5_pU) and the [Swiss Python Summit](https://www.youtube.com/watch?v=WN7suk8OA_E).
+
 ## datajudge
 
 [datajudge](https://github.com/quantco/datajudge) is a Python data testing library. Datajudge allows for the convenient expression and testing of expectations between different data source in database. It integrates nicely with pytest. For more, read our [blog post](https://tech.quantco.com/2022/06/20/datajudge.html) or have a look at an [example](https://datajudge.readthedocs.io/en/latest/examples/example.html) in the documentation.
