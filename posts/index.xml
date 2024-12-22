@@ -1,4 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Blog</title><link>https://kevinkle.in/posts/</link><description>Recent content in Posts on Blog</description><generator>Hugo</generator><language>en-us</language><copyright>© Kevin Klein</copyright><lastBuildDate>Sat, 20 Jul 2024 07:38:07 +0200</lastBuildDate><atom:link href="https://kevinkle.in/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>No More Breakpoints?</title><link>https://kevinkle.in/posts/2024-07-20-breakpoints/</link><pubDate>Sat, 20 Jul 2024 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2024-07-20-breakpoints/</guid><description>&lt;p>I am way past a stage of a crush or merely being in love when it comes to &lt;a href="https://docs.python.org/3/library/pdb.html">&lt;code>pdb&lt;/code>&lt;/a>; I&amp;rsquo;d rather call it a deep love.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Blog</title><link>https://kevinkle.in/posts/</link><description>Recent content in Posts on Blog</description><generator>Hugo</generator><language>en-us</language><copyright>© Kevin Klein</copyright><lastBuildDate>Sun, 22 Dec 2024 07:38:07 +0200</lastBuildDate><atom:link href="https://kevinkle.in/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>It Depends</title><link>https://kevinkle.in/posts/2024-12-22-micro-macro/</link><pubDate>Sun, 22 Dec 2024 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2024-12-22-micro-macro/</guid><description>&lt;p>Generally speaking our behaviors (both actual and ideal), morals or personalities are very sensitive to the intricate contexts of life.
+It took me a while to realize that my behaviors and ideals in a given dimension are sensitive to whether I&amp;rsquo;m under the impression of dealing
+with an individual &amp;ndash; &amp;lsquo;micro&amp;rsquo; &amp;ndash; or with an entity, an abstract organization or society as a whole &amp;ndash; &amp;lsquo;macro&amp;rsquo;.&lt;/p>
+&lt;p>The following are few tendencies of mine I believe to have observed; dimensions of behavior and morals which depend a lot on micro vs. macro:&lt;/p></description></item><item><title>Lifestyle Creep: How It Started, How It's Going</title><link>https://kevinkle.in/posts/9999-01-01-lifestyle-creep/</link><pubDate>Sun, 15 Dec 2024 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/9999-01-01-lifestyle-creep/</guid><description>&lt;p>&lt;a href="https://en.wikipedia.org/wiki/Lifestyle_creep">Wikipedia&lt;/a>&amp;rsquo;s
+definition of lifestyle creep looks as follows:&lt;/p>
+&lt;blockquote>
+&lt;p>Lifestyle creep, also known as lifestyle inflation, is a phenomenon
+that occurs when, as more resources are spent on standard of living,
+former luxuries become perceived necessities.&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="me-rambling-about-this-definition">Me rambling about this definition&lt;/h1>
+&lt;p>To be perfectly honest, I don&amp;rsquo;t find said definition to be particularly
+useful.&lt;/p>
+&lt;p>Firstly,&lt;/p>
+&lt;blockquote>
+&lt;p>[&amp;hellip;] as more resources are spent [&amp;hellip;]&lt;/p>
+&lt;/blockquote>
+&lt;p>expresses a correlation. What I really care about is causation,
+though. Let&amp;rsquo;s look at these two examples to illustrate what I&amp;rsquo;m trying
+to get at:&lt;/p></description></item><item><title>No More Breakpoints?</title><link>https://kevinkle.in/posts/2024-07-20-breakpoints/</link><pubDate>Sat, 20 Jul 2024 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2024-07-20-breakpoints/</guid><description>&lt;p>I am way past a stage of a crush or merely being in love when it comes to &lt;a href="https://docs.python.org/3/library/pdb.html">&lt;code>pdb&lt;/code>&lt;/a>; I&amp;rsquo;d rather call it a deep love.&lt;/p>
 &lt;p>Miracurously I have perceived it to be both very flexible and powerful for advanced users as well as very simple and thereby beginner-friendly when catering to rather simple use cases.
 What adds to my appreciation for &lt;code>pdb&lt;/code> is that - unlike, afaict, most debuggers - it sits rather with the code than the IDE. This agnosticity to IDEs or systems makes it very portable and convenient to use in many different environments, e.g. whenever you only have a terminal access to a machine.&lt;/p></description></item><item><title>Analyzing Advent of Code</title><link>https://kevinkle.in/posts/2024-01-05-aoc/</link><pubDate>Fri, 05 Jan 2024 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2024-01-05-aoc/</guid><description>&lt;p>2023 came with another edition of &lt;a href="https://adventofcode.com/">Advent of Code&lt;/a>, an
 &lt;a href="https://en.wikipedia.org/wiki/Advent_calendar">advent calendar&lt;/a> with programming challenges.&lt;/p>
@@ -889,33 +908,7 @@ validation split.&lt;/p></description></item><item><title>Running Log</title><li
 &lt;!-- raw HTML omitted -->
 &lt;p>We are given a set of tuples representing user-movie ratings, \(\mathcal{R} = \{(i,j,r)\}\), where \(i\) is the user index, \(j\) is the movie index and \(r \in [0, \dots, 5]\) the rating.
 In the most common scenarios, only a fraction of all user-movie pairs are rated, hence we can talk about &lt;em>sparse&lt;/em> data.
-In other words, most users have only rated a few movies. Now we want to obtain sensible predictions for movies a user has not rated. I leave drawing to picture as to why this is super relevant in many use cases to your imagination. Note that we only have this explicit feedback from users and don&amp;rsquo;t have any context knowledge about the users or movies. We can only leverage ratings from other users to build predictions. This is called collaborative filtering.&lt;/p></description></item><item><title>It depends</title><link>https://kevinkle.in/posts/9999-01-01-micro-macro/</link><pubDate>Sat, 01 Jan 2000 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/9999-01-01-micro-macro/</guid><description>&lt;p>TODO: Define what this really means.&lt;/p>
-&lt;p>Me in interaction with the micro or macro?
-The micro/macro in interaction with micro/macro?&lt;/p>
-&lt;p>Q: Is there really such a thing as &amp;lsquo;me and macro&amp;rsquo; or is this more
-about us/them within/outside of social circle?&lt;/p>
-&lt;table>
- &lt;thead>
- &lt;tr>
- &lt;th>Micro&lt;/th>
- &lt;th>Macro&lt;/th>
- &lt;/tr>
- &lt;/thead>
- &lt;tbody>
- &lt;tr>
- &lt;td>Principles&lt;/td>
- &lt;td>Opportunism&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Offering&lt;/td>
- &lt;td>Asking&lt;/td>
- &lt;/tr>
- &lt;tr>
- &lt;td>Trust&lt;/td>
- &lt;td>Control&lt;/td>
- &lt;/tr>
- &lt;/tbody>
-&lt;/table></description></item><item><title>Post Title</title><link>https://kevinkle.in/posts/9999-01-01-template/</link><pubDate>Sat, 01 Jan 2000 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/9999-01-01-template/</guid><description>&lt;h1 id="motivation">Motivation&lt;/h1>
+In other words, most users have only rated a few movies. Now we want to obtain sensible predictions for movies a user has not rated. I leave drawing to picture as to why this is super relevant in many use cases to your imagination. Note that we only have this explicit feedback from users and don&amp;rsquo;t have any context knowledge about the users or movies. We can only leverage ratings from other users to build predictions. This is called collaborative filtering.&lt;/p></description></item><item><title>Post Title</title><link>https://kevinkle.in/posts/9999-01-01-template/</link><pubDate>Sat, 01 Jan 2000 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/9999-01-01-template/</guid><description>&lt;h1 id="motivation">Motivation&lt;/h1>
 &lt;p>&lt;a href="https://google.com">url&lt;/a>&lt;/p>
 &lt;p>Cool sentence with footnote&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>.&lt;/p>
 &lt;p>&lt;img src="https://kevinkle.in/imgs/Hn.png" alt="image">&lt;/p>
