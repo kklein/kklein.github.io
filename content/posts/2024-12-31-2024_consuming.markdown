@@ -1,6 +1,6 @@
 ---
 title:  "2024 in Consuming"
-date:   2024-12-22 12:38:07 +0200
+date:   2024-12-31 12:38:07 +0200
 description:
 comments: false
 tags: [thoughts]
