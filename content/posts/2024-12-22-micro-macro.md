@@ -13,7 +13,7 @@ Generally speaking our behaviors (both actual and ideal), morals or personalitie
 It took me a while to realize that my behaviors and ideals in a given dimension are sensitive to whether I'm under the impression of dealing
 with an individual -- 'micro' -- or with an entity, an abstract organization or society as a whole -- 'macro'.
 
-The following are few tendencies of mine I believe to have observed; dimensions of behavior and morals which depend a lot on micro vs. macro:
+The following are few tendencies of mine I believe to have observed. In these dimensions, the behavior and morals I live and expect depend a lot on micro vs. macro:
 
 | Micro                                         | Macro                    |
 |-----------------------------------------------|--------------------------|
