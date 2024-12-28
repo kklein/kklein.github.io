@@ -1,15 +1,16 @@
 ---
 title:  "2024 in Consuming"
-date:   2024-12-31 12:38:07 +0200
+date:   2024-12-28 08:38:07 +0200
 description:
 comments: false
 tags: [thoughts]
 katex: False
 params:
-  published: false
+  published: true
 ---
 
-Just rambling about some music I've been exposed to in 2023. I did a similar thing in
+Just rambling about some music and books I've been exposed to in 2024. I did a similar thing in
+[2023](https://kevinkle.in/posts/2023-12-31-2023_consuming/),
 [2022](https://kevinkle.in/posts/2022-12-22-2022_consuming/),
 [2021](https://kevinkle.in/posts/2021-12-28-2021_consuming/) and
 [2020](https://kevinkle.in/posts/2021-01-02-2020_consuming/).
@@ -17,43 +18,45 @@ Just rambling about some music I've been exposed to in 2023. I did a similar thi
 # Records
 
 ## Quaranta - Danny Brown
-TODO
+The album felt fairly old too me; quite slow, fairly monotonous and certainly dark.
 
 ## Only For Dolphins - Action Bronson
-TODO
+A very easy listen I came back to when hosting people. Sergio is a true earworm.
 
 ## Sour Soul - BADBADNOTGOOD & Ghostface Killah
 I think this is my favourite BADBADNOTGOOD album. It doesn't feel as
 excessively playful, more authentic than other works of theirs to me. More necessity, less luxury.
 
 ## FABRICLIVE 59 - Four Tet
-TODO
+Cutting through the chase with honesty; no show, no filler. Great stuff.
 
 ## Space Heavy - King Krule
-TODO
+The blunt sound of the bass on 'Flimsier' and 'If Only It Was Warmth' hit home.
+Unfortunately I haven't perceived the album as really coherent so far. Maybe some more patience on my end is all it needs.
+Overall I find that the composure King Krule demonstrates more recently suits him very well. At the same time I do miss his rougher singing of the past, though.
 
 ## The Sunset Violent - Mount Kimbie
 It feels as though I had been listening to 'Empty and Silent' for decades.
 
 ## The Queen is Dead - The Smiths
-TODO
+I chuckled more than once and thought that some of the lyrics were fairly witty in a simple, unpretentious way.
+I don't get how 'Never Had No One Ever' has the second-least streams of this album on YouTube music.
 
 ## Vol. 4 - Black Sabbath
 This album didn't feel very 'produced'; the arrangements felt quite
-improvised and suprisiing; the mix was surprisingly bimodal with very high and low
-frequencies. I actually mistook the base guitar for a guitar!
+improvised and suprising; the mix was surprisingly bimodal with very high and low
+frequencies. I actually mistook the bass guitar for a guitar!
 I can totally picture how a 14 year old -- lying on a narrow bed,
-staring at the ceiling - is massively impacted and moved by songs like
+staring at the ceiling -- is massively impacted and moved by songs like
 'Snowblind' and 'Under the Sun'.
 
-## The Glow Pt. 2 - The Microphones
-TODO
-
 ## Romance - Fontaines DC
-TODO
+I have been disappointed by this album. Previous Fontaines DC albums struck me with vicious energy; something that can't be taken away
+from them even if they're not shining the brightest musically. This album seems to go down a different road, a road of esthetics and swagger.
+In and by itself this is surely fair enough. Yet, I find that they don't pull off this approach too well -- expect for the amazing 'Starbuster'.
 
 ## Violent Femmes - Violent Femmes
-TODO
+How has this album not shown up on my radar any sooner? I think this is what my 17 year old self would've called 'real music'.
 
 ## Toxicity - System of a Down
 Either this album has aged very well or I am somehow still stuck in my
@@ -83,7 +86,7 @@ well as the book's end to get us through this.
 I definitely learned about scuplture, art history and the church. What
 struck me most, though, was how Michelangelo was portrayed as a pawn,
 effortlessly moved around by the powerful. I perceived the writing as
-though his dedication and superiority made him important, but stripped
+though his dedication and superiority made him an important asset, but stripped
 him of all powers and self-determination.
 
 ## Dried-Up in meetings & other short stories - Mir Jalal
@@ -104,9 +107,16 @@ suspense).
 This is probably the most daring, the most left-field book I've read.
 
 ## Brief Interviews with Hideous Men - David Foster Wallace
-These short stories had everything. Lots of  intricate and complex
+These short stories had everything. Lots of intricate and complex
 narrative structure, filled with beautifully flowing use of
 language. But don't accuse DFW of intellectual masturbation too soon;
 I find that he left space for the visceral and baked quite a bit of
 humanly simple (simply humane?), emotive, touching themes into this
 collection. Hell, there was even some **suspense**.
+
+## De Mann, deen ëmmer laacht - Joseph Kayser
+I really enjoyed diving into this parallel world of local public administration.
+
+## Briefe an einen jungen Dichter - Rainer Maria Rilke
+1/5 excuses as to why the responses are late, 1/5 excuses as to why the responses
+are spare, 1/5 incredible nuggets of wisdom, 2/5 above my pay grade.
