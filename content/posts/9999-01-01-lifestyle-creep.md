@@ -1,10 +1,11 @@
 ---
 title: "Lifestyle Creep: How It Started, How It's Going"
-date: 2024-12-31 7:38:07 +0200
+date: 2024-12-31 18:38:07 +0200
 comments: false
 description: This is a really cool post, please read it.
 tags: [thoughts]
 katex: True
+draft: True
 params:
   published: false
 ---
@@ -40,7 +41,7 @@ to get at:
 | Do I deem the change in perspective useful? (i.e. do I consider the lifestyle creep 'justified') | Not at all                         | Very much                          |
 
 
-My point is that many things are correlated to higher age: higher
+In this example, many aspects are correlated to higher age: higher
 salaries, higher expenditures, more responsibilities, more people
 depending on one, more societal pressure. What I really care about is
 the following:
@@ -56,8 +57,8 @@ increased spending.
 Secondly, I find it difficult to wrap my hand around the concept of a
 necessity. I side with what Jakob Lund Fisker writes in his _Early Retirement Extreme_:
 
-> [...] often results in normative discussion of what other people
-> should need or want, which usually degenerate into discussion about
+> [...] often results in normative discussions of what other people
+> should need or want, which usually degenerate into discussions about
 > what is possible and what is not possible. The fact that it is so
 > hard to agree on which is which suggests that the differentiation
 > has become meaningless and thus irrelevant. _There are no such things
@@ -67,8 +68,8 @@ necessity. I side with what Jakob Lund Fisker writes in his _Early Retirement Ex
 Therefore I will define my own notion of lifestyle creep as follows:
 
 > Lifestyle creep, also known as lifestyle inflation, is a phenomenon
-> that occurs if, **because** more resources are spent on standard of living
-> of a given person, this person starts taking former luxuries **for granted**.
+> that occurs if a given person starts taking former luxuries **for granted**
+> **because** more resources are spent on standard of living.
 
 Now, even with this definition the presence of lifestyle creep doesn't
 imply poor decision making[^2]. For instance, is it reproachable to
