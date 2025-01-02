@@ -27,7 +27,7 @@ Firstly,
 > [...] as more resources are spent [...]
 
 expresses a correlation. What I really care about is causation,
-though. 
+though.
 
 Secondly, I find it difficult to wrap my hand around the concept of a
 necessity. I side with what Jakob Lund Fisker writes in his _Early Retirement Extreme_:
@@ -104,7 +104,7 @@ What is the 'progress' of taking former luxuries for granted?
 
 ## No change
 
-To my surprise, the following this have not become more or less of a
+To my surprise, the following have not become more or less of a
 luxury, despite higher spending:
 * ANC headphones
 * Keyboard
