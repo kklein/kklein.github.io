@@ -3,15 +3,13 @@ definition of lifestyle creep looks as follows:&lt;/p>
 &lt;blockquote>
 &lt;p>Lifestyle creep, also known as lifestyle inflation, is a phenomenon
 that occurs when, as more resources are spent on standard of living,
-former luxuries become perceived necessities.&lt;/p>
-&lt;/blockquote>
+former luxuries become perceived necessities.&lt;/p>&lt;/blockquote>
 &lt;h1 id="me-rambling-about-this-definition">Me rambling about this definition&lt;/h1>
 &lt;p>To be perfectly honest, I don&amp;rsquo;t find said definition to be particularly
 useful.&lt;/p>
 &lt;p>Firstly,&lt;/p>
 &lt;blockquote>
-&lt;p>[&amp;hellip;] as more resources are spent [&amp;hellip;]&lt;/p>
-&lt;/blockquote>
+&lt;p>[&amp;hellip;] as more resources are spent [&amp;hellip;]&lt;/p>&lt;/blockquote>
 &lt;p>expresses a correlation. What I really care about is causation,
 though.&lt;/p></description></item><item><title>2024 in Exercise</title><link>https://kevinkle.in/posts/2024-12-31-2024_exercise/</link><pubDate>Tue, 31 Dec 2024 02:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2024-12-31-2024_exercise/</guid><description>&lt;p>Since another year has come to an end, I can&amp;rsquo;t help but ask the question: What does my exercise data have to tell me? I did very similar things in
 &lt;a href="https://kevinkle.in/posts/2023-12-28-2023_running/">2023&lt;/a>
@@ -301,8 +299,7 @@ by a running injury in 2022.&lt;/p></description></item><item><title>2022 in Con
 &lt;p>The nonchalant absurdity sometimes reminded me of Jack Kerouac. So many things I couldn&amp;rsquo;t relate to and so many questions I&amp;rsquo;d need to ask about. Christian Kracht&amp;rsquo;s precision in descriptions and childish behaviors made me empathize a lot with a character who&amp;rsquo;s certainly not a posterboy for likeableness.&lt;/p></description></item><item><title>Status Symbols</title><link>https://kevinkle.in/posts/2022-12-21-status_symbols/</link><pubDate>Wed, 21 Dec 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-12-21-status_symbols/</guid><description>&lt;p>What is a status symbol?&lt;/p>
 &lt;p>While the Cambridge dictionary restricts status symbols to possessions, wikipedia takes a more permissive stance and defines them as&lt;/p>
 &lt;blockquote>
-&lt;p>a visible, external symbol of one&amp;rsquo;s social position, an indicator of economic or social status&lt;/p>
-&lt;/blockquote>
+&lt;p>a visible, external symbol of one&amp;rsquo;s social position, an indicator of economic or social status&lt;/p>&lt;/blockquote>
 &lt;p>I&amp;rsquo;ll side with the latter. This, of course, bears the questions of what social status actually is, which I will, of course, eschew.&lt;/p>
 &lt;p>Rather, a list of indicators I believe to have perceived with regards to social status:&lt;/p></description></item><item><title>Chicory Tarte Tatin</title><link>https://kevinkle.in/posts/2022-10-03-chicory_tarte_tatin/</link><pubDate>Sun, 09 Oct 2022 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2022-10-03-chicory_tarte_tatin/</guid><description>&lt;h1 id="ingredients">Ingredients&lt;/h1>
 &lt;ul>
@@ -899,8 +896,7 @@ In other words, my perspective was that such messaging often started off great b
 &lt;p>Appreciating the simplicity of powerful randomized algorithms comes easy to me. In the following I will try to describe a naive algorithm relying on a randomized argument. What I find particularly remarkable is that it can easily parry the critique I am so often encountered with when cherishing randomized algorithms: it can trivially be turned deterministic.&lt;/p>
 &lt;h3 id="max-3sat">MAX-3SAT&lt;/h3>
 &lt;p>Is a boolean satisfiability problem. Given a formula in 3-CNF, the goal to satisfy as many clauses as possible.&lt;/p></description></item><item><title>Sklearn Pipelines</title><link>https://kevinkle.in/posts/2019-01-10-sklearn-pipelines/</link><pubDate>Tue, 08 Jan 2019 13:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2019-01-10-sklearn-pipelines/</guid><description>&lt;blockquote>
-&lt;p>Pipeline of transforms with a final estimator.&lt;/p>
-&lt;/blockquote>
+&lt;p>Pipeline of transforms with a final estimator.&lt;/p>&lt;/blockquote>
 &lt;h2 id="why">Why&lt;/h2>
 &lt;p>Whether you&amp;rsquo;re using sklearn transformations already or implementing data wrangling from scratch, there are interesting aspects to squeezing those into an sklearn
 &lt;a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html">pipeline&lt;/a>.
@@ -928,7 +924,6 @@ validation split.&lt;/p></description></item><item><title>Running Log</title><li
 &lt;h2 id="motivation">Motivation&lt;/h2>
 &lt;p>A while back I listened to &lt;a href="https://samharris.org/podcasts/what-is-technology-doing-to-us/">Sam Harris&amp;rsquo; podcast with Tristan Harris&lt;/a>. What remained was following:&lt;/p>
 &lt;p>I agreed that most technology is agnostic. At the same time, a lot of technology stemming from or being a byproduct of the attention economy is rather geared towards a usage that is a net disadvantage for the user. What I mean by that is that such technology has both advantages and disadvantages that can at least partly be isolated. Yet a somewhat unconscious usage, think: path of least resistance, will often weigh the disadvantages more heavily. I don&amp;rsquo;t see why this would be an intrinsic property of such products and services, it just happens to be the case for most examples I could think of.&lt;/p></description></item><item><title>Matrix Factorization in Collaborative Filtering</title><link>https://kevinkle.in/posts/2018-07-10-cf-mf/</link><pubDate>Tue, 10 Jul 2018 16:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/2018-07-10-cf-mf/</guid><description>&lt;h2 id="the-task">The Task&lt;/h2>
-&lt;!-- raw HTML omitted -->
 &lt;p>We are given a set of tuples representing user-movie ratings, \(\mathcal{R} = \{(i,j,r)\}\), where \(i\) is the user index, \(j\) is the movie index and \(r \in [0, \dots, 5]\) the rating.
 In the most common scenarios, only a fraction of all user-movie pairs are rated, hence we can talk about &lt;em>sparse&lt;/em> data.
 In other words, most users have only rated a few movies. Now we want to obtain sensible predictions for movies a user has not rated. I leave drawing to picture as to why this is super relevant in many use cases to your imagination. Note that we only have this explicit feedback from users and don&amp;rsquo;t have any context knowledge about the users or movies. We can only leverage ratings from other users to build predictions. This is called collaborative filtering.&lt;/p></description></item><item><title>Post Title</title><link>https://kevinkle.in/posts/9999-01-01-template/</link><pubDate>Sat, 01 Jan 2000 07:38:07 +0200</pubDate><guid>https://kevinkle.in/posts/9999-01-01-template/</guid><description>&lt;h1 id="motivation">Motivation&lt;/h1>
@@ -954,8 +949,7 @@ $$\begin{aligned}
 &lt;blockquote>
 &lt;p>An excerpt from a series of poems from the uncanny valley between
 obviously too bad to be meant seriously and just bad but
-respectable.&lt;/p>
-&lt;/blockquote>
+respectable.&lt;/p>&lt;/blockquote>
 &lt;p>DFW, The Depressed person, BIwHM&lt;/p>
 &lt;blockquote>
 &lt;p>The word &amp;ldquo;pathetic&amp;rdquo;, the therapist candidly shared, often felt to

@@ -45,18 +45,18 @@ of amazing features:</p><ul><li>It supports LaTeX.</li><li>It supports audio and
 behaviour.</li><li>It has a high degree of customization when it comes to spaced
 repetition algorithm parameters.</li><li>It comes with free (yet, closed-source) hosting.</li></ul><h1 id=remembering-in-practice>Remembering, in practice</h1><p>While there are plenty of ready-to-use Anki flashcard decks available
 online, I decided to create my own decks. I both care about high precision and low recall.</p><h2 id=creation-of-flashcards>Creation of flashcards</h2><p>I store all of my flashcards in fairly straight-forward csv files. This is an excerpt from my
-<a href=https://github.com/kklein/flashcards/blob/main/french.csv>flashcards for French</a>.</p><pre tabindex=0><code class=language-csv data-lang=csv>L&#39;embarras,&#34;1. Incertitude, perplexité de quelqu&#39;un qui ne sait quelle voie choisir.
-2. Gêne, malaise en présence d&#39;une situation délicate
-3. Difficulté, problème (surtout pluriel)&#34;
-
-Échappatoire (f.),&#34;Moyen adroit et détourné de se tirer d&#39;embarras.
-Exemple: Trouver une échappatoire pour ne pas aller à une soirée.&#34;
-
-Agencer,&#34;Disposer en combinant (des éléments), organiser (un ensemble)
-par une combinaison d&#39;éléments.&#34;
-
-Habile,&#34;Qui exécute avec adresse et compétence quelque chose de ses mains.&#34;
-</code></pre><p>As of now I have decks for the following topics:</p><ul><li>French vocabulary<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup></li><li>English vocabulary</li><li>Probability & Statistics</li><li>Machine Learning</li><li>Causal Inference</li><li>Deep Learning</li></ul><p>The former two decks are imported as to create cards for the reverse as well. For example, the last row of the excerpt above will create two flashcards:</p><table><thead><tr><th style=text-align:left>Question</th><th style=text-align:left>Answer</th></tr></thead><tbody><tr><td style=text-align:left>Habile</td><td style=text-align:left>Qui exécute avec adresse et compétence quelque chose de ses mains.</td></tr><tr><td style=text-align:left>Qui exécute avec adresse et compétence quelque chose de ses mains.</td><td style=text-align:left>Habile</td></tr></tbody></table><p>All other decks are unidirectional.</p><p>I version-control these csv files with <code>git</code> and host them in <a href=https://github.com/kklein/flashcards>this GitHub repository</a>.</p><p>Naturally, anki expects these csv files to have a certain format. In order to automate
+<a href=https://github.com/kklein/flashcards/blob/main/french.csv>flashcards for French</a>.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csv data-lang=csv><span style=display:flex><span><span style=color:#e6db74>L&#39;embarras</span>,<span style=color:#e6db74>&#34;1. Incertitude, perplexité de quelqu&#39;un qui ne sait quelle voie choisir.
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>2. Gêne, malaise en présence d&#39;une situation délicate
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>3. Difficulté, problème (surtout pluriel)&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#e6db74>Échappatoire (f.)</span>,<span style=color:#e6db74>&#34;Moyen adroit et détourné de se tirer d&#39;embarras.
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>Exemple: Trouver une échappatoire pour ne pas aller à une soirée.&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#e6db74>Agencer</span>,<span style=color:#e6db74>&#34;Disposer en combinant (des éléments), organiser (un ensemble)
+</span></span></span><span style=display:flex><span><span style=color:#e6db74>par une combinaison d&#39;éléments.&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#e6db74>Habile</span>,<span style=color:#e6db74>&#34;Qui exécute avec adresse et compétence quelque chose de ses mains.&#34;</span>
+</span></span></code></pre></div><p>As of now I have decks for the following topics:</p><ul><li>French vocabulary<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup></li><li>English vocabulary</li><li>Probability & Statistics</li><li>Machine Learning</li><li>Causal Inference</li><li>Deep Learning</li></ul><p>The former two decks are imported as to create cards for the reverse as well. For example, the last row of the excerpt above will create two flashcards:</p><table><thead><tr><th style=text-align:left>Question</th><th style=text-align:left>Answer</th></tr></thead><tbody><tr><td style=text-align:left>Habile</td><td style=text-align:left>Qui exécute avec adresse et compétence quelque chose de ses mains.</td></tr><tr><td style=text-align:left>Qui exécute avec adresse et compétence quelque chose de ses mains.</td><td style=text-align:left>Habile</td></tr></tbody></table><p>All other decks are unidirectional.</p><p>I version-control these csv files with <code>git</code> and host them in <a href=https://github.com/kklein/flashcards>this GitHub repository</a>.</p><p>Naturally, anki expects these csv files to have a certain format. In order to automate
 the validation of this format, I build a <a href=https://pre-commit.com/>pre-commit</a> hook, such that whenever I seek
 to commit an update to my flashcards, the csv files are validated for spelling errors
 and format violations. You can find this validation mechanisms in <a href=https://github.com/kklein/anki-csv>this repository</a>.</p><p>Once the csv files are created/updated and version controlled, I
